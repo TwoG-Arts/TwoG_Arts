@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YoRHa_2G</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(function () {
+            $(".AboutMe").load("pages/AboutMe.html");
+        });
+
+        function videos() {
+            $(".Videos").load("pages/Videos.html");
+            $(".Designs").html('');
+            $(".AboutMe").html('');
+            $(".Editing").html('');
+        }
+
+        function designs() {
+            $(".Designs").load("pages/Designs.html");
+            $(".Editing").html('');
+            $(".AboutMe").html('');
+            $(".Videos").html('');
+        }
+
+        function editing() {
+            $(".Editing").load("pages/Editing.html");
+            $(".Designs").html('');
+            $(".AboutMe").html('');
+            $(".Videos").html('');
+        }
+
+        function aboutMe() {
+            $(".AboutMe").load("pages/AboutMe.html");
+            $(".Editing").html('');
+            $(".Designs").html('');
+            $(".Videos").html('');
+        }
+
+        function language() {
+
+        }
+    </script>
+</head>
+<body>
+<header class="buttons">
+    <button class="works" onclick="aboutMe()"><img src="images/Button.png">
+        <p>About Me</p>
+        <div class="underline"></div>
+    </button>
+    <button class="works" onclick="videos()"><img src="images/Button.png">
+        <p>Videos</p>
+        <div class="underline"></div>
+    </button>
+    <button class="works" onclick="designs()"><img src="images/Button.png">
+        <p>Designs</p>
+        <div class="underline"></div>
+    </button>
+    <button class="works" onclick="editing()"><img src="images/Button.png">
+        <p>Editing</p>
+        <div class="underline"></div>
+    </button>
+    <button id="aboutMe" onclick="aboutMe()"><img src="images/Button.png">
+        <p>About Me</p>
+        <div class="underline"></div>
+    </button>
+    <a href="#work"><button id="works"><img src="images/Button.png">
+        <p>Works</p>
+        <div class="underline"></div>
+    </button></a>
+</header>
+<div class="mobile">
+    <img id="banner" src="images/bannermobile.png">
+    <div id="work" class="lavori">
+        <h1>Works</h1>
+        <div class="highlight">
+            <div class="video">
+                <a href="https://www.instagram.com/stories/highlights/17969819818631532/" target="_blank"><img
+                        src="images/editing/raamshanks.png"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.instagram.com/p/ChmHwQ5AYEE/" target="_blank"><img src="images/editing/aotr.png"></a>
+            </div>
+        </div>
+        <div class="more">
+            <button onclick="editing()">Più editing</button>
+        </div>
+        <div class="highlight">
+            <div class="video">
+                <a href="https://www.instagram.com/p/CebBWMvK0_t/" target="_blank"><img src="images/videos/akumanoko.png"></a>
+            </div>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=dywu3qIFt7Y" target="_blank"><img
+                        src="images/videos/pillola9.png"></a>
+            </div>
+        </div>
+        <div class="more">
+            <button onclick="videos()">Più video</button>
+        </div>
+        <div class="highlight">
+            <div class="video">
+                <a><img src="images/designs/desraamdeadman.png"></a>
+            </div>
+            <div class="video">
+                <a><img src="images/designs/destwog.png"></a>
+            </div>
+        </div>
+        <div class="more">
+            <a href="pages/Designs.html"><button>Più designs</button></a>
+        </div>
+    </div>
+    <div class="mobileContacts">
+        <h1>Contatti</h1>
+        <div class="imageContacts">
+            <a href="mailto:yorha2g@gmail.com"><img src="images/email.png"></a>
+            <a href="https://www.youtube.com/user/giggi1630"><img src="images/youtube.png"></a>
+            <a href="https://www.instagram.com/twog_arts/"><img src="images/insta.png"></a>
+            <a href="https://www.tiktok.com/@twog_arts"><img src="images/tiktok.png"></a>
+            <a href="https://t.me/YoRHa_2G"><img src="images/telegram.png"></a>
+        </div>
+    </div>
+</div>
+<div class="AboutMe"></div>
+<div class="Videos"></div>
+<div class="Designs"></div>
+<div class="Editing"></div>
+
+</body><footer class="footer">
+    <div class="language">
+        <p>IT</p>
+        <label class="switch" onclick="language()">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p>EN</p>
+    </div>
+    <div class="footer-center">
+        <p>Made with ♥</p>
+        <p>by</p>
+        <p>2G & Rankoll</p>
+    </div>
+    <div class="mobileButton">
+        <a href="https://t.me/YoRHa_2G" target="_blank"><img class="mobileImage" src="images/telegram_f.png"></a>
+        <div id="email" class="contactRow"><a href="mailto:yorha2g@gmail.com"><p>yorha2g@gmail.com</p></a></div>
+        <div class="contacts">
+            <div class="contactRow"><a href="https://www.instagram.com/twog_arts/" target="_blank"><img
+                    src="images/insta_f.png"></a>
+            </div>
+            <div class="contactRow"><a href="https://www.youtube.com/user/giggi1630" target="_blank"><img
+                    src="images/yt_f.png"></a></div>
+            <div class="contactRow"><a href="https://www.tiktok.com/@twog_arts" target="_blank"><img
+                    src="images/tik_tok_f.png"></a>
+            </div>
+            <div class="contactRow"><a href="https://t.me/YoRHa_2G" target="_blank"><img
+                    src="images/telegram_f.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

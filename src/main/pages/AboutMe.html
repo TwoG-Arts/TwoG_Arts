@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script>
+        $(function () {
+            clicked(0);
+            select(0);
+            const highlight = document.getElementById('2g');
+            highlight.classList.add('active');
+            highlight.style.background = '#4E4B42';
+            highlight.style.color = "#B4AE9A";
+        })
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="sideBut" id="wrapper">
+        <button class="button" id="2g" onclick="select(0);clicked(0)">
+            <div class="sideStyle"></div>
+            YoRHa 2G
+        </button>
+        <button class="button" onclick="select(1);clicked(1)">
+            <div class="sideStyle"></div>
+            Contatti
+        </button>
+        <button class="button" onclick="select(2);clicked(2)">
+            <div class="sideStyle"></div>
+            Collaborazioni
+        </button>
+        <button class="button" onclick="select(3);clicked(3)">
+            <div class="sideStyle"></div>
+            Ringraziamenti
+        </button>
+        <button class="button" onclick="select(4);clicked(4)">
+            <div class="sideStyle"></div>
+            Lavori
+        </button>
+    </div>
+    <div class="infoAboutMe">
+
+        <div class="rightBlock show">
+            <div class="mobileHead"><h1>About Me</h1></div>
+            <p id="firstPart">Il mio nome è Luigi, sono un tecnico informatico che ha iniziato
+                a
+                frequentare
+                l'accademia delle belle arti di Napoli
+                presso la facoltà di Nuove Tecnologie dell’arte nel 2020. Il mio nome “2G” deriva dalla mia opera
+                preferita:
+                NieR
+                Automata, gioco che mi ha segnato profondamente, grazie al suo scavare a fondo nella natura umana ed
+                alla
+                narrazione
+                impeccabile del maestro Yoko Taro. Principalmente mi occupo di fotomontaggio e fotoritocco, mi diletto
+                nella
+                creazione di VFX e nel video editing.
+            </p>
+            <img id="logoAboutMe" src="images/LogoAboutMe.png">
+            <p id="secondPart">Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito
+                le
+                foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue
+                live
+                mediante
+                diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da
+                cui prendo
+                ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al
+                mondo dei VFX
+                e
+                dell’editing video in generale.</p>
+        </div>
+        <div class="mobileCollab">
+            <h1>Collaborazioni</h1>
+            <div class="highlight"><img src="images/logoRAAM.png">
+                <p>RAAMDeadman</p></div>
+        </div>
+        <div class="rightBlock show" style="display: none">
+            <div>
+                <div class="contactRow"><a href="mailto:yorha2g@gmail.com" target="_blank"><img src="images/email.png">Email:
+                    yorha2g@gmail.com</a></div>
+                <div class="contactRow"><a href="https://www.instagram.com/twog_arts/" target="_blank"><img
+                        src="images/insta.png">Instagram:
+                    @twog_arts</a></div>
+                <div class="contactRow"><a href="https://www.youtube.com/user/giggi1630" target="_blank"><img
+                        src="images/youtube.png">Youtube:
+                    YoRHa 2G</a></div>
+                <div class="contactRow"><a href="https://www.tiktok.com/@twog_arts" target="_blank"><img
+                        src="images/tiktok.png">TikTok:
+                    @twog_arts</a></div>
+                <div class="contactRow"><a href="https://t.me/YoRHa_2G" target="_blank"><img
+                        src="images/telegram.png">Telegram:
+                    @twog_arts</a></div>
+            </div>
+        </div>
+        <div class="rightBlock show">
+            <div class="collab">
+                <img src="images/logoRAAM.png">
+                <h2>RAAMDeadman</h2>
+                <div class="links">
+                    <div><a href="https://www.youtube.com/c/raamdeadman" target="_blank"><img src="images/youtube.png">Youtube</a>
+                    </div>
+                    <div><a href="https://www.youtube.com/c/RAAMDeadman2" target="_blank"><img src="images/youtube.png">Youtube<sup>2</sup></a>
+                    </div>
+                    <div><a href="https://www.instagram.com/raamdeadman/" target="_blank"><img src="images/insta.png">Instagram</a>
+                    </div>
+                    <div><a href="https://www.instagram.com/deadman_cosplay/" target="_blank"><img
+                            src="images/insta.png">Instagram
+                        Cosplay</a></div>
+                    <div><a href="https://www.twitch.tv/raamdeadman" target="_blank"><img src="images/twitch.png">Twitch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="collab">
+                <img src="images/logoLosmichele.png">
+                <h2>LosMichele</h2>
+                <div class="links">
+                    <div><a href="https://www.instagram.com/michelelosciale/" target="_blank"><img
+                            src="images/insta.png">Instagram</a>
+                    </div>
+                    <div><a href="https://www.twitch.tv/losmichele" target="_blank"><img src="images/twitch.png">Twitch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightBlock show">
+            <h2>Un ringraziamento speciale a ciccio e caio</h2>
+        </div>
+        <div class="rightBlock show">
+            <div class="lavori">
+                <h1>Edits</h1>
+                <div class="highlight">
+                    <div class="video">
+                        <a href="https://www.instagram.com/stories/highlights/17969819818631532/" target="_blank"><img
+                                src="images/editing/raamshanks.png"></a>
+                    </div>
+                    <div class="video">
+                        <a href="https://www.instagram.com/p/ChmHwQ5AYEE/" target="_blank"><img src="images/editing/aotr.png"></a>
+                    </div>
+                </div>
+                <div class="more">
+                    <button onclick="editing()">Scopri di più</button>
+                </div>
+                <h1>Designs</h1>
+                <div class="highlight">
+                    <div class="video">
+                        <a><img src="images/designs/desraamdeadman.png"></a>
+                    </div>
+                    <div class="video">
+                        <a><img src="images/designs/destwog.png"></a>
+                    </div>
+                </div>
+                <div class="more">
+                    <button onclick="designs()">Scopri di più</button>
+                </div>
+                <h1>Videos</h1>
+                <div class="highlight">
+                    <div class="video">
+                        <a href="https://www.instagram.com/p/CebBWMvK0_t/" target="_blank"><img
+                                src="images/videos/akumanoko.png"></a>
+                    </div>
+                    <div class="video">
+                        <a href="https://www.youtube.com/watch?v=dywu3qIFt7Y" target="_blank"><img
+                                src="images/videos/pillola9.png"></a>
+                    </div>
+                </div>
+                <div class="more">
+                    <button onclick="videos()">Scopri di più</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let prevButton = document.getElementById('2g');
+    let showing = null;
+
+    function clicked(i) {
+        const selected = document.getElementsByClassName('button')[i];
+        selected.style.background = '#4E4B42';
+        selected.style.color = "#B4AE9A";
+        selected.classList.add('active');
+        if (prevButton !== null && prevButton !== selected) {
+            prevButton.classList.remove('active');
+            prevButton.style.background = '#B4AE9A';
+            prevButton.style.color = '#4E4B42';
+            prevButton = selected;
+        }
+        prevButton = selected;
+    }
+
+    function select(i) {
+        const selected = document.getElementsByClassName('show')[i];
+        selected.style.display = 'flex';
+        selected.classList.add('showing');
+        if (showing !== null && showing !== selected) {
+            showing.classList.remove('showing');
+            showing.style.display = 'none';
+            showing = selected;
+        }
+        showing = selected;
+    }
+</script>
+</html>

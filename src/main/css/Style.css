@@ -282,7 +282,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
-    max-height: 47rem;
+    max-height: 44rem;
     justify-content: space-evenly;
     margin: 2rem;
     flex-wrap: wrap;
@@ -440,7 +440,7 @@ input:checked + .slider:before {
 
 .lavori {
     width: 100%;
-    max-height: 42rem;
+    max-height: 39rem;
     overflow: auto;
     overflow-x: hidden;
 }
@@ -513,12 +513,19 @@ input:checked + .slider:before {
     width: 100%;
 }
 
-.mobileCollab {
+.mobileCollab, .mobileImage {
     display: none;
 }
 
+.highlight p {
+    font-family: BreezeSans, sans-serif;
+    color: #343127;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
 /* Mobile */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     body {
         padding-bottom: 100px;
     }
@@ -540,7 +547,8 @@ input:checked + .slider:before {
     }
 
     .footer {
-        height: 100px;
+        height: 80px;
+        position: fixed;
     }
 
     #works, #aboutMe {
@@ -551,7 +559,7 @@ input:checked + .slider:before {
         width: 50%;
     }
 
-    .mobileHead {
+    .mobileHead, .mobileImage {
         display: block;
     }
 
@@ -600,5 +608,20 @@ input:checked + .slider:before {
     .mobileCollab p {
         display: inline-block;
         margin: 0;
+    }
+
+    .footer-center, .contacts, #email {
+        display: none;
+    }
+
+    .mobileButton {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+    }
+
+    .mobileButton img {
+        width: 4rem;
+        margin: 1rem;
     }
 }

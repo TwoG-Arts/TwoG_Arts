@@ -16,46 +16,55 @@
 
         function videos() {
             const mob = document.getElementsByClassName('mobile')[0];
+            const work = document.getElementById('works');
 
             $(".Videos").load("pages/Videos.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Editing").html('');
             mob.style.display = 'none';
+            work.style.display = 'none';
             $(".home").html('Home');
+
         }
 
         function designs() {
             const mob = document.getElementsByClassName('mobile')[0];
+            const work = document.getElementById('works');
 
             $(".Designs").load("pages/Designs.html");
             $(".Editing").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
             mob.style.display = 'none';
+            work.style.display = 'none';
             $(".home").html('Home');
         }
 
         function editing() {
             const mob = document.getElementsByClassName('mobile')[0];
+            const work = document.getElementById('works');
 
             $(".Editing").load("pages/Editing.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
             mob.style.display = 'none';
+            work.style.display = 'none';
             $(".home").html('Home');
         }
 
         function aboutMe() {
             const mob = document.getElementsByClassName('mobile')[0];
+            const work = document.getElementById('works');
 
             $(".AboutMe").load("pages/AboutMe.html");
             $(".Editing").html('');
             $(".Designs").html('');
             $(".Videos").html('');
             mob.style.display = 'flex';
-            $(".home").html('About Home');
+            work.style.display = 'block';
+            $(".home").html('About Me');
         }
 
         function language() {

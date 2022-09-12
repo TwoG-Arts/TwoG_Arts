@@ -659,4 +659,8 @@ input:checked + .slider:before {
         height: 32px;
         width: 32px;
     }
+
+    .scrolldiv {
+        max-height: initial;
+    }
 }

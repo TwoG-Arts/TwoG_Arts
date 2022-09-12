@@ -10,13 +10,13 @@
 
     <script src="jquery/jquery.js"></script>
     <script>
-        const mob = document.getElementsByClassName('mobile')[0];
-
         $(function () {
             $(".AboutMe").load("pages/AboutMe.html");
         });
 
         function videos() {
+            const mob = document.getElementsByClassName('mobile')[0];
+
             $(".Videos").load("pages/Videos.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
@@ -26,6 +26,8 @@
         }
 
         function designs() {
+            const mob = document.getElementsByClassName('mobile')[0];
+
             $(".Designs").load("pages/Designs.html");
             $(".Editing").html('');
             $(".AboutMe").html('');
@@ -35,6 +37,8 @@
         }
 
         function editing() {
+            const mob = document.getElementsByClassName('mobile')[0];
+
             $(".Editing").load("pages/Editing.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
@@ -44,6 +48,8 @@
         }
 
         function aboutMe() {
+            const mob = document.getElementsByClassName('mobile')[0];
+
             $(".AboutMe").load("pages/AboutMe.html");
             $(".Editing").html('');
             $(".Designs").html('');

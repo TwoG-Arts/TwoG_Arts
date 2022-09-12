@@ -551,7 +551,7 @@ input:checked + .slider:before {
         width: 50%;
     }
 
-    .mobileHead {
+    .mobileHead, .mobileImage {
         display: block;
     }
 
@@ -600,9 +600,10 @@ input:checked + .slider:before {
     .highlight {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
-    .highlight p {
+    .mobileCollab.highlight p {
         font-family: BreezeSans, sans-serif;
         color: #343127;
         font-weight: bolder;
@@ -622,7 +623,7 @@ input:checked + .slider:before {
     }
 
     .linkCollab a:hover {
-        background-color: #343127;
+        color: #343127;
     }
 
 

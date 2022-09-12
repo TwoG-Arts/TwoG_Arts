@@ -479,10 +479,8 @@ input:checked + .slider:before {
 
 #banner {
     width: 50rem;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     background-color: #B4AE9A;
     padding: 1rem;
-    margin: 0.5rem auto 2rem auto;
 }
 
 .mobile {
@@ -662,5 +660,13 @@ input:checked + .slider:before {
 
     .scrolldiv {
         max-height: initial;
+    }
+
+    .banner {
+        background-color: #B4AE9A;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
     }
 }

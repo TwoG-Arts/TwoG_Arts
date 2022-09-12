@@ -64,8 +64,8 @@
             $(".Videos").html('');
             if ($(window).width()<=1100) {
                 mob.style.display = 'flex';
+                work.style.display = 'block';
             }
-            work.style.display = 'block';
             $(".home").html('About Me');
         }
 
@@ -93,7 +93,7 @@
         <div class="underline"></div>
     </button>
     <button id="aboutMe" onclick="aboutMe()"><a href="#me"><img src="images/Button.png">
-        <p class="home">About Me</p>
+        <p class="home">Chi sono</p>
         <div class="underline"></div>
     </a></button>
     <button id="works"><a href="#work"><img src="images/Button.png">
@@ -102,9 +102,9 @@
     </a></button>
 </header>
 <div class="mobile">
-    <img id="banner" src="images/bannermobile.png">
+    <div class="banner"><img id="banner" src="images/bannermobile.png"></div>
     <div class="lavori" id="work">
-        <h1>Works</h1>
+        <h1>Lavori</h1>
         <div class="highlight">
             <div class="video">
                 <a href="https://www.instagram.com/stories/highlights/17969819818631532/" target="_blank"><img

@@ -6,36 +6,37 @@
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="images/favicon.ico">
+    <link href="AboutMe.html" rel="import"/>
 
     <script src="jquery/jquery.js"></script>
     <script>
         $(function () {
-            $(".AboutMe").load("pages/AboutMe.html");
+            $(".AboutMe").load("AboutMe.html");
         });
 
         function videos() {
-            $(".Videos").load("pages/Videos.html");
+            $(".Videos").load("Videos.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Editing").html('');
         }
 
         function designs() {
-            $(".Designs").load("pages/Designs.html");
+            $(".Designs").load("Designs.html");
             $(".Editing").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
         }
 
         function editing() {
-            $(".Editing").load("pages/Editing.html");
+            $(".Editing").load("Editing.html");
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
         }
 
         function aboutMe() {
-            $(".AboutMe").load("pages/AboutMe.html");
+            $(".AboutMe").load("AboutMe.html");
             $(".Editing").html('');
             $(".Designs").html('');
             $(".Videos").html('');
@@ -68,14 +69,14 @@
         <p>About Me</p>
         <div class="underline"></div>
     </button>
-    <a href="#work"><button id="works"><img src="images/Button.png">
+    <button id="works"><a href="#"><img src="images/Button.png">
         <p>Works</p>
         <div class="underline"></div>
-    </button></a>
+    </a></button>
 </header>
 <div class="mobile">
     <img id="banner" src="images/bannermobile.png">
-    <div id="work" class="lavori">
+    <div class="lavori">
         <h1>Works</h1>
         <div class="highlight">
             <div class="video">
@@ -110,7 +111,7 @@
             </div>
         </div>
         <div class="more">
-            <a href="pages/Designs.html"><button>Più designs</button></a>
+            <button onclick="designs()">Più designs</button>
         </div>
     </div>
     <div class="mobileContacts">
@@ -128,8 +129,7 @@
 <div class="Videos"></div>
 <div class="Designs"></div>
 <div class="Editing"></div>
-
-</body><footer class="footer">
+<footer class="footer">
     <div class="language">
         <p>IT</p>
         <label class="switch" onclick="language()">
@@ -143,8 +143,7 @@
         <p>by</p>
         <p>2G & Rankoll</p>
     </div>
-    <div class="mobileButton">
-        <a href="https://t.me/YoRHa_2G" target="_blank"><img class="mobileImage" src="images/telegram_f.png"></a>
+    <div>
         <div id="email" class="contactRow"><a href="mailto:yorha2g@gmail.com"><p>yorha2g@gmail.com</p></a></div>
         <div class="contacts">
             <div class="contactRow"><a href="https://www.instagram.com/twog_arts/" target="_blank"><img
@@ -161,4 +160,5 @@
         </div>
     </div>
 </footer>
+</body>
 </html>

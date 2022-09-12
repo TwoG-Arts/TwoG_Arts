@@ -62,7 +62,9 @@
             $(".Editing").html('');
             $(".Designs").html('');
             $(".Videos").html('');
-            mob.style.display = 'flex';
+            if ($(window).width()<=1100) {
+                mob.style.display = 'flex';
+            }
             work.style.display = 'block';
             $(".home").html('About Me');
         }

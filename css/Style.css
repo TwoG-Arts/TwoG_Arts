@@ -608,19 +608,4 @@ input:checked + .slider:before {
         display: inline-block;
         margin: 0;
     }
-
-    .footer-center, .contacts, #email {
-        display: none;
-    }
-
-    .mobileButton {
-        display: flex;
-        align-items: center;
-        margin-right: 0.5rem;
-    }
-
-    .mobileButton img {
-        width: 4rem;
-        margin: 1rem;
-    }
 }

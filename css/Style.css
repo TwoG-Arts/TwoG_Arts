@@ -590,6 +590,7 @@ input:checked + .slider:before {
     .mobileCollab img {
         width: 3rem;
         display: inline-block;
+        margin-right: 0.5rem;
     }
 
     .mobileCollab p {
@@ -602,11 +603,11 @@ input:checked + .slider:before {
         justify-content: center;
     }
 
-    .mobileCollab.highlight {
+    .mobileCollab .highlight {
         flex-direction: column;
     }
 
-    .mobileCollab.wrap p {
+    .mobileCollab .wrap {
         font-family: BreezeSans, sans-serif;
         color: #343127;
         font-weight: bolder;
@@ -622,7 +623,7 @@ input:checked + .slider:before {
         font-family: BreezeSans, sans-serif;
         color: #4E4B42;
         font-weight: bolder;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .linkCollab a:hover {

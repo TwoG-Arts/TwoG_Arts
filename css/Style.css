@@ -600,10 +600,13 @@ input:checked + .slider:before {
     .highlight {
         display: flex;
         justify-content: center;
+    }
+
+    .mobileCollab.highlight {
         flex-direction: column;
     }
 
-    .mobileCollab.highlight p {
+    .mobileCollab.wrap p {
         font-family: BreezeSans, sans-serif;
         color: #343127;
         font-weight: bolder;
@@ -640,5 +643,19 @@ input:checked + .slider:before {
     .mobileButton img {
         width: 4rem;
         margin: 1rem;
+    }
+
+    .language p {
+        font-size: 2rem;
+    }
+
+    .switch {
+        width: 75px;
+        height: 40px;
+    }
+
+    .slider:before {
+        height: 32px;
+        width: 32px;
     }
 }

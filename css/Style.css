@@ -513,8 +513,15 @@ input:checked + .slider:before {
     width: 100%;
 }
 
-.mobileCollab {
+.mobileCollab, .mobileImage {
     display: none;
+}
+
+.highlight p {
+    font-family: BreezeSans, sans-serif;
+    color: #343127;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 /* Mobile */
@@ -600,5 +607,20 @@ input:checked + .slider:before {
     .mobileCollab p {
         display: inline-block;
         margin: 0;
+    }
+
+    .footer-center, .contacts, #email {
+        display: none;
+    }
+
+    .mobileButton {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+    }
+
+    .mobileButton img {
+        width: 4rem;
+        margin: 1rem;
     }
 }

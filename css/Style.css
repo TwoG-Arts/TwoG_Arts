@@ -452,6 +452,8 @@ input:checked + .slider:before {
     font-size: 1.5rem;
     font-weight: bolder;
     color: #4E4B42;
+    width: 100%;
+    padding: 1rem 0.5rem;
 }
 
 .more {
@@ -459,6 +461,8 @@ input:checked + .slider:before {
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    width: 100%;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
 }
 
 .more:hover {
@@ -466,10 +470,6 @@ input:checked + .slider:before {
 }
 
 #works, #aboutMe {
-    display: none;
-}
-
-.mobile {
     display: none;
 }
 
@@ -517,15 +517,8 @@ input:checked + .slider:before {
     display: none;
 }
 
-.highlight p {
-    font-family: BreezeSans, sans-serif;
-    color: #343127;
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
-
 /* Mobile */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     body {
         padding-bottom: 100px;
     }
@@ -566,12 +559,6 @@ input:checked + .slider:before {
         width: 100%;
     }
 
-    .more {
-        width: 100%;
-        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
-        padding: 1rem 0.5rem;
-    }
-
     .mobile .lavori img {
         width: 20rem;
     }
@@ -597,6 +584,7 @@ input:checked + .slider:before {
         padding: 1rem;
         background-color: #B4AE9A;
         box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+        margin: 2rem 0;
     }
 
     .mobileCollab img {
@@ -607,5 +595,33 @@ input:checked + .slider:before {
     .mobileCollab p {
         display: inline-block;
         margin: 0;
+    }
+
+    .highlight {
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlight p {
+        font-family: BreezeSans, sans-serif;
+        color: #343127;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .linkCollab {
+        display: flex;
+    }
+
+    .linkCollab a {
+        margin: 0.5rem;
+        font-family: BreezeSans, sans-serif;
+        color: #4E4B42;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    .linkCollab a:hover {
+        background-color: #343127;
     }
 }

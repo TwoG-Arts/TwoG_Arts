@@ -19,6 +19,9 @@
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Editing").html('');
+            $(".mobile").style.display = 'none';
+            $("#home").html('Home');
+
         }
 
         function designs() {
@@ -26,6 +29,8 @@
             $(".Editing").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
+            $(".mobile").style.display = 'none';
+            $("#home").html('Home');
         }
 
         function editing() {
@@ -33,6 +38,8 @@
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
+            $(".mobile").style.display = 'none';
+            $("#home").html('Home');
         }
 
         function aboutMe() {
@@ -40,6 +47,8 @@
             $(".Editing").html('');
             $(".Designs").html('');
             $(".Videos").html('');
+            $(".mobile").style.display = 'flex';
+            $("#home").html('About Home');
         }
 
         function language() {
@@ -65,10 +74,10 @@
         <p>Editing</p>
         <div class="underline"></div>
     </button>
-    <button id="aboutMe" onclick="aboutMe()"><img src="images/Button.png">
-        <p>About Me</p>
+    <button id="aboutMe" onclick="aboutMe()"><a href="#me"><img src="images/Button.png">
+        <p id="home">About Me</p>
         <div class="underline"></div>
-    </button>
+    </a></button>
     <button id="works"><a href="#work"><img src="images/Button.png">
         <p>Works</p>
         <div class="underline"></div>
@@ -84,7 +93,8 @@
                         src="images/editing/raamshanks.png"></a>
             </div>
             <div class="video">
-                <a href="https://www.instagram.com/p/ChmHwQ5AYEE/" target="_blank"><img src="images/editing/aotr.png"></a>
+                <a href="https://www.instagram.com/p/ChmHwQ5AYEE/" target="_blank"><img
+                        src="images/editing/aotr.png"></a>
             </div>
         </div>
         <div class="more">
@@ -92,7 +102,8 @@
         </div>
         <div class="highlight">
             <div class="video">
-                <a href="https://www.instagram.com/p/CebBWMvK0_t/" target="_blank"><img src="images/videos/akumanoko.png"></a>
+                <a href="https://www.instagram.com/p/CebBWMvK0_t/" target="_blank"><img
+                        src="images/videos/akumanoko.png"></a>
             </div>
             <div class="video">
                 <a href="https://www.youtube.com/watch?v=dywu3qIFt7Y" target="_blank"><img

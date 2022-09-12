@@ -10,6 +10,8 @@
 
     <script src="jquery/jquery.js"></script>
     <script>
+        const mob = document.getElementsByClassName('mobile')[0];
+
         $(function () {
             $(".AboutMe").load("pages/AboutMe.html");
         });
@@ -19,9 +21,8 @@
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Editing").html('');
-            $(".mobile").style.display = 'none';
-            $("#home").html('Home');
-
+            mob.style.display = 'none';
+            $(".home").html('Home');
         }
 
         function designs() {
@@ -29,8 +30,8 @@
             $(".Editing").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
-            $(".mobile").style.display = 'none';
-            $("#home").html('Home');
+            mob.style.display = 'none';
+            $(".home").html('Home');
         }
 
         function editing() {
@@ -38,8 +39,8 @@
             $(".Designs").html('');
             $(".AboutMe").html('');
             $(".Videos").html('');
-            $(".mobile").style.display = 'none';
-            $("#home").html('Home');
+            mob.style.display = 'none';
+            $(".home").html('Home');
         }
 
         function aboutMe() {
@@ -47,8 +48,8 @@
             $(".Editing").html('');
             $(".Designs").html('');
             $(".Videos").html('');
-            $(".mobile").style.display = 'flex';
-            $("#home").html('About Home');
+            mob.style.display = 'flex';
+            $(".home").html('About Home');
         }
 
         function language() {
@@ -75,7 +76,7 @@
         <div class="underline"></div>
     </button>
     <button id="aboutMe" onclick="aboutMe()"><a href="#me"><img src="images/Button.png">
-        <p id="home">About Me</p>
+        <p class="home">About Me</p>
         <div class="underline"></div>
     </a></button>
     <button id="works"><a href="#work"><img src="images/Button.png">

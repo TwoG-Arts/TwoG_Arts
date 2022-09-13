@@ -5,16 +5,6 @@
     <title>About Me</title>
     <link rel="stylesheet" href="../css/Style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script>
-        $(function () {
-            clicked(0);
-            select(0);
-            const highlight = document.getElementById('2g');
-            highlight.classList.add('active');
-            highlight.style.background = '#4E4B42';
-            highlight.style.color = "#B4AE9A";
-        })
-    </script>
 </head>
 <body>
 <div class="wrap">
@@ -170,34 +160,4 @@
     </div>
 </div>
 </body>
-<script>
-    let prevButton = document.getElementById('2g');
-    let showing = null;
-
-    function clicked(i) {
-        const selected = document.getElementsByClassName('button')[i];
-        selected.style.background = '#4E4B42';
-        selected.style.color = "#B4AE9A";
-        selected.classList.add('active');
-        if (prevButton !== null && prevButton !== selected) {
-            prevButton.classList.remove('active');
-            prevButton.style.background = '#B4AE9A';
-            prevButton.style.color = '#4E4B42';
-            prevButton = selected;
-        }
-        prevButton = selected;
-    }
-
-    function select(i) {
-        const selected = document.getElementsByClassName('show')[i];
-        selected.style.display = 'flex';
-        selected.classList.add('showing');
-        if (showing !== null && showing !== selected) {
-            showing.classList.remove('showing');
-            showing.style.display = 'none';
-            showing = selected;
-        }
-        showing = selected;
-    }
-</script>
 </html>

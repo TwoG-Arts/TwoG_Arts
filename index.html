@@ -8,115 +8,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <script src="jquery/jquery.js"></script>
-    <script>
-        $(function () {
-            $(".AboutMe").load("pages/AboutMe.html");
-        });
-
-        function videos() {
-            const mob = document.getElementsByClassName('mobile')[0];
-            const work = document.getElementById('works');
-
-            $(".Videos").load("pages/Videos.html");
-            $(".Designs").html('');
-            $(".AboutMe").html('');
-            $(".Editing").html('');
-            mob.style.display = 'none';
-            work.style.display = 'none';
-            $(".home").html('Home');
-        }
-
-        function designs() {
-            const mob = document.getElementsByClassName('mobile')[0];
-            const work = document.getElementById('works');
-
-            $(".Designs").load("pages/Designs.html");
-            $(".Editing").html('');
-            $(".AboutMe").html('');
-            $(".Videos").html('');
-            mob.style.display = 'none';
-            work.style.display = 'none';
-            $(".home").html('Home');
-        }
-
-        function editing() {
-            const mob = document.getElementsByClassName('mobile')[0];
-            const work = document.getElementById('works');
-
-            $(".Editing").load("pages/Editing.html");
-            $(".Designs").html('');
-            $(".AboutMe").html('');
-            $(".Videos").html('');
-            mob.style.display = 'none';
-            work.style.display = 'none';
-            $(".home").html('Home');
-        }
-
-        function aboutMe() {
-            const mob = document.getElementsByClassName('mobile')[0];
-            const work = document.getElementById('works');
-
-            $(".AboutMe").load("pages/AboutMe.html");
-            $(".Editing").html('');
-            $(".Designs").html('');
-            $(".Videos").html('');
-            if ($(window).width()<=1100) {
-                mob.style.display = 'flex';
-                work.style.display = 'block';
-            }
-            $(".home").html('Chi sono');
-        }
-
-        function language(lang) {
-            let toTranslate = document.getElementsByClassName('en');
-            console.log(toTranslate);
-            if(document.getElementsByClassName('check')[0].checked) {
-                toTranslate[0].textContent = 'About Me';
-                toTranslate[1].textContent = 'Videos';
-                toTranslate[2].textContent = 'About Me';
-                toTranslate[3].textContent = 'Works';
-                toTranslate[4].textContent = 'Works';
-                toTranslate[5].textContent = 'More edits';
-                toTranslate[6].textContent = 'More videos';
-                toTranslate[7].textContent = 'More designs';
-                toTranslate[8].textContent = 'Contacts';
-
-                toTranslate[9].textContent = 'Contacts';
-                toTranslate[10].textContent = 'Collaborations';
-                toTranslate[11].textContent = 'Special thanks';
-                toTranslate[12].textContent = 'Works';
-                toTranslate[13].textContent = 'My name is Luigi but you can call me Giorgio';
-                toTranslate[14].textContent = 'Lately I am working with';
-                toTranslate[15].textContent = 'Collaborations';
-                toTranslate[16].textContent = 'Special thanks to Rankoll for coding, myself for every detailed illustrations';
-                toTranslate[17].textContent = 'More about';
-                toTranslate[18].textContent = 'More about';
-                toTranslate[19].textContent = 'More about';
-            } else {
-                toTranslate[0].textContent = 'Chi sono';
-                toTranslate[1].textContent = 'Video';
-                toTranslate[2].textContent = 'Chi sono';
-                toTranslate[3].textContent = 'Lavori';
-                toTranslate[4].textContent = 'Lavori';
-                toTranslate[5].textContent = 'Più editing';
-                toTranslate[6].textContent = 'Più video';
-                toTranslate[7].textContent = 'Più designs';
-                toTranslate[8].textContent = 'Contatti';
-
-                toTranslate[9].textContent = 'Contatti';
-                toTranslate[10].textContent = 'Collaborazioni';
-                toTranslate[11].textContent = 'Ringraziamenti';
-                toTranslate[12].textContent = 'Lavori';
-                toTranslate[13].textContent = 'Il mio nome è Luigi, sono un tecnico informatico che ha iniziato a frequentare l\'accademia delle belle arti di Napoli presso la facoltà di Nuove Tecnologie dell’arte nel 2020. Il mio nome “2G” deriva dalla mia opera preferita: NieR Automata, gioco che mi ha segnato profondamente, grazie al suo scavare a fondo nella natura umana ed alla narrazione impeccabile del maestro Yoko Taro. Principalmente mi occupo di fotomontaggio e fotoritocco, mi diletto nella creazione di VFX e nel video editing.';
-                toTranslate[14].textContent = 'Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito le foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue live mediante diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da cui prendo ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al mondo dei VFX e dell’editing video in generale.';
-                toTranslate[15].textContent = 'Collaborazioni';
-                toTranslate[16].textContent = 'Un ringraziamento speciale a ciccio e caio';
-                toTranslate[17].textContent = 'Scopri di più';
-                toTranslate[18].textContent = 'Scopri di più';
-                toTranslate[19].textContent = 'Scopri di più';
-            }
-        }
-    </script>
+    <script src="js/pages.js"></script>
 </head>
 <body>
 <header class="buttons">
@@ -214,7 +106,7 @@
     <div class="footer-center">
         <p>Made with ♥</p>
         <p>by</p>
-        <p>2G & Rankoll</p>
+        <p id="banana">2G & Rankoll</p>
     </div>
     <div class="mobileButton">
         <a href="https://t.me/YoRHa_2G" target="_blank"><img class="mobileImage" src="images/telegram_f.png"></a>

@@ -7,12 +7,6 @@ $(function () {
     } else {
         random.textContent = 'Rankoll & 2G';
     }
-    clicked(0);
-    select(0);
-    const highlight = document.getElementById('2g');
-    highlight.classList.add('active');
-    highlight.style.background = '#4E4B42';
-    highlight.style.color = "#B4AE9A";
 });
 
 function videos() {

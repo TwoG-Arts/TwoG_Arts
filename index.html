@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="images/favicon.ico">
-    <link href="AboutMe.html" rel="import"/>
 
     <script src="jquery/jquery.js"></script>
     <script>
@@ -25,7 +24,6 @@
             mob.style.display = 'none';
             work.style.display = 'none';
             $(".home").html('Home');
-
         }
 
         function designs() {
@@ -69,19 +67,66 @@
             $(".home").html('Chi sono');
         }
 
-        function language() {
+        function language(lang) {
+            let toTranslate = document.getElementsByClassName('en');
+            console.log(toTranslate);
+            if(document.getElementsByClassName('check')[0].checked) {
+                toTranslate[0].textContent = 'About Me';
+                toTranslate[1].textContent = 'Videos';
+                toTranslate[2].textContent = 'About Me';
+                toTranslate[3].textContent = 'Works';
+                toTranslate[4].textContent = 'Works';
+                toTranslate[5].textContent = 'More edits';
+                toTranslate[6].textContent = 'More videos';
+                toTranslate[7].textContent = 'More designs';
+                toTranslate[8].textContent = 'Contacts';
 
+                toTranslate[9].textContent = 'Contacts';
+                toTranslate[10].textContent = 'Collaborations';
+                toTranslate[11].textContent = 'Special thanks';
+                toTranslate[12].textContent = 'Works';
+                toTranslate[13].textContent = 'My name is Luigi but you can call me Giorgio';
+                toTranslate[14].textContent = 'Lately I am working with';
+                toTranslate[15].textContent = 'Collaborations';
+                toTranslate[16].textContent = 'Special thanks to Rankoll for coding, myself for every detailed illustrations';
+                toTranslate[17].textContent = 'More about';
+                toTranslate[18].textContent = 'More about';
+                toTranslate[19].textContent = 'More about';
+            else {
+                toTranslate[0].textContent = 'Chi sono';
+                toTranslate[1].textContent = 'Video';
+                toTranslate[2].textContent = 'Chi sono';
+                toTranslate[3].textContent = 'Lavori';
+                toTranslate[4].textContent = 'Lavori';
+                toTranslate[5].textContent = 'Più editing';
+                toTranslate[6].textContent = 'Più video';
+                toTranslate[7].textContent = 'Più designs';
+                toTranslate[8].textContent = 'Contatti';
+
+                toTranslate[9].textContent = 'Contatti';
+                toTranslate[10].textContent = 'Collaborazioni';
+                toTranslate[11].textContent = 'Ringraziamenti';
+                toTranslate[12].textContent = 'Lavori';
+                toTranslate[13].textContent = 'Il mio nome è Luigi, sono un tecnico informatico che ha iniziato a frequentare l\'accademia delle belle arti di Napoli presso la facoltà di Nuove Tecnologie dell’arte nel 2020. Il mio nome “2G” deriva dalla mia opera preferita: NieR Automata, gioco che mi ha segnato profondamente, grazie al suo scavare a fondo nella natura umana ed alla narrazione impeccabile del maestro Yoko Taro. Principalmente mi occupo di fotomontaggio e fotoritocco, mi diletto nella creazione di VFX e nel video editing.';
+                toTranslate[14].textContent = 'Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito le foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue live mediante diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da cui prendo ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al mondo dei VFX e dell’editing video in generale.';
+                toTranslate[15].textContent = 'Collaborazioni';
+                toTranslate[16].textContent = 'Un ringraziamento speciale a ciccio e caio';
+                toTranslate[17].textContent = 'Scopri di più';
+                toTranslate[18].textContent = 'Scopri di più';
+                toTranslate[19].textContent = 'Scopri di più';
+                }
+            }
         }
     </script>
 </head>
 <body>
 <header class="buttons">
     <button class="works" onclick="aboutMe()"><img src="images/Button.png">
-        <p>Chi sono</p>
+        <p class="en">Chi sono</p>
         <div class="underline"></div>
     </button>
     <button class="works" onclick="videos()"><img src="images/Button.png">
-        <p>Video</p>
+        <p class="en">Video</p>
         <div class="underline"></div>
     </button>
     <button class="works" onclick="designs()"><img src="images/Button.png">
@@ -93,18 +138,18 @@
         <div class="underline"></div>
     </button>
     <button id="aboutMe" onclick="aboutMe()"><a href="#me"><img src="images/Button.png">
-        <p class="home">Chi sono</p>
+        <p class="en home">Chi sono</p>
         <div class="underline"></div>
     </a></button>
     <button id="works"><a href="#work"><img src="images/Button.png">
-        <p>Lavori</p>
+        <p class="en">Lavori</p>
         <div class="underline"></div>
     </a></button>
 </header>
 <div class="mobile">
     <div class="banner"><img id="banner" src="images/bannermobile.png"></div>
     <div class="lavori" id="work">
-        <h1>Lavori</h1>
+        <h1 class="en">Lavori</h1>
         <div class="highlight">
             <div class="video">
                 <a href="https://www.instagram.com/stories/highlights/17969819818631532/" target="_blank"><img
@@ -116,7 +161,7 @@
             </div>
         </div>
         <div class="more">
-            <button onclick="editing()">Più editing</button>
+            <button onclick="editing()" class="en">Più editing</button>
         </div>
         <div class="highlight">
             <div class="video">
@@ -129,7 +174,7 @@
             </div>
         </div>
         <div class="more">
-            <button onclick="videos()">Più video</button>
+            <button onclick="videos()" class="en">Più video</button>
         </div>
         <div class="highlight">
             <div class="video">
@@ -140,11 +185,11 @@
             </div>
         </div>
         <div class="more">
-            <button onclick="designs()">Più designs</button>
+            <button onclick="designs()" class="en">Più designs</button>
         </div>
     </div>
     <div class="mobileContacts">
-        <h1>Contatti</h1>
+        <h1 class="en">Contatti</h1>
         <div class="imageContacts">
             <a href="mailto:yorha2g@gmail.com"><img src="images/email.png"></a>
             <a href="https://www.youtube.com/user/giggi1630"><img src="images/youtube.png"></a>
@@ -162,7 +207,7 @@
     <div class="language">
         <p>IT</p>
         <label class="switch" onclick="language()">
-            <input type="checkbox">
+            <input class="check" type="checkbox">
             <span class="slider round"></span>
         </label>
         <p>EN</p>

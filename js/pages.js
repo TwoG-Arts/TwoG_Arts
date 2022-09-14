@@ -1,4 +1,4 @@
-let check = !!document.getElementsByClassName('check')[0].checked;
+let check;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -9,6 +9,9 @@ $(function () {
     } else {
         random.textContent = 'Rankoll & 2G';
     }
+    if (document.getElementsByClassName('check')[0].checked) {
+        check = true;
+    } else { check = false; }
 });
 
 function videos() {
@@ -123,7 +126,8 @@ function language() {
     let it = makeRangeIterator(0, 150, 1);
     console.log(toTranslate);
 
-    if(check) {
+    if(check.checked) {
+        check = false;
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
         if (!(design || editing) && !($(window).width()<=1100)) {
@@ -170,6 +174,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Soul from Dark Soul.';
         }
     } else {
+        check = true;
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing) && !($(window).width()<=1100)) {

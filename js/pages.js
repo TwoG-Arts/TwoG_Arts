@@ -210,6 +210,8 @@ function screenTest(e) {
         /* the viewport is 1100 pixels wide or less */
         clicked(0);
         select(0);
+        mob.style.display = 'flex';
+        work.style.display = 'block';
     } else {
         /* the viewport is more than 1100 pixels wide */
         mob.style.display = 'none';

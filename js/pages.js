@@ -25,6 +25,7 @@ function videos() {
 function designs() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
+    let check = document.getElementsByClassName('check')[0];
 
     $(".Designs").load("pages/Designs.html");
     $(".Editing").html('');
@@ -33,10 +34,10 @@ function designs() {
     mob.style.display = 'none';
     work.style.display = 'none';
     $(".home").html('Home');
-    if (document.getElementsByClassName('check')[0].checked)
+    if (check.checked)
     {
-        document.getElementsByClassName('check')[0].checked = false;
-        document.getElementsByClassName('check')[0].checked = true;
+        check.checked = false;
+        check.checked = true;
         language();
     }
 }
@@ -44,6 +45,7 @@ function designs() {
 function editing() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
+    let check = document.getElementsByClassName('check')[0];
 
     $(".Editing").load("pages/Editing.html");
     $(".Designs").html('');
@@ -51,13 +53,10 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    $(".home").html('Home');
-    if (document.getElementsByClassName('check')[0].checked)
-    {
-        document.getElementsByClassName('check')[0].checked = false;
-        document.getElementsByClassName('check')[0].checked = true;
+    if (check.checked) {
         language();
     }
+    $(".home").html('Home');
 }
 
 function aboutMe() {
@@ -71,6 +70,9 @@ function aboutMe() {
     if ($(window).width()<=1100) {
         mob.style.display = 'flex';
         work.style.display = 'block';
+    }
+    if (check.checked) {
+        language();
     }
     $(".home").html('Chi sono');
 }
@@ -127,9 +129,10 @@ function language() {
     let wrap = document.getElementById('default');
     let design = document.getElementById('design');
     let editing = document.getElementById('editing');
+    let check = document.getElementsByClassName('check')[0];
     let it = makeRangeIterator(0, 150, 1);
 
-    if(document.getElementsByClassName('check')[0].checked) {
+    if(check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
         if (!(design || editing) && !($(window).width()<=1100)) {

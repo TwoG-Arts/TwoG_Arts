@@ -120,6 +120,7 @@ function language() {
     let editing = document.getElementById('editing');
     let check = document.getElementsByClassName('check')[0];
     let it = makeRangeIterator(0, 150, 1);
+    console.log(toTranslate);
 
     if(check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
@@ -136,12 +137,12 @@ function language() {
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
-            toTranslate[it.next().value].textContent = 'Special thanks';
+            toTranslate[it.next().value].textContent = 'Credits';
             toTranslate[it.next().value].textContent = 'Works';
             toTranslate[it.next().value].textContent = 'My name is Luigi but you can call me Giorgio';
             toTranslate[it.next().value].textContent = 'Lately I am working with';
             toTranslate[it.next().value].textContent = 'Collaborations';
-            toTranslate[it.next().value].textContent = 'Special thanks';
+            toTranslate[it.next().value].textContent = 'Credits';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'Xion & Axel Romeruf for the supervision of texts.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';

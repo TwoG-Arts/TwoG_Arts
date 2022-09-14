@@ -94,9 +94,9 @@ function select(i) {
 
 function language() {
     let toTranslate = document.getElementsByClassName('en');
-    let wrap = document.getElementsByClassName('wrap')[0];
-    let design = document.getElementById('design');
-    let editing = document.getElementById('editing');
+    const wrap = document.getElementsByClassName('wrap')[0];
+    const design = document.getElementsByClassName('video')[0];
+    const editing = document.getElementsByClassName('works')[0];
 
     if(document.getElementsByClassName('check')[0].checked) {
         toTranslate[0].textContent = 'About Me';

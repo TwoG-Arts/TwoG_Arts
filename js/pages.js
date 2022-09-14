@@ -134,6 +134,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'More videos';
         toTranslate[it.next().value].textContent = 'More designs';
         toTranslate[it.next().value].textContent = 'Contacts';
+        let offset = it.value;
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
@@ -153,27 +154,25 @@ function language() {
             toTranslate[it.next().value].textContent = 'More about';
         }
         if (design) {
-            toTranslate = document.getElementsByClassName('en');
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
-            toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
-            toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
+            toTranslate[it.next().value + offset].textContent = 'Graphics and logo for RaamDeadman\'s socials';
+            toTranslate[it.next().value + offset].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
+            toTranslate[it.next().value + offset].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
-            toTranslate = document.getElementsByClassName('en');
-            toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
-            toTranslate[it.next().value].textContent = 'The Rumbling from Attack on Titan.';
-            toTranslate[it.next().value].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Okabe & Daru from Steins;Gate w/RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Shanks from One Piece by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Thor Ravager from Thor Love&Thunder by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Aiden Pearce from Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Soul from Dark Soul.';
+            toTranslate[it.next().value + offset].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
+            toTranslate[it.next().value + offset].textContent = 'The Rumbling from Attack on Titan.';
+            toTranslate[it.next().value + offset].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Okabe & Daru from Steins;Gate w/RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Shanks from One Piece by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Thor Ravager from Thor Love&Thunder by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Aiden Pearce from Watch Dogs.';
+            toTranslate[it.next().value + offset].textContent = 'Soul from Dark Soul.';
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
-        if (!(design || editing)) {
+        if (!(design || editing) && !($(window).width()<=1100)) {
             toTranslate[it.next().value].textContent = 'Chi sono';
         } else {it.next();}
         toTranslate[it.next().value].textContent = 'Lavori';
@@ -182,6 +181,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Più designs';
         toTranslate[it.next().value].textContent = 'Contatti';
+        let offset = it.value;
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
@@ -201,21 +201,19 @@ function language() {
             toTranslate[it.next().value].textContent = 'Scopri di più';
         }
         if (design) {
-            toTranslate = document.getElementsByClassName('en');
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
+            toTranslate[it.next().value + offset].textContent = 'Grafiche e logo per i social di RaamDeadman';
+            toTranslate[it.next().value + offset].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
+            toTranslate[it.next().value + offset].textContent = 'Grafiche e logo per i miei social';
         }
         if (editing) {
-            toTranslate = document.getElementsByClassName('en');
-            toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Il Boato da L\'attacco dei Giganti.';
-            toTranslate[it.next().value].textContent = 'Connor da Detroit Become Human by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Okabe & Daru da Steins;Gate w/RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Shanks da One Piece by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Thor Ravager da Thor Love&Thunder by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Aiden Pearce da Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Anima da Dark Soul.';
+            toTranslate[it.next().value + offset].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
+            toTranslate[it.next().value + offset].textContent = 'Il Boato da L\'attacco dei Giganti.';
+            toTranslate[it.next().value + offset].textContent = 'Connor da Detroit Become Human by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Okabe & Daru da Steins;Gate w/RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Shanks da One Piece by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Thor Ravager da Thor Love&Thunder by RaamDeadman.';
+            toTranslate[it.next().value + offset].textContent = 'Aiden Pearce da Watch Dogs.';
+            toTranslate[it.next().value + offset].textContent = 'Anima da Dark Soul.';
         }
     }
 }

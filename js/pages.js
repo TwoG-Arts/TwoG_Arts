@@ -105,7 +105,7 @@ function language() {
         toTranslate[6].textContent = 'More videos';
         toTranslate[7].textContent = 'More designs';
         toTranslate[8].textContent = 'Contacts';
-        if (document.getElementsByClassName('wrap')) {
+        if (document.getElementsByClassName('wrap')[0].style.display === 'flex') {
             toTranslate[9].textContent = 'Contacts';
             toTranslate[10].textContent = 'Collaborations';
             toTranslate[11].textContent = 'Special thanks';
@@ -118,12 +118,12 @@ function language() {
             toTranslate[18].textContent = 'More about';
             toTranslate[19].textContent = 'More about';
         }
-        if (document.getElementById('design')) {
+        if (document.getElementById('design').style.display === 'flex') {
             toTranslate[9].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[10].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
             toTranslate[11].textContent = 'Graphics and logo for my socials';
         }
-        if (document.getElementById('editing')) {
+        if (document.getElementById('editing').style.display === 'flex') {
             toTranslate[9].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
             toTranslate[10].textContent = 'The Rumbling from Attack on Titan.';
             toTranslate[11].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
@@ -143,7 +143,7 @@ function language() {
         toTranslate[6].textContent = 'Più video';
         toTranslate[7].textContent = 'Più designs';
         toTranslate[8].textContent = 'Contatti';
-        if (document.getElementsByClassName('wrap')) {
+        if (document.getElementsByClassName('wrap')[0].style.display === 'flex') {
             toTranslate[9].textContent = 'Contatti';
             toTranslate[10].textContent = 'Collaborazioni';
             toTranslate[11].textContent = 'Ringraziamenti';
@@ -156,12 +156,12 @@ function language() {
             toTranslate[18].textContent = 'Scopri di più';
             toTranslate[19].textContent = 'Scopri di più';
         }
-        if (document.getElementById('design')) {
+        if (document.getElementById('design').style.display === 'flex') {
             toTranslate[9].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[10].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
             toTranslate[11].textContent = 'Grafiche e logo per i miei social';
         }
-        if (document.getElementById('editing')) {
+        if (document.getElementById('editing').style.display === 'flex') {
             toTranslate[9].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
             toTranslate[10].textContent = 'Il Boato da L\'attacco dei Giganti.';
             toTranslate[11].textContent = 'Connor da Detroit Become Human by RaamDeadman.';

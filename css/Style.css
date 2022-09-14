@@ -282,7 +282,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
-    max-height: 47rem;
+    max-height: 40rem;
     justify-content: space-evenly;
     margin: 2rem;
     flex-wrap: wrap;
@@ -424,7 +424,6 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1 {

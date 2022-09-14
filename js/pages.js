@@ -120,7 +120,9 @@ function language() {
     if(document.getElementsByClassName('check')[0].checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
-        toTranslate[it.next().value].textContent = 'About Me';
+        if (!(design || editing)) {
+            toTranslate[it.next().value].textContent = 'About Me';
+        } else {it.next();}
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'More edits';
@@ -159,7 +161,9 @@ function language() {
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
-        toTranslate[it.next().value].textContent = 'Chi sono';
+        if (!(design || editing)) {
+            toTranslate[it.next().value].textContent = 'Chi sono';
+        } else {it.next();}
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Più editing';

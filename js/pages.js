@@ -25,7 +25,6 @@ function videos() {
 function designs() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
-    let check = document.getElementsByClassName('check')[0];
 
     $(".Designs").load("pages/Designs.html");
     $(".Editing").html('');
@@ -33,19 +32,13 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    language();
     $(".home").html('Home');
-    if (check.checked)
-    {
-        check.checked = false;
-        check.checked = true;
-        language();
-    }
 }
 
 function editing() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
-    let check = document.getElementsByClassName('check')[0];
 
     $(".Editing").load("pages/Editing.html");
     $(".Designs").html('');
@@ -53,9 +46,7 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    if (check.checked) {
-        language();
-    }
+    language();
     $(".home").html('Home');
 }
 
@@ -71,9 +62,7 @@ function aboutMe() {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
-    if (check.checked) {
-        language();
-    }
+    language();
     $(".home").html('Chi sono');
 }
 
@@ -163,12 +152,14 @@ function language() {
             toTranslate[it.next().value].textContent = 'More about';
         }
         if (design) {
+            toTranslate = document.getElementsByClassName('en');
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
+            toTranslate = document.getElementsByClassName('en');
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'The Rumbling from Attack on Titan.';
             toTranslate[it.next().value].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
@@ -209,11 +200,13 @@ function language() {
             toTranslate[it.next().value].textContent = 'Scopri di più';
         }
         if (design) {
+            toTranslate = document.getElementsByClassName('en');
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
         }
         if (editing) {
+            toTranslate = document.getElementsByClassName('en');
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'Il Boato da L\'attacco dei Giganti.';
             toTranslate[it.next().value].textContent = 'Connor da Detroit Become Human by RaamDeadman.';

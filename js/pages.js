@@ -33,6 +33,12 @@ function designs() {
     mob.style.display = 'none';
     work.style.display = 'none';
     $(".home").html('Home');
+    if (document.getElementsByClassName('check')[0].checked)
+    {
+        document.getElementsByClassName('check')[0].checked = false;
+        document.getElementsByClassName('check')[0].checked = true;
+        language();
+    }
 }
 
 function editing() {
@@ -46,6 +52,12 @@ function editing() {
     mob.style.display = 'none';
     work.style.display = 'none';
     $(".home").html('Home');
+    if (document.getElementsByClassName('check')[0].checked)
+    {
+        document.getElementsByClassName('check')[0].checked = false;
+        document.getElementsByClassName('check')[0].checked = true;
+        language();
+    }
 }
 
 function aboutMe() {

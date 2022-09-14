@@ -115,7 +115,7 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
 
 function language() {
     let toTranslate = document.getElementsByClassName('en');
-    const wrap = document.getElementById('default');
+
     const design = document.getElementById('design');
     const editing = document.getElementById('editing');
     const it = makeRangeIterator(0, 150, 1);

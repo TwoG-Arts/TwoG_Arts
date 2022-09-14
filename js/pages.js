@@ -120,7 +120,7 @@ function language() {
     if(document.getElementsByClassName('check')[0].checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
-        if (!(design || editing)) {
+        if (!(design || editing) && !($(window).width()<=1100)) {
             toTranslate[it.next().value].textContent = 'About Me';
         } else {it.next();}
         toTranslate[it.next().value].textContent = 'Works';
@@ -200,3 +200,21 @@ function language() {
         }
     }
 }
+
+const mediaQueryList = window.matchMedia('(max-width: 1100px)');
+
+function screenTest(e) {
+    const mob = document.getElementsByClassName('mobile')[0];
+    const work = document.getElementById('works');
+    if (e.matches) {
+        /* the viewport is 1100 pixels wide or less */
+        clicked(0);
+        select(0);
+    } else {
+        /* the viewport is more than 1100 pixels wide */
+        mob.style.display = 'none';
+        work.style.display = 'none';
+    }
+}
+
+mediaQueryList.addListener(screenTest);

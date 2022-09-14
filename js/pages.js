@@ -32,7 +32,6 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    language();
     $(".home").html('Home');
 }
 
@@ -46,7 +45,6 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    language();
     $(".home").html('Home');
 }
 
@@ -62,7 +60,6 @@ function aboutMe() {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
-    language();
     $(".home").html('Chi sono');
 }
 
@@ -115,10 +112,10 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
 
 function language() {
     let toTranslate = document.getElementsByClassName('en');
-
-    const design = document.getElementById('design');
-    const editing = document.getElementById('editing');
-    const it = makeRangeIterator(0, 150, 1);
+    let wrap = document.getElementById('default');
+    let design = document.getElementById('design');
+    let editing = document.getElementById('editing');
+    let it = makeRangeIterator(0, 150, 1);
 
     if(document.getElementsByClassName('check')[0].checked) {
         toTranslate[it.next().value].textContent = 'About Me';
@@ -132,7 +129,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'More videos';
         toTranslate[it.next().value].textContent = 'More designs';
         toTranslate[it.next().value].textContent = 'Contacts';
-
+        if (wrap) {
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Special thanks';
@@ -149,12 +146,14 @@ function language() {
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
-
+        }
+        if (design) {
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
-
+        }
+        if (editing) {
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'The Rumbling from Attack on Titan.';
             toTranslate[it.next().value].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
@@ -163,7 +162,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Thor Ravager from Thor Love&Thunder by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Aiden Pearce from Watch Dogs.';
             toTranslate[it.next().value].textContent = 'Soul from Dark Soul.';
-
+        }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
@@ -176,7 +175,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Più designs';
         toTranslate[it.next().value].textContent = 'Contatti';
-
+        if (wrap) {
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Crediti';
@@ -193,11 +192,13 @@ function language() {
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';
-
+        }
+        if (design) {
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
-
+        }
+        if (editing) {
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'Il Boato da L\'attacco dei Giganti.';
             toTranslate[it.next().value].textContent = 'Connor da Detroit Become Human by RaamDeadman.';
@@ -206,6 +207,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Thor Ravager da Thor Love&Thunder by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Aiden Pearce da Watch Dogs.';
             toTranslate[it.next().value].textContent = 'Anima da Dark Soul.';
+        }
     }
 }
 

@@ -19,9 +19,7 @@ function videos() {
     $(".Editing").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    if(document.getElementsByClassName('check')[0].checked) {
-        language();
-    }
+    language();
     $(".home").html('Home');
 }
 
@@ -35,9 +33,7 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    if(document.getElementsByClassName('check')[0].checked) {
-        language();
-    }
+    language();
     $(".home").html('Home');
 }
 
@@ -51,9 +47,7 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    if(document.getElementsByClassName('check')[0].checked) {
-        language();
-    }
+    language();
     $(".home").html('Home');
 }
 
@@ -69,9 +63,7 @@ function aboutMe() {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
-    if(document.getElementsByClassName('check')[0].checked) {
-        language();
-    }
+    language();
     $(".home").html('Chi sono');
 }
 

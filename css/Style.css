@@ -257,6 +257,9 @@ body {
 .collab h2 {
     text-align: center;
     color: #4E4B42;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
+    padding: 0.5rem;
+    font-size: 3rem;
 }
 
 .collab a img {
@@ -510,6 +513,18 @@ input:checked + .slider:before {
 
 .mobileCollab, .mobileImage {
     display: none;
+}
+
+.rightBlock li a {
+    font-family: BreezeSans, sans-serif;
+    font-size: 1.5rem;
+    color: #4E4B42;
+    margin: 0.5rem 1rem;
+}
+
+.rightBlock li a:hover {
+    color: #4E4B42;
+    font-weight: bolder;
 }
 
 /* Mobile */

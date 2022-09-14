@@ -10,6 +10,16 @@
 
     <script src="jquery/jquery.js"></script>
     <script src="js/pages.js"></script>
+    <script>
+        let des = document.getElementsByClassName('Designs');
+        des.addEventListener('change', (event) => {
+            language();
+        });
+        let edi = document.getElementsByClassName('Editing');
+        edi.addEventListener('change', (event) => {
+            language();
+        });
+    </script>
 </head>
 <body>
 <header class="buttons">

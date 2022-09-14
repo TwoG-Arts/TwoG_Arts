@@ -189,11 +189,11 @@ function language() {
             toTranslate[it.next().value].textContent = 'Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito le foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue live mediante diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da cui prendo ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al mondo dei VFX e dell’editing video in generale.';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Ringrazio';
-            toTranslate[it.next().value].html('<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.');
-            toTranslate[it.next().value].html('Xion & Axel Romeruf per la revisione testi.');
-            toTranslate[it.next().value].html('<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.');
-            toTranslate[it.next().value].html('<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting');
-            toTranslate[it.next().value].html('Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.');
+            toTranslate[it.next().value].textContent = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
+            toTranslate[it.next().value].textContent = 'Xion & Axel Romeruf per la revisione testi.';
+            toTranslate[it.next().value].textContent = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';
+            toTranslate[it.next().value].textContent = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting';
+            toTranslate[it.next().value].textContent = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';

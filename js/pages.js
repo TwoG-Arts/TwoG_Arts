@@ -94,7 +94,7 @@ function select(i) {
 
 function language() {
     let toTranslate = document.getElementsByClassName('en');
-    const wrap = document.getElementsByClassName('wrap')[0];
+    const wrap = document.getElementById('default');
     const design = document.getElementById('design');
     const editing = document.getElementById('editing');
 

@@ -32,6 +32,7 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    language();
     $(".home").html('Home');
 }
 
@@ -45,6 +46,7 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    language();
     $(".home").html('Home');
 }
 
@@ -60,6 +62,7 @@ function aboutMe() {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
+    language();
     $(".home").html('Chi sono');
 }
 

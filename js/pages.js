@@ -113,7 +113,7 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     };
 }
 
-$(function language() {
+function language() {
     let toTranslate = document.getElementsByClassName('en');
     let wrap = document.getElementById('default');
     let design = document.getElementById('design');
@@ -215,7 +215,7 @@ $(function language() {
             toTranslate[it.next().value].textContent = 'Anima da Dark Soul.';
         }
     }
-})
+}
 
 const mediaQueryList = window.matchMedia('(max-width: 1100px)');
 

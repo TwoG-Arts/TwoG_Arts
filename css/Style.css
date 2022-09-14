@@ -517,13 +517,12 @@ input:checked + .slider:before {
 
 .rightBlock li a {
     font-family: BreezeSans, sans-serif;
-    font-size: 1.5rem;
     color: #4E4B42;
-    margin: 0.5rem 1rem;
+    text-decoration: underline;
 }
 
 .rightBlock li a:hover {
-    color: #4E4B42;
+    color: #6A6555;
     font-weight: bolder;
 }
 

@@ -27,12 +27,12 @@ function designs() {
     const work = document.getElementById('works');
 
     $(".Designs").load("pages/Designs.html");
+    language();
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    language();
     $(".home").html('Home');
 }
 
@@ -41,12 +41,12 @@ function editing() {
     const work = document.getElementById('works');
 
     $(".Editing").load("pages/Editing.html");
+    language();
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
-    language();
     $(".home").html('Home');
 }
 
@@ -55,6 +55,7 @@ function aboutMe() {
     const work = document.getElementById('works');
 
     $(".AboutMe").load("pages/AboutMe.html");
+    language();
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');
@@ -62,7 +63,6 @@ function aboutMe() {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
-    language();
     $(".home").html('Chi sono');
 }
 

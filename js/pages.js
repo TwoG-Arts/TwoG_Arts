@@ -152,7 +152,8 @@ function language() {
             toTranslate[it.next().value].textContent = 'More about';
         }
         if (design) {
-            console.log(it.value);
+            let val = it.value;
+            console.log(val);
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';

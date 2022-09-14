@@ -19,6 +19,9 @@ function videos() {
     $(".Editing").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    if(document.getElementsByClassName('check')[0].checked) {
+        language();
+    }
     $(".home").html('Home');
 }
 
@@ -32,6 +35,9 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    if(document.getElementsByClassName('check')[0].checked) {
+        language();
+    }
     $(".home").html('Home');
 }
 
@@ -45,6 +51,9 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    if(document.getElementsByClassName('check')[0].checked) {
+        language();
+    }
     $(".home").html('Home');
 }
 
@@ -59,6 +68,9 @@ function aboutMe() {
     if ($(window).width()<=1100) {
         mob.style.display = 'flex';
         work.style.display = 'block';
+    }
+    if(document.getElementsByClassName('check')[0].checked) {
+        language();
     }
     $(".home").html('Chi sono');
 }

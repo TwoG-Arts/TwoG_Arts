@@ -143,11 +143,11 @@ function language() {
             toTranslate[it.next().value].textContent = 'Lately I am working with';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Special thanks';
-            toTranslate[it.next().value].html = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
+            toTranslate[it.next().value].textContent = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].textContent = 'Xion & Axel Romeruf for the supervision of texts.';
-            toTranslate[it.next().value].html('<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.');
-            toTranslate[it.next().value].html('<a href="https://github.com" target="_blank">GitHub</a> for the hosting');
-            toTranslate[it.next().value].html('A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.');
+            toTranslate[it.next().value].textContent = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
+            toTranslate[it.next().value].textContent = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting';
+            toTranslate[it.next().value].textContent = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';

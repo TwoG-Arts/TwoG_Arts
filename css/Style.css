@@ -266,7 +266,6 @@ body {
     display: inline-block;
     width: 4rem;
     height: 4rem;
-    margin-right: 0.5rem;
 }
 
 .show {
@@ -275,6 +274,7 @@ body {
 
 .links {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -428,7 +428,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1 {
+.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1 {
     background-color: #4E4B42;
     margin-right: auto;
     margin-left: auto;
@@ -601,7 +601,7 @@ input:checked + .slider:before {
         margin: 2rem 0;
     }
 
-    .mobileCollab {
+    .mobileCollab, .mobileCredits {
         display: block;
         padding: 1rem;
         background-color: #B4AE9A;
@@ -610,13 +610,13 @@ input:checked + .slider:before {
     }
 
     .mobileCollab img {
-        width: 3rem;
+        width: 4.5rem;
         display: inline-block;
-        margin-right: 0.5rem;
     }
 
     .mobileCollab p {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         margin: 0;
     }
 

@@ -164,7 +164,7 @@ body {
     float: right;
     shape-outside: border-box;
     background-clip: content-box;
-    width: 5rem;
+    width: 10rem;
 }
 
 .wrap {

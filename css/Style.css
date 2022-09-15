@@ -139,18 +139,11 @@ body {
     padding: 1.5rem;
 }
 
-.rightBlock #firstPart {
-    width: 85%;
-}
-
-.rightBlock #secondPart {
-    width: 100%;
-}
-
-#firstPart, #secondPart {
+#firstPart {
+    display: inline-block;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .rightBlock p {
@@ -169,8 +162,9 @@ body {
 #logoAboutMe {
     display: inline-block;
     float: right;
-    width: 15%;
-    height: 15%;
+    shape-outside: border-box;
+    background-clip: content-box;
+    width: 5rem;
 }
 
 .wrap {
@@ -315,7 +309,7 @@ body {
 }
 
 .video img {
-    width: 30rem;
+    width: 27rem;
 }
 
 .video a {
@@ -596,7 +590,7 @@ input:checked + .slider:before {
         display: none;
     }
 
-    .rightBlock #firstPart, .rightBlock #secondPart {
+    .rightBlock #firstPart{
         width: 100%;
     }
 
@@ -613,9 +607,9 @@ input:checked + .slider:before {
     }
 
     .mobileCollab img {
-        width: 4.5rem;
+        width: 5rem;
         display: inline-block;
-        margin-bottom: 1rem;
+        margin: 0.5rem 0;
     }
 
     .mobileCollab p {
@@ -638,7 +632,7 @@ input:checked + .slider:before {
         font-family: BreezeSans, sans-serif;
         color: #343127;
         font-weight: bolder;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .linkCollab {
@@ -713,7 +707,7 @@ input:checked + .slider:before {
     }
 
     .mobileCredits li {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .mobileCredits .highlight {
@@ -734,5 +728,9 @@ input:checked + .slider:before {
 
     .rightBlock {
         padding: 1rem;
+    }
+
+    #firstPart {
+        font-size: 2rem;
     }
 }

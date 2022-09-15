@@ -150,7 +150,7 @@ body {
 #firstPart, #secondPart {
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.6rem;
 }
 
 .rightBlock p {
@@ -432,11 +432,13 @@ input:checked + .slider:before {
     background-color: #4E4B42;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 0.5rem;
     text-align: center;
     color: #B4AE9A;
     font-family: BreezeSans, sans-serif;
     font-weight: bolder;
     padding: 0.25rem 0;
+    font-size: 3rem;
 }
 
 .lavori {
@@ -450,7 +452,7 @@ input:checked + .slider:before {
     background-color: transparent;
     border: none;
     font-family: BreezeSans, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: #4E4B42;
     width: 100%;
@@ -497,7 +499,8 @@ input:checked + .slider:before {
 
 .imageContacts {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 .imageContacts img {
@@ -582,7 +585,7 @@ input:checked + .slider:before {
     }
 
     .mobile .lavori img {
-        width: 20rem;
+        width: 22rem;
     }
 
     #logoAboutMe {
@@ -612,6 +615,7 @@ input:checked + .slider:before {
     .mobileCollab img {
         width: 4.5rem;
         display: inline-block;
+        margin-bottom: 1rem;
     }
 
     .mobileCollab p {
@@ -638,7 +642,9 @@ input:checked + .slider:before {
     }
 
     .linkCollab {
+        justify-content: space-evenly;
         display: flex;
+        width: 100%;
     }
 
     .linkCollab a {
@@ -695,21 +701,38 @@ input:checked + .slider:before {
         box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
     }
 
-    .mobileCredits h1, .mobileCredits h2, .mobileCredits li {
+    .mobileCredits h2, .mobileCredits li {
         font-family: BreezeSans, sans-serif;
         font-weight: bold;
         color: #4E4B42;
     }
 
-    .mobileCredits h1 {
-        font-size: 2.5rem;
-    }
-
     .mobileCredits h2 {
         font-size: 2rem;
+        margin-top: 1rem;
     }
 
     .mobileCredits li {
         font-size: 1.5rem;
+    }
+
+    .mobileCredits .highlight {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        margin: 1rem;
+    }
+
+    .video img {
+        width: 44rem;
+    }
+
+    .video p {
+        font-size: 2rem;
+    }
+
+    .rightBlock {
+        padding: 1rem;
     }
 }

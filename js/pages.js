@@ -142,14 +142,23 @@ function language() {
             toTranslate[it.next().value].textContent = 'Lately I am working with';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Credits';
+            toTranslate[it.next().value].textContent = 'More about';
+            toTranslate[it.next().value].textContent = 'More about';
+            toTranslate[it.next().value].textContent = 'More about';
+            toTranslate[it.next().value].textContent = 'Collaborations';
+            toTranslate[it.next().value].textContent = 'Credits';
+            toTranslate[it.next().value].textContent = 'Thanking';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting';
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
-            toTranslate[it.next().value].textContent = 'More about';
-            toTranslate[it.next().value].textContent = 'More about';
-            toTranslate[it.next().value].textContent = 'More about';
+            toTranslate[it.next().value].textContent = 'Thanking';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
+            toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
+            toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting';
+            toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
         }
         if (design) {
             let val = it.value;
@@ -172,7 +181,7 @@ function language() {
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
-        if (!(design || editing) && !($(window).width()<=1100)) {
+        if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'Chi sono';
         } else {it.next();}
         toTranslate[it.next().value].textContent = 'Lavori';
@@ -188,16 +197,24 @@ function language() {
             toTranslate[it.next().value].textContent = 'Lavori';
             toTranslate[it.next().value].textContent = 'Il mio nome è Luigi, sono un tecnico informatico che ha iniziato a frequentare l\'accademia delle belle arti di Napoli presso la facoltà di Nuove Tecnologie dell’arte nel 2020. Il mio nome “2G” deriva dalla mia opera preferita: NieR Automata, gioco che mi ha segnato profondamente, grazie al suo scavare a fondo nella natura umana ed alla narrazione impeccabile del maestro Yoko Taro. Principalmente mi occupo di fotomontaggio e fotoritocco, mi diletto nella creazione di VFX e nel video editing.';
             toTranslate[it.next().value].textContent = 'Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito le foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue live mediante diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da cui prendo ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al mondo dei VFX e dell’editing video in generale.';
+            toTranslate[it.next().value].textContent = 'Scopri di più';
+            toTranslate[it.next().value].textContent = 'Scopri di più';
+            toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
+            toTranslate[it.next().value].textContent = 'Crediti';
             toTranslate[it.next().value].textContent = 'Ringrazio';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting';
             toTranslate[it.next().value].innerHTML = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
-            toTranslate[it.next().value].textContent = 'Scopri di più';
-            toTranslate[it.next().value].textContent = 'Scopri di più';
-            toTranslate[it.next().value].textContent = 'Scopri di più';
+            toTranslate[it.next().value].textContent = 'Ringrazio';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
+            toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';
+            toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting';
+            toTranslate[it.next().value].innerHTML = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
+
         }
         if (design) {
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';

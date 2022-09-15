@@ -708,12 +708,12 @@ input:checked + .slider:before {
     }
 
     .mobileCredits h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-top: 1rem;
     }
 
     .mobileCredits li {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .mobileCredits .highlight {

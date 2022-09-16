@@ -249,3 +249,23 @@ function screenTest(e) {
 }
 
 mediaQueryList.addListener(screenTest);
+
+let i = 0;
+
+$(function() {
+    let wrap = document.getElementById('default');
+    if (wrap) {
+        window.addEventListener('wheel', function(event) {
+        if (event.deltaY < 0 && i>1) {
+            i--;
+            clicked(i);
+            select(i);
+        }
+        else if (event.deltaY > 0 && i<5) {
+            i++;
+            clicked(i);
+            select(i);
+        }
+        });
+    }
+})

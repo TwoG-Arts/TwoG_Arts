@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    padding: 5px 1em 4em 1em;
+    padding: 5px 1rem 4rem 1rem;
     background-image: url("../images/Background.png");
     zoom: 2;
     -moz-transform: scale(2);/* Firefox */
@@ -34,14 +34,14 @@ img {
 }
 
 .buttons button {
-    width: 23em;
-    height: 5.5em;
-    margin: 1em 2em;
+    width: 23rem;
+    height: 5.5rem;
+    margin: 1rem 2rem;
     padding: 0;
     border: none;
     background-color: #B4AE9A;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
-    border-bottom: 2em #343127;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    border-bottom: 2rem #343127;
 }
 
 .buttons button:hover
@@ -54,7 +54,7 @@ img {
     position: relative;
     left: 0;
     bottom: -1px;
-    height: 0.5em;
+    height: 0.5rem;
     width: 100%;
     background-color: #343127;
     padding: 0 5px;
@@ -70,10 +70,10 @@ img {
 
 .buttons button img {
     float: left;
-    width: 5em;
-    height: 5em;
-    padding: 0.3em;
-    margin-left: 0.4em;
+    width: 5rem;
+    height: 5rem;
+    padding: 0.3rem;
+    margin-left: 0.4rem;
 }
 
 .footer {
@@ -85,7 +85,7 @@ img {
     bottom: 0;
     background-color: #6A6555;
     width: 100%;
-    height: 4em;
+    height: 4rem;
     font-weight: bolder;
 }
 
@@ -101,9 +101,9 @@ img {
 .sideBut {
     display: grid;
     position: relative;
-    top: 7em;
+    top: 7rem;
     width: 22%;
-    height: 15em;
+    height: 15rem;
 }
 
 .language {
@@ -116,23 +116,23 @@ img {
     color: #B4AE9A;
     font-size: 1em;
     font-family: BreezeSans, sans-serif;
-    margin: 0.75em;
+    margin: 0.75rem;
 }
 
 .thanks {
-    margin-left: 0.75em;
+    margin-left: 0.75rem;
 }
 
 .sideBut button {
     background-color: #B4AE9A;
-    min-width: 16em;
+    min-width: 16rem;
     border: none;
-    margin: 1em;
-    border-left: 0.5em solid #4E4B42;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
+    margin: 1rem;
+    border-left: 0.5rem solid #4E4B42;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     padding-bottom: 0;
     padding-top: 0;
-    height: 3em;
+    height: 3rem;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-size: 2em;
@@ -142,19 +142,19 @@ img {
 
 .sideStyle {
     float: left;
-    width: 0.2em;
+    width: 0.2rem;
     height: 100%;
-    border-right: 0.1em solid #4E4B42;
-    margin-right: 0.5em;
+    border-right: 0.1rem solid #4E4B42;
+    margin-right: 0.5rem;
 }
 
 .rightBlock {
     display: flex;
     flex-wrap: wrap;
     background-color: #B4AE9A;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
-    margin: 3em 5em;
-    padding: 1.5em;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    margin: 3rem 5rem;
+    padding: 1.5rem;
 }
 
 #firstPart {
@@ -167,7 +167,7 @@ img {
 .rightBlock p {
     display: inline;
     float: left;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
     font-size: 1.4em;
 }
 
@@ -182,7 +182,7 @@ img {
     float: right;
     shape-outside: border-box;
     background-clip: content-box;
-    width: 10em;
+    width: 10rem;
 }
 
 .wrap {
@@ -202,18 +202,18 @@ img {
     font-family: BreezeSans, sans-serif;
     font-size: 0.9em;
     font-weight: bolder;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .contactRow img {
-    width: 2em;
-    margin-right: 1em;
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 .footer .contactRow img {
-    width: 1.5em;
+    width: 1.5rem;
     float: left;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .contactRow a {
@@ -237,8 +237,8 @@ img {
 }
 
 .rightBlock h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-weight: bolder;
@@ -255,13 +255,13 @@ img {
 
 .collab {
     width: 50%;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .collab img {
     display: block;
-    width: 8em;
-    height: 8em;
+    width: 8rem;
+    height: 8rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -269,15 +269,15 @@ img {
 .collab h2 {
     text-align: center;
     color: #4E4B42;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0b0b0b;
-    padding: 0.5em;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
+    padding: 0.5rem;
     font-size: 3em;
 }
 
 .collab a img {
     display: inline-block;
-    width: 4em;
-    height: 4em;
+    width: 4rem;
+    height: 4rem;
 }
 
 .show {
@@ -293,17 +293,17 @@ img {
 /* Videos */
 
 .scrolldiv {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
-    max-height: 40em;
+    max-height: 40rem;
     justify-content: space-evenly;
-    margin: 2em;
+    margin: 2rem;
     flex-wrap: wrap;
     overflow: auto;
     overflow-x: hidden;
     background-color: #B4AE9A;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
 }
 
 ::-webkit-scrollbar {
@@ -316,18 +316,18 @@ img {
 
 ::-webkit-scrollbar-button {
     background: #343127;
-    height: 0.35em;
+    height: 0.35rem;
 }
 
 .video {
     display: flex;
     justify-content: center;
-    width: 36em;
-    padding: 1.5em;
+    width: 36rem;
+    padding: 1.5rem;
 }
 
 .video img {
-    width: 27em;
+    width: 27rem;
 }
 
 .video a {
@@ -345,10 +345,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
-    padding: 0.75em;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    padding: 0.75rem;
     margin-top: 16px;
-    height: 9em;
+    height: 9rem;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-size: 1.5em;
@@ -357,19 +357,19 @@ p {
 
 .text img {
     position: relative;
-    top: -4em;
+    top: -4rem;
     float: right;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 .video sub {
     display: block;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .video .text img {
     display: block;
-    width: 2em;
+    width: 2rem;
 }
 
 .switch {
@@ -444,18 +444,18 @@ input:checked + .slider:before {
     background-color: #4E4B42;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     text-align: center;
     color: #B4AE9A;
     font-family: BreezeSans, sans-serif;
     font-weight: bolder;
-    padding: 0.25em 0;
+    padding: 0.25rem 0;
     font-size: 3em;
 }
 
 .lavori {
     width: 100%;
-    max-height: 37em;
+    max-height: 37rem;
     overflow: auto;
     overflow-x: hidden;
 }
@@ -468,14 +468,14 @@ input:checked + .slider:before {
     font-weight: bolder;
     color: #4E4B42;
     width: 100%;
-    padding: 1em 0.5em;
+    padding: 1rem 0.5rem;
 }
 
 .more {
     display: flex;
     justify-content: center;
-    margin: 1.5em;
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
+    margin: 1.5rem;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
 }
 
 .more:hover {
@@ -491,33 +491,33 @@ input:checked + .slider:before {
 }
 
 #banner {
-    width: 50em;
+    width: 50rem;
     background-color: #B4AE9A;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .mobile {
     display: none;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .mobileContacts {
-    box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     background-color: #B4AE9A;
-    padding: 1em;
-    margin-top: 2em;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 .imageContacts {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .imageContacts img {
-    width: 5em;
-    margin: 0 1em;
+    width: 5rem;
+    margin: 0 1rem;
 }
 
 .mobileHead {
@@ -532,8 +532,8 @@ input:checked + .slider:before {
 .rightBlock h3 {
     width: 100%;
     font-size: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-weight: bolder;
@@ -546,7 +546,7 @@ input:checked + .slider:before {
 }
 
 .rightBlock li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 .rightBlock li a:hover {
@@ -563,8 +563,8 @@ input:checked + .slider:before {
     .lavori {
         background-color: #B4AE9A;
         max-height: none;
-        padding: 1em;
-        box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
+        padding: 1rem;
+        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     }
 
     .mobile {
@@ -597,11 +597,11 @@ input:checked + .slider:before {
     }
 
     .mobile .lavori img {
-        width: 22em;
+        width: 22rem;
     }
 
     #logoAboutMe {
-        width: 20em;
+        width: 20rem;
     }
 
     .rightBlock #logoAboutMe {
@@ -613,21 +613,21 @@ input:checked + .slider:before {
     }
 
     .rightBlock {
-        margin: 2em 0;
+        margin: 2rem 0;
     }
 
     .mobileCollab, .mobileCredits {
         display: block;
-        padding: 1em;
+        padding: 1rem;
         background-color: #B4AE9A;
-        box-shadow: 0.25em 0.25em 1em 0.15em #0B0B0B;
-        margin: 2em 0;
+        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+        margin: 2rem 0;
     }
 
     .mobileCollab img {
-        width: 5em;
+        width: 5rem;
         display: inline-block;
-        margin: 0.5em 0;
+        margin: 0.5rem 0;
     }
 
     .mobileCollab p {
@@ -643,7 +643,7 @@ input:checked + .slider:before {
 
     .mobileCollab .highlight {
         flex-direction: column;
-        margin-top: 1em;
+        margin-top: 1rem;
     }
 
     .mobileCollab .wrap {
@@ -660,7 +660,7 @@ input:checked + .slider:before {
     }
 
     .linkCollab a {
-        margin: 0.5em;
+        margin: 0.5rem;
         font-family: BreezeSans, sans-serif;
         color: #4E4B42;
         font-weight: bolder;
@@ -679,12 +679,12 @@ input:checked + .slider:before {
     .mobileButton {
         display: flex;
         align-items: center;
-        margin-right: 0.5em;
+        margin-right: 0.5rem;
     }
 
     .mobileButton img {
-        width: 4em;
-        margin: 1em;
+        width: 4rem;
+        margin: 1rem;
     }
 
     .language p {
@@ -709,8 +709,8 @@ input:checked + .slider:before {
         background-color: #B4AE9A;
         display: flex;
         justify-content: center;
-        margin-bottom: 2em;
-        box-shadow: 0.25em 0.25em 1em 0.15em #0b0b0b;
+        margin-bottom: 2rem;
+        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
     }
 
     .mobileCredits h2, .mobileCredits li {
@@ -721,7 +721,7 @@ input:checked + .slider:before {
 
     .mobileCredits h2 {
         font-size: 2.5em;
-        margin-top: 1em;
+        margin-top: 1rem;
     }
 
     .mobileCredits li {
@@ -733,11 +733,11 @@ input:checked + .slider:before {
     }
 
     .buttons button {
-        margin: 1em;
+        margin: 1rem;
     }
 
     .video img {
-        width: 44em;
+        width: 44rem;
     }
 
     .video p {
@@ -745,10 +745,10 @@ input:checked + .slider:before {
     }
 
     .rightBlock {
-        padding: 1em;
+        padding: 1rem;
     }
 
     #firstPart {
-        font-size: 2em;
+        font-size: 2rem;
     }
 }

@@ -166,6 +166,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
+            toTranslate[it.next().value].textContent = 'Ken Kaneki From Tokyo Ghoul';
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'The Rumbling from Attack on Titan.';
             toTranslate[it.next().value].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
@@ -218,6 +219,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
         }
         if (editing) {
+            toTranslate[it.next().value].textContent = 'Ken Kaneki da Tokyo Ghoul';
             toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
             toTranslate[it.next().value].textContent = 'Il Boato da L\'attacco dei Giganti.';
             toTranslate[it.next().value].textContent = 'Connor da Detroit Become Human by RaamDeadman.';

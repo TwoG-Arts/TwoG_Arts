@@ -174,7 +174,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Shanks from One Piece by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Thor Ravager from Thor Love&Thunder by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Aiden Pearce from Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Soul from Dark Soul.';
+            toTranslate[it.next().value].textContent = 'Soul from Dark Souls.';
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
@@ -227,7 +227,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Shanks da One Piece by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Thor Ravager da Thor Love&Thunder by RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Aiden Pearce da Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Anima da Dark Soul.';
+            toTranslate[it.next().value].textContent = 'Anima da Dark Souls.';
         }
     }
 }

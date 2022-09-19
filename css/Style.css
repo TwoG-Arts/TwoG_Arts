@@ -2,10 +2,11 @@
     font-family: 'BreezeSans';
     src: url('../ttf/BreezeSans.ttf') format('truetype');
 }
+
 html {
     max-width: 1920px;
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -552,13 +553,13 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 1770px) {
-    header .buttons {
+    .buttons {
         zoom: 85%;
     }
 }
 
 @media only screen and (max-width: 1505px) {
-    header .buttons {
+    .buttons {
         zoom: 75%;
     }
 
@@ -568,7 +569,7 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 1400px) {
-    header .buttons {
+    .buttons {
         zoom: 60%;
     }
 

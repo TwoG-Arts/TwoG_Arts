@@ -5,11 +5,10 @@
 
 @media only screen and (max-width: 2048px) {
     body {
-        max-width: 1920px;
+        min-width: 1920px;
         display: flex;
         justify-content: center;
     }
-}
 
 @media only screen and (max-width: 1920px) {
     body {
@@ -556,22 +555,30 @@
         font-weight: bolder;
     }
 }
+}
 
 @media only screen and (max-width: 1770px) {
-    body {
+    header .buttons {
         zoom: 85%;
     }
 }
 
 @media only screen and (max-width: 1505px) {
-    body {
+    header .buttons {
         zoom: 75%;
+    }
+
+    .rightBlock {
+        margin: 3rem 5rem 2rem 5rem;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    body {
-    zoom: 62%;
+    header .buttons {
+        zoom: 60%;
+    }
+    #default {
+        zoom: 85%;
     }
     @media only screen and (min-height: 600px) {
 

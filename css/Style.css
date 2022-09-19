@@ -3,16 +3,11 @@
     src: url('../ttf/BreezeSans.ttf') format('truetype');
 }
 
-@media only screen and (max-width: 2048px) {
-    body {
-        min-width: 1920px;
-        display: flex;
-        justify-content: center;
-    }
-
 @media only screen and (max-width: 1920px) {
     body {
-        display: block;
+        max-width: 1920px;
+        display: flex;
+        justify-content: center;
         zoom: 100%;
         margin: 0;
         padding: 5px 1rem 4rem 1rem;
@@ -554,7 +549,6 @@
         color: #6A6555;
         font-weight: bolder;
     }
-}
 }
 
 @media only screen and (max-width: 1770px) {

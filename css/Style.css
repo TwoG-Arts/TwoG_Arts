@@ -452,7 +452,19 @@ input:checked + .slider:before {
     font-size: 3rem;
 }
 
+.lavori {
+    width: 100%;
+    max-height: 37rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
 
+.collabdiv {
+    width: 100%;
+    max-height: 37rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
 
 .lavori button {
     background-color: transparent;
@@ -561,10 +573,6 @@ input:checked + .slider:before {
 
     .rightBlock {
         margin: 3rem 5rem 2rem 5rem;
-        width: 100%;
-        max-height: 37rem;
-        overflow: auto;
-        overflow-x: hidden;
 
     }
 }

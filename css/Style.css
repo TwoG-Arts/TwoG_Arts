@@ -2,11 +2,13 @@
     font-family: 'BreezeSans';
     src: url('../ttf/BreezeSans.ttf') format('truetype');
 }
-
-body {
+html {
     max-width: 1920px;
     display: flex;
     justify-content: center;
+}
+
+body {
     zoom: 100%;
     margin: 0;
     padding: 5px 1rem 4rem 1rem;

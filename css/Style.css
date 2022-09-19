@@ -546,9 +546,28 @@ input:checked + .slider:before {
     font-weight: bolder;
 }
 
+@media only screen and (max-width: 1770px) {
+    body {
+        zoom: 85%;
+    }
+}
+
+@media only screen and (max-width: 1505px) {
+    body {
+        zoom: 75%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        zoom: 62%;
+    }
+}
+
 /* Mobile */
 @media only screen and (max-width: 1100px) {
     body {
+        zoom: 100%;
         padding-bottom: 100px;
     }
 
@@ -742,23 +761,5 @@ input:checked + .slider:before {
 
     #firstPart {
         font-size: 2em;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    body {
-        zoom: 62%;
-    }
-}
-
-@media only screen and (max-width: 1550px) {
-    body {
-        zoom: 75%;
-    }
-}
-
-@media only screen and (max-width: 1750px) {
-    body {
-        zoom: 85%;
     }
 }

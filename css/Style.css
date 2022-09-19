@@ -4,6 +4,7 @@
 }
 
 body {
+    zoom: 100%;
     margin: 0;
     padding: 5px 1rem 4rem 1rem;
     background-image: url("../images/Background.png");
@@ -741,5 +742,23 @@ input:checked + .slider:before {
 
     #firstPart {
         font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        zoom: 62%;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    body {
+        zoom: 75%;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    body {
+        zoom: 85%;
     }
 }

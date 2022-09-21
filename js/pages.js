@@ -166,15 +166,15 @@ function language() {
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
-            toTranslate[it.next().value].textContent = 'Ken Kaneki From Tokyo Ghoul';
-            toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman';
-            toTranslate[it.next().value].textContent = 'The Rumbling from Attack on Titan.';
-            toTranslate[it.next().value].textContent = 'Connor from Detroit Become Human by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Okabe & Daru from Steins;Gate w/RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Shanks from One Piece by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Thor Ravager from Thor Love&Thunder by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Aiden Pearce from Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Soul from Dark Souls.';
+            toTranslate[it.next().value].innerHTML = 'Ken Kaneki From Tokyo Ghoul <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'The Rumbling from Attack on Titan. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Connor from Detroit Become Human by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Okabe & Daru from Steins;Gate w/RaamDeadman. <sub>PH: Rankoll \& RaamDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Shanks from One Piece by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Thor Ravager from Thor Love&Thunder by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Aiden Pearce from Watch Dogs <sub>PH: RaamDeadman.</sub>.';
+            toTranslate[it.next().value].innerHTML = 'Soul from Dark Souls. <sub>PH: Me</sub>';
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
@@ -220,14 +220,14 @@ function language() {
         }
         if (editing) {
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul <sub>PH: Me</sub>';
-            toTranslate[it.next().value].textContent = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Il Boato da L\'attacco dei Giganti.';
-            toTranslate[it.next().value].textContent = 'Connor da Detroit Become Human by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Okabe & Daru da Steins;Gate w/RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Shanks da One Piece by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Thor Ravager da Thor Love&Thunder by RaamDeadman.';
-            toTranslate[it.next().value].textContent = 'Aiden Pearce da Watch Dogs.';
-            toTranslate[it.next().value].textContent = 'Anima da Dark Souls.';
+            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Il Boato da L\'attacco dei Giganti. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Connor da Detroit Become Human by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Okabe & Daru da Steins;Gate w/RaamDeadman. <sub>PH: Rankoll \& RaamDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Shanks da One Piece by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Thor Ravager da Thor Love&Thunder by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Aiden Pearce da Watch Dogs.<sub>PH: RaamDeadman</sub>';
+            toTranslate[it.next().value].innerHTML = 'Anima da Dark Souls. <sub>PH: Me</sub>';
         }
     }
 }

@@ -119,10 +119,10 @@ function language() {
     let design = document.getElementById('design');
     let editing = document.getElementById('editing');
     let check = document.getElementsByClassName('check')[0];
-    let it = makeRangeIterator(0, 150, 1);
-    it.next();
+
     if (check.checked) {
-        toTranslate[it.value].textContent = 'About Me';
+        let it = makeRangeIterator(0, 150, 1);
+        toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
         if (!(design || editing) && !($(window).width() <= 1100)) {
             toTranslate[it.next().value].textContent = 'About Me';
@@ -179,6 +179,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Soul from Dark Souls. <sub>PH: Me.</sub>';
         }
     } else {
+        let it = makeRangeIterator(0, 150, 1);
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing)) {

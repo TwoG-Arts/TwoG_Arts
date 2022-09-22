@@ -514,7 +514,7 @@ input:checked + .slider:before {
     box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     background-color: #B4AE9A;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .imageContacts {
@@ -569,6 +569,7 @@ input:checked + .slider:before {
     display: inline;
     position: fixed;
     bottom: 6rem;
+    opacity: 0.75;
 }
 
 /* working on popup for contacts
@@ -676,7 +677,7 @@ p {
     }
 
     .rightBlock {
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
 
     .mobileCollab, .mobileCredits {
@@ -684,7 +685,7 @@ p {
         padding: 1rem;
         background-color: #B4AE9A;
         box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
-        margin: 2rem 0;
+        margin: 3rem 0;
     }
 
     .mobileCollab img {
@@ -772,7 +773,7 @@ p {
         background-color: #B4AE9A;
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
     }
 

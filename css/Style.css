@@ -561,6 +561,16 @@ input:checked + .slider:before {
     color: #6A6555;
     font-weight: bolder;
 }
+
+#upTop {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: inline;
+    position: fixed;
+    bottom: 6rem;
+}
+
 /* working on popup for contacts
 .mobileButton .contacts .contactRow a:hover
 p {

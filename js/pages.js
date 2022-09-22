@@ -98,7 +98,16 @@ function select(i) {
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     let nextIndex = start;
     let iterationCount = 0;
-
+    function before() {
+        let result;
+        if (nextIndex > end) {
+            result = {value: nextIndex, done: false};
+            nextIndex -= step;
+            iterationCount--;
+            return result;
+        }
+        return {value: iterationCount, done: true};
+    }
     return {
         next() {
             let result;
@@ -111,6 +120,7 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
             return {value: iterationCount, done: true};
         }
     };
+
 }
 
 function language() {
@@ -123,7 +133,8 @@ function language() {
 
     if (check.checked) {
         if($(window).width() <= 1100) {
-            toTranslate[it.value].textContent = 'About Me';
+            toTranslate[it.next().value].textContent = 'About Me';
+            it.before();
         }
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
@@ -163,8 +174,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
         }
         if (design) {
-            let val = it.value;
-            console.log(val);
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
@@ -183,7 +192,8 @@ function language() {
         }
     } else {
         if($(window).width() <= 1100) {
-            toTranslate[it.value].textContent = 'Chi sono';
+            toTranslate[it.next().value].textContent = 'Chi sono';
+            it.before();
         }
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';

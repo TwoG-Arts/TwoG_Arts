@@ -45,10 +45,6 @@ img {
 
 .buttons button:hover {
     transform: scale(1.1);
-}
-
-.buttons button:hover
-.buttons button {
     background-image: url("../images/overlayButtons.png");
     background-size: contain;
 }
@@ -94,7 +90,7 @@ img {
 .sideBut {
     display: grid;
     position: relative;
-    top: 7rem;
+    top: 2rem;
     width: 22%;
     height: 15rem;
 }

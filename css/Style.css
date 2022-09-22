@@ -29,8 +29,6 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url("../images/overlayButtons.png");
-    background-size: contain;
 }
 
 .buttons button {
@@ -50,19 +48,9 @@ img {
 }
 
 .buttons button:hover
-.underline {
-    display: block;
-}
-
-.underline {
-    display: none;
-    position: relative;
-    left: 0;
-    bottom: -1px;
-    height: 0.5rem;
-    width: 100%;
-    background-color: #343127;
-    padding: 0 5px;
+.buttons button {
+    background-image: url("../images/overlayButtons.png");
+    background-size: contain;
 }
 
 .buttons p {

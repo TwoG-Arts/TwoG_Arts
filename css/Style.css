@@ -460,6 +460,8 @@ input:checked + .slider:before {
 }
 
 .collabdiv {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-height: 37rem;
     overflow: auto;
@@ -559,7 +561,12 @@ input:checked + .slider:before {
     color: #6A6555;
     font-weight: bolder;
 }
-
+/* working on popup for contacts
+.mobileButton .contacts .contactRow a:hover
+p {
+    display: block;
+}
+*/
 @media only screen and (max-width: 1770px) {
     .buttons {
         zoom: 85%;

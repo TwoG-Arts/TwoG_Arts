@@ -72,6 +72,7 @@ img {
     height: 5rem;
     padding: 0.3rem;
     margin-left: 0.4rem;
+    background-image: url("../images/overlayButtons.png");
 }
 
 .footer {
@@ -572,12 +573,11 @@ input:checked + .slider:before {
     opacity: 0.75;
 }
 
-/* working on popup for contacts
 .mobileButton .contacts .contactRow a:hover
 p {
     display: block;
 }
-*/
+
 @media only screen and (max-width: 1770px) {
     .buttons {
         zoom: 85%;

@@ -29,6 +29,8 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: url("../images/overlayButtons.png");
+    background-size: contain;
 }
 
 .buttons button {
@@ -40,6 +42,11 @@ img {
     background-color: #B4AE9A;
     box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     border-bottom: 2rem #343127;
+    transition: transform .2s;
+}
+
+.buttons button:hover {
+    transform: scale(1.2);
 }
 
 .buttons button:hover
@@ -72,7 +79,6 @@ img {
     height: 5rem;
     padding: 0.3rem;
     margin-left: 0.4rem;
-    background-image: url("../images/overlayButtons.png");
 }
 
 .footer {

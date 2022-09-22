@@ -182,6 +182,9 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Soul from Dark Souls. <sub>PH: Me.</sub>';
         }
     } else {
+        if($(window).width() <= 1100) {
+            toTranslate[it.value].textContent = 'Chi sono';
+        }
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing)) {

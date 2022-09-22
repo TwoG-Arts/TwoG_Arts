@@ -2,7 +2,7 @@ $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
     let random = document.getElementById('banana');
     let num = Math.floor(Math.random() * 2);
-    if (num===0) {
+    if (num === 0) {
         random.textContent = '2G & Rankoll';
     } else {
         random.textContent = 'Rankoll & 2G';
@@ -59,7 +59,7 @@ function aboutMe() {
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');
-    if ($(window).width()<=1100) {
+    if ($(window).width() <= 1100) {
         mob.style.display = 'flex';
         work.style.display = 'block';
     }
@@ -121,12 +121,14 @@ function language() {
     let check = document.getElementsByClassName('check')[0];
     let it = makeRangeIterator(0, 150, 1);
 
-    if(check.checked) {
+    if (check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
-        if (!(design || editing) && !($(window).width()<=1100)) {
+        if (!(design || editing) && !($(window).width() <= 1100)) {
             toTranslate[it.next().value].textContent = 'About Me';
-        } else {it.next();}
+        } else {
+            it.next();
+        }
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'More edits';
@@ -181,7 +183,9 @@ function language() {
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'Chi sono';
-        } else {it.next();}
+        } else {
+            it.next();
+        }
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Più editing';
@@ -254,20 +258,39 @@ mediaQueryList.addListener(screenTest);
 
 let i = 0;
 
-$(function() {
+$(function () {
     let wrap = document.getElementById('default');
     if (wrap) {
-        window.addEventListener('wheel', function(event) {
-        if (event.deltaY < 0 && i>1) {
-            i--;
-            clicked(i);
-            select(i);
-        }
-        else if (event.deltaY > 0 && i<5) {
-            i++;
-            clicked(i);
-            select(i);
-        }
+        window.addEventListener('wheel', function (event) {
+            if (event.deltaY < 0 && i > 1) {
+                i--;
+                clicked(i);
+                select(i);
+            } else if (event.deltaY > 0 && i < 5) {
+                i++;
+                clicked(i);
+                select(i);
+            }
         });
     }
 })
+
+function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+let up = document.getElementById("upTop");
+
+window.onscroll = function () {
+    scrollFunction()
+    };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        up.style.display = "block";
+    } else {
+        up.style.display = "none";
+    }
+}
+

@@ -605,6 +605,14 @@ p {
         padding-bottom: 100px;
     }
 
+    .buttons {
+        zoom: 100%;
+    }
+
+    #default {
+        zoom: 100%;
+    }
+
     .lavori {
         background-color: #B4AE9A;
         max-height: none;
@@ -730,6 +738,15 @@ p {
     .mobileButton img {
         width: 4rem;
         margin: 1rem;
+    }
+
+    #upTop {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: inline;
+        position: fixed;
+        bottom: 6rem;
     }
 
     .language p {

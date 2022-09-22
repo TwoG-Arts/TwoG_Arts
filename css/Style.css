@@ -740,15 +740,6 @@ p {
         margin: 1rem;
     }
 
-    #upTop {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        display: inline;
-        position: fixed;
-        bottom: 6rem;
-    }
-
     .language p {
         font-size: 2rem;
     }

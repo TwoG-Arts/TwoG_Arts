@@ -138,6 +138,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'More videos';
         toTranslate[it.next().value].textContent = 'More designs';
         toTranslate[it.next().value].textContent = 'Contacts';
+        toTranslate[it.next().value].textContent = 'Support Me';
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Works';
             toTranslate[it.next().value].textContent = 'Contacts';
@@ -197,6 +198,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Più designs';
         toTranslate[it.next().value].textContent = 'Contatti';
+        toTranslate[it.next().value].textContent = 'Supportami';
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Lavori';
             toTranslate[it.next().value].textContent = 'Contatti';

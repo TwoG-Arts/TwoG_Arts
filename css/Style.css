@@ -600,7 +600,7 @@ input:checked + .slider:before {
     border-top: 1.5rem solid #6A6555;
 }
 
-.collabdiv .collab .links a:hover
+.links a:hover
 .moreAbout {
     display: inline;
 }

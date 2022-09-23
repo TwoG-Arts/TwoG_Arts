@@ -96,18 +96,21 @@ function select(i) {
 }
 
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {
+    let beforeIndex = start-1;
     let nextIndex = start;
     let iterationCount = 0;
-    function before() {
+    return {
+        last() {
         let result;
-        if (nextIndex > end) {
-            result = {value: nextIndex, done: false};
+        if (beforeIndex > start) {
+            result = {value: beforeIndex, done: false};
             nextIndex -= step;
             iterationCount--;
             return result;
         }
         return {value: iterationCount, done: true};
     }
+    };
     return {
         next() {
             let result;
@@ -120,7 +123,6 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
             return {value: iterationCount, done: true};
         }
     };
-
 }
 
 function language() {
@@ -134,7 +136,7 @@ function language() {
     if (check.checked) {
         if($(window).width() <= 1100) {
             toTranslate[it.next().value].textContent = 'About Me';
-            it.before();
+            it.last();
         }
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
@@ -180,7 +182,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
-            toTranslate[it.next().value].innerHTML = 'Ken Kaneki From Tokyo Ghoul. <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Ken Kaneki from Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'The Rumbling from Attack on Titan. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor from Detroit Become Human by RaamDeadman. <sub>PH: Me.</sub>';
@@ -193,7 +195,7 @@ function language() {
     } else {
         if($(window).width() <= 1100) {
             toTranslate[it.next().value].textContent = 'Chi sono';
-            it.before();
+            it.last();
         }
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';

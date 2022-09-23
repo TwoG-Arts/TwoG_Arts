@@ -98,6 +98,7 @@ img {
 .language {
     display: flex;
     align-items: center;
+    width: 20rem;
 }
 
 .language p {
@@ -430,7 +431,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1 {
+.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1, #contacts h1, #specialThx h1, .mobileSupportMe h1 {
     background-color: #4E4B42;
     margin-right: auto;
     margin-left: auto;
@@ -501,7 +502,7 @@ input:checked + .slider:before {
     margin-top: 2rem;
 }
 
-.mobileContacts {
+.mobileContacts, .mobileSupportMe {
     box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     background-color: #B4AE9A;
     padding: 1rem;
@@ -559,8 +560,16 @@ input:checked + .slider:before {
     outline: none;
     display: inline;
     position: fixed;
-    bottom: 6rem;
+    bottom: 11rem;
     opacity: 0.75;
+}
+
+#upTop img {
+    width: 5.5rem;
+}
+
+#contacts {
+    flex-direction: column;
 }
 
 .mobileButton .contacts .contactRow a:hover
@@ -804,5 +813,10 @@ p {
 
     #firstPart {
         font-size: 2em;
+    }
+
+    .buttons button:hover {
+        transform: scale(1);
+        background-image: none;
     }
 }

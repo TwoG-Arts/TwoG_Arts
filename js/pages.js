@@ -122,9 +122,6 @@ function language() {
     let it = makeRangeIterator(0, 150, 1);
 
     if (check.checked) {
-        if($(window).width() <= 1100) {
-            toTranslate[it.next().value].textContent = 'About Me';
-        }
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
         if (!(design || editing) && !($(window).width() <= 1100)) {
@@ -185,9 +182,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Soul from Dark Souls. <sub>PH: Me.</sub>';
         }
     } else {
-        if($(window).width() <= 1100) {
-            toTranslate[it.next().value].textContent = 'Chi sono';
-        }
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing)) {

@@ -273,13 +273,13 @@ function toTop() {
     document.documentElement.scrollTop = 0;
 }
 
-let up = document.getElementById("upTop");
 
 window.onscroll = function () {
     scrollFunction()
     };
 
 function scrollFunction() {
+    let up = document.getElementById("upTop");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         up.style.display = "inline";
     } else {

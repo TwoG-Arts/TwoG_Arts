@@ -578,9 +578,31 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 
-.mobileButton .contacts .contactRow a:hover
-p {
-    display: block;
+.moreAbout {
+    display: none;
+    position: relative;
+    bottom: 2rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    background-color: #6A6555;
+    padding: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+}
+
+.triangle-down {
+    display: inline;
+    position: relative;
+    bottom: 0.5rem;
+    width: 0;
+    height: 0;
+    border-left: 0.75rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    border-top: 1.5rem solid #6A6555;
+}
+
+.collabdiv .collab .links a:hover
+.moreAbout {
+    display: inline;
 }
 
 @media only screen and (max-width: 1770px) {

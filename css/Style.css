@@ -437,11 +437,16 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-bottom: 0.5rem;
     text-align: center;
+    width: 100%;
     color: #B4AE9A;
     font-family: BreezeSans, sans-serif;
     font-weight: bolder;
     padding: 0.25rem 0;
     font-size: 3rem;
+}
+
+#supportMe {
+    margin: 1rem auto;
 }
 
 .lavori {
@@ -561,11 +566,12 @@ input:checked + .slider:before {
     display: inline;
     position: fixed;
     bottom: 11rem;
+    right: -0.7rem;
     opacity: 0.75;
 }
 
 #upTop img {
-    width: 5.5rem;
+    width: 5rem;
 }
 
 #contacts {

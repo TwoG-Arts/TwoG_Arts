@@ -100,18 +100,6 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
     let nextIndex = start;
     let iterationCount = 0;
     return {
-        last() {
-        let result;
-        if (beforeIndex > start) {
-            result = {value: beforeIndex, done: false};
-            nextIndex -= step;
-            iterationCount--;
-            return result;
-        }
-        return {value: iterationCount, done: true};
-    }
-    };
-    return {
         next() {
             let result;
             if (nextIndex < end) {
@@ -136,7 +124,6 @@ function language() {
     if (check.checked) {
         if($(window).width() <= 1100) {
             toTranslate[it.next().value].textContent = 'About Me';
-            it.last();
         }
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
@@ -156,6 +143,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Credits';
+            toTranslate[it.next().value].textContent = 'About Me';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">My name is Luigi but you can call me Giorgio. Lately I am working with';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
@@ -195,7 +183,6 @@ function language() {
     } else {
         if($(window).width() <= 1100) {
             toTranslate[it.next().value].textContent = 'Chi sono';
-            it.last();
         }
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
@@ -215,6 +202,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Crediti';
+            toTranslate[it.next().value].textContent = 'Chi sono';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Il mio nome è Luigi, sono un tecnico informatico che ha iniziato a frequentare l\'accademia delle belle arti di Napoli presso la facoltà di Nuove Tecnologie dell’arte nel 2020. Il mio nome “2G” deriva dalla mia opera preferita: NieR Automata, gioco che mi ha segnato profondamente, grazie al suo scavare a fondo nella natura umana ed alla narrazione impeccabile del maestro Yoko Taro. Principalmente mi occupo di fotomontaggio e fotoritocco, mi diletto nella creazione di VFX e nel video editing. Attualmente collaboro con il cosplayer e Youtuber RaamDeadman, a cui edito le foto e curo le estetiche dei social e lo streamer LosMichele, editando i momenti salienti delle sue live mediante diversi format, come i Best of e le Pillole. Sono un fruitore assiduo di anime, manga, videogames da cui prendo ispirazione per i miei lavori di fotomontaggio ed amo il cinema, passione che mi ha avvicinato al mondo dei VFX e dell’editing video in generale.';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';

@@ -580,12 +580,13 @@ input:checked + .slider:before {
 
 .moreAbout {
     display: none;
-    position: relative;
-    bottom: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
     font-size: 1.5rem;
-    height: 2rem;
     background-color: #6A6555;
-    padding: 0.5rem;
+    padding: 0.5em;
     box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
 }
 
@@ -602,7 +603,7 @@ input:checked + .slider:before {
 
 .links a:hover
 .moreAbout {
-    display: inline;
+    display: block;
 }
 
 @media only screen and (max-width: 1770px) {

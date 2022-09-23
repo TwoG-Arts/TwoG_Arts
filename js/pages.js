@@ -265,24 +265,8 @@ function screenTest(e) {
     }
 }
 
-mediaQueryList.addEventListener(screenTest);
-window.addEventListener('wheel', function (event) {scroller(event)});
-let i = 0;
+mediaQueryList.addListener(screenTest);
 
-function scroller(event) {
-    let wrap = document.getElementById('default');
-    if (wrap) {
-        if (event.deltaY < 0 && i > 1) {
-            i--;
-            clicked(i);
-            select(i);
-        } else if (event.deltaY > 0 && i < 5) {
-            i++;
-            clicked(i);
-            select(i);
-        }
-    }
-}
 
 function toTop() {
     document.body.scrollTop = 0;
@@ -296,8 +280,8 @@ window.onscroll = function () {
     };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        up.style.display = "block";
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        up.style.display = "inline";
     } else {
         up.style.display = "none";
     }

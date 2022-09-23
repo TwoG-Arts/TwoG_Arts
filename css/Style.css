@@ -563,7 +563,7 @@ input:checked + .slider:before {
     background-color: transparent;
     border: none;
     outline: none;
-    display: inline;
+    display: none;
     position: fixed;
     bottom: 11rem;
     right: -0.7rem;

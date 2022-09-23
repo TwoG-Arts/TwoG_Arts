@@ -597,7 +597,7 @@ input:checked + .slider:before {
     height: 0;
     border-left: 0.75rem solid transparent;
     border-right: 0.75rem solid transparent;
-    border-top: 1.5rem solid #6A6555;
+    border-bottom: 1.5rem solid #6A6555;
 }
 
 .links a:hover

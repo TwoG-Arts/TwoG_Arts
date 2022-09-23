@@ -265,26 +265,24 @@ function screenTest(e) {
     }
 }
 
-mediaQueryList.addListener(screenTest);
-
+mediaQueryList.addEventListener(screenTest);
+window.addEventListener('wheel', function (event) {scroller(event)});
 let i = 0;
 
-$(function () {
+function scroller(event) {
     let wrap = document.getElementById('default');
     if (wrap) {
-        window.addEventListener('wheel', function (event) {
-            if (event.deltaY < 0 && i > 1) {
-                i--;
-                clicked(i);
-                select(i);
-            } else if (event.deltaY > 0 && i < 5) {
-                i++;
-                clicked(i);
-                select(i);
-            }
-        });
+        if (event.deltaY < 0 && i > 1) {
+            i--;
+            clicked(i);
+            select(i);
+        } else if (event.deltaY > 0 && i < 5) {
+            i++;
+            clicked(i);
+            select(i);
+        }
     }
-})
+}
 
 function toTop() {
     document.body.scrollTop = 0;

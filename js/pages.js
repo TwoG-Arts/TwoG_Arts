@@ -124,10 +124,12 @@ function language() {
     if (check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
-        if (!(design || editing) && !($(window).width() <= 1100)) {
+        if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'About Me';
+        } else if ($(window).width() <= 1100) {
+            toTranslate[it.next().value].textContent = 'Home';
         } else {
-            it.next();
+            toTranslate[it.next().value].textContent = 'About Me';
         }
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'Works';
@@ -186,8 +188,10 @@ function language() {
         toTranslate[it.next().value].textContent = 'Video';
         if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'Chi sono';
+        } else if ($(window).width() <= 1100) {
+            toTranslate[it.next().value].textContent = 'Home';
         } else {
-            it.next();
+            toTranslate[it.next().value].textContent = 'Chi sono';
         }
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Lavori';

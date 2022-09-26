@@ -1,3 +1,7 @@
+let prevButton = document.getElementById('2g');
+let prevButtonText = document.getElementById('YoRHa');
+let showing = null;
+
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
     let random = document.getElementById('banana');
@@ -66,13 +70,9 @@ function aboutMe() {
     $(".home").html('Chi sono');
 }
 
-let prevButton = document.getElementById('2g');
-let prevButtonText = prevButton.getElementsByTagName('div')[1];
-let showing = null;
-
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
-    let selectedText = selected.getElementsByTagName('div')[1];
+    const selectedText = selected.getElementsByTagName('div')[1];
     selected.style.backgroundSize = '200% 100%';
     selected.style.background = '#4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom';
     selected.style.transition = 'transition: all 0.4s ease';

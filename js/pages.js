@@ -86,10 +86,10 @@ function clicked(i) {
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
         prevButton.style.backgroundSize = '200% 100%';
-        prevButton.style.background = '#B4AE9A linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%) right bottom';
+        prevButton.style.backgroundPosition = 'right bottom';
         prevButton.style.transition = 'all 0.4s ease';
         prevButton.style.animationFillMode = 'both';
-        prevButtonText.style.background = '#4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom';
+        prevButtonText.style.backgroundPosition = 'right bottom';
         prevButtonText.style.backgroundSize = '200% 100%';
         prevButtonText.style.transition = 'all 0.4s ease';
         prevButtonText.style.webkitBackgroundClip = 'text';

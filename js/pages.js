@@ -67,20 +67,30 @@ function aboutMe() {
 }
 
 let prevButton = document.getElementById('2g');
+let prevButtonText = prevButton.getElementsByTagName('div')[1];
 let showing = null;
 
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
-    selected.style.background = '#4E4B42';
-    selected.style.color = "#B4AE9A";
+    let selectedText = selected.getElementsByTagName('div')[1];
+    selected.style.backgroundSize = '200% 100%';
+    selected.style.background = '#4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom';
+    selected.style.transition = 'transition: all 0.4s ease';
+    selected.style.animationFillMode = 'both';
+    selectedText.style.backgroundImage = 'linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%)';
+    selectedText.style.backgroundPosition = 'right bottom';
+    selectedText.setAttribute('style', '-webkit-background-clip:text');
+    selectedText.style.color = 'transparent';
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
-        prevButton.style.background = '#B4AE9A';
-        prevButton.style.color = '#4E4B42';
+        prevButton.style.backgroundPosition = 'left bottom';
+        prevButtonText.style.backgroundPosition = 'left bottom';
         prevButton = selected;
+        prevButtonText = selectedText;
     }
     prevButton = selected;
+    prevButtonText = selectedText;
 }
 
 function select(i) {
@@ -96,7 +106,6 @@ function select(i) {
 }
 
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {
-    let beforeIndex = start-1;
     let nextIndex = start;
     let iterationCount = 0;
     return {

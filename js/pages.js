@@ -75,7 +75,7 @@ function clicked(i) {
     const selectedText = selected.getElementsByTagName('div')[1];
     selected.style.backgroundSize = '200% 100%';
     selected.style.background = '#4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom';
-    selected.style.transition = 'transition: all 0.4s ease';
+    selected.style.transition = 'all 0.4s ease';
     selected.style.animationFillMode = 'both';
     selectedText.style.backgroundImage = 'linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%)';
     selectedText.style.backgroundPosition = 'right bottom';

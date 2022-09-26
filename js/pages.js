@@ -79,8 +79,8 @@ function clicked(i) {
     selected.style.animationFillMode = 'both';
     selectedText.style.background = '#B4AE9A linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%) right bottom';
     selectedText.style.backgroundSize = '200% 100%';
+    selectedText.style.webkitBackgroundClip = 'text';
     selectedText.style.transition = 'all 0.4s ease';
-    selectedText.style.backgroundClip = 'text';
     selectedText.style.color = 'transparent';
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
@@ -92,7 +92,7 @@ function clicked(i) {
         prevButtonText.style.background = '#4E4B42 linear-gradient(to right, #4E4B42 50%, #B4AE9A 50%) left bottom';
         prevButtonText.style.backgroundSize = '200% 100%';
         prevButtonText.style.transition = 'all 0.4s ease';
-        prevButtonText.style.backgroundClip = 'text';
+        prevButtonText.style.webkitBackgroundClip = 'text';
         prevButtonText.style.color = 'transparent';
         prevButton = selected;
         prevButtonText = selectedText;

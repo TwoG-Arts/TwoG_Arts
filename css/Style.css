@@ -48,6 +48,7 @@ img {
 }
 
 .buttons button:after {
+    transition: .2s all;
     background-image: url("../images/overlayButtons.png");
     background-size: contain;
     opacity: 0;

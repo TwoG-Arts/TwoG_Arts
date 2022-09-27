@@ -31,7 +31,7 @@ img {
     flex-wrap: wrap;
 }
 
-.buttons button:before {
+.buttons button:after {
     width: 23rem;
     height: 5.5rem;
     margin: 1rem 2rem;
@@ -43,7 +43,7 @@ img {
     transition: all .2s;
 }
 
-.buttons button:hover:before {
+.buttons button:hover:after {
     transform: scale(1.1);
 }
 
@@ -142,7 +142,7 @@ img {
     text-align: left;
 }
 
-.sideBut button:hover #YoRHa, .sideBut button:hover .button .en {
+.sideBut button:hover #YoRHa, .button .en, .sideBut button {
     background-position: left bottom;
 }
 

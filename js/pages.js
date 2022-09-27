@@ -74,8 +74,11 @@ function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
     const selectedText = selected.getElementsByTagName('div')[1];
 
+    selected.style.background = '#4E4B42 linear-gradient(to right, #4E4B42 50%, #B4AE9A 50%) left bottom';
+    selected.style.backgroundSize = '200% 100%';
     selected.style.transition = 'all 0.4s ease';
     selected.style.animationFillMode = 'both';
+    selectedText.style.background = '#B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom';
     selectedText.style.backgroundSize = '200% 100%';
     selectedText.style.webkitBackgroundClip = 'text';
     selectedText.style.backgroundClip = 'text';

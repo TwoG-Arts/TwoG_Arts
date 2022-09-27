@@ -132,7 +132,7 @@ img {
 }
 
 #YoRHa, .button .en {
-    background: #B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom;
+    background: #4E4B42 linear-gradient(to right, #4E4B42 50%, #B4AE9A 50%) left bottom;
     background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

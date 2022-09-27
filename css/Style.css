@@ -45,14 +45,16 @@ img {
 
 .buttons button:hover {
     transform: scale(1.1);
-    animation: appear .2s ease-in;
-    background-image: url("../images/overlayButtons.png");
-    background-size: contain;
 }
 
-@keyframes appear {
-    from {background-image: none}
-    to {background-image: url("../images/overlayButtons.png");}
+.buttons button:after {
+    background-image: url("../images/overlayButtons.png");
+    background-size: contain;
+    opacity: 0;
+}
+
+.buttons button:hover:after {
+    opacity: 1;
 }
 
 .buttons p {

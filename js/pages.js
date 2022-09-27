@@ -73,13 +73,13 @@ function aboutMe() {
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
     const selectedText = selected.getElementsByTagName('div')[1];
-    selected.style.backgroundPosition = 'left bottom';
-    selectedText.style.backgroundPosition = 'left bottom';
+    selected.style.backgroundPosition = 'right bottom';
+    selectedText.style.backgroundPosition = 'right bottom';
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
-        prevButton.style.backgroundPosition = 'right bottom';
-        prevButtonText.style.backgroundPosition = 'right bottom';
+        prevButton.style.backgroundPosition = 'left bottom';
+        prevButtonText.style.backgroundPosition = 'left bottom';
         prevButton = selected;
         prevButtonText = selectedText;
     }

@@ -116,6 +116,7 @@ img {
 .sideBut button {
     background: #B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom;
     background-size: 200% 100%;
+    transition: all 0.4s ease;
     min-width: 16rem;
     border: none;
     margin: 1rem;
@@ -134,6 +135,7 @@ img {
 #YoRHa, .button .en {
     background: #4E4B42 linear-gradient(to right, #4E4B42 50%, #B4AE9A 50%) left bottom;
     background-size: 200% 100%;
+    transition: all 0.4s ease;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

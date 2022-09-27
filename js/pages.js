@@ -76,24 +76,20 @@ function clicked(i) {
 
     selected.style.background = '#4E4B42 linear-gradient(to right, #4E4B42 50%, #B4AE9A 50%) left bottom';
     selected.style.backgroundSize = '200% 100%';
-    selected.style.transition = 'all 0.4s ease';
     selected.style.animationFillMode = 'both';
     selectedText.style.background = '#B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom';
     selectedText.style.backgroundSize = '200% 100%';
     selectedText.style.webkitBackgroundClip = 'text';
     selectedText.style.backgroundClip = 'text';
-    selectedText.style.transition = 'all 0.4s ease';
     selectedText.style.color = 'transparent';
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
         prevButton.style.backgroundSize = '200% 100%';
         prevButton.style.backgroundPosition = 'right bottom';
-        prevButton.style.transition = 'all 0.4s ease';
         prevButton.style.animationFillMode = 'both';
         prevButtonText.style.backgroundPosition = 'right bottom';
         prevButtonText.style.backgroundSize = '200% 100%';
-        prevButtonText.style.transition = 'all 0.4s ease';
         prevButtonText.style.webkitBackgroundClip = 'text';
         prevButtonText.style.backgroundClip = 'text';
         prevButtonText.style.color = 'transparent';

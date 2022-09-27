@@ -31,7 +31,7 @@ img {
     flex-wrap: wrap;
 }
 
-.buttons button:after {
+.buttons button {
     width: 23rem;
     height: 5.5rem;
     margin: 1rem 2rem;
@@ -43,11 +43,11 @@ img {
     transition: all .2s;
 }
 
-.buttons button:hover:after {
+.buttons button:hover {
     transform: scale(1.1);
 }
 
-.buttons button:after {
+.buttons button:before {
     transition: .2s all;
     background-image: url("../images/overlayButtons.png");
     background-size: contain;
@@ -142,7 +142,15 @@ img {
     text-align: left;
 }
 
-.sideBut button:hover #YoRHa, .button .en, .sideBut button {
+.sideBut button:hover #YoRHa {
+    background-position: left bottom;
+}
+
+.sideBut button:hover .button .en {
+    background-position: left bottom;
+}
+
+.sideBut button:hover {
     background-position: left bottom;
 }
 

@@ -147,6 +147,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Credits';
             toTranslate[it.next().value].textContent = 'About Me';
+            toTranslate[it.next().value].textContent = 'Welcome';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">My name is Luigi but you can call me Giorgio. Lately I am working with';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
@@ -161,6 +162,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Support Me';
+            toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Thanking';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
@@ -210,6 +212,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Crediti';
             toTranslate[it.next().value].textContent = 'Chi sono';
+            toTranslate[it.next().value].textContent = 'Benvenuti';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Benvenuti! Mi chiamo Luigi "2G" Balzano e sono nato a Torre Annunziata nel napoletano. Frequento l\'Accademia delle Belle Arti, grazie alla quale ho avuto la possibilità di coltivare la mia passione per l\'arte, alimentata anche dagli interessi sviluppati nel corso degli anni. Ho appreso delle conoscenze di informatica che mi sono state preziose per esprimere le mie idee attraverso i lavori. Noterete sicuramente come molte delle mie creazioni siano state influenzate dalle opere con cui risuono di più, ad esempio dall\'anime Steins; Gate, il quale racconta una storia profonda che mi vede in sintonia col protagonista; dal manga Attack on Titan, dimostrazione pratica di come la tecnica da sola non basta e deve essere veicolo di un messaggio importante; inoltre, nei miei lavori tendo a piegare la realtà senza distaccarmene, sotto influenza di due grandi registi come Christopher Nolan e Martin Scorsese. Pongo molta enfasi nel dare una forma alle miei emozioni ed i miei pensieri tramite l\'arte, l\'unico mezzo che mi permette a pieno di esprimere pensieri e stati d\'animo.';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';
@@ -224,6 +227,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Supportami';
+            toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Ringrazio';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';

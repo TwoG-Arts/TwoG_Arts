@@ -142,15 +142,15 @@ img {
     text-align: left;
 }
 
-.sideBut button:hover #YoRHa {
+.sideBut .button:hover #YoRHa {
     background-position: left bottom;
 }
 
-.sideBut button:hover .en {
+.sideBut .button:hover .en {
     background-position: left bottom;
 }
 
-.sideBut button:hover {
+.sideBut .button:hover {
     background-position: left bottom;
 }
 
@@ -463,7 +463,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1, #contacts h1, #specialThx h1, .mobileSupportMe h1 {
+.lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1, #contacts h1, #specialThx h1, .mobileSupportMe h1, .rightBlock h1, .collabdiv h1 {
     background-color: #4E4B42;
     margin-right: auto;
     margin-left: auto;

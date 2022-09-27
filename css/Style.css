@@ -117,6 +117,7 @@ img {
     background: #B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom;
     background-size: 200% 100%;
     transition: all 0.4s ease;
+    animation-fill-mode: both;
     min-width: 16rem;
     border: none;
     margin: 1rem;

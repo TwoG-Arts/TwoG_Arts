@@ -45,14 +45,20 @@ img {
 
 .buttons button:hover {
     transform: scale(1.1);
+    animation: appear .2s ease-in;
     background-image: url("../images/overlayButtons.png");
     background-size: contain;
+}
+
+@keyframes appear {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
 .buttons p {
     display: inline-block;
     font-size: 3.25rem;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-family: BreezeSans, sans-serif;
     color: #343127;
 }

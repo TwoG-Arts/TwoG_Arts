@@ -79,7 +79,6 @@ function clicked(i) {
     selected.style.animationFillMode = 'both';
     selectedText.style.background = '#B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom';
     selectedText.style.backgroundSize = '200% 100%';
-    selectedText.style.webkitBackgroundClip = 'text';
     selectedText.style.transition = 'all 0.4s ease';
     selectedText.style.color = 'transparent';
     selected.classList.add('active');
@@ -92,7 +91,6 @@ function clicked(i) {
         prevButtonText.style.backgroundPosition = 'right bottom';
         prevButtonText.style.backgroundSize = '200% 100%';
         prevButtonText.style.transition = 'all 0.4s ease';
-        prevButtonText.style.webkitBackgroundClip = 'text';
         prevButtonText.style.color = 'transparent';
         prevButton = selected;
         prevButtonText = selectedText;

@@ -73,13 +73,13 @@ function aboutMe() {
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
     const selectedText = selected.getElementsByTagName('div')[1];
-    selected.style.backgroundColor = '#4E4B42';
-    selectedText.style.backgroundColor = '#B4AE9A';
+    selected.style.backgroundPosition = 'left bottom';
+    selectedText.style.backgroundPosition = 'left bottom';
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
-        prevButton.style.backgroundColor = '#B4AE9A';
-        prevButtonText.style.backgroundColor = '#4E4B42';
+        prevButton.style.backgroundPosition = 'right bottom';
+        prevButtonText.style.backgroundPosition = 'right bottom';
         prevButton = selected;
         prevButtonText = selectedText;
     }

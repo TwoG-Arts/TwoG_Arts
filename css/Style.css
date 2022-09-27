@@ -40,7 +40,7 @@ img {
     background-color: #B4AE9A;
     box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
     border-bottom: 2rem #343127;
-    transition: transform .2s;
+    transition: all .2s;
 }
 
 .buttons button:hover {

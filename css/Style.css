@@ -114,7 +114,8 @@ img {
 }
 
 .sideBut button {
-    background-color: #B4AE9A;
+    background: #B4AE9A linear-gradient(to right, #B4AE9A 50%, #4E4B42 50%) left bottom;
+    background-size: 200% 100%;
     min-width: 16rem;
     border: none;
     margin: 1rem;
@@ -128,6 +129,10 @@ img {
     font-size: 2rem;
     font-weight: bolder;
     text-align: left;
+}
+
+#YoRHa, .button .en {
+    -webkit-background-clip: text;
 }
 
 .sideStyle {

@@ -13,6 +13,14 @@ $(function () {
     }
 });
 
+const hover = document.getElementsByClassName('button')[i];
+const hoverText = hover.getElementsByTagName('div')[1];
+hover.hover(function(){
+    $(this).css("background-position", "right bottom");
+}, function(){
+    $(this).css("background-position", "left bottom");
+})
+
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');

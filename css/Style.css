@@ -142,18 +142,6 @@ img {
     text-align: left;
 }
 
-.sideBut .button:hover #YoRHa {
-    background-position: left bottom;
-}
-
-.sideBut .button:hover .en {
-    background-position: left bottom;
-}
-
-.sideBut .button:hover {
-    background-position: left bottom;
-}
-
 #YoRHa, .button .en {
     background: #4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom;
     background-size: 200% 100%;

@@ -721,7 +721,7 @@ input:checked + .slider:before {
         width: 20rem;
     }
 
-    .rightBlock #logoAboutMe {
+    .rightBlock #logoAboutMe, #welcome {
         display: none;
     }
 

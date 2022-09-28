@@ -139,6 +139,7 @@ function language() {
     if (check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
+        toTranslate[it.next().value].textContent = 'Other';
         if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'About Me';
         } else if ($(window).width() <= 1100) {
@@ -204,6 +205,7 @@ function language() {
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
+        toTranslate[it.next().value].textContent = 'Altro';
         if (!(design || editing)) {
             toTranslate[it.next().value].textContent = 'Chi sono';
         } else if ($(window).width() <= 1100) {

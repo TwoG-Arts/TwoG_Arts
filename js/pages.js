@@ -13,13 +13,17 @@ $(function () {
     }
 });
 
-const hover = document.getElementsByClassName('button')[i];
+const hover = document.getElementsByClassName('button');
 const hoverText = hover.getElementsByTagName('div')[1];
-hover.hover(function(){
-    $(this).css("background-position", "right bottom");
-}, function(){
+$(document).ready(function(){
+$(hover).hover(function(){
     $(this).css("background-position", "left bottom");
-})
+    $(hoverText).css("background-position", "left bottom");
+}, function() {
+    $(this).css("background-position", "right bottom");
+    $(hoverText).css("background-position", "right bottom");
+    });
+});
 
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];

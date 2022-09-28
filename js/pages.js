@@ -78,8 +78,8 @@ function clicked(i) {
     selected.classList.add('active');
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
-        prevButton.style.backgroundPosition = 'left bottom';
-        prevButtonText.style.backgroundPosition = 'left bottom';
+        prevButton.style.backgroundPosition = 'right bottom';
+        prevButtonText.style.backgroundPosition = 'right bottom';
         prevButton = selected;
         prevButtonText = selectedText;
     }

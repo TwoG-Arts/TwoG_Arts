@@ -191,7 +191,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
-            toTranslate[it.next().value].innerHTML = 'Gojo from Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
+            toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki from Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'The Rumbling from Attack on Titan. <sub>PH: Me.</sub>';
@@ -256,7 +256,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
         }
         if (editing) {
-            toTranslate[it.next().value].innerHTML = 'Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
+            toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Il Boato da L\'attacco dei Giganti. <sub>PH: Me.</sub>';

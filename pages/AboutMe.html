@@ -8,8 +8,16 @@
             clicked(0);
             select(0);
             language();
-
-
+        });
+        const buttons = document.getElementsByClassName('button');
+        $(document).ready(function(){
+            $(buttons).children().hover(function(){
+                (this).element.style.backgroundPosition = 'left bottom';
+                (this).lastChild.style.backgroundPosition = 'left bottom';
+            }, function() {
+                (this).element.style.backgroundPosition = 'right bottom';
+                (this).lastChild.style.backgroundPosition = 'right bottom';
+            });
         });
     </script>
 </head>

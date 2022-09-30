@@ -453,6 +453,7 @@ input:checked + .slider:before {
 
 .lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1, #contacts h1, #specialThx h1, .mobileSupportMe h1, .rightBlock h1, .collabdiv h1 {
     background-color: #4E4B42;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0.5rem;

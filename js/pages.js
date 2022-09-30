@@ -13,17 +13,6 @@ $(function () {
     }
 });
 
-const buttons = document.getElementsByClassName('button');
-$(document).ready(function(){
-    $(buttons).children().hover(function(){
-        (this).item().style.backgroundPosition = 'left bottom';
-        (this).lastChild.style.backgroundPosition = 'left bottom';
-    }, function() {
-        (this).item().style.backgroundPosition = 'right bottom';
-        (this).lastChild.style.backgroundPosition = 'right bottom';
-    });
-});
-
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');

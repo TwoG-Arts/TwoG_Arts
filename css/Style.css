@@ -38,7 +38,7 @@ img {
     padding: 0;
     border: none;
     background-color: #B4AE9A;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     border-bottom: 2rem #343127;
     transition: all .2s;
 }
@@ -131,7 +131,7 @@ img {
     border: none;
     margin: 1rem;
     border-left: 0.5rem solid #4E4B42;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     padding-bottom: 0;
     padding-top: 0;
     height: 3rem;
@@ -162,7 +162,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     background-color: #B4AE9A;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     margin: 3rem 5rem;
     padding: 1.5rem;
 }
@@ -280,7 +280,7 @@ img {
 .collab h2 {
     text-align: center;
     color: #4E4B42;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     padding: 0.5rem;
     font-size: 3rem;
 }
@@ -314,7 +314,7 @@ img {
     overflow: auto;
     overflow-x: hidden;
     background-color: #B4AE9A;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
 }
 
 ::-webkit-scrollbar {
@@ -356,7 +356,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     padding: 0.75rem;
     margin-top: 16px;
     height: 9rem;
@@ -500,7 +500,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     margin: 1.5rem;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
 }
 
 .more:hover {
@@ -528,7 +528,7 @@ input:checked + .slider:before {
 }
 
 .mobileContacts, .mobileSupportMe {
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
     background-color: #B4AE9A;
     padding: 1rem;
     margin-top: 3rem;
@@ -607,7 +607,7 @@ input:checked + .slider:before {
     font-size: 1.5rem;
     background-color: #6A6555;
     padding: 0.5em;
-    box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+    box-shadow: 1px 2px 3px 3px #7e796b;
 }
 
 .triangle-down {
@@ -681,7 +681,7 @@ input:checked + .slider:before {
         background-color: #B4AE9A;
         max-height: none;
         padding: 1rem;
-        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+        box-shadow: 1px 2px 3px 3px #7e796b;
     }
 
     .mobile {
@@ -737,7 +737,7 @@ input:checked + .slider:before {
         display: block;
         padding: 1rem;
         background-color: #B4AE9A;
-        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0B0B0B;
+        box-shadow: 1px 2px 3px 3px #7e796b;
         margin: 3rem 0;
     }
 
@@ -827,7 +827,7 @@ input:checked + .slider:before {
         display: flex;
         justify-content: center;
         margin-bottom: 3rem;
-        box-shadow: 0.25rem 0.25rem 1rem 0.15rem #0b0b0b;
+        box-shadow: 1px 2px 3px 3px #7e796b;
     }
 
     .mobileCredits h2, .mobileCredits li {

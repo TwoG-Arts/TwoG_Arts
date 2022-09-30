@@ -12,12 +12,14 @@
 
         })
         const buttons = document.getElementsByClassName('button');
-        $(buttons).children().hover(function(){
-            (this).style.backgroundPosition = 'left bottom';
-            (this).lastChild.style.backgroundPosition = 'left bottom';
-        }, function() {
-            buttons.children().style.backgroundPosition = 'right bottom';
-            buttons.children().lastChild.style.backgroundPosition = 'right bottom';
+        $(document).ready(function(){
+            $(buttons).children().hover(function(){
+                (this).style.backgroundPosition = 'left bottom';
+                (this).lastChild.style.backgroundPosition = 'left bottom';
+            }, function() {
+                (this).style.backgroundPosition = 'right bottom';
+                (this).lastChild.style.backgroundPosition = 'right bottom';
+            });
         });
     </script>
 </head>

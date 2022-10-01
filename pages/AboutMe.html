@@ -10,19 +10,13 @@
             select(0);
             language();
         });
+        const sideBut = document.getElementsByClassName('sideBut')[0];
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
-        let i = 0;
-        let arr = [].slice.call(buttons);
-        arr.forEach(function (button) {
-            if (button === active) {
-                return i;
-            }
-            i++;
-        });
-        arr[i].remove();
+        sideBut.removeChild(active);
+        const inactives = sideBut.children;
         $(document).ready(function(){
-            $(arr).hover(function () {
+            $(inactives).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';
                 (this).lastChild.style.backgroundPosition = 'left bottom';
             }, function () {

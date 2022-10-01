@@ -13,7 +13,15 @@
         const sideBut = document.getElementsByClassName('sideBut')[0];
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
-        buttons.childNodes.removeChild(active);
+        let i = 0;
+        let arr = [].slice.call(buttons);
+        arr.forEach(function (button) {
+            if (button === active) {
+                return i;
+            }
+            i++;
+        });
+        buttons.childNodes.removeChild(i);
         $(document).ready(function(){
             $(buttons).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';

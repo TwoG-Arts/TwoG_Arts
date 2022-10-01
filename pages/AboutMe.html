@@ -13,10 +13,9 @@
         const sideBut = document.getElementsByClassName('sideBut')[0];
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
-        sideBut.parentNode.removeChild(active);
-        const inactives = sideBut.children;
+        buttons.childNodes.removeChild(active);
         $(document).ready(function(){
-            $(inactives).hover(function () {
+            $(buttons).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';
                 (this).lastChild.style.backgroundPosition = 'left bottom';
             }, function () {

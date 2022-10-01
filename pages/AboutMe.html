@@ -11,7 +11,8 @@
         });
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
-        const inactives = buttons.removeChild(active);
+        buttons.parentNode.removeChild(active);
+        const inactives = buttons;
         $(document).ready(function(){
             $(inactives).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';

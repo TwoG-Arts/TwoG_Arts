@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
-    <script src="jquery/jquery.js"></script>
+    <script src="../jquery/jquery.js"></script>
     <script>
         $(function () {
             clicked(0);
@@ -11,9 +11,11 @@
             language();
         });
         let buttons = document.getElementsByClassName('button');
-        let active = buttons.getElementsByClassName('active')[0];
+        let active = document.getElementsByClassName('active')[0];
+
+        buttons.removeChild(active);
         $(document).ready(function(){
-            $(buttons).children(buttons).hover(function () {
+            $(buttons).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';
                 (this).lastChild.style.backgroundPosition = 'left bottom';
             }, function () {

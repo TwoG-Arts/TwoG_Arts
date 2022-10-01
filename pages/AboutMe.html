@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <script src="jquery/jquery.js"></script>
     <script>
         $(function () {
             clicked(0);
             select(0);
             language();
         });
-        const sideBut = document.getElementsByClassName('sideBut')[0];
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
         let i = 0;
-        buttons.forEach(function (button) {
-            if(button === active) {
+        let arr = [].slice.call(buttons);
+        arr.forEach(function (button) {
+            if (button === active) {
                 return i;
             }
             i++;

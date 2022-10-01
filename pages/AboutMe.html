@@ -11,7 +11,8 @@
         });
         const sideBut = document.getElementsByClassName('sideBut')[0];
         const active = document.getElementsByClassName('active')[0];
-        const inactives = sideBut.children().remove(active);
+        const inactives = sideBut.children;
+        inactives.remove(active);
         $(document).ready(function(){
             $(inactives).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';

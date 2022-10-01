@@ -9,10 +9,9 @@
             select(0);
             language();
         });
-        const buttons = document.getElementsByClassName('button');
+        const sideBut = document.getElementsByClassName('sideBut')[0];
         const active = document.getElementsByClassName('active')[0];
-        buttons.parentNode.removeChild(active);
-        const inactives = buttons;
+        const inactives = sideBut.children().remove(active);
         $(document).ready(function(){
             $(inactives).hover(function () {
                 (this).parent.style.backgroundPosition = 'left bottom';

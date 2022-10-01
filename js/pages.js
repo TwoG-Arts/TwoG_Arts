@@ -1,5 +1,8 @@
 let prevButton = document.getElementById('2g');
 let prevButtonText = document.getElementById('YoRHa');
+let buttons = document.getElementsByClassName('button');
+let active = document.getElementsByClassName('active')[0];
+buttons.removeChild(active);
 let showing = null;
 
 $(function () {
@@ -11,6 +14,13 @@ $(function () {
     } else {
         random.textContent = 'Rankoll & 2G';
     }
+    $(buttons).hover(function () {
+        (this).parent.style.backgroundPosition = 'left bottom';
+        (this).lastChild.style.backgroundPosition = 'left bottom';
+    }, function () {
+        (this).parent.style.backgroundPosition = 'right bottom';
+        (this).lastChild.style.backgroundPosition = 'right bottom';
+    });
 });
 
 function videos() {

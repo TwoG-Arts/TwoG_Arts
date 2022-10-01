@@ -13,7 +13,7 @@
         const sideBut = document.getElementsByClassName('sideBut')[0];
         const buttons = document.getElementsByClassName('button');
         const active = document.getElementsByClassName('active')[0];
-        sideBut.removeChild(active);
+        sideBut.parentNode.removeChild(active);
         const inactives = sideBut.children;
         $(document).ready(function(){
             $(inactives).hover(function () {

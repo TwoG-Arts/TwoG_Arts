@@ -1,7 +1,7 @@
 let prevButton = document.getElementById('2g');
 let prevButtonText = document.getElementById('YoRHa');
 let buttons = document.getElementsByClassName('button');
-let active = buttons.getElementsByClassName('active')[0];
+let active = document.getElementsByClassName('active')[0];
 let showing = null;
 
 $(function () {

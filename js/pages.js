@@ -1,4 +1,5 @@
 let prevButton = document.getElementById('2g');
+let prevHeaderButton = document.getElementsByClassName('works')[0];
 let prevButtonText = document.getElementById('YoRHa');
 let buttons = document.getElementsByClassName('button');
 let active = document.getElementsByClassName('active')[0];
@@ -79,6 +80,18 @@ function aboutMe() {
     $(".home").html('Chi sono');
 }
 
+function headerButtons(i) {
+    const selected = document.getElementsByClassName('works')[i];
+    selected.style.transform = 'scale(1.1)';
+    selected.classList.add('on');
+    if (prevHeaderButton !== null && prevHeaderButton !== selected) {
+        prevHeaderButton.classList.remove('on');
+        prevHeaderButton.style.transform = 'scale(1.0)';
+        prevHeaderButton = selected;
+    }
+    prevHeaderButton = selected;
+}
+
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
     const selectedText = selected.getElementsByTagName('div')[1];
@@ -130,6 +143,7 @@ function language() {
     let wrap = document.getElementById('default');
     let design = document.getElementById('design');
     let editing = document.getElementById('editing');
+    let video = document.getElementById('video');
     let check = document.getElementsByClassName('check')[0];
     let it = makeRangeIterator(0, 150, 1);
 
@@ -182,12 +196,15 @@ function language() {
 
         }
         if (design) {
+            toTranslate[it.next().value].textContent = 'Drawings';
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
         }
         if (editing) {
+            toTranslate[it.next().value].textContent = 'Originals';
+            toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki from Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
@@ -198,6 +215,10 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Thor Ravager from Thor Love&Thunder by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Aiden Pearce from Watch Dogs. <sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Soul from Dark Souls. <sub>PH: Me.</sub>';
+        }
+        if (video) {
+            toTranslate[it.next().value].textContent = 'Originals';
+            toTranslate[it.next().value].textContent = 'Collaborations';
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
@@ -248,11 +269,15 @@ function language() {
 
         }
         if (design) {
+            toTranslate[it.next().value].textContent = 'Disegni';
+
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
         }
         if (editing) {
+            toTranslate[it.next().value].textContent = 'Originali';
+            toTranslate[it.next().value].textContent = 'Collaborazoni';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
@@ -263,6 +288,10 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Thor Ravager da Thor Love&Thunder by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Aiden Pearce da Watch Dogs. <sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Anima da Dark Souls. <sub>PH: Me.</sub>';
+        }
+        if (video) {
+            toTranslate[it.next().value].textContent = 'Originali';
+            toTranslate[it.next().value].textContent = 'Collaborazioni';
         }
     }
 }

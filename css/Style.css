@@ -338,7 +338,7 @@ img {
 }
 
 .video img {
-    width: 27rem;
+    width: 100%;
 }
 
 .video a {

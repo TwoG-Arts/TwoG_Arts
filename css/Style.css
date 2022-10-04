@@ -101,7 +101,7 @@ img {
     position: relative;
     top: 2rem;
     width: 22%;
-    height: 15rem;
+    height: 1rem;
 }
 
 .language {
@@ -165,6 +165,10 @@ img {
     box-shadow: 1px 2px 3px 3px #7e796b;
     margin: 3rem 5rem;
     padding: 1.5rem;
+}
+
+.Designs .rightBlock, .Videos .rightBlock, .Editing .rightBlock {
+    justify-content: space-evenly;
 }
 
 #firstPart {
@@ -333,8 +337,8 @@ img {
 .video {
     display: flex;
     justify-content: center;
-    width: 36rem;
-    padding: 1.5rem;
+    width: 25rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .video img {
@@ -355,6 +359,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     align-items: center;
     box-shadow: 1px 2px 3px 3px #7e796b;
     padding: 0.75rem;
@@ -854,12 +859,16 @@ input:checked + .slider:before {
         margin: 1rem;
     }
 
+    .video {
+        width: 50%;
+    }
+
     .video img {
-        width: 44rem;
+        width: 100%;
     }
 
     .video p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .rightBlock {

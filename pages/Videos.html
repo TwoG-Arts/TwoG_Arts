@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Videos</title>
+    <script>
+        $(function () {
+            clicked(0);
+            select(0);
+            language();
+        });
+    </script>
 </head>
 <body>
 <div class="wrap" id="video">
@@ -17,7 +24,7 @@
         </button>
     </div>
     <div class="infoAboutMe">
-        <div class="rightBlock">
+        <div class="rightBlock show">
             <!--add the most recent original video below-->
 
             <div class="video">
@@ -42,7 +49,7 @@
                 </a>
             </div>
         </div>
-        <div class="rightBlock">
+        <div class="rightBlock show">
             <!--add the most recent collaboration video below-->
 
             <div class="video">

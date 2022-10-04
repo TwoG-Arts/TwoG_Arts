@@ -7,6 +7,8 @@ let showing = null;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
+    prevHeaderButton.classList.add('on');
+    headerButtons(0);
     let random = document.getElementById('banana');
     let num = Math.floor(Math.random() * 2);
     if (num === 0) {
@@ -82,11 +84,11 @@ function aboutMe() {
 
 function headerButtons(i) {
     const selected = document.getElementsByClassName('works')[i];
-    selected.style.transform = 'scale(1.1)';
+    selected.style.transform = 'scale(1.0)';
     selected.classList.add('on');
     if (prevHeaderButton !== null && prevHeaderButton !== selected) {
         prevHeaderButton.classList.remove('on');
-        prevHeaderButton.style.transform = 'scale(1.0)';
+        prevHeaderButton.style.transform = 'scale(1.1)';
         prevHeaderButton = selected;
     }
     prevHeaderButton = selected;

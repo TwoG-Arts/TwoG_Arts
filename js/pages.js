@@ -7,8 +7,6 @@ let showing = null;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
-    prevHeaderButton.classList.add('on');
-    headerButtons(0);
     let random = document.getElementById('banana');
     let num = Math.floor(Math.random() * 2);
     if (num === 0) {
@@ -16,13 +14,18 @@ $(function () {
     } else {
         random.textContent = 'Rankoll & 2G';
     }
-    $(buttons).hover(function () {
+});
+
+$(function () {
+    for (const button of buttons){
+    $(button).hover(function () {
         (this).parent.style.backgroundPosition = 'left bottom';
         (this).lastChild.style.backgroundPosition = 'left bottom';
     }, function () {
         (this).parent.style.backgroundPosition = 'right bottom';
         (this).lastChild.style.backgroundPosition = 'right bottom';
     });
+    }
 });
 
 function videos() {
@@ -279,7 +282,7 @@ function language() {
         }
         if (editing) {
             toTranslate[it.next().value].textContent = 'Originali';
-            toTranslate[it.next().value].textContent = 'Collaborazoni';
+            toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';

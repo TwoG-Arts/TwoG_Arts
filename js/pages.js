@@ -15,17 +15,18 @@ $(function () {
     }
 });
 
+function selectionLeave() {
+    $(prevButton).css("background-position", "left bottom");
+    $(prevButtonText).css("background-position", "left bottom");
+}
+
 function selection() {
     for (let i=0; i<5; i++) {
         let hoverButton = document.getElementsByClassName('button')[i];
         let hoverText = hoverButton.getElementsByTagName('div')[1];
-        if(prevButton !== hoverButton) {
-            $(hoverButton).css("background-position", "right bottom");
-            $(hoverText).css("background-position", "right bottom");
-        }
+        $(hoverButton).css("background-position", "right bottom");
+        $(hoverText).css("background-position", "right bottom");
     }
-    $(prevButton).css("background-position", "left bottom");
-    $(prevButtonText).css("background-position", "left bottom");
 }
 
 function buttonHover(i) {
@@ -35,7 +36,21 @@ function buttonHover(i) {
     $(buttonText).css("background-position", "left bottom");
 }
 
+function buttonLeave(i) {
+    let button = document.getElementsByClassName('button')[i];
+    let buttonText = button.getElementsByTagName('div')[1];
+    $(button).css("background-position", "right bottom");
+    $(buttonText).css("background-position", "right bottom");
+}
+
 /*
+    let buttons = document.getElementsByClassName('button');
+    for (let button of buttons) {
+        let hoverText = button.getElementsByTagName('div')[1];
+            $(button).css("background-position", "right bottom");
+            $(hoverText).css("background-position", "right bottom");
+    }
+
     $(buttons).hover(function () {
         let hovered = $(this).getElementsByTagName('div')[1];
         $(this).css("background-position", "left bottom");
@@ -226,7 +241,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
-            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting.';
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
 
         }

@@ -13,26 +13,26 @@
 </head>
 <body>
 <div class="wrap" id="default">
-    <div class="sideBut" id="wrapper" onmouseover="selection()">
+    <div class="sideBut" id="wrapper" onmouseover="selection()" onmouseleave="selectionLeave()">
         <button class="button" id="2g" onclick="select(0);clicked(0)">
             <div class="sideStyle"></div>
-            <div id="YoRHa" onmouseover="buttonHover(0)">YoRHa 2G</div>
+            <div id="YoRHa" onmouseover="buttonHover(0)" onmouseleave="buttonLeave(0)">YoRHa 2G</div>
         </button>
         <button class="button" onclick="select(1);clicked(1)">
             <div class="sideStyle"></div>
-            <div class="en" onmouseover="buttonHover(1)">Lavori</div>
+            <div class="en" onmouseover="buttonHover(1)" onmouseleave="buttonLeave(1)">Lavori</div>
         </button>
         <button class="button" onclick="select(2);clicked(2)">
             <div class="sideStyle"></div>
-            <div class="en" onmouseover="buttonHover(2)">Contatti</div>
+            <div class="en" onmouseover="buttonHover(2)" onmouseleave="buttonLeave(2)">Contatti</div>
         </button>
         <button class="button" onclick="select(3);clicked(3)">
             <div class="sideStyle"></div>
-            <div class="en" onmouseover="buttonHover(3)">Collaborazioni</div>
+            <div class="en" onmouseover="buttonHover(3)" onmouseleave="buttonLeave(3)">Collaborazioni</div>
         </button>
         <button class="button" onclick="select(4);clicked(4)">
             <div class="sideStyle"></div>
-            <div class="en" onmouseover="buttonHover(4)">Ringraziamenti</div>
+            <div class="en" onmouseover="buttonHover(4)" onmouseleave="buttonLeave(4)">Ringraziamenti</div>
         </button>
     </div>
     <div class="infoAboutMe">

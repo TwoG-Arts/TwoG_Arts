@@ -482,6 +482,12 @@ input:checked + .slider:before {
     overflow-x: hidden;
 }
 
+.spacing {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
 .collabdiv {
     display: flex;
     flex-wrap: wrap;

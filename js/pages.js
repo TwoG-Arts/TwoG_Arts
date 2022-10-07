@@ -16,17 +16,21 @@ $(function () {
 });
 
 function selection() {
-    let sideBut = document.getElementsByClassName('sideBut')[0];
-    let buttons = sideBut.children;
-    for (let button in buttons) {
+    for (let i=0; i<5; i++) {
+        let button = document.getElementsByClassName('button')[i];
+        let selectedText = button.getElementsByTagName('div')[1];
         $(button).css("background-position", "right bottom");
+        $(selectedText).css("background-position", "right bottom");
     }
+    $(prevButton).css("background-position", "left bottom");
+    $(prevButtonText).css("background-position", "left bottom");
 }
 
 function buttonHover(i) {
     let button = document.getElementsByClassName('button')[i];
-    $(button).style.backgroundPosition = 'left bottom';
-    $(button).lastChild.style.backgroundPosition = 'left bottom';
+    let buttonText = button.getElementsByTagName('div')[1];
+    $(button).css("background-position", "left bottom");
+    $(buttonText).css("background-position", "left bottom");
 }
 
 /*

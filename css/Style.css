@@ -482,6 +482,22 @@ input:checked + .slider:before {
     overflow-x: hidden;
 }
 
+.lavori .video {
+    width: 50%;
+}
+
+#drawings {
+    width: 25rem;
+    height: auto;
+}
+
+.Videos .video, .Designs .video {
+    width: 50%;
+    height: 36rem;
+}
+
+
+
 .spacing {
     display: flex;
     justify-content: space-evenly;
@@ -701,7 +717,7 @@ input:checked + .slider:before {
         flex-direction: column;
     }
 
-    .works, .sideBut {
+    .works, .sideBut, .highlight h2 {
         display: none;
     }
 

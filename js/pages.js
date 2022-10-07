@@ -19,16 +19,16 @@ function selection() {
     let sideBut = document.getElementsByClassName('sideBut')[0];
     let buttons = sideBut.children;
     for (let button in buttons) {
-        button.css("background-position", "right bottom");
+        $(button).css("background-position", "right bottom");
     }
-    buttons.hover(function () {
+    $(buttons).hover(function () {
+        let hovered = $(this).getElementsByTagName('div')[1];
         $(this).css("background-position", "left bottom");
-        $(this).lastChild.css("background-position", "left bottom");
+        $(hovered).css("background-position", "left bottom");
     }, function () {
-        for (let button in buttons) {
-        button.css("background-position", "right bottom");
-        button.lastChild.css("background-position", "right bottom");
-        }
+        let hovered = buttons.getElementsByTagName('div')[1];
+        $(buttons).css("background-position", "right bottom");
+        $(hovered).lastChild.css("background-position", "right bottom");
     });
 }
 
@@ -191,7 +191,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Works';
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
-            toTranslate[it.next().value].textContent = 'Credits';
+            toTranslate[it.next().value].textContent = 'Special Thanks';
             toTranslate[it.next().value].textContent = 'About Me';
             toTranslate[it.next().value].textContent = 'Welcome';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">My name is Luigi "2G" Balzano and I\'m born in Torre Annunziata near Naples. I attend the Academy of Fine Arts, thanks to which I had the chance to grow my passion for the arts, powered by the interests that I developed throught the years. I learned computer science skills, precious to me, that helped me express my ideas through my works. You could surely notice how many of my creations have been affected by the works with which I resonate the most, for example Steins;Gate, which tells the deep story of a man I see me in tune with; from the manga Attack on Titan, practically showing how a good technique alone isn\'t enough and it has to carry a more important message; also, in my works I tend to bend reality without parting from it, under the influence of two great directors like Christopher Nolan and Martin Scorsese. I put a lot of emphasis on shaping my emotions and my thoughts through arts, the only means that allows me to fully express thoughts and moods.';
@@ -199,12 +199,12 @@ function language() {
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].textContent = 'Collaborations';
-            toTranslate[it.next().value].textContent = 'Credits';
-            toTranslate[it.next().value].textContent = 'Thanking';
+            toTranslate[it.next().value].textContent = 'Special Thanks';
+            toTranslate[it.next().value].textContent = 'Special Thanks';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
-            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting.';
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Support Me';
@@ -268,7 +268,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Lavori';
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
-            toTranslate[it.next().value].textContent = 'Crediti';
+            toTranslate[it.next().value].textContent = 'Ringraziamenti';
             toTranslate[it.next().value].textContent = 'Chi sono';
             toTranslate[it.next().value].textContent = 'Benvenuti';
             toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Mi chiamo Luigi "2G" Balzano e sono nato a Torre Annunziata nel napoletano. Frequento l\'Accademia delle Belle Arti, grazie alla quale ho avuto la possibilità di coltivare la mia passione per l\'arte, alimentata anche dagli interessi sviluppati nel corso degli anni. Ho appreso delle conoscenze di informatica che mi sono state preziose per esprimere le mie idee attraverso i lavori. Noterete sicuramente come molte delle mie creazioni siano state influenzate dalle opere con cui risuono di più, ad esempio dall\'anime Steins; Gate, il quale racconta una storia profonda che mi vede in sintonia col protagonista; dal manga Attack on Titan, dimostrazione pratica di come la tecnica da sola non basta e deve essere veicolo di un messaggio importante; inoltre, nei miei lavori tendo a piegare la realtà senza distaccarmene, sotto influenza di due grandi registi come Christopher Nolan e Martin Scorsese. Pongo molta enfasi nel dare una forma alle miei emozioni ed i miei pensieri tramite l\'arte, l\'unico mezzo che mi permette a pieno di esprimere pensieri e stati d\'animo.';
@@ -276,8 +276,8 @@ function language() {
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
-            toTranslate[it.next().value].textContent = 'Crediti';
-            toTranslate[it.next().value].textContent = 'Ringrazio';
+            toTranslate[it.next().value].textContent = 'Ringraziamenti';
+            toTranslate[it.next().value].textContent = 'Ringraziamenti';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';
@@ -290,7 +290,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';
-            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting';
+            toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting.';
             toTranslate[it.next().value].innerHTML = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
 
         }

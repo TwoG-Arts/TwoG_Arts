@@ -1,7 +1,6 @@
 let prevButton = document.getElementById('2g');
 let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
-let buttons = document.getElementsByClassName('button');
 let showing = null;
 
 $(function () {
@@ -16,6 +15,20 @@ $(function () {
     }
 });
 
+function selection() {
+    let sideBut = document.getElementsByClassName('sideBut')[0];
+    let buttons = sideBut.children;
+    buttons.style.backgroundPosition = 'right bottom';
+    buttons.hover(function () {
+        $(this).style.backgroundPosition = 'left bottom';
+        $(this).lastChild.style.backgroundPosition = 'left bottom';
+    }, function () {
+        buttons.style.backgroundPosition = 'right bottom';
+        buttons.lastChild.style.backgroundPosition = 'right bottom';
+    });
+}
+
+/*
 $(function () {
     for (const button of buttons){
     $(button).hover(function () {
@@ -26,7 +39,7 @@ $(function () {
         (this).lastChild.style.backgroundPosition = 'right bottom';
     });
     }
-});
+});*/
 
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];

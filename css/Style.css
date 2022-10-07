@@ -32,6 +32,7 @@ img {
 }
 
 .buttons button {
+    position: relative;
     width: 23rem;
     height: 5.5rem;
     margin: 1rem 2rem;
@@ -658,6 +659,25 @@ input:checked + .slider:before {
 .moreAbout {
     display: block;
 }
+
+.overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay-right img {
+    transform: rotate(180deg);
+    width: 5.5rem;
+}
+
+
 
 @media only screen and (max-width: 1770px) {
     .buttons {

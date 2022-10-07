@@ -102,6 +102,7 @@ img {
     top: 2rem;
     width: 22%;
     height: 100%;
+    z-index: -1;
 }
 
 .language {
@@ -381,6 +382,7 @@ p {
 .video sub {
     display: block;
     margin-top: 1rem;
+    bottom: 0;
 }
 
 .video .text img {

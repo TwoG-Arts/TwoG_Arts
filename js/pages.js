@@ -18,13 +18,17 @@ $(function () {
 function selection() {
     let sideBut = document.getElementsByClassName('sideBut')[0];
     let buttons = sideBut.children;
-    buttons.style.backgroundPosition = 'right bottom';
+    for (let button in buttons)
+        button.style.backgroundPosition = 'right bottom';
+
     buttons.hover(function () {
         $(this).style.backgroundPosition = 'left bottom';
         $(this).lastChild.style.backgroundPosition = 'left bottom';
     }, function () {
-        buttons.style.backgroundPosition = 'right bottom';
-        buttons.lastChild.style.backgroundPosition = 'right bottom';
+        for (let button in buttons) {
+        button.style.backgroundPosition = 'right bottom';
+        button.lastChild.style.backgroundPosition = 'right bottom';
+        }
     });
 }
 

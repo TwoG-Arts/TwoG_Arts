@@ -17,10 +17,12 @@ $(function () {
 
 function selection() {
     for (let i=0; i<5; i++) {
-        let button = document.getElementsByClassName('button')[i];
-        let selectedText = button.getElementsByTagName('div')[1];
-        $(button).css("background-position", "right bottom");
-        $(selectedText).css("background-position", "right bottom");
+        let hoverButton = document.getElementsByClassName('button')[i];
+        let hoverText = hoverButton.getElementsByTagName('div')[1];
+        if(prevButton !== hoverButton) {
+            $(hoverButton).css("background-position", "right bottom");
+            $(hoverText).css("background-position", "right bottom");
+        }
     }
     $(prevButton).css("background-position", "left bottom");
     $(prevButtonText).css("background-position", "left bottom");

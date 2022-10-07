@@ -7,6 +7,7 @@ let showing = null;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
+    headerButtons(0);
     let random = document.getElementById('banana');
     let num = Math.floor(Math.random() * 2);
     if (num === 0) {
@@ -201,7 +202,11 @@ function language() {
 
         }
         if (design) {
+            toTranslate[it.next().value].textContent = 'Design';
+            toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = 'Drawings';
+            toTranslate[it.next().value].textContent = '3D';
+
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
@@ -274,7 +279,10 @@ function language() {
 
         }
         if (design) {
+            toTranslate[it.next().value].textContent = 'Design';
+            toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = 'Disegni';
+            toTranslate[it.next().value].textContent = '3D';
 
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';

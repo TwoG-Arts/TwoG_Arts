@@ -1,8 +1,7 @@
 let prevButton = document.getElementById('2g');
-let prevHeaderButton = document.getElementsByClassName('works')[0];
+let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
 let buttons = document.getElementsByClassName('button');
-let active = document.getElementsByClassName('active')[0];
 let showing = null;
 
 $(function () {
@@ -88,11 +87,11 @@ function aboutMe() {
 
 function headerButtons(i) {
     const selected = document.getElementsByClassName('works')[i];
-    selected.style.transform = 'scale(1.0)';
-    selected.classList.add('on');
+    selected.style.transform = 'scale(1.1)';
+    selected.classList.add('active');
     if (prevHeaderButton !== null && prevHeaderButton !== selected) {
-        prevHeaderButton.classList.remove('on');
-        prevHeaderButton.style.transform = 'scale(1.1)';
+        prevHeaderButton.classList.remove('active');
+        prevHeaderButton.style.transform = 'initial';
         prevHeaderButton = selected;
     }
     prevHeaderButton = selected;

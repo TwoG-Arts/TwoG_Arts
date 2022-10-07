@@ -482,11 +482,11 @@ input:checked + .slider:before {
     overflow-x: hidden;
 }
 
-.lavori .video {
+.AboutMe .lavori .video {
     width: 50%;
 }
 
-#drawings {
+#drawings .video {
     width: 25rem;
     height: auto;
 }
@@ -495,8 +495,6 @@ input:checked + .slider:before {
     width: 50%;
     height: 36rem;
 }
-
-
 
 .spacing {
     display: flex;

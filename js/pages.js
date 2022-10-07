@@ -21,6 +21,15 @@ function selection() {
     for (let button in buttons) {
         $(button).css("background-position", "right bottom");
     }
+}
+
+function buttonHover(i) {
+    let button = document.getElementsByClassName('button')[i];
+    $(button).style.backgroundPosition = 'left bottom';
+    $(button).lastChild.style.backgroundPosition = 'left bottom';
+}
+
+/*
     $(buttons).hover(function () {
         let hovered = $(this).getElementsByTagName('div')[1];
         $(this).css("background-position", "left bottom");
@@ -30,9 +39,7 @@ function selection() {
         $(buttons).css("background-position", "right bottom");
         $(hovered).lastChild.css("background-position", "right bottom");
     });
-}
 
-/*
 $(function () {
     for (const button of buttons){
     $(button).hover(function () {
@@ -209,7 +216,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Support Me';
             toTranslate[it.next().value].textContent = 'Collaborations';
-            toTranslate[it.next().value].textContent = 'Thanking';
+            toTranslate[it.next().value].textContent = 'Special Thanks';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf for the supervision of texts.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> for the agreement of sharing the collaborations.';
@@ -286,7 +293,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Supportami';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
-            toTranslate[it.next().value].textContent = 'Ringrazio';
+            toTranslate[it.next().value].textContent = 'Ringraziamenti';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';
             toTranslate[it.next().value].innerHTML = 'lexA & Xion Romeruf per la revisione testi.';
             toTranslate[it.next().value].innerHTML = '<a href="https://www.instagram.com/michelelosciale/" target="_blank">Losmichele</a> & <a href="https://www.instagram.com/deadman_cosplay/" target="_blank">RaamDeadman</a> per aver acconsentito a pubblicare le collaborazioni.';

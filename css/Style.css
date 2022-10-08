@@ -662,7 +662,7 @@ input:checked + .slider:before {
     display: block;
 }
 
-.overlay-right, .overlay-left img {
+.overlay-right img, .overlay-left img {
     width: 4rem;
 }
 
@@ -763,7 +763,7 @@ input:checked + .slider:before {
         width: 100%;
     }
 
-    .mobile .lavori img {
+    .mobile .lavori .highlight img {
         width: 22rem;
     }
 
@@ -791,7 +791,7 @@ input:checked + .slider:before {
         margin: 3rem 0;
     }
 
-    .mobileCollab img {
+    .mobileCollab .highlight img {
         width: 5rem;
         display: inline-block;
         margin: 0.5rem 0;

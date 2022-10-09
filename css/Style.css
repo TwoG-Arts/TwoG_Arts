@@ -243,6 +243,10 @@ img {
   font-size: 2rem;
   font-weight: bolder;
 }
+.contactRowFooter img {
+    width: 2rem;
+    margin-right: 1rem;
+}
 
 .footer .contactRow img {
     width: 1.5rem;

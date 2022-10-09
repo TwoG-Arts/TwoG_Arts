@@ -237,6 +237,12 @@ img {
     width: 2rem;
     margin-right: 1rem;
 }
+.contactRowFooter{
+  color: #4E4B42;
+  font-family: BreezeSans, sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
 
 .footer .contactRow img {
     width: 1.5rem;
@@ -599,7 +605,7 @@ input:checked + .slider:before {
 
 .rightBlock h3 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #4E4B42;

@@ -75,14 +75,23 @@ $(function () {
     }
 });*/
 
-const widget = document.querySelector(".button");
+document.getElementsByClassName("button")[0].onmouseover = function() {mouseOver()};
+document.getElementsByClassName("button")[0].onmouseout = function() {mouseOut()};
+document.getElementsByClassName("button")[1].onmouseover = function() {mouseOver()};
+document.getElementsByClassName("button")[1].onmouseout = function() {mouseOut()};
+document.getElementsByClassName("button")[2].onmouseover = function() {mouseOver()};
+document.getElementsByClassName("button")[2].onmouseout = function() {mouseOut()};
+document.getElementsByClassName("button")[3].onmouseover = function() {mouseOver()};
+document.getElementsByClassName("button")[3].onmouseout = function() {mouseOut()};
+document.getElementsByClassName("button")[4].onmouseover = function() {mouseOver()};
+document.getElementsByClassName("button")[4].onmouseout = function() {mouseOut()};
 
-widget.addEventListener("mouseout", exitWidget);
+function mouseOver() {
+    document.getElementById("demo").style.backgroundPosition = "left bottom";
+}
 
-function exitWidget(event){
-    if(event.target === widget){
-        widget.classList.add("hovering");
-    }
+function mouseOut() {
+    document.getElementById("demo").style.backgroundPosition = "right bottom";
 }
 
 function videos() {

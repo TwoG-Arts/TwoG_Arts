@@ -15,18 +15,17 @@ $(function () {
     }
 });
 
-function selectionLeave() {
-    $(prevButton).css("background-position", "left bottom");
-    $(prevButtonText).css("background-position", "left bottom");
+document.getElementById("active").onmouseover = function() {mouseOver()};
+
+function mouseOver() {
+    document.getElementById("active").style.backgroundPosition = "left bottom";
 }
 
-function selection() {
-    for (let i=0; i<5; i++) {
-        let hoverButton = document.getElementsByClassName('button')[i];
-        let hoverText = hoverButton.getElementsByTagName('div')[1];
-        $(hoverButton).css("background-position", "right bottom");
-        $(hoverText).css("background-position", "right bottom");
-    }
+function selectionLeave() {
+    let buttonActive = document.getElementsByClassName('active')[0];
+    buttonActive.classList.add('hovering');
+    $(prevButton).css("background-position", "left bottom");
+    $(prevButtonText).css("background-position", "left bottom");
 }
 
 function buttonHover(i) {
@@ -43,6 +42,13 @@ function buttonLeave(i) {
     button.classList.remove('hovering');
     $(button).css("background-position", "right bottom");
     $(buttonText).css("background-position", "right bottom");
+}
+
+function selection() {
+    let activeButton = prevButton;
+    let activeButtonText = prevButtonText;
+    activeButton.style.backgroundPosition = "right bottom";
+    activeButtonText.style.backgroundPosition = "right bottom";
 }
 
 /*
@@ -74,25 +80,6 @@ $(function () {
     });
     }
 });*/
-
-document.getElementsByClassName("button")[0].onmouseover = function() {mouseOver()};
-document.getElementsByClassName("button")[0].onmouseout = function() {mouseOut()};
-document.getElementsByClassName("button")[1].onmouseover = function() {mouseOver()};
-document.getElementsByClassName("button")[1].onmouseout = function() {mouseOut()};
-document.getElementsByClassName("button")[2].onmouseover = function() {mouseOver()};
-document.getElementsByClassName("button")[2].onmouseout = function() {mouseOut()};
-document.getElementsByClassName("button")[3].onmouseover = function() {mouseOver()};
-document.getElementsByClassName("button")[3].onmouseout = function() {mouseOut()};
-document.getElementsByClassName("button")[4].onmouseover = function() {mouseOver()};
-document.getElementsByClassName("button")[4].onmouseout = function() {mouseOut()};
-
-function mouseOver() {
-    document.getElementById("demo").style.backgroundPosition = "left bottom";
-}
-
-function mouseOut() {
-    document.getElementById("demo").style.backgroundPosition = "right bottom";
-}
 
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
@@ -169,6 +156,7 @@ function clicked(i) {
     selected.style.backgroundPosition = 'left bottom';
     selectedText.style.backgroundPosition = 'left bottom';
     selected.classList.add('active');
+
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
         prevButton.style.backgroundPosition = 'right bottom';

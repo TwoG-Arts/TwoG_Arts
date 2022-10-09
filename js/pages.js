@@ -140,11 +140,11 @@ function aboutMe() {
 
 function headerButtons(i) {
     const selected = document.getElementsByClassName('works')[i];
-    selected.style.transform = 'scale(1.1)';
+    $(selected).css('transform', 'scale(1.1)');
     selected.classList.add('active');
     if (prevHeaderButton !== null && prevHeaderButton !== selected) {
         prevHeaderButton.classList.remove('active');
-        prevHeaderButton.style.transform = 'scale(1.0)';
+        $(prevHeaderButton).css('transform', 'scale(1.0)');
         prevHeaderButton = selected;
     }
     prevHeaderButton = selected;

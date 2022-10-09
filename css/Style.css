@@ -686,6 +686,10 @@ input:checked + .slider:before {
     transform: rotate(180deg);
 }
 
+.hovering:hover {
+    background-position: left bottom;
+}
+
 @media only screen and (max-width: 1770px) {
     .buttons {
         zoom: 85%;
@@ -930,5 +934,9 @@ input:checked + .slider:before {
     .buttons button:hover {
         transform: scale(1);
         background-image: none;
+    }
+
+    .infoAboutMe .rightBlock .lavori {
+        box-shadow: initial;
     }
 }

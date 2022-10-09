@@ -32,6 +32,7 @@ function selection() {
 function buttonHover(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
+    button.classList.add('hovering');
     $(button).css("background-position", "left bottom");
     $(buttonText).css("background-position", "left bottom");
 }
@@ -39,6 +40,7 @@ function buttonHover(i) {
 function buttonLeave(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
+    button.classList.remove('hovering');
     $(button).css("background-position", "right bottom");
     $(buttonText).css("background-position", "right bottom");
 }
@@ -72,6 +74,16 @@ $(function () {
     });
     }
 });*/
+
+const widget = document.querySelector(".button");
+
+widget.addEventListener("mouseout", exitWidget);
+
+function exitWidget(event){
+    if(event.target === widget){
+        widget.classList.add("hovering");
+    }
+}
 
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
@@ -136,7 +148,7 @@ function headerButtons(i) {
     selected.classList.add('active');
     if (prevHeaderButton !== null && prevHeaderButton !== selected) {
         prevHeaderButton.classList.remove('active');
-        prevHeaderButton.style.transform = 'initial';
+        prevHeaderButton.style.transform = 'scale(1.0)';
         prevHeaderButton = selected;
     }
     prevHeaderButton = selected;

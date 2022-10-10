@@ -15,12 +15,6 @@ $(function () {
     }
 });
 
-document.getElementById("active").onmouseover = function() {mouseOver()};
-
-function mouseOver() {
-    document.getElementById("active").style.backgroundPosition = "left bottom";
-}
-
 function selectionLeave() {
     let buttonActive = document.getElementsByClassName('active')[0];
     buttonActive.classList.add('hovering');
@@ -51,39 +45,11 @@ function selection() {
     activeButtonText.style.backgroundPosition = "right bottom";
 }
 
-/*
-    let buttons = document.getElementsByClassName('button');
-    for (let button of buttons) {
-        let hoverText = button.getElementsByTagName('div')[1];
-            $(button).css("background-position", "right bottom");
-            $(hoverText).css("background-position", "right bottom");
-    }
-
-    $(buttons).hover(function () {
-        let hovered = $(this).getElementsByTagName('div')[1];
-        $(this).css("background-position", "left bottom");
-        $(hovered).css("background-position", "left bottom");
-    }, function () {
-        let hovered = buttons.getElementsByTagName('div')[1];
-        $(buttons).css("background-position", "right bottom");
-        $(hovered).lastChild.css("background-position", "right bottom");
-    });
-
-$(function () {
-    for (const button of buttons){
-    $(button).hover(function () {
-        (this).parent.style.backgroundPosition = 'left bottom';
-        (this).lastChild.style.backgroundPosition = 'left bottom';
-    }, function () {
-        (this).parent.style.backgroundPosition = 'right bottom';
-        (this).lastChild.style.backgroundPosition = 'right bottom';
-    });
-    }
-});*/
-
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
+    const original = document.getElementById('original');
+    const collab = document.getElementById('collab');
 
     $(".Videos").load("pages/Videos.html");
     $(".Designs").html('');
@@ -91,12 +57,20 @@ function videos() {
     $(".Editing").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    original.style.display = 'none';
+    collab.style.display = 'none';
+    if ($(window).width() <= 1100) {
+        original.style.display = 'block';
+        collab.style.display = 'block';
+    }
     $(".home").html('Home');
 }
 
 function designs() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
+    const original = document.getElementById('original');
+    const collab = document.getElementById('collab');
 
     $(".Designs").load("pages/Designs.html");
     language();
@@ -105,12 +79,16 @@ function designs() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    original.style.display = 'none';
+    collab.style.display = 'none';
     $(".home").html('Home');
 }
 
 function editing() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
+    const original = document.getElementById('original');
+    const collab = document.getElementById('collab');
 
     $(".Editing").load("pages/Editing.html");
     language();
@@ -119,18 +97,27 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     work.style.display = 'none';
+    original.style.display = 'none';
+    collab.style.display = 'none';
+    if ($(window).width() <= 1100) {
+        original.style.display = 'block';
+        collab.style.display = 'block';
+    }
     $(".home").html('Home');
 }
 
 function aboutMe() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
-
+    const original = document.getElementById('originali');
+    const collab = document.getElementById('collab');
     $(".AboutMe").load("pages/AboutMe.html");
     language();
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');
+    original.style.display = 'none';
+    collab.style.display = 'none';
     if ($(window).width() <= 1100) {
         mob.style.display = 'flex';
         work.style.display = 'block';
@@ -140,11 +127,9 @@ function aboutMe() {
 
 function headerButtons(i) {
     const selected = document.getElementsByClassName('works')[i];
-    $(selected).css('transform', 'scale(1.1)');
-    selected.classList.add('active');
+    selected.classList.add('transform');
     if (prevHeaderButton !== null && prevHeaderButton !== selected) {
-        prevHeaderButton.classList.remove('active');
-        $(prevHeaderButton).css('transform', 'scale(1.0)');
+        prevHeaderButton.classList.remove('transform');
         prevHeaderButton = selected;
     }
     prevHeaderButton = selected;
@@ -217,6 +202,8 @@ function language() {
         } else {
             toTranslate[it.next().value].textContent = 'About Me';
         }
+        toTranslate[it.next().value].textContent = 'Originals';
+        toTranslate[it.next().value].textContent = 'Collab';
         toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'More edits';
@@ -299,6 +286,8 @@ function language() {
         } else {
             toTranslate[it.next().value].textContent = 'Chi sono';
         }
+        toTranslate[it.next().value].textContent = 'Originali';
+        toTranslate[it.next().value].textContent = 'Collab';
         toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'Più editing';

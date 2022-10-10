@@ -60,6 +60,7 @@ img {
 }
 
 .buttons p {
+    width: 100%;
     display: inline-block;
     font-size: 3.25rem;
     margin-bottom: 0;
@@ -68,9 +69,8 @@ img {
 }
 
 .buttons button img {
-    float: left;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     padding: 0.3rem;
     margin-left: 0.4rem;
 }
@@ -296,8 +296,8 @@ img {
 
 .collab {
     width: 50%;
-
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .collab img {
@@ -658,9 +658,9 @@ input:checked + .slider:before {
 .moreAbout {
     display: none;
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
     font-size: 1.5rem;
     background-color: #6A6555;
     padding: 0.5em;
@@ -670,9 +670,9 @@ input:checked + .slider:before {
 .triangle-down {
     display: inline;
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     width: 0;
     height: 0;
     border-left: 0.75rem solid transparent;
@@ -684,8 +684,7 @@ input:checked + .slider:before {
     position: relative;
 }
 
-.links a:hover
-.moreAbout {
+.popup:hover .moreAbout {
     display: block;
 }
 
@@ -715,6 +714,10 @@ input:checked + .slider:before {
 
 .notHovering:hover {
     background-position: right bottom;
+}
+
+.transform {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1770px) {
@@ -782,8 +785,15 @@ input:checked + .slider:before {
         height: 100px;
     }
 
-    #works, #aboutMe, .mobileCredits {
+    #works, .mobileCredits {
         display: block;
+    }
+
+    #aboutMe a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
     }
 
     header button {
@@ -935,7 +945,7 @@ input:checked + .slider:before {
     }
 
     .buttons button {
-        margin: 1rem;
+        margin: 0.75rem;
     }
 
     .video {

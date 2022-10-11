@@ -796,8 +796,16 @@ input:checked + .slider:before {
         display: block;
     }
 
-    #aboutMe, #original, #collab, #works {
+    #aboutMe, #original {
         display: block;
+    }
+
+    #aboutMe {
+        margin-right: 1.5%;
+    }
+
+    #works {
+        margin-left: 1.5%;
     }
 
     #aboutMe a, #works a {
@@ -956,7 +964,7 @@ input:checked + .slider:before {
     }
 
     .buttons button {
-        width: 30%;
+        width: 48.5%;
         margin: 0.75rem;
     }
 

@@ -32,7 +32,6 @@ img {
 }
 
 .buttons button {
-    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -721,6 +720,13 @@ input:checked + .slider:before {
     transform: scale(1.1);
 }
 
+.works a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1770px) {
     .buttons {
         zoom: 85%;
@@ -791,7 +797,7 @@ input:checked + .slider:before {
     }
 
     #aboutMe {
-        display: flex;
+        display: block;
     }
 
     #aboutMe a, #works a {
@@ -984,5 +990,9 @@ input:checked + .slider:before {
 
     .works {
         display: none;
+    }
+
+    .buttons button img {
+        width: 3rem;
     }
 }

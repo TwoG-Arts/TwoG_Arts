@@ -109,7 +109,7 @@ function editing() {
 function aboutMe() {
     const mob = document.getElementsByClassName('mobile')[0];
     const work = document.getElementById('works');
-    const original = document.getElementById('originali');
+    const original = document.getElementById('original');
     const collab = document.getElementById('collab');
     $(".AboutMe").load("pages/AboutMe.html");
     language();
@@ -120,7 +120,7 @@ function aboutMe() {
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
         mob.style.display = 'flex';
-        work.style.display = 'block';
+        work.style.display = 'flex';
     }
     $(".home").html('Chi sono');
 }

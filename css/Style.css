@@ -72,8 +72,7 @@ img {
 }
 
 .buttons button img {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
     padding: 0.3rem;
     margin-left: 0.4rem;
 }
@@ -779,7 +778,7 @@ input:checked + .slider:before {
         flex-direction: column;
     }
 
-    .works, .sideBut, .highlight h2 {
+    .sideBut, .highlight h2 {
         display: none;
     }
 
@@ -795,7 +794,7 @@ input:checked + .slider:before {
         display: flex;
     }
 
-    #aboutMe a {
+    #aboutMe a, #works a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -981,5 +980,9 @@ input:checked + .slider:before {
 
     .infoAboutMe .rightBlock .lavori {
         box-shadow: initial;
+    }
+
+    .works {
+        display: none;
     }
 }

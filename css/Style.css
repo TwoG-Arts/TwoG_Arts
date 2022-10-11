@@ -720,7 +720,7 @@ input:checked + .slider:before {
     transform: scale(1.1);
 }
 
-.works a {
+.buttons button a {
     display: flex;
     align-items: center;
     justify-content: center;

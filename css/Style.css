@@ -669,7 +669,9 @@ input:checked + .slider:before {
     font-size: 1.5rem;
     background-color: #6A6555;
     padding: 0.5em;
-    box-shadow: 1px 2px 3px 3px #7e796b;
+    color: #B4AE9A;
+    border-radius: 7px;
+    font-weight: bold;
 }
 
 .triangle-down {
@@ -961,7 +963,7 @@ input:checked + .slider:before {
 
     .buttons button {
         width: 48.5%;
-        margin: 1rem 1.5% 0 1.5%;
+        margin: 1rem 0;
     }
 
     .mobileAboutMe {

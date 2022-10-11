@@ -64,6 +64,8 @@ function videos() {
     if ($(window).width() <= 1100) {
         original.style.display = 'block';
         collab.style.display = 'block';
+        aboutMe.style.width = '30%';
+        aboutMe.style.margin = '0.75rem';
     }
     $(".home").html('Home');
 }
@@ -104,12 +106,11 @@ function editing() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
-    aboutMe.classList.remove('mobileAboutMe');
-    aboutMe.classList.remove('mobileAboutMe');
     if ($(window).width() <= 1100) {
         original.style.display = 'block';
         collab.style.display = 'block';
-        aboutMe.classList.add('mobileAboutMe');
+        aboutMe.style.width = '30%';
+        aboutMe.style.margin = '0.75rem';
     }
     $(".home").html('Home');
 }

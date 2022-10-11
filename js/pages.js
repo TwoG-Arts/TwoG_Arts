@@ -50,6 +50,7 @@ function videos() {
     const work = document.getElementById('works');
     const original = document.getElementById('original');
     const collab = document.getElementById('collab');
+    const aboutMe = document.getElementById('aboutMe');
 
     $(".Videos").load("pages/Videos.html");
     $(".Designs").html('');
@@ -59,6 +60,7 @@ function videos() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
+    aboutMe.classList.remove('mobileAboutMe');
     if ($(window).width() <= 1100) {
         original.style.display = 'block';
         collab.style.display = 'block';
@@ -71,6 +73,7 @@ function designs() {
     const work = document.getElementById('works');
     const original = document.getElementById('original');
     const collab = document.getElementById('collab');
+    const aboutMe = document.getElementById('aboutMe');
 
     $(".Designs").load("pages/Designs.html");
     language();
@@ -81,6 +84,7 @@ function designs() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
+    aboutMe.classList.remove('mobileAboutMe');
     $(".home").html('Home');
 }
 
@@ -89,6 +93,7 @@ function editing() {
     const work = document.getElementById('works');
     const original = document.getElementById('original');
     const collab = document.getElementById('collab');
+    const aboutMe = document.getElementById('aboutMe');
 
     $(".Editing").load("pages/Editing.html");
     language();
@@ -99,9 +104,12 @@ function editing() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
+    aboutMe.classList.remove('mobileAboutMe');
+    aboutMe.classList.remove('mobileAboutMe');
     if ($(window).width() <= 1100) {
         original.style.display = 'block';
         collab.style.display = 'block';
+        aboutMe.classList.add('mobileAboutMe');
     }
     $(".home").html('Home');
 }
@@ -111,6 +119,8 @@ function aboutMe() {
     const work = document.getElementById('works');
     const original = document.getElementById('original');
     const collab = document.getElementById('collab');
+    const aboutMe = document.getElementById('aboutMe');
+
     $(".AboutMe").load("pages/AboutMe.html");
     language();
     $(".Editing").html('');

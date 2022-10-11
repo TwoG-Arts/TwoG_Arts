@@ -567,6 +567,11 @@ input:checked + .slider:before {
     display: none;
 }
 
+#original, #collab {
+    width: 30%;
+    margin: 0.75rem;
+}
+
 .logo {
     background-color: #B4AE9A;
 }
@@ -796,16 +801,8 @@ input:checked + .slider:before {
         display: block;
     }
 
-    #aboutMe, #original {
-        display: block;
-    }
-
     #aboutMe {
-        margin-right: 1.5%;
-    }
-
-    #works {
-        margin-left: 1.5%;
+        display: block;
     }
 
     #aboutMe a, #works a {
@@ -902,7 +899,6 @@ input:checked + .slider:before {
         color: #343127;
     }
 
-
     .footer-center, .contacts, #email {
         display: none;
     }
@@ -965,7 +961,20 @@ input:checked + .slider:before {
 
     .buttons button {
         width: 48.5%;
+        margin: 1rem 1.5% 0 1.5%;
+    }
+
+    .mobileAboutMe {
+        width: 30%;
         margin: 0.75rem;
+    }
+
+    #aboutMe {
+        margin-right: 1.5%;
+    }
+
+    #works {
+        margin-left: 1.5%;
     }
 
     .video {

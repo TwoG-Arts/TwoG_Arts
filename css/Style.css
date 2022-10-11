@@ -73,7 +73,7 @@ img {
 .buttons button img {
     width: 5rem;
     padding: 0.3rem;
-    margin-left: 0.4rem;
+    margin: 0 0.4rem;
 }
 
 .footer {
@@ -792,11 +792,11 @@ input:checked + .slider:before {
         height: 100px;
     }
 
-    #works, .mobileCredits {
+    .mobileCredits {
         display: block;
     }
 
-    #aboutMe {
+    #aboutMe, #original, #collab, #works {
         display: block;
     }
 
@@ -956,6 +956,7 @@ input:checked + .slider:before {
     }
 
     .buttons button {
+        width: 30%;
         margin: 0.75rem;
     }
 

@@ -60,8 +60,8 @@ function videos() {
     original.style.display = 'none';
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'flex';
-        collab.style.display = 'flex';
+        original.style.display = 'block';
+        collab.style.display = 'block';
     }
     $(".home").html('Home');
 }
@@ -100,8 +100,8 @@ function editing() {
     original.style.display = 'none';
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'flex';
-        collab.style.display = 'flex';
+        original.style.display = 'block';
+        collab.style.display = 'block';
     }
     $(".home").html('Home');
 }
@@ -119,8 +119,8 @@ function aboutMe() {
     original.style.display = 'none';
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        mob.style.display = 'flex';
-        work.style.display = 'flex';
+        mob.style.display = 'block';
+        work.style.display = 'block';
     }
     $(".home").html('Chi sono');
 }
@@ -248,12 +248,17 @@ function language() {
             toTranslate[it.next().value].textContent = '3D';
 
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
 
             /*Drawings*/
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Drawings<div class="overlay-right"><img src="images/ovhone.png"></div>';
 
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
+
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>3D<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
         if (editing) {
             toTranslate[it.next().value].textContent = 'Originals';
@@ -330,15 +335,20 @@ function language() {
             toTranslate[it.next().value].textContent = 'Disegni';
             toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = '3D';
-
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Disegni<div class="overlay-right"><img src="images/ovhone.png"></div>';
 
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
+
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>3D<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
         if (editing) {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Darius da Assassin\'s Creed Odyssey.<sub>PH: RAAMDeadman</sub>';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
@@ -348,7 +358,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Anima da Dark Souls. <sub>PH: Me.</sub>';
 
 
-
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor da Detroit Become Human by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Shanks da One Piece by RaamDeadman. <sub>PH: Me.</sub>';
@@ -357,6 +367,8 @@ function language() {
         if (video) {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
     }
 }

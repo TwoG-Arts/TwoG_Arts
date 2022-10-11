@@ -60,7 +60,6 @@ function videos() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
-    aboutMe.classList.remove('mobileAboutMe');
     if ($(window).width() <= 1100) {
         original.style.display = 'block';
         collab.style.display = 'block';
@@ -86,7 +85,6 @@ function designs() {
     work.style.display = 'none';
     original.style.display = 'none';
     collab.style.display = 'none';
-    aboutMe.classList.remove('mobileAboutMe');
     $(".home").html('Home');
 }
 
@@ -132,6 +130,8 @@ function aboutMe() {
     if ($(window).width() <= 1100) {
         mob.style.display = 'block';
         work.style.display = 'block';
+        aboutMe.style.width = '48.5%';
+        aboutMe.style.margin = '1rem 0';
     }
     $(".home").html('Chi sono');
 }

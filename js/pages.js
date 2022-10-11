@@ -60,8 +60,8 @@ function videos() {
     original.style.display = 'none';
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'block';
-        collab.style.display = 'block';
+        original.style.display = 'flex';
+        collab.style.display = 'flex';
     }
     $(".home").html('Home');
 }
@@ -100,8 +100,8 @@ function editing() {
     original.style.display = 'none';
     collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'block';
-        collab.style.display = 'block';
+        original.style.display = 'flex';
+        collab.style.display = 'flex';
     }
     $(".home").html('Home');
 }

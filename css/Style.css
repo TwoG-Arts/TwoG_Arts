@@ -563,7 +563,7 @@ input:checked + .slider:before {
     color: #343127;
 }
 
-#works, #aboutMe {
+#works, #aboutMe, #original, #collab {
     display: none;
 }
 

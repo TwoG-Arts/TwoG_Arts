@@ -32,6 +32,9 @@ img {
 }
 
 .buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 23rem;
     height: 5.5rem;
@@ -377,8 +380,7 @@ img {
     text-decoration: none;
 }
 
-.video a:hover
-p {
+.video a:hover p {
     color: #343127;
 }
 
@@ -787,6 +789,10 @@ input:checked + .slider:before {
 
     #works, .mobileCredits {
         display: block;
+    }
+
+    #aboutMe {
+        display: flex;
     }
 
     #aboutMe a {

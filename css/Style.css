@@ -24,6 +24,17 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+/* Stile della selezione*/
+/* Firefox è un bimbo speciale */
+::-moz-selection {
+  color: #b4ae9a;
+  background: #343127;
+}
+
+::selection {
+  color: #b4ae9a;
+  background: #343127;
+}
 
 .buttons {
     display: flex;

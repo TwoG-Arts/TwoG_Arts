@@ -77,7 +77,6 @@ function designs() {
     const aboutMe = document.getElementById('aboutMe');
 
     $(".Designs").load("pages/Designs.html");
-    language();
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -96,7 +95,6 @@ function editing() {
     const aboutMe = document.getElementById('aboutMe');
 
     $(".Editing").load("pages/Editing.html");
-    language();
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -121,7 +119,6 @@ function aboutMe() {
     const aboutMe = document.getElementById('aboutMe');
 
     $(".AboutMe").load("pages/AboutMe.html");
-    language();
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');
@@ -260,14 +257,17 @@ function language() {
 
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials';
-            toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Graphics and logo for my socials';
+            toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials.';
+            toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman.';
+            toTranslate[it.next().value].textContent = 'Graphics and logo for my socials.';
 
             /*Drawings*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Drawings<div class="overlay-right"><img src="images/ovhone.png"></div>';
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Image Randomizer.';
+            toTranslate[it.next().value].textContent = 'Website of Maikubirth mod for The Binding of Isaac.';
+            toTranslate[it.next().value].textContent = 'Website of the personal portfolio.';
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>3D<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
@@ -275,7 +275,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';            toTranslate[it.next().value].innerHTML = 'Darius from Assassin\'s Creed Odyssey.<sub>PH: RaamDeadman</sub>';
-            toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
+            toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki from Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'The Rumbling from Attack on Titan. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Okabe & Daru from Steins;Gate w/RaamDeadman. <sub>PH: Rankoll \& RaamDeadman.</sub>';
@@ -351,12 +351,15 @@ function language() {
             toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = '3D';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman';
-            toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social';
+            toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman.';
+            toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman.';
+            toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social.';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Disegni<div class="overlay-right"><img src="images/ovhone.png"></div>';
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Selettore di immagini casuale.';
+            toTranslate[it.next().value].textContent = 'Sito Web Maikubirth mod per The Binding of Isaac.';
+            toTranslate[it.next().value].textContent = 'Sito Web portfolio personale.';
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>3D<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
@@ -364,8 +367,8 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Darius da Assassin\'s Creed Odyssey.<sub>PH: RAAMDeadman</sub>';
-            toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll</sub>';
+            toTranslate[it.next().value].innerHTML = 'Darius da Assassin\'s Creed Odyssey.<sub>PH: RAAMDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Il Boato da L\'attacco dei Giganti. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Okabe & Daru da Steins;Gate w/RaamDeadman. <sub>PH: Rankoll \& RaamDeadman.</sub>';

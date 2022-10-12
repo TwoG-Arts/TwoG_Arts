@@ -291,6 +291,9 @@ function language() {
         if (video) {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';

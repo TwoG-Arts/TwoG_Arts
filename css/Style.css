@@ -494,6 +494,8 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
+
 }
 
 .lavori h1, .mobileContacts h1, .mobileHead h1, .mobileCollab h1, .mobileCredits h1, #contacts h1, #specialThx h1, .mobileSupportMe h1, .rightBlock h1, .collabdiv h1 {

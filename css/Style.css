@@ -772,6 +772,12 @@ input:checked + .slider:before {
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    .buttons {
+        zoom: 67%;
+    }
+}
+
 @media only screen and (max-width: 1505px) {
     .buttons {
         zoom: 75%;

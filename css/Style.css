@@ -776,6 +776,15 @@ input:checked + .slider:before {
     body {
         zoom: 85%;
     }
+    .buttons{
+      zoom:80%;
+    }
+    .lavori {
+      max-height: 29rem;
+    }
+    .collabdiv{
+      max-height: 35rem;
+    }
 }
 
 @media only screen and (max-width: 1505px) {

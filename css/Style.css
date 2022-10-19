@@ -773,8 +773,8 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 1366px) {
-    .buttons {
-        zoom: 67%;
+    body {
+        zoom: 85%;
     }
 }
 

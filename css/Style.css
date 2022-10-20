@@ -506,7 +506,7 @@ input:checked + .slider:before {
     position: relative;
     background-color: #4E4B42;
     box-shadow: 1px 2px 3px 3px #7e796b;
-    margin: 0.8rem auto 1rem auto;
+    margin: 0.2rem auto 1rem auto;
     text-align: center;
     width: 97%;
     height: 4rem;
@@ -574,6 +574,10 @@ input:checked + .slider:before {
     color: #4E4B42;
     width: 100%;
     padding: 1rem 0.5rem;
+}
+
+.lavori button:hover {
+    color: #343127;
 }
 
 .more {
@@ -1093,5 +1097,5 @@ input:checked + .slider:before {
 }
 
 .video:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

@@ -811,6 +811,8 @@ input:checked + .slider:before {
     }
 }
 
+
+
 @media only screen and (max-width: 1400px) {
     .buttons {
         zoom: 80%;
@@ -822,10 +824,13 @@ input:checked + .slider:before {
       zoom:80%;
     }
     .lavori {
-      max-height: 28rem;
+      max-height: 27rem;
     }
     .collabdiv{
-      max-height: 35rem;
+      max-height: 34rem;
+    }
+    #lavorialt .lavori{
+      max-height: 34rem;
     }
 
     #default {

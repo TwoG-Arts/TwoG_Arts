@@ -813,7 +813,19 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 1400px) {
     .buttons {
-        zoom: 60%;
+        zoom: 80%;
+    }
+    body {
+        zoom: 85%;
+    }
+    .buttons{
+      zoom:80%;
+    }
+    .lavori {
+      max-height: 28rem;
+    }
+    .collabdiv{
+      max-height: 35rem;
     }
 
     #default {

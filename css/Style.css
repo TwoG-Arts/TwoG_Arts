@@ -829,7 +829,7 @@ input:checked + .slider:before {
     .collabdiv{
       max-height: 34rem;
     }
-    #lavorialt .lavori{
+    #lavorialt{
       max-height: 34rem;
     }
 

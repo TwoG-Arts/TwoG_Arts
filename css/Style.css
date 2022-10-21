@@ -229,7 +229,7 @@ img {
 .hoverButton {
     position: absolute;
     width: 22%;
-    height: 70%;
+    height: max-content;
 }
 
 .contactRow {
@@ -375,7 +375,7 @@ img {
     height: 0.35rem;
 }
 
-.video {
+.video, .code {
     display: flex;
     justify-content: center;
     width: 25rem;
@@ -384,11 +384,11 @@ img {
     transition: transform .2s;
 }
 
-.video img {
+.video img, .code img {
     width: 100%;
 }
 
-.video a {
+.video a, .code a {
     text-align: center;
     text-decoration: none;
 }
@@ -506,7 +506,7 @@ input:checked + .slider:before {
     position: relative;
     background-color: #4E4B42;
     box-shadow: 1px 2px 3px 3px #7e796b;
-    margin: 0.8rem auto 1rem auto;
+    margin: 0.2rem auto 1rem auto;
     text-align: center;
     width: 97%;
     height: 4rem;
@@ -540,6 +540,11 @@ input:checked + .slider:before {
     height: auto;
 }
 
+#editing .video {
+    width: 24rem;
+    padding: 0 1.5rem;
+}
+
 .Videos .video, .Designs .video {
     width: 50%;
     height: 36rem;
@@ -569,6 +574,10 @@ input:checked + .slider:before {
     color: #4E4B42;
     width: 100%;
     padding: 1rem 0.5rem;
+}
+
+.lavori button:hover {
+    color: #343127;
 }
 
 .more {
@@ -682,9 +691,7 @@ input:checked + .slider:before {
     display: none;
     position: absolute;
     bottom: 100%;
-    width: 10rem;
     left: 50%;
-    text-align: center;
     transform: translate(-50%, 100%);
     font-size: 1.5rem;
     background-color: #6A6555;
@@ -692,6 +699,8 @@ input:checked + .slider:before {
     color: #B4AE9A;
     border-radius: 7px;
     font-weight: bold;
+    text-align: center;
+    width: max-content;
     /*Animazione*/
     animation-name: floating;
     animation-duration: 3s;
@@ -764,22 +773,14 @@ input:checked + .slider:before {
     text-decoration: none;
 }
 
-#coding .video {
-    border: 46px solid;
-    border-image-source: url("../images/cornice_editing.png");
-    border-image-slice: 46;
-    border-image-repeat: round;
+#coding .code {
+    background-image: url("../images/cornice_editing.png");
 }
 
 #coding p {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: bold;
     color: #4E4B42;
-}
-
-.code {
-    width: 100%;
-    height: 100%;
 }
 
 @media only screen and (max-width: 1770px) {
@@ -812,8 +813,6 @@ input:checked + .slider:before {
         margin: 3rem 5rem 2rem 5rem;
     }
 }
-
-
 
 @media only screen and (max-width: 1400px) {
     .buttons {
@@ -1096,6 +1095,7 @@ input:checked + .slider:before {
         width: 3rem;
     }
 }
-.video div:hover{
-    transform: scale(1);
+
+.video:hover {
+    transform: scale(1.05);
 }

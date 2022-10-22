@@ -563,6 +563,15 @@ input:checked + .slider:before {
     max-height: 37rem;
     overflow: auto;
     overflow-x: hidden;
+    padding: 1.5rem;
+}
+
+#collabRightBlock, #lavoriRightBlock {
+    padding: 0;
+}
+
+#lavorialt {
+    padding: 1.5rem;
 }
 
 .lavori button {
@@ -708,16 +717,16 @@ input:checked + .slider:before {
     animation-timing-function: ease-in-out;
 }
 @keyframes floating {
-    0% { transform: translate(-5rem,  3.5rem); }
-    50%  { transform: translate(-5rem, 4rem); }
-    100%   { transform: translate(-5rem, 3.5rem); }
+    0% { transform: translate(-50%, 100%); }
+    50%  { transform: translate(-50%, 95%); }
+    100%   { transform: translate(-50%, 100%); }
 }
 
 .triangle-down {
     display: inline;
     position: absolute;
     bottom: 100%;
-    left: 5rem;
+    left: 50%;
     transform: translate(-50%, 50%);
     width: 0;
     height: 0;

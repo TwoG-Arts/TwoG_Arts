@@ -15,6 +15,13 @@ $(function () {
     }
 });
 
+function selection() {
+    let activeButton = prevButton;
+    let activeButtonText = prevButtonText;
+    activeButton.style.backgroundPosition = "right bottom";
+    activeButtonText.style.backgroundPosition = "right bottom";
+}
+
 function selectionLeave() {
     let buttonActive = document.getElementsByClassName('active')[0];
     buttonActive.classList.add('hovering');
@@ -38,97 +45,52 @@ function buttonLeave(i) {
     $(buttonText).css("background-position", "right bottom");
 }
 
-function selection() {
-    let activeButton = prevButton;
-    let activeButtonText = prevButtonText;
-    activeButton.style.backgroundPosition = "right bottom";
-    activeButtonText.style.backgroundPosition = "right bottom";
-}
-
 function videos() {
     const mob = document.getElementsByClassName('mobile')[0];
-    const work = document.getElementById('works');
-    const original = document.getElementById('original');
-    const collab = document.getElementById('collab');
-    const aboutMe = document.getElementById('aboutMe');
 
     $(".Videos").load("pages/Videos.html");
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
     mob.style.display = 'none';
-    work.style.display = 'none';
-    original.style.display = 'none';
-    collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'block';
-        collab.style.display = 'block';
-        aboutMe.style.width = '30%';
-        aboutMe.style.margin = '0.75rem';
     }
     $(".home").html('Home');
 }
 
 function designs() {
     const mob = document.getElementsByClassName('mobile')[0];
-    const work = document.getElementById('works');
-    const original = document.getElementById('original');
-    const collab = document.getElementById('collab');
-    const aboutMe = document.getElementById('aboutMe');
 
     $(".Designs").load("pages/Designs.html");
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
-    work.style.display = 'none';
-    original.style.display = 'none';
-    collab.style.display = 'none';
     $(".home").html('Home');
 }
 
 function editing() {
     const mob = document.getElementsByClassName('mobile')[0];
-    const work = document.getElementById('works');
-    const original = document.getElementById('original');
-    const collab = document.getElementById('collab');
-    const aboutMe = document.getElementById('aboutMe');
 
     $(".Editing").load("pages/Editing.html");
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
-    work.style.display = 'none';
-    original.style.display = 'none';
-    collab.style.display = 'none';
     if ($(window).width() <= 1100) {
-        original.style.display = 'block';
-        collab.style.display = 'block';
-        aboutMe.style.width = '30%';
-        aboutMe.style.margin = '0.75rem';
     }
     $(".home").html('Home');
 }
 
 function aboutMe() {
     const mob = document.getElementsByClassName('mobile')[0];
-    const work = document.getElementById('works');
-    const original = document.getElementById('original');
-    const collab = document.getElementById('collab');
-    const aboutMe = document.getElementById('aboutMe');
 
     $(".AboutMe").load("pages/AboutMe.html");
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');
-    original.style.display = 'none';
-    collab.style.display = 'none';
     if ($(window).width() <= 1100) {
         mob.style.display = 'block';
-        work.style.display = 'block';
-        aboutMe.style.width = '48.5%';
-        aboutMe.style.margin = '1rem 0';
     }
     $(".home").html('Chi sono');
 }
@@ -210,9 +172,6 @@ function language() {
         } else {
             toTranslate[it.next().value].textContent = 'About Me';
         }
-        toTranslate[it.next().value].textContent = 'Originals';
-        toTranslate[it.next().value].textContent = 'Collab';
-        toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'More edits';
         toTranslate[it.next().value].textContent = 'More videos';
@@ -310,9 +269,6 @@ function language() {
         } else {
             toTranslate[it.next().value].textContent = 'Chi sono';
         }
-        toTranslate[it.next().value].textContent = 'Originali';
-        toTranslate[it.next().value].textContent = 'Collab';
-        toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'Più editing';
         toTranslate[it.next().value].textContent = 'Più video';

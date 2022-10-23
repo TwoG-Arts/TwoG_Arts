@@ -7,7 +7,6 @@ let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
 let selected = null;
-prevButtonDropdown.classList.add("active")
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -181,7 +180,6 @@ function clickedDropdown(i) {
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        prevButtonClicked.classList.remove('active');
         prevButtonClicked.style.backgroundPosition = 'right bottom';
         prevButtonClickedText.style.backgroundPosition = 'right bottom';
         prevButtonClicked = selectedColor;

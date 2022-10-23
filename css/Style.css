@@ -186,6 +186,13 @@ img {
     margin-bottom: 0;
 }
 
+.dropdownMenu {
+    box-shadow: 1px 2px 3px 3px #7e796b;
+    background: #B4AE9A;
+    padding-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
 header ul, header li {
     list-style-type: none;
 }

@@ -152,7 +152,6 @@ function clickedDropdown(i) {
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
     selectedColor.style.backgroundPosition = 'left bottom';
     selectedTextColor.style.backgroundPosition = 'left bottom';
-    selectedColor.classList.add('active');
 
     let j = i%3;
 
@@ -174,7 +173,6 @@ function clickedDropdown(i) {
                 dropdownContent[2].style.display = 'block';
                 break;
         }
-        prevButtonDropdown.classList.remove('active');
         prevButtonDropdown.style.backgroundPosition = 'right bottom';
         prevButtonDropdownText.style.backgroundPosition = 'right bottom';
         prevButtonDropdown = selectedColor;

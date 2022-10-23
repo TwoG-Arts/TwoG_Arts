@@ -155,7 +155,7 @@ function clickedDropdown(i) {
 
     let j = i%3;
 
-    if (i===0 || j===0) {
+    if (i===0 || j===1) {
         switch (i) {
             case 3:
                 dropdownContent[1].style.display = 'none';

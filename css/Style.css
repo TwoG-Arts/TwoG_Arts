@@ -265,7 +265,7 @@ img {
 }
 
 .contactRowFooter img:hover{
-  animation: footeropani .5s;
+  animation: footeropani .5s inherit;
 }
 @keyframes footeropani {
   0% {

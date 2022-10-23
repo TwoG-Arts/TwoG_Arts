@@ -1,8 +1,8 @@
 let prevButton = document.getElementById('2g');
 let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
-let prevButtonDropdown = null;
-let prevButtonDropdownText = null;
+let prevButtonDropdown = document.getElementById('home');
+let prevButtonDropdownText = document.getElementById('homeText');
 let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
@@ -181,7 +181,7 @@ function clickedDropdown(i) {
         return;
     }
 
-    if (prevButtonClicked !== null && prevButton !== selectedColor) {
+    if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
         prevButtonClicked.classList.remove('active');
         prevButtonClicked.style.backgroundPosition = 'right bottom';
         prevButtonClickedText.style.backgroundPosition = 'right bottom';

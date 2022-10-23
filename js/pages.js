@@ -7,6 +7,7 @@ let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
 let selected = null;
+prevButtonDropdown.classList.add("active")
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -155,7 +156,7 @@ function clickedDropdown(i) {
 
     let j = i%3;
 
-    if (i===0 || j===1) {
+    if ((i===0 || j===1) && prevButtonDropdown !== selectedColor) {
         switch (i) {
             case 3:
                 dropdownContent[1].style.display = 'none';

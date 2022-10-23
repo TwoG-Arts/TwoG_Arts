@@ -171,13 +171,19 @@ img {
 }
 
 .dropdown {
-    margin: 1rem 1rem 1rem 4rem;
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
     box-shadow: 1px 2px 3px 3px #7e796b;
     background: #B4AE9A;
+}
+
+.dropdown h1 {
+    margin-bottom: 0;
 }
 
 header ul, header li {

@@ -269,11 +269,11 @@ img {
 }
 @keyframes footeropani {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: .5;
   }
 }
 .footer .contactRow img {

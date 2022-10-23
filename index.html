@@ -29,61 +29,105 @@
         <p class="en">Altro</p>
     </a></button>
     </div>
-    <button class="dropdown" id="aboutMe" onclick="dropContent();clickedDropdown(0)">
+    <button class="dropdown" id="aboutMe" onclick="dropContent();clickedDropdown(0)"><a>
         <img id="button" src="images/Button.png">
         <img id="lines" src="images/hamline.png">
         <h1 id="menu">Menù</h1>
         <ul class="dropdown-content">
-            <li><div class="dropdown2"><button class="buttonSelected" onclick="clickedDropdown(0);">
-                <div class="sideStyle"></div>
-                <div class="en">Home</div></button>
-                <ul class="dropdown-content2">
-                    <li><a href="https://yorha-2g.github.io/YoRHa-2G/#me"><button class="buttonSelected" onclick="clickedDropdown(1);">
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(0);"><a>
                         <div class="sideStyle"></div>
-                        <div class="en">Chi Sono</div></button></a></li>
-                    <li><a href="https://yorha-2g.github.io/YoRHa-2G/#work"><button class="buttonSelected" onclick="clickedDropdown(2);">
+                        <div class="en">Home</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <a href="https://yorha-2g.github.io/YoRHa-2G/#me">
+                                <button class="buttonSelected" onclick="clickedDropdown(1);aboutMe();"><a>
+                                    <div class="sideStyle"></div>
+                                    <div class="en">Chi Sono</div>
+                                </a></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://yorha-2g.github.io/YoRHa-2G/#work">
+                                <button class="buttonSelected" onclick="clickedDropdown(2);aboutMe();"><a>
+                                    <div class="sideStyle"></div>
+                                    <div class="en">Lavori</div>
+                                </a></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(3);"><a>
                         <div class="sideStyle"></div>
-                        <div class="en">Lavori</div></button></a></li>
-                </ul>
-            </div></li>
-            <li><div class="dropdown2"><button class="buttonSelected" onclick="clickedDropdown(3);">
-                <div class="sideStyle"></div>
-                <div class="en">Editing</div></button>
-                <ul class="dropdown-content2">
-                    <li><button class="buttonSelected" onclick="clickedDropdown(4);editing();select(0);">
+                        <div class="en">Editing</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(4);editing();select(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Originali</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(5);editing();select(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Collaborazioni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(6);clicked(2);"><a>
                         <div class="sideStyle"></div>
-                        <div class="en">Originali</div></button></li>
-                    <li><button class="buttonSelected" onclick="clickedDropdown(5);editing();select(1);">
+                        <div class="en">Video</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(7);videos();select(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Originali</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(8);videos();select(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Collaborazioni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(9);clicked(3);"><a>
                         <div class="sideStyle"></div>
-                        <div class="en">Collaborazioni</div></button></li>
-                </ul>
-            </div></li>
-            <li><div class="dropdown2"><button class="buttonSelected" onclick="clickedDropdown(6);clicked(2);">
-                <div class="sideStyle"></div>
-                <div class="en">Video</div></button>
-                <ul class="dropdown-content2">
-                    <li><button class="buttonSelected" onclick="clickedDropdown(7);videos();select(0);">
-                        <div class="sideStyle"></div>
-                        <div class="en">Originali</div></button></li>
-                    <li><button class="buttonSelected" onclick="clickedDropdown(8);videos();select(1);">
-                        <div class="sideStyle"></div>
-                        <div class="en">Collaborazioni</div></button></li>
-                </ul>
-            </div></li>
-            <li><div class="dropdown2"><button class="buttonSelected" onclick="clickedDropdown(9);clicked(3);">
-                <div class="sideStyle"></div>
-                <div class="en">Altro</div></button>
-                <ul class="dropdown-content2">
-                    <li><button class="buttonSelected" onclick="clickedDropdown(10);designs();select(0);">
-                        <div class="sideStyle"></div>
-                        <div class="en">Design</div></button></li>
-                    <li><button class="buttonSelected" onclick="clickedDropdown(11);designs();select(1);">
-                        <div class="sideStyle"></div>
-                        <div class="en">Disegni</div></button></li>
-                </ul>
-            </div></li>
+                        <div class="en">Altro</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(10);designs();select(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Design</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(11);designs();select(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Disegni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
-    </button>
+    </a></button>
 </header>
 <div class="mobile">
     <div class="banner"><img id="banner" src="images/bannermobile.png"></div>

@@ -199,7 +199,7 @@ function dropContent() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     content.style.display = 'block';
     content.classList.add('selecting');
-    if (prevButton !== content) {
+    if (selected !== null && selected !== content) {
         selected.classList.remove('selecting');
         selected.style.display = 'none';
         selected = content;

@@ -50,7 +50,7 @@ function buttonLeave(i) {
     $(buttonText).css("background-position", "right bottom");
 }
 
-function videos() {
+function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Videos").load("pages/Videos.html");
@@ -59,11 +59,12 @@ function videos() {
     $(".Editing").html('');
     mob.style.display = 'none';
     if ($(window).width() <= 1100) {
+        select(i);
     }
     $(".home").html('Home');
 }
 
-function designs() {
+function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Designs").load("pages/Designs.html");
@@ -71,10 +72,13 @@ function designs() {
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
+    if ($(window).width() <= 1100) {
+        select(i);
+    }
     $(".home").html('Home');
 }
 
-function editing() {
+function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Editing").load("pages/Editing.html");
@@ -83,6 +87,7 @@ function editing() {
     $(".Videos").html('');
     mob.style.display = 'none';
     if ($(window).width() <= 1100) {
+        select(i);
     }
     $(".home").html('Home');
 }
@@ -177,6 +182,7 @@ function clickedDropdown(i) {
                 dropdownContent[3].style.display = 'block';
                 break;
         }
+        prevButtonDropdown.classList.remove('active');
         prevButtonDropdown.style.backgroundPosition = 'right bottom';
         prevButtonDropdownText.style.backgroundPosition = 'right bottom';
         prevButtonDropdown = selectedColor;

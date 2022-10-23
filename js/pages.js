@@ -244,8 +244,6 @@ function language() {
         toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].textContent = 'Home';
-        toTranslate[it.next().value].textContent = 'About Me';
-        toTranslate[it.next().value].textContent = 'Works';
         toTranslate[it.next().value].textContent = 'Editing';
         toTranslate[it.next().value].textContent = 'Originals';
         toTranslate[it.next().value].textContent = 'Collaborations';
@@ -347,8 +345,6 @@ function language() {
         toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].textContent = 'Home';
-        toTranslate[it.next().value].textContent = 'Chi Sono';
-        toTranslate[it.next().value].textContent = 'Lavori';
         toTranslate[it.next().value].textContent = 'Editing';
         toTranslate[it.next().value].textContent = 'Originali';
         toTranslate[it.next().value].textContent = 'Collaborazioni';

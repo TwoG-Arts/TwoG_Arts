@@ -157,29 +157,20 @@ function clickedDropdown(i) {
 
     if (i===0 || j===0) {
         switch (i) {
-            case 0:
+            case 3:
                 dropdownContent[1].style.display = 'none';
                 dropdownContent[2].style.display = 'none';
-                dropdownContent[3].style.display = 'none';
                 dropdownContent[0].style.display = 'block';
                 break;
-            case 3:
-                dropdownContent[0].style.display = 'none';
-                dropdownContent[2].style.display = 'none';
-                dropdownContent[3].style.display = 'none';
-                dropdownContent[1].style.display = 'block';
-                break;
             case 6:
-                dropdownContent[1].style.display = 'none';
+                dropdownContent[2].style.display = 'none';
                 dropdownContent[0].style.display = 'none';
-                dropdownContent[3].style.display = 'none';
-                dropdownContent[2].style.display = 'block';
+                dropdownContent[1].style.display = 'block';
                 break;
             case 9:
                 dropdownContent[1].style.display = 'none';
-                dropdownContent[2].style.display = 'none';
                 dropdownContent[0].style.display = 'none';
-                dropdownContent[3].style.display = 'block';
+                dropdownContent[2].style.display = 'block';
                 break;
         }
         prevButtonDropdown.classList.remove('active');
@@ -444,17 +435,14 @@ const mediaQueryList = window.matchMedia('(max-width: 1100px)');
 
 function screenTest(e) {
     const mob = document.getElementsByClassName('mobile')[0];
-    const work = document.getElementById('works');
     if (e.matches) {
         /* the viewport is 1100 pixels wide or less */
         clicked(0);
         select(0);
         mob.style.display = 'flex';
-        work.style.display = 'block';
     } else {
         /* the viewport is more than 1100 pixels wide */
         mob.style.display = 'none';
-        work.style.display = 'none';
     }
 }
 

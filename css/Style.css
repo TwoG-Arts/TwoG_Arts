@@ -137,7 +137,7 @@ img {
     margin-left: 0.75rem;
 }
 
-.sideBut button, .dropdown button {
+.sideBut button, .buttonSelected {
     background: #B4AE9A linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%) right bottom;
     background-size: 200% 100%;
     transition: all 0.4s ease;
@@ -170,10 +170,30 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
+.dropdown {
+    padding: 1rem 1rem 1rem 4rem;
+    color: #4E4B42;
+    font-family: BreezeSans, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#menu {
+    font-size: 3rem;
+}
+
 .dropdown img {
     position: absolute;
     right: 5rem;
     width: 3rem;
+}
+
+.dropdown-content, .dropdown-content2 {
+    display: none;
+}
+
+.dropdown-content2 {
+    padding-left: 1.5rem;
 }
 
 .sideStyle {

@@ -229,13 +229,19 @@ function language() {
         toTranslate[it.next().value].textContent = 'About Me';
         toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'Other';
-        if (!(design || editing)) {
-            toTranslate[it.next().value].textContent = 'About Me';
-        } else if ($(window).width() <= 1100) {
-            toTranslate[it.next().value].textContent = 'Home';
-        } else {
-            toTranslate[it.next().value].textContent = 'About Me';
-        }
+        toTranslate[it.next().value].textContent = 'Home';
+        toTranslate[it.next().value].textContent = 'About Me';
+        toTranslate[it.next().value].textContent = 'Works';
+        toTranslate[it.next().value].textContent = 'Editing';
+        toTranslate[it.next().value].textContent = 'Originals';
+        toTranslate[it.next().value].textContent = 'Collaborations';
+        toTranslate[it.next().value].textContent = 'Videos';
+        toTranslate[it.next().value].textContent = 'Originals';
+        toTranslate[it.next().value].textContent = 'Collaborations';
+        toTranslate[it.next().value].textContent = 'Other';
+        toTranslate[it.next().value].textContent = 'Design';
+        toTranslate[it.next().value].textContent = 'Drawings';
+
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'More edits';
         toTranslate[it.next().value].textContent = 'More videos';
@@ -326,13 +332,19 @@ function language() {
         toTranslate[it.next().value].textContent = 'Chi sono';
         toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Altro';
-        if (!(design || editing)) {
-            toTranslate[it.next().value].textContent = 'Chi sono';
-        } else if ($(window).width() <= 1100) {
-            toTranslate[it.next().value].textContent = 'Home';
-        } else {
-            toTranslate[it.next().value].textContent = 'Chi sono';
-        }
+        toTranslate[it.next().value].textContent = 'Home';
+        toTranslate[it.next().value].textContent = 'Chi Sono';
+        toTranslate[it.next().value].textContent = 'Lavori';
+        toTranslate[it.next().value].textContent = 'Editing';
+        toTranslate[it.next().value].textContent = 'Originali';
+        toTranslate[it.next().value].textContent = 'Collaborazioni';
+        toTranslate[it.next().value].textContent = 'Video';
+        toTranslate[it.next().value].textContent = 'Originali';
+        toTranslate[it.next().value].textContent = 'Collaborazioni';
+        toTranslate[it.next().value].textContent = 'Altro';
+        toTranslate[it.next().value].textContent = 'Design';
+        toTranslate[it.next().value].textContent = 'Disegni';
+
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'Più editing';
         toTranslate[it.next().value].textContent = 'Più video';

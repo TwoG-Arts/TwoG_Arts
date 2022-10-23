@@ -262,20 +262,14 @@ img {
 .contactRowFooter img {
     width: 1.5rem;
     margin-right: 1rem;
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
 .contactRowFooter img:hover{
-  animation: footeropani;
+ opacity: 0.6;
 }
-@keyframes footeropani {
-  0% {
-    opacity: 1;
-  }
 
-  100% {
-    opacity: .5;
-  }
-}
 .footer .contactRow img {
     width: 1.5rem;
     float: left;

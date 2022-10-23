@@ -137,7 +137,7 @@ img {
     margin-left: 0.75rem;
 }
 
-.sideBut button, .buttonSelected {
+.sideBut button, .buttonSelected, #aboutMe {
     background: #B4AE9A linear-gradient(to left, #B4AE9A 50%, #4E4B42 50%) right bottom;
     background-size: 200% 100%;
     transition: all 0.4s ease;
@@ -162,7 +162,7 @@ img {
     background-position: left bottom;
 }
 
-#YoRHa, .button .en, .buttonSelected .en {
+#YoRHa, .button .en, .buttonSelected .en, #menu {
     background: #4E4B42 linear-gradient(to left, #4E4B42 50%, #B4AE9A 50%) right bottom;
     background-size: 200% 100%;
     transition: all 0.4s ease;
@@ -171,11 +171,15 @@ img {
 }
 
 .dropdown {
-    padding: 1rem 1rem 1rem 4rem;
+    margin: 1rem 1rem 1rem 4rem;
     color: #4E4B42;
     font-family: BreezeSans, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.dropdown ul {
+    list-style-type: none;
 }
 
 #menu {
@@ -184,8 +188,8 @@ img {
 
 .dropdown img {
     position: absolute;
-    right: 5rem;
-    width: 3rem;
+    left: 0.2rem;
+    width: 4rem;
 }
 
 .dropdown-content, .dropdown-content2 {

@@ -153,19 +153,27 @@ function clickedDropdown(i) {
     if (i===0 || j===0) {
         switch (i) {
             case 0:
-                dropdownContent.style.display = 'none';
+                dropdownContent[1].style.display = 'none';
+                dropdownContent[2].style.display = 'none';
+                dropdownContent[3].style.display = 'none';
                 dropdownContent[0].style.display = 'block';
                 break;
             case 3:
-                dropdownContent.style.display = 'none';
+                dropdownContent[0].style.display = 'none';
+                dropdownContent[2].style.display = 'none';
+                dropdownContent[3].style.display = 'none';
                 dropdownContent[1].style.display = 'block';
                 break;
             case 6:
-                dropdownContent.style.display = 'none';
+                dropdownContent[1].style.display = 'none';
+                dropdownContent[0].style.display = 'none';
+                dropdownContent[3].style.display = 'none';
                 dropdownContent[2].style.display = 'block';
                 break;
             case 9:
-                dropdownContent.style.display = 'none';
+                dropdownContent[1].style.display = 'none';
+                dropdownContent[2].style.display = 'none';
+                dropdownContent[0].style.display = 'none';
                 dropdownContent[3].style.display = 'block';
                 break;
         }

@@ -262,12 +262,12 @@ img {
 .contactRowFooter img {
     width: 1.5rem;
     margin-right: 1rem;
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.3s;
 }
 
 .contactRowFooter img:hover{
- opacity: 0.6;
+ opacity: 0.5;
 }
 
 .footer .contactRow img {

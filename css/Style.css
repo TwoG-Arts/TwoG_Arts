@@ -178,7 +178,6 @@ img {
     font-family: BreezeSans, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
-    box-shadow: 1px 2px 3px 3px #7e796b;
     background: #B4AE9A;
 }
 
@@ -189,7 +188,6 @@ img {
 .dropdownMenu {
     box-shadow: 1px 2px 3px 3px #7e796b;
     background: #B4AE9A;
-    padding-bottom: 1rem;
     transition: all 0.4s ease;
 }
 
@@ -204,11 +202,17 @@ header ul, header li {
 .dropdown img {
     position: absolute;
     left: 0.5rem;
-    width: 3.7rem;
+    top: 0.5rem;
+    width: 4rem
 }
 
 .dropdown-content, .dropdown-content2 {
     display: none;
+}
+
+.dropdown-content {
+    padding-left: 4rem;
+    padding-right: 1rem ;
 }
 
 .dropdown-content2 {

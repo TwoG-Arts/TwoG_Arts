@@ -59,7 +59,9 @@ function videos(i) {
     $(".Editing").html('');
     mob.style.display = 'none';
 
-    $("#late").onload = function (){select(i);}
+    document.addEventListener('DOMContentLoaded', function() {
+        select(i);
+    }, false);
     $(".home").html('Home');
 }
 
@@ -72,7 +74,9 @@ function designs(i) {
     $(".Videos").html('');
     mob.style.display = 'none';
 
-    $("#late").onload = function (){select(i);}
+    document.addEventListener('DOMContentLoaded', function() {
+        select(i);
+    }, false);
     $(".home").html('Home');
 }
 
@@ -85,7 +89,9 @@ function editing(i) {
     $(".Videos").html('');
     mob.style.display = 'none';
 
-    $("#late").onload = function (){select(i);}
+    document.addEventListener('DOMContentLoaded', function() {
+        select(i);
+    }, false);
     $(".home").html('Home');
 }
 

@@ -58,9 +58,8 @@ function videos(i) {
     $(".AboutMe").html('');
     $(".Editing").html('');
     mob.style.display = 'none';
-    if ($(window).width() <= 1100) {
-        select(i);
-    }
+
+    select(i);
     $(".home").html('Home');
 }
 
@@ -72,9 +71,8 @@ function designs(i) {
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
-    if ($(window).width() <= 1100) {
-        select(i);
-    }
+
+    select(i);
     $(".home").html('Home');
 }
 
@@ -86,13 +84,13 @@ function editing(i) {
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
-    if ($(window).width() <= 1100) {
-        select(i);
-    }
+
+    select(i);
+
     $(".home").html('Home');
 }
 
-function aboutMe() {
+function aboutMe(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".AboutMe").load("pages/AboutMe.html");
@@ -102,6 +100,8 @@ function aboutMe() {
     if ($(window).width() <= 1100) {
         mob.style.display = 'block';
     }
+
+    select(i);
     $(".home").html('Chi sono');
 }
 

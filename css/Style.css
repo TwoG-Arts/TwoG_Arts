@@ -871,7 +871,7 @@ input:checked + .slider:before {
     }
 
     .rightBlock {
-        margin: 3rem 5rem 2rem 5rem;
+        margin: 2.5rem 5rem 2rem 5rem;
     }
 }
 

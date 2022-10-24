@@ -873,9 +873,11 @@ input:checked + .slider:before {
     .buttons {
         zoom: 75%;
     }
-
+    .sideBut{
+      top: 1.99rem;
+    }
     .rightBlock {
-        margin: 3rem 5rem 2rem 5rem;
+        margin: 2.5rem 5rem 2rem 5rem;
     }
 }
 
@@ -1148,4 +1150,16 @@ input:checked + .slider:before {
 
 .video:hover {
     transform: scale(1.05);
+}
+
+.footer-center b{
+   animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat{
+  0%{transform: scale( .75, .75); }
+  20%{transform: scale( 1, 1 );}
+  40%{transform: scale( .75, .75 );}
+  60%{transform: scale( 1, 1 );}
+  80%{transform: scale( .75, .75 );}
+  100%{transform: scale( .75, .75 );}
 }

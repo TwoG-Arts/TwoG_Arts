@@ -704,7 +704,7 @@ input:checked + .slider:before {
     width: 100%;
 }
 
-.mobileCollab, .mobileImage, .mobileCredits {
+.mobileCollab, .mobileImage, .mobileCredits, .dropdownMenu {
     display: none;
 }
 
@@ -950,7 +950,7 @@ input:checked + .slider:before {
         display: block;
     }
 
-    #aboutMe {
+    #aboutMe, .dropdownMenu {
         display: block;
     }
 

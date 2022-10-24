@@ -53,36 +53,39 @@ function buttonLeave(i) {
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Videos").load("pages/Videos.html").onload = function (){select(i)};
+    $(".Videos").load("pages/Videos.html");
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
     mob.style.display = 'none';
 
+    $("#late").onload = function (){select(i);}
     $(".home").html('Home');
 }
 
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Designs").load("pages/Designs.html").onload = function (){select(i)};
+    $(".Designs").load("pages/Designs.html");
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
 
+    $("#late").onload = function (){select(i);}
     $(".home").html('Home');
 }
 
 function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Editing").load("pages/Editing.html").onload = function (){select(i)};
+    $(".Editing").load("pages/Editing.html");
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
 
+    $("#late").onload = function (){select(i);}
     $(".home").html('Home');
 }
 
@@ -97,7 +100,6 @@ function aboutMe(i) {
         mob.style.display = 'block';
     }
 
-    select(i);
     $(".home").html('Chi sono');
 }
 

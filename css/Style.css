@@ -1151,8 +1151,11 @@ input:checked + .slider:before {
 .video:hover {
     transform: scale(1.05);
 }
-
-.footer-center b{
+.cuore{
+  display: inline-block;
+  color: #b4ae9a;
+}
+.footer-center div{
    animation: heartbeat 1s infinite;
 }
 @keyframes heartbeat{

@@ -29,69 +29,87 @@
         <p class="en">Altro</p>
     </a></button>
     </div>
-    <div class="dropdownMenu">
-    <button class="dropdown" id="aboutMe" onclick="dropContent();"><a>
+    <button class="dropdown" id="aboutMe" onclick="dropContent();clickedDropdown(0)"><a>
         <img id="button" src="images/Button.png">
         <img id="lines" src="images/hamline.png">
         <h1 id="menu">Menù</h1>
+        <ul class="dropdown-content">
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(0);"><a>
+                        <div class="sideStyle"></div>
+                        <div class="en">Home</div>
+                    </a></button>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(3);"><a>
+                        <div class="sideStyle"></div>
+                        <div class="en">Editing</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(4);editing(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Originali</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(5);editing(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Collaborazioni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(6);clicked(2);"><a>
+                        <div class="sideStyle"></div>
+                        <div class="en">Video</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(7);videos(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Originali</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(8);videos(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Collaborazioni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown2">
+                    <button class="buttonSelected" onclick="clickedDropdown(9);clicked(3);"><a>
+                        <div class="sideStyle"></div>
+                        <div class="en">Altro</div>
+                    </a></button>
+                    <ul class="dropdown-content2">
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(10);designs(0);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Design</div>
+                            </a></button>
+                        </li>
+                        <li>
+                            <button class="buttonSelected" onclick="clickedDropdown(11);designs(1);"><a>
+                                <div class="sideStyle"></div>
+                                <div class="en">Disegni</div>
+                            </a></button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </a></button>
-    <div class="dropdown-content">
-        <div class="dropdown2">
-            <button id="home" class="buttonSelected" onclick="clickedDropdown(0);"><a>
-                <div class="sideStyle"></div>
-                <div id="homeText" class="en">Home</div>
-            </a></button>
-        </div>
-        <div class="dropdown2">
-            <button class="buttonSelected" onclick="clickedDropdown(1);"><a>
-                <div class="sideStyle"></div>
-                <div class="en">Editing</div>
-            </a></button>
-            <div class="dropdown-content2">
-                <button class="buttonSelected" onclick="clickedDropdown(2);editing(0);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Originali</div>
-                </a></button>
-                <button class="buttonSelected" onclick="clickedDropdown(3);editing(1);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Collaborazioni</div>
-                </a></button>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="buttonSelected" onclick="clickedDropdown(4);"><a>
-                <div class="sideStyle"></div>
-                <div class="en">Video</div>
-            </a></button>
-            <div class="dropdown-content2">
-                <button class="buttonSelected" onclick="clickedDropdown(5);videos(0);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Originali</div>
-                </a></button>
-                <button class="buttonSelected" onclick="clickedDropdown(6);videos(1);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Collaborazioni</div>
-                </a></button>
-            </div>
-        </div>
-        <div class="dropdown2">
-            <button class="buttonSelected" onclick="clickedDropdown(7);"><a>
-                <div class="sideStyle"></div>
-                <div class="en">Altro</div>
-            </a></button>
-            <div class="dropdown-content2">
-                <button class="buttonSelected" onclick="clickedDropdown(8);designs(0);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Design</div>
-                </a></button>
-                <button class="buttonSelected" onclick="clickedDropdown(9);designs(1);"><a>
-                    <div class="sideStyle"></div>
-                    <div class="en">Disegni</div>
-                </a></button>
-            </div>
-        </div>
-    </div>
-    </div>
 </header>
 <div class="mobile">
     <div class="banner"><img id="banner" src="images/bannermobile.png"></div>
@@ -153,7 +171,6 @@
             <a href="https://www.instagram.com/twog_arts/"><img src="images/icons/insta.png"></a>
             <a href="https://www.tiktok.com/@twog_arts"><img src="images/icons/tiktok.png"></a>
             <a href="https://t.me/YoRHa_2G"><img src="images/icons/telegram.png"></a>
-            <a href="https://www.deviantart.com/yorha2g"><img src="images/icons/deviant.png"></a>
         </div>
     </div>
     <div class="mobileSupportMe">
@@ -180,7 +197,7 @@
         <p>EN</p>
     </div>
     <div class="footer-center">
-        <p>Made with <b style="font-size: 1.1rem">♥</b></p>
+        <p class="cuore">Made with <div class="cuore"><b style="font-size: 1.1rem">♥</b></div></p>
         <p>by</p>
         <p id="banana">2G & Rankoll</p>
     </div>
@@ -190,9 +207,6 @@
         <div class="contacts">
             <div class="contactRowFooter"><a href="https://www.instagram.com/twog_arts/" target="_blank"><img
                     src="images/footer/insta_f.png"></a>
-            </div>
-            <div class="contactRowFooter"><a href="https://www.deviantart.com/yorha2g" target="_blank"><img
-                    src="images/footer/deviant_f.png"></a>
             </div>
             <div class="contactRowFooter"><a href="https://www.youtube.com/user/giggi1630" target="_blank"><img
                     src="images/footer/yt_f.png"></a>

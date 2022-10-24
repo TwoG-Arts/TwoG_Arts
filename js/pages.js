@@ -54,12 +54,12 @@ function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Videos").load("pages/Videos.html");
+    $("#video").onload = function (){select(i)};
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
     mob.style.display = 'none';
 
-    select(i);
     $(".home").html('Home');
 }
 
@@ -67,12 +67,12 @@ function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Designs").load("pages/Designs.html");
+    $("#design").onload = function (){select(i)};
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
 
-    select(i);
     $(".home").html('Home');
 }
 
@@ -80,12 +80,11 @@ function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
     $(".Editing").load("pages/Editing.html");
+    $("#editing").onload = function (){select(i)};
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
     mob.style.display = 'none';
-
-    select(i);
 
     $(".home").html('Home');
 }

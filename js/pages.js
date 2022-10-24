@@ -53,8 +53,7 @@ function buttonLeave(i) {
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Videos").load("pages/Videos.html");
-    $("#video").onload = function (){select(i)};
+    $(".Videos").load("pages/Videos.html").onload = function (){select(i)};
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
@@ -66,8 +65,7 @@ function videos(i) {
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Designs").load("pages/Designs.html");
-    $("#design").onload = function (){select(i)};
+    $(".Designs").load("pages/Designs.html").onload = function (){select(i)};
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -79,8 +77,7 @@ function designs(i) {
 function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Editing").load("pages/Editing.html");
-    $("#editing").onload = function (){select(i)};
+    $(".Editing").load("pages/Editing.html").onload = function (){select(i)};
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -153,6 +150,11 @@ function clickedDropdown(i) {
 
     if ((i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
+            case 0:
+                dropdownContent[0].style.display = 'none';
+                dropdownContent[1].style.display = 'none';
+                dropdownContent[2].style.display = 'none';
+                break;
             case 1:
                 dropdownContent[1].style.display = 'none';
                 dropdownContent[2].style.display = 'none';

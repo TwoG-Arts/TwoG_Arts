@@ -1149,7 +1149,7 @@ input:checked + .slider:before {
 }
 
 #cuore{
-   animation: heartbeat 5s infinite;
+   animation: heartbeat 1s infinite;
 }
 @keyframes heartbeat
 {

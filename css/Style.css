@@ -869,7 +869,9 @@ input:checked + .slider:before {
     .buttons {
         zoom: 75%;
     }
-
+    .sideBut{
+      top: 1.99rem;
+    }
     .rightBlock {
         margin: 2.5rem 5rem 2rem 5rem;
     }

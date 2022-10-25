@@ -53,7 +53,9 @@ function buttonLeave(i) {
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Videos").load("pages/Videos.html");
+    if ($(".Videos").html === '') {
+        $(".Videos").load("pages/Videos.html");
+    }
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
@@ -61,7 +63,7 @@ function videos(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis')
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
@@ -69,7 +71,9 @@ function videos(i) {
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Designs").load("pages/Designs.html");
+    if ($(".Designs").html === '') {
+        $(".Designs").load("pages/Designs.html");
+    }
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -77,7 +81,7 @@ function designs(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis')
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
@@ -85,7 +89,9 @@ function designs(i) {
 function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Editing").load("pages/Editing.html");
+    if ($(".Editing").html === '') {
+        $(".Editing").load("pages/Editing.html");
+    }
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -93,15 +99,16 @@ function editing(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis')
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
 
 function aboutMe(i) {
     const mob = document.getElementsByClassName('mobile')[0];
-
-    $(".AboutMe").load("pages/AboutMe.html");
+    if ($(".AboutMe").html === '') {
+        $(".AboutMe").load("pages/AboutMe.html");
+    }
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');

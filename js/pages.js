@@ -6,7 +6,7 @@ let prevButtonDropdownText = document.getElementById('homeText');
 let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
-let selected = null;
+let selected = false;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -203,14 +203,19 @@ function clickedDropdown(i) {
 
 function dropContent() {
     const content = document.getElementsByClassName('dropdown-content')[0];
-    content.style.display = 'block';
-    content.classList.add('selecting');
-    if (selected !== null && selected !== content) {
-        selected.classList.remove('selecting');
-        selected.style.display = 'none';
-        selected = content;
+    const lines = document.getElementById('lines');
+    if (selected === false) {
+        content.classList.add('selecting');
+        content.style.display = 'block';
+        content.style.height = 'auto';
+        lines.style.transform = 'rotate(90deg)';
+        selected = true;
+    } else {
+        content.classList.remove('selecting');
+        content.style.height = '0';
+        lines.style.transform = 'rotate(0deg)';
+        selected = false;
     }
-    selected = content;
 }
 
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {

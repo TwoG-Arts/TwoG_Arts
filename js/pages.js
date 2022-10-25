@@ -204,15 +204,16 @@ function clickedDropdown(i) {
 function dropContent() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
+    const buttons = document.getElementsByClassName('dropdown2');
     if (selected === false) {
         content.classList.add('selecting');
         content.style.display = 'block';
-        content.style.height = 'auto';
+        content.height(buttons.outerHeight(true));
         lines.style.animation = 'rotation';
         selected = true;
     } else {
         content.classList.remove('selecting');
-        content.style.height = '0';
+        content.height(0);
         lines.style.animation = 'reverseRotation';
         selected = false;
     }

@@ -208,12 +208,12 @@ function dropContent() {
         content.classList.add('selecting');
         content.style.display = 'block';
         content.style.height = 'auto';
-        lines.style.animationDirection = 'normal';
+        lines.style.animation = 'rotation';
         selected = true;
     } else {
         content.classList.remove('selecting');
         content.style.height = '0';
-        lines.style.animationDirection = 'reverse';
+        lines.style.animation = 'reverseRotation';
         selected = false;
     }
 }

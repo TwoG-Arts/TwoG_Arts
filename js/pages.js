@@ -202,21 +202,30 @@ function clickedDropdown(i) {
 }
 
 function dropContent() {
+    if (selected === false) {
+        view();
+    } else {
+        hide();
+    }
+}
+
+function view() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
-    const buttons = document.getElementsByClassName('buttonSelected');
-    if (selected === false) {
-        content.classList.add('selecting');
-        content.style.display = 'block';
-        content.classList.remove('dropAnimation');
-        lines.classList.add('rotate');
-        selected = true;
-    } else {
-        content.classList.remove('selecting');
-        content.classList.add('dropAnimation');
-        lines.classList.remove('rotate');
-        selected = false;
-    }
+    content.classList.add('selecting');
+    content.style.display = 'block';
+    content.classList.remove('dropAnimation');
+    lines.classList.add('rotate');
+    selected = true;
+}
+
+function hide() {
+    const content = document.getElementsByClassName('dropdown-content')[0];
+    const lines = document.getElementById('lines');
+    content.classList.remove('selecting');
+    content.classList.add('dropAnimation');
+    lines.classList.remove('rotate');
+    selected = false;
 }
 
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {

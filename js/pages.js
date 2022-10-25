@@ -184,7 +184,9 @@ function clickedDropdown(i) {
                 dropdownContent[2].style.display = 'block';
                 break;
         }
-        content.style.height = '31rem';
+        if (i===1 || i===4 || i===7) {
+            content.style.height = '31rem';
+        }
         $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;

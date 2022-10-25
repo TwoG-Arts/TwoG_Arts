@@ -207,7 +207,12 @@ header ul, header li {
     width: 4.5rem;
 }
 
+.dropdown-content2 {
+    display: none;
+}
+
 .dropdown-content {
+    height: 0;
     padding-left: 4rem;
     padding-right: 1rem;
 }

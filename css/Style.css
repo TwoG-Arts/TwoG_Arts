@@ -1179,6 +1179,11 @@ input:checked + .slider:before {
 }
 
 #lines {
-    animation: transform 0.4s;
-    transform: rotate(0deg);
+    animation: rotation 0.4s;
+    animation-direction: normal;
+}
+
+@keyframes rotation {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(90deg);}
 }

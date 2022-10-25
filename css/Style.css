@@ -1188,13 +1188,5 @@ input:checked + .slider:before {
 
 .rotate {
     transform-origin: 50% 50%;
-    animation: scaling 0.4s;
-}
-
-@keyframes scaling {
-    0%{transform: scale(1);}
-    50%{transform: scale(0.6);}
-    100%{transform: scale(1);}
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
+    transform: rotate(90deg);
 }

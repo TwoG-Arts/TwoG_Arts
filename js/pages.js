@@ -1,12 +1,12 @@
 let prevButton = document.getElementById('2g');
 let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
-let prevButtonDropdown = document.getElementsByClassName('buttonSelected')[0];
-let prevButtonDropdownText = prevButtonDropdown.getElementsByTagName('div')[1];
+let prevButtonDropdown = document.getElementById('home');
+let prevButtonDropdownText = document.getElementById('homeText');
 let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
-let selected = null;
+let selected = false;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -160,7 +160,7 @@ function clickedDropdown(i) {
     selectedColor.style.backgroundPosition = 'left bottom';
     selectedTextColor.style.backgroundPosition = 'left bottom';
 
-    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== null && prevButtonDropdown !== selectedColor) {
+    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
             case 0:
                 dropdownContent[0].style.display = 'none';
@@ -184,16 +184,16 @@ function clickedDropdown(i) {
                 break;
         }
 
-        prevButtonDropdown.style.backgroundPosition = 'right bottom';
-        prevButtonDropdownText.style.backgroundPosition = 'right bottom';
+        $(prevButtonDropdown).css("background-position", "right bottom");
+        $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        prevButtonClicked.style.backgroundPosition = 'right bottom';
-        prevButtonClickedText.style.backgroundPosition = 'right bottom';
+        $(prevButtonClicked).css("background-position", "right bottom");
+        $(prevButtonClickedText).css("background-position", "right bottom");
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }
@@ -203,14 +203,20 @@ function clickedDropdown(i) {
 
 function dropContent() {
     const content = document.getElementsByClassName('dropdown-content')[0];
-    content.style.display = 'block';
-    content.classList.add('selecting');
-    if (selected !== null && selected !== content) {
-        selected.classList.remove('selecting');
-        selected.style.display = 'none';
-        selected = content;
+    const lines = document.getElementById('lines');
+    const buttons = document.getElementsByClassName('buttonSelected');
+    if (selected === false) {
+        content.classList.add('selecting');
+        content.style.display = 'block';
+        content.classList.remove('dropAnimation');
+        lines.classList.add('rotate');
+        selected = true;
+    } else {
+        content.classList.remove('selecting');
+        content.classList.add('dropAnimation');
+        lines.classList.remove('rotate');
+        selected = false;
     }
-    selected = content;
 }
 
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {

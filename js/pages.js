@@ -59,9 +59,10 @@ function videos(i) {
     $(".Editing").html('');
     mob.style.display = 'none';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        select(i);
-    }, false);
+    if (i===1) {
+        const selection = document.getElementsByClassName('loadAfter')[0];
+        selection.classList.add('loadThis')
+    }
     $(".home").html('Home');
 }
 
@@ -74,9 +75,10 @@ function designs(i) {
     $(".Videos").html('');
     mob.style.display = 'none';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        select(i);
-    }, false);
+    if (i===1) {
+        const selection = document.getElementsByClassName('loadAfter')[0];
+        selection.classList.add('loadThis')
+    }
     $(".home").html('Home');
 }
 
@@ -89,9 +91,10 @@ function editing(i) {
     $(".Videos").html('');
     mob.style.display = 'none';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        select(i);
-    }, false);
+    if (i===1) {
+        const selection = document.getElementsByClassName('loadAfter')[0];
+        selection.classList.add('loadThis')
+    }
     $(".home").html('Home');
 }
 

@@ -6,6 +6,12 @@
     <script>
         $(function () {
             clicked(0);
+            select(0);
+            const selection = document.getElementsByClassName('loadAfter')[0];
+            if (selection.classList.contains('loadThis')) {
+                select(1);
+                selection.classList.remove('loadThis');
+            }
             language();
         });
     </script>
@@ -180,12 +186,13 @@
                 </div>
                 <div class="video">
                     <a href="https://www.youtube.com/watch?v=dA-9Y99BwCQ" target="_blank"><img src="images/videos/bestof1.png">
-                        <div class="text" id="late"><p>LosMichele-Best of TWITCH #1</p><img src="images/icons/link.png"></div>
+                        <div class="text"><p>LosMichele-Best of TWITCH #1</p><img src="images/icons/link.png"></div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="loadAfter"></div>
 </body>
 </html>

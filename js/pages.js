@@ -156,6 +156,7 @@ function select(i) {
 function clickedDropdown(i) {
     const selectedColor = document.getElementsByClassName('buttonSelected')[i];
     const selectedTextColor = selectedColor.getElementsByTagName('div')[1];
+    const content = document.getElementsByClassName('dropdown-content')[0];
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
     selectedColor.style.backgroundPosition = 'left bottom';
     selectedTextColor.style.backgroundPosition = 'left bottom';
@@ -183,7 +184,7 @@ function clickedDropdown(i) {
                 dropdownContent[2].style.display = 'block';
                 break;
         }
-
+        content.style.height = '31rem';
         $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;
@@ -215,7 +216,6 @@ function view() {
     content.classList.add('selecting');
     content.style.display = 'block';
     content.classList.remove('dropAnimation');
-    content.style.height = '31rem';
     lines.classList.add('rotate');
     selected = true;
 }
@@ -225,7 +225,6 @@ function hide() {
     const lines = document.getElementById('lines');
     content.classList.remove('selecting');
     content.classList.add('dropAnimation');
-    content.style.height = '21rem';
     lines.classList.remove('rotate');
     selected = false;
 }

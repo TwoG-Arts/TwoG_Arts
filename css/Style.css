@@ -207,10 +207,6 @@ header ul, header li {
     width: 4.5rem;
 }
 
-.dropdown-content, .dropdown-content2 {
-    display: none;
-}
-
 .dropdown-content {
     padding-left: 4rem;
     padding-right: 1rem;

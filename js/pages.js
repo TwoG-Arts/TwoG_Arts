@@ -215,6 +215,7 @@ function view() {
     content.classList.add('selecting');
     content.style.display = 'block';
     content.classList.remove('dropAnimation');
+    content.style.height = '31rem';
     lines.classList.add('rotate');
     selected = true;
 }
@@ -224,6 +225,7 @@ function hide() {
     const lines = document.getElementById('lines');
     content.classList.remove('selecting');
     content.classList.add('dropAnimation');
+    content.style.height = '21rem';
     lines.classList.remove('rotate');
     selected = false;
 }

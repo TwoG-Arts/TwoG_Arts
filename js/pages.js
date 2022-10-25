@@ -184,6 +184,7 @@ function clickedDropdown(i) {
                 break;
         }
 
+        $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;

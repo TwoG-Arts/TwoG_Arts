@@ -1187,6 +1187,10 @@ input:checked + .slider:before {
     height: 21rem;
 }
 
+.bigSelection {
+    height: 31rem;
+}
+
 #lines {
     transition: 0.4s ease;
 }

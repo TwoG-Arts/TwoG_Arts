@@ -185,7 +185,8 @@ function clickedDropdown(i) {
                 break;
         }
         if (i===1 || i===4 || i===7) {
-            content.style.height = '31rem';
+            content.classList.add('bigSelection');
+            content.classList.remove('selecting');
         }
         $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
@@ -216,7 +217,6 @@ function view() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
     content.classList.add('selecting');
-    content.style.display = 'block';
     content.classList.remove('dropAnimation');
     lines.classList.add('rotate');
     selected = true;
@@ -227,6 +227,7 @@ function hide() {
     const lines = document.getElementById('lines');
     content.classList.remove('selecting');
     content.classList.add('dropAnimation');
+    content.classList.remove('bigSelection');
     lines.classList.remove('rotate');
     selected = false;
 }

@@ -1182,6 +1182,11 @@ input:checked + .slider:before {
     height: 0;
 }
 
+.selecting {
+    transition: height 0.4s ease;
+    height: auto;
+}
+
 #lines {
     transition: 0.4s ease;
 }

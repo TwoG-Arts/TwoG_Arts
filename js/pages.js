@@ -63,7 +63,7 @@ function videos(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis');
+        selection.innerHTML = '<script>$(function() {select(1)});</script>';
     }
     $(".home").html('Home');
 }
@@ -81,7 +81,7 @@ function designs(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis');
+        selection.innerHTML = '<script>$(function() {select(1)});</script>';
     }
     $(".home").html('Home');
 }
@@ -99,7 +99,7 @@ function editing(i) {
 
     if (i===1) {
         const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.classList.add('loadThis');
+        selection.innerHTML = '<script>$(function() {select(1)});</script>';
     }
     $(".home").html('Home');
 }

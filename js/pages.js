@@ -53,7 +53,7 @@ function buttonLeave(i) {
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    if ($(".Videos").html === '') {
+    if ($(".Videos").firstChild === null) {
         $(".Videos").load("pages/Videos.html");
     }
     $(".Designs").html('');
@@ -62,8 +62,8 @@ function videos(i) {
     mob.style.display = 'none';
 
     if (i===1) {
-        const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.innerHTML = '<script>$(function() {select(1)});</script>';
+        const selection = document.getElementsByClassName('Videos')[0];
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
@@ -71,7 +71,7 @@ function videos(i) {
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    if ($(".Designs").html === '') {
+    if ($(".Designs").firstChild === null) {
         $(".Designs").load("pages/Designs.html");
     }
     $(".Editing").html('');
@@ -80,8 +80,8 @@ function designs(i) {
     mob.style.display = 'none';
 
     if (i===1) {
-        const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.innerHTML = '<script>$(function() {select(1)});</script>';
+        const selection = document.getElementsByClassName('Designs')[0];
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
@@ -89,7 +89,7 @@ function designs(i) {
 function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    if ($(".Editing").html === '') {
+    if ($(".Editing").firstChild === null) {
         $(".Editing").load("pages/Editing.html");
     }
     $(".Designs").html('');
@@ -98,15 +98,15 @@ function editing(i) {
     mob.style.display = 'none';
 
     if (i===1) {
-        const selection = document.getElementsByClassName('loadAfter')[0];
-        selection.innerHTML = '<script>$(function() {select(1)});</script>';
+        const selection = document.getElementsByClassName('Editing')[0];
+        selection.classList.add('loadThis');
     }
     $(".home").html('Home');
 }
 
 function aboutMe(i) {
     const mob = document.getElementsByClassName('mobile')[0];
-    if ($(".AboutMe").html === '') {
+    if ($(".AboutMe").firstChild === null) {
         $(".AboutMe").load("pages/AboutMe.html");
     }
     $(".Editing").html('');

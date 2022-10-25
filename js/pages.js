@@ -208,12 +208,10 @@ function dropContent() {
     if (selected === false) {
         content.classList.add('selecting');
         content.style.display = 'block';
-        content.style.height = 'auto';
         lines.classList.add('rotate');
         selected = true;
     } else {
         content.classList.remove('selecting');
-        content.style.height = '0';
         lines.classList.remove('rotate');
         selected = false;
     }

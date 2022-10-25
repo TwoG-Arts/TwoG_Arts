@@ -1173,8 +1173,13 @@ input:checked + .slider:before {
 }
 
 .dropdown-content, .dropdown-content2 {
-    transition: height 400ms;
+    transition: 0.4s ease;
     overflow: hidden;
+}
+
+.selecting {
+    height: 0;
+    transition: 0.4s ease;
 }
 
 #lines {
@@ -1189,6 +1194,9 @@ input:checked + .slider:before {
 @keyframes rotation {
     from {transform: rotate(0deg);}
     to {transform: rotate(90deg);}
+    0% {transform: scale(1);}
+    50% {transform: scale(0.8);}
+    100% {transform: scale(1);}
 }
 
 @keyframes reverseRotation {

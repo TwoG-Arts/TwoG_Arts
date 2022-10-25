@@ -1177,7 +1177,7 @@ input:checked + .slider:before {
     overflow: hidden;
 }
 
-.selecting {
+.dropAnimation {
     height: 0;
     transition: 0.4s ease;
 }
@@ -1189,17 +1189,11 @@ input:checked + .slider:before {
 .rotate {
     transform-origin: 50% 50%;
     transform: rotate(90deg);
+    animation: scaling 0.4s;
 }
 
-@keyframes rotation {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(90deg);}
-    0% {transform: scale(1);}
-    50% {transform: scale(0.8);}
-    100% {transform: scale(1);}
-}
-
-@keyframes reverseRotation {
-    from {transform: rotate(90deg);}
-    to {transform: rotate(0deg);}
+@keyframes scaling {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.6);}
+    100%{transform: scale(1);}
 }

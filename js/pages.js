@@ -208,10 +208,12 @@ function dropContent() {
     if (selected === false) {
         content.classList.add('selecting');
         content.style.display = 'block';
+        content.classList.remove('dropAnimation');
         lines.classList.add('rotate');
         selected = true;
     } else {
         content.classList.remove('selecting');
+        content.classList.add('dropAnimation');
         lines.classList.remove('rotate');
         selected = false;
     }

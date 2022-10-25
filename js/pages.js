@@ -160,7 +160,7 @@ function clickedDropdown(i) {
     selectedColor.style.backgroundPosition = 'left bottom';
     selectedTextColor.style.backgroundPosition = 'left bottom';
 
-    if ((i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
+    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
             case 0:
                 dropdownContent[0].style.display = 'none';
@@ -183,8 +183,11 @@ function clickedDropdown(i) {
                 dropdownContent[2].style.display = 'block';
                 break;
         }
-        prevButtonDropdown.style.backgroundPosition = 'right bottom';
-        prevButtonDropdownText.style.backgroundPosition = 'right bottom';
+
+        let btn = prevButtonDropdown;
+        let btnText = prevButtonDropdownText;
+        btn.style.backgroundPosition = 'right bottom';
+        btnText.style.backgroundPosition = 'right bottom';
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;

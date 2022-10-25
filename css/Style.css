@@ -14,8 +14,7 @@ body {
     margin: 0;
     padding: 5px 1rem 4rem 1rem;
     background-image: url("../images/Background.png");
-    background-size: 100%;
-}
+    background-size: 50%;
 }
 
 p{ -webkit-text-size-adjust: none; }
@@ -918,6 +917,7 @@ input:checked + .slider:before {
     body {
         zoom: 100%;
         padding-bottom: 100px;
+        background-size: 100%;
     }
 
     .buttons {

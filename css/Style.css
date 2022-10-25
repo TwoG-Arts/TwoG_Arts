@@ -741,12 +741,12 @@ input:checked + .slider:before {
     display: none;
     position: fixed;
     bottom: 11rem;
-    right: -0.7rem;
+    right: 0.30rem;
     opacity: 0.75;
 }
 
 #upTop img {
-    width: 5rem;
+    width: 8rem;
 }
 
 #contacts {

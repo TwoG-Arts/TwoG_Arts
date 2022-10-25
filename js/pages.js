@@ -204,17 +204,17 @@ function clickedDropdown(i) {
 function dropContent() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
-    const buttons = document.getElementsByClassName('dropdown2');
+    const buttons = document.getElementsByClassName('buttonSelected');
     if (selected === false) {
         content.classList.add('selecting');
         content.style.display = 'block';
-        content.height(buttons.outerHeight(true));
-        lines.style.animation = 'rotation';
+        content.style.height = 'auto';
+        lines.classList.add('rotate');
         selected = true;
     } else {
         content.classList.remove('selecting');
-        content.height(0);
-        lines.style.animation = 'reverseRotation';
+        content.style.height = '0';
+        lines.classList.remove('rotate');
         selected = false;
     }
 }

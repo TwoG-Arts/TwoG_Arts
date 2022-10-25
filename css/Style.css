@@ -1178,8 +1178,12 @@ input:checked + .slider:before {
 }
 
 #lines {
-    animation: none;
-    animation-duration: 400ms;
+    transition: 0.4s ease;
+}
+
+.rotate {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
 }
 
 @keyframes rotation {

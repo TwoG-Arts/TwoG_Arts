@@ -190,7 +190,6 @@ img {
 .dropdownMenu {
     box-shadow: 1px 2px 3px 3px #7e796b;
     background: #B4AE9A;
-    transition: all 0.4s ease;
 }
 
 header ul, header li {
@@ -1184,7 +1183,7 @@ input:checked + .slider:before {
 
 .selecting {
     transition: height 0.4s ease;
-    height: auto;
+    height: 21rem;
 }
 
 #lines {

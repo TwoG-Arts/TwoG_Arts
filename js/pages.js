@@ -53,8 +53,9 @@ function buttonLeave(i) {
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Videos").load("pages/Videos.html");
-
+    if ($(".Videos").firstChild === null) {
+        $(".Videos").load("pages/Videos.html");
+    }
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Editing").html('');
@@ -70,7 +71,9 @@ function videos(i) {
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Designs").load("pages/Designs.html");
+    if ($(".Designs").firstChild === null) {
+        $(".Designs").load("pages/Designs.html");
+    }
     $(".Editing").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -86,7 +89,9 @@ function designs(i) {
 function editing(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
-    $(".Editing").load("pages/Editing.html");
+    if ($(".Editing").firstChild === null) {
+        $(".Editing").load("pages/Editing.html");
+    }
     $(".Designs").html('');
     $(".AboutMe").html('');
     $(".Videos").html('');
@@ -101,8 +106,9 @@ function editing(i) {
 
 function aboutMe(i) {
     const mob = document.getElementsByClassName('mobile')[0];
-
-    $(".AboutMe").load("pages/AboutMe.html");
+    if ($(".AboutMe").firstChild === null) {
+        $(".AboutMe").load("pages/AboutMe.html");
+    }
     $(".Editing").html('');
     $(".Designs").html('');
     $(".Videos").html('');

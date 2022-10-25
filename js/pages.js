@@ -1,8 +1,8 @@
 let prevButton = document.getElementById('2g');
 let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
-let prevButtonDropdown = document.getElementsByClassName('buttonSelected')[0];
-let prevButtonDropdownText = prevButtonDropdown.getElementsByTagName('div')[1];
+let prevButtonDropdown = document.getElementById('home');
+let prevButtonDropdownText = document.getElementById('homeText');
 let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
@@ -160,7 +160,7 @@ function clickedDropdown(i) {
     selectedColor.style.backgroundPosition = 'left bottom';
     selectedTextColor.style.backgroundPosition = 'left bottom';
 
-    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== null && prevButtonDropdown !== selectedColor) {
+    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
             case 0:
                 dropdownContent[0].style.display = 'none';
@@ -184,16 +184,15 @@ function clickedDropdown(i) {
                 break;
         }
 
-        prevButtonDropdown.style.backgroundPosition = 'right bottom';
-        prevButtonDropdownText.style.backgroundPosition = 'right bottom';
+        $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        prevButtonClicked.style.backgroundPosition = 'right bottom';
-        prevButtonClickedText.style.backgroundPosition = 'right bottom';
+        $(prevButtonClicked).css("background-position", "right bottom");
+        $(prevButtonClickedText).css("background-position", "right bottom");
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }

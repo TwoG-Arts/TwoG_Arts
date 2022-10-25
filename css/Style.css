@@ -180,7 +180,7 @@ img {
     font-size: 2rem;
     font-weight: bolder;
     background: #B4AE9A;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .dropdown h1 {
@@ -205,7 +205,7 @@ header ul, header li {
     position: absolute;
     left: 0.5rem;
     top: 0.5rem;
-    width: 4rem
+    width: 4.5rem;
 }
 
 .dropdown-content, .dropdown-content2 {

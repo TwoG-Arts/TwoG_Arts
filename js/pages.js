@@ -11,6 +11,7 @@ let selected = false;
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
     headerButtons(0);
+    clickedDropdown(0);
     let random = document.getElementById('banana');
     let num = Math.floor(Math.random() * 2);
     if (num === 0) {

@@ -20,36 +20,6 @@ $(function () {
     }
 });
 
-function selection() {
-    let activeButton = prevButton;
-    let activeButtonText = prevButtonText;
-    activeButton.style.backgroundPosition = "right bottom";
-    activeButtonText.style.backgroundPosition = "right bottom";
-}
-
-function selectionLeave() {
-    let buttonActive = document.getElementsByClassName('active')[0];
-    buttonActive.classList.add('hovering');
-    $(prevButton).css("background-position", "left bottom");
-    $(prevButtonText).css("background-position", "left bottom");
-}
-
-function buttonHover(i) {
-    let button = document.getElementsByClassName('button')[i];
-    let buttonText = button.getElementsByTagName('div')[1];
-    button.classList.add('hovering');
-    $(button).css("background-position", "left bottom");
-    $(buttonText).css("background-position", "left bottom");
-}
-
-function buttonLeave(i) {
-    let button = document.getElementsByClassName('button')[i];
-    let buttonText = button.getElementsByTagName('div')[1];
-    button.classList.remove('hovering');
-    $(button).css("background-position", "right bottom");
-    $(buttonText).css("background-position", "right bottom");
-}
-
 function videos(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 
@@ -111,6 +81,54 @@ function aboutMe(i) {
     }
 
     $(".home").html('Chi sono');
+}
+
+function selection() {
+    let activeButton = prevButton;
+    let activeButtonText = prevButtonText;
+    activeButton.style.backgroundPosition = "right bottom";
+    activeButtonText.style.backgroundPosition = "right bottom";
+}
+
+function selectionLeave() {
+    let buttonActive = document.getElementsByClassName('active')[0];
+    buttonActive.classList.add('hovering');
+    $(prevButton).css("background-position", "left bottom");
+    $(prevButtonText).css("background-position", "left bottom");
+}
+
+function buttonHover(i) {
+    let button = document.getElementsByClassName('button')[i];
+    let buttonText = button.getElementsByTagName('div')[1];
+    button.classList.add('hovering');
+    $(button).css("background-position", "left bottom");
+    $(buttonText).css("background-position", "left bottom");
+}
+
+function buttonLeave(i) {
+    let button = document.getElementsByClassName('button')[i];
+    let buttonText = button.getElementsByTagName('div')[1];
+    button.classList.remove('hovering');
+    $(button).css("background-position", "right bottom");
+    $(buttonText).css("background-position", "right bottom");
+}
+
+function headerSelection() {
+    prevHeaderButton.classList.remove('transform');
+}
+
+function headerSelectionLeave() {
+    prevHeaderButton.classList.add('transform');
+}
+
+function headerHover(i) {
+    const selected = document.getElementsByClassName('works')[i];
+    selected.classList.add('transform');
+}
+
+function headerLeave(i) {
+    const selected = document.getElementsByClassName('works')[i];
+    selected.classList.remove('transform');
 }
 
 function headerButtons(i) {

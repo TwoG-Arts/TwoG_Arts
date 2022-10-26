@@ -164,24 +164,24 @@ function clickedDropdown(i) {
     if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
             case 0:
-                dropdownContent[0].style.display = 'none';
-                dropdownContent[1].style.display = 'none';
-                dropdownContent[2].style.display = 'none';
+                dropdownContent[0].classList.remove('dropAnimation2');
+                dropdownContent[1].classList.remove('dropAnimation2');
+                dropdownContent[2].classList.remove('dropAnimation2');
                 break;
             case 1:
-                dropdownContent[1].style.display = 'none';
-                dropdownContent[2].style.display = 'none';
-                dropdownContent[0].style.display = 'block';
+                dropdownContent[1].classList.remove('dropAnimation2');
+                dropdownContent[2].classList.remove('dropAnimation2');
+                dropdownContent[0].classList.add('dropAnimation2');
                 break;
             case 4:
-                dropdownContent[2].style.display = 'none';
-                dropdownContent[0].style.display = 'none';
-                dropdownContent[1].style.display = 'block';
+                dropdownContent[2].classList.remove('dropAnimation2');
+                dropdownContent[0].classList.remove('dropAnimation2');
+                dropdownContent[1].classList.add('dropAnimation2');
                 break;
             case 7:
-                dropdownContent[1].style.display = 'none';
-                dropdownContent[0].style.display = 'none';
-                dropdownContent[2].style.display = 'block';
+                dropdownContent[1].classList.remove('dropAnimation2');
+                dropdownContent[0].classList.remove('dropAnimation2');
+                dropdownContent[2].classList.add('dropAnimation2');
                 break;
         }
         if (i===1 || i===4 || i===7) {
@@ -216,19 +216,22 @@ function dropContent() {
 function view() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
+    const button = document.getElementById('button');
     content.classList.add('selecting');
     content.classList.remove('dropAnimation');
     lines.classList.add('rotate');
+    button.classList.add('rotate');
     selected = true;
 }
 
 function hide() {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
+    const button = document.getElementById('button');
     content.classList.remove('selecting');
     content.classList.add('dropAnimation');
-    content.classList.remove('bigSelection');
     lines.classList.remove('rotate');
+    button.classList.remove('rotate');
     selected = false;
 }
 

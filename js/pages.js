@@ -209,8 +209,6 @@ function clickedDropdown(i) {
         if (i===1 || i===4 || i===7) {
             content.classList.add('bigSelection');
             content.classList.remove('selecting');
-            $(content).firstChild.css("background-position", "right bottom");
-            $(content).lastChild.css("background-position", "right bottom");
         }
         $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
@@ -242,11 +240,13 @@ function clickedDropdown(i) {
 }
 
 function checkMobile() {
-    const checkText = check.getElementsByTagName('div')[1];
-    const checkUpText = checkUp.getElementsByTagName('div')[1];
-    $(check).css("background-position", "left bottom");
+    const c = check;
+    const cUp = checkUp;
+    const checkText = c.getElementsByTagName('div')[1];
+    const checkUpText = cUp.getElementsByTagName('div')[1];
+    $(c).css("background-position", "left bottom");
     $(checkText).css("background-position", "left bottom");
-    $(checkUp).css("background-position", "left bottom");
+    $(cUp).css("background-position", "left bottom");
     $(checkUpText).css("background-position", "left bottom");
 }
 

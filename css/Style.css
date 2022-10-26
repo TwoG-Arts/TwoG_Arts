@@ -829,6 +829,7 @@ input:checked + .slider:before {
 }
 
 .headerHover {
+    position: absolute;
     width: 100%;
     height: 7.5rem;
 }

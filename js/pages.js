@@ -224,12 +224,15 @@ function view() {
     selected = true;
 }
 
-function hide() {
+function hide(j) {
     const content = document.getElementsByClassName('dropdown-content')[0];
     const lines = document.getElementById('lines');
     const button = document.getElementById('button');
     content.classList.remove('selecting');
     content.classList.add('dropAnimation');
+    if (j===0) {
+        content.classList.remove('bigSelection');
+    }
     lines.classList.remove('rotate');
     button.classList.remove('rotate');
     selected = false;

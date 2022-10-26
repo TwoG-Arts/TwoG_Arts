@@ -7,6 +7,8 @@ let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
 let selected = false;
+let check = document.getElementsByClassName('buttonSelected')[0];
+let checkUp = null;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -175,6 +177,7 @@ function select(i) {
 function clickedDropdown(i) {
     const selectedColor = document.getElementsByClassName('buttonSelected')[i];
     const selectedTextColor = selectedColor.getElementsByTagName('div')[1];
+    const buttonSelected = document.getElementsByClassName('buttonSelected');
     const content = document.getElementsByClassName('dropdown-content')[0];
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
     selectedColor.style.backgroundPosition = 'left bottom';
@@ -206,12 +209,26 @@ function clickedDropdown(i) {
         if (i===1 || i===4 || i===7) {
             content.classList.add('bigSelection');
             content.classList.remove('selecting');
+            $(content).firstChild.css("background-position", "right bottom");
+            $(content).lastChild.css("background-position", "right bottom");
         }
         $(prevButtonDropdown).css("background-position", "right bottom");
         $(prevButtonDropdownText).css("background-position", "right bottom");
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;
+    }
+
+    if ((i>1 || i<10) && i!==4 && i!==7) {
+        check = selectedColor;
+        if(i===2 && i===3)
+            checkUp = buttonSelected[1];
+        if(i===5 && i===6)
+            checkUp = buttonSelected[4];
+        if(i===8 && i===9)
+            checkUp = buttonSelected[7];
+    } else {
+        checkUp = null;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
@@ -222,6 +239,15 @@ function clickedDropdown(i) {
     }
     prevButtonClicked = selectedColor;
     prevButtonClickedText = selectedTextColor;
+}
+
+function checkMobile() {
+    const checkText = check.getElementsByTagName('div')[1];
+    const checkUpText = checkUp.getElementsByTagName('div')[1];
+    $(check).css("background-position", "left bottom");
+    $(checkText).css("background-position", "left bottom");
+    $(checkUp).css("background-position", "left bottom");
+    $(checkUpText).css("background-position", "left bottom");
 }
 
 function dropContent() {

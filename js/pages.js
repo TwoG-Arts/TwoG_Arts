@@ -2,7 +2,7 @@ let prevButton = document.getElementById('2g');
 let prevHeaderButton = document.getElementById('firstButton');
 let prevButtonText = document.getElementById('YoRHa');
 let prevButtonDropdown = document.getElementById('home');
-let prevButtonDropdownText = document.getElementById('homeText');
+let prevButtonDropdownText = prevButtonDropdown.getElementsByTagName('div')[1];
 let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
@@ -226,8 +226,10 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        prevButtonDropdown.classList.remove('blackButton');
-        prevButtonDropdownText.classList.remove('blackButton');
+        if (prevButtonDropdown.classList.contains('blackButton')) {
+            prevButtonDropdown.classList.remove('blackButton');
+            prevButtonDropdownText.classList.remove('blackButton');
+        }
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;

@@ -7,8 +7,8 @@ let prevButtonClicked = null;
 let prevButtonClickedText = null;
 let showing = null;
 let selected = false;
-let check = document.getElementsByClassName('buttonSelected')[0];
-let checkUp = check;
+let check = 0;
+let checkUp = 0;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -182,32 +182,32 @@ function clickedDropdown(i) {
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
     const prevBut = prevButtonDropdown;
     const prevButText = prevButtonDropdownText;
+
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
-        check = selectedColor;
+        check = i;
         switch (i) {
             case 0:
-                check = null;
-                checkUp = null;
+                checkUp = 0;
                 break;
             case 2:
-                checkUp = buttonSelected[1];
+                checkUp = 1;
                 break;
             case 3:
-                checkUp = buttonSelected[1];
+                checkUp = 1;
                 break;
             case 5:
-                checkUp = buttonSelected[4];
+                checkUp = 4;
                 break;
             case 6:
-                checkUp = buttonSelected[4];
+                checkUp = 4;
                 break;
             case 8:
-                checkUp = buttonSelected[7];
+                checkUp = 7;
                 break;
             case 9:
-                checkUp = buttonSelected[7];
+                checkUp = 7;
                 break;
         }
     }
@@ -276,21 +276,19 @@ function clickedDropdown(i) {
 }
 
 function checkMobile() {
-    const c = check;
-    const cUp = checkUp;
-    const selectedButton = document.getElementsByClassName('buttonSelected')[0];
-    const buttonText = document.getElementById('homeText');
-    if(c !== null) {
-        const checkText = c.getElementsByTagName('div');
-        c.classList.add('blackButton');
-        checkText[1].classList.add('blackButton');
-    } else if (cUp !== null) {
-        const checkUpText = cUp.getElementsByTagName('div');
-        cUp.classList.add('blackButton');
-        checkUpText[1].classList.add('blackButton');
+    const buttonHighlight = document.getElementsByClassName('buttonSelected')[check];
+    const buttonAbove = document.getElementsByClassName('buttonSelected')[checkUp];
+    const buttonHighlightText = buttonHighlight.getElementsByTagName('div')[1];
+    const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
+    if(check !== 0) {
+        buttonHighlight.classList.add('blackButton');
+        buttonHighlightText.classList.add('blackButton');
+    } else if (checkUp !== 0) {
+        buttonAbove.classList.add('blackButton');
+        buttonAboveText.classList.add('blackButton');
     } else {
-        selectedButton.classList.add('blackButton');
-        buttonText.classList.add('blackButton');
+        buttonHighlight.classList.add('blackButton');
+        buttonHighlightText.classList.add('blackButton');
     }
 }
 

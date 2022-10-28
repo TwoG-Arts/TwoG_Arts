@@ -184,7 +184,32 @@ function clickedDropdown(i) {
     const prevButText = prevButtonDropdownText;
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
-
+    if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
+        check = selectedColor;
+        switch (i) {
+            case 0:
+                checkUp = null;
+                break;
+            case 2:
+                checkUp = buttonSelected[1];
+                break;
+            case 3:
+                checkUp = buttonSelected[1];
+                break;
+            case 5:
+                checkUp = buttonSelected[4];
+                break;
+            case 6:
+                checkUp = buttonSelected[4];
+                break;
+            case 8:
+                checkUp = buttonSelected[7];
+                break;
+            case 9:
+                checkUp = buttonSelected[7];
+                break;
+        }
+    }
     if ((i===0 || i===1 || i===4 || i===7) && prevButtonClicked !== selectedColor) {
         switch (i) {
             case 0:
@@ -230,32 +255,6 @@ function clickedDropdown(i) {
         }
         return;
     }
-    if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
-        check = selectedColor;
-        switch (i) {
-            case 0:
-                checkUp = null;
-                break;
-            case 2:
-                checkUp = buttonSelected[1];
-                break;
-            case 3:
-                checkUp = buttonSelected[1];
-                break;
-            case 5:
-                checkUp = buttonSelected[4];
-                break;
-            case 6:
-                checkUp = buttonSelected[4];
-                break;
-            case 8:
-                checkUp = buttonSelected[7];
-                break;
-            case 9:
-                checkUp = buttonSelected[7];
-                break;
-        }
-    }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
         prevButtonClicked.classList.remove('blackButton');
@@ -268,6 +267,8 @@ function clickedDropdown(i) {
 }
 
 function checkMobile() {
+    const selected = document.getElementsByClassName('button')[i];
+    const selectedText = selected.getElementsByTagName('div')[1];
     const c = check;
     const cUp = checkUp;
     if(c !== null) {

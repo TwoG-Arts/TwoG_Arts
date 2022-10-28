@@ -294,6 +294,8 @@ function checkMobile() {
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
     }
+    prevButtonDropdown = buttonHighlight;
+    prevButtonDropdownText = buttonHighlightText;
 }
 
 function dropContent() {

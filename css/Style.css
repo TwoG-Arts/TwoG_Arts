@@ -1213,3 +1213,7 @@ input:checked + .slider:before {
     transform-origin: 50% 50%;
     transform: rotate(90deg);
 }
+
+.blackButton {
+    background-position: left bottom;
+}

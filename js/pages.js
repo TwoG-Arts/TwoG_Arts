@@ -281,13 +281,13 @@ function checkMobile() {
     const selectedButton = document.getElementsByClassName('buttonSelected')[0];
     const buttonText = document.getElementById('homeText');
     if(c !== null) {
-        const checkText = c.getElementsByTagName('div')[1];
+        const checkText = c.getElementsByTagName('div');
         c.classList.add('blackButton');
-        checkText.classList.add('blackButton');
+        checkText[1].classList.add('blackButton');
     } else if (cUp !== null) {
-        const checkUpText = cUp.getElementsByTagName('div')[1];
+        const checkUpText = cUp.getElementsByTagName('div');
         cUp.classList.add('blackButton');
-        checkUpText.classList.add('blackButton');
+        checkUpText[1].classList.add('blackButton');
     } else {
         selectedButton.classList.add('blackButton');
         buttonText.classList.add('blackButton');

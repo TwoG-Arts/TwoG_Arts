@@ -89,31 +89,31 @@ function aboutMe(i) {
 function selection() {
     let activeButton = prevButton;
     let activeButtonText = prevButtonText;
-    activeButton.classList.remove('BlackButton');
-    activeButtonText.classList.remove('BlackButton');
+    activeButton.classList.remove('blackButton');
+    activeButtonText.classList.remove('blackButton');
 }
 
 function selectionLeave() {
     let buttonActive = document.getElementsByClassName('active')[0];
     buttonActive.classList.add('hovering');
-    $(prevButton).classList.add('BlackButton');
-    $(prevButtonText).classList.add('BlackButton');
+    $(prevButton).classList.add('blackButton');
+    $(prevButtonText).classList.add('blackButton');
 }
 
 function buttonHover(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
     button.classList.add('hovering');
-    $(button).classList.add('BlackButton');
-    $(buttonText).classList.add('BlackButton');
+    $(button).classList.add('blackButton');
+    $(buttonText).classList.add('blackButton');
 }
 
 function buttonLeave(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
     button.classList.remove('hovering');
-    $(button).classList.remove('BlackButton');
-    $(buttonText).classList.remove('BlackButton');
+    $(button).classList.remove('blackButton');
+    $(buttonText).classList.remove('blackButton');
 }
 
 function headerSelection() {
@@ -147,14 +147,14 @@ function headerButtons(i) {
 function clicked(i) {
     const selected = document.getElementsByClassName('button')[i];
     const selectedText = selected.getElementsByTagName('div')[1];
-    selected.classList.add('BlackButton');
-    selectedText.classList.add('BlackButton');
+    selected.classList.add('blackButton');
+    selectedText.classList.add('blackButton');
     selected.classList.add('active');
 
     if (prevButton !== null && prevButton !== selected) {
         prevButton.classList.remove('active');
-        prevButton.classList.remove('BlackButton');
-        prevButtonText.classList.remove('BlackButton');
+        prevButton.classList.remove('blackButton');
+        prevButtonText.classList.remove('blackButton');
         prevButton = selected;
         prevButtonText = selectedText;
     }
@@ -180,8 +180,8 @@ function clickedDropdown(i) {
     const buttonSelected = document.getElementsByClassName('buttonSelected');
     const content = document.getElementsByClassName('dropdown-content')[0];
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
-    selectedColor.classList.add('BlackButton');
-    selectedTextColor.classList.add('BlackButton');
+    selectedColor.classList.add('blackButton');
+    selectedTextColor.classList.add('blackButton');
 
     if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
         switch (i) {
@@ -211,23 +211,23 @@ function clickedDropdown(i) {
             content.classList.remove('selecting');
         }
         if (i===1) {
-            buttonSelected[2].classList.remove('BlackButton');
-            buttonSelected[2].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
-            buttonSelected[3].classList.remove('BlackButton');
-            buttonSelected[3].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
+            buttonSelected[2].classList.remove('blackButton');
+            buttonSelected[2].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[3].classList.remove('blackButton');
+            buttonSelected[3].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===4) {
-            buttonSelected[5].classList.remove('BlackButton');
-            buttonSelected[5].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
-            buttonSelected[6].classList.remove('BlackButton');
-            buttonSelected[6].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
+            buttonSelected[5].classList.remove('blackButton');
+            buttonSelected[5].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[6].classList.remove('blackButton');
+            buttonSelected[6].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===7) {
-            buttonSelected[8].classList.remove('BlackButton');
-            buttonSelected[8].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
-            buttonSelected[9].classList.remove('BlackButton');
-            buttonSelected[9].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('BlackButton');
+            buttonSelected[8].classList.remove('blackButton');
+            buttonSelected[8].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[9].classList.remove('blackButton');
+            buttonSelected[9].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        $(prevButtonDropdown).classList.remove('BlackButton');
-        $(prevButtonDropdownText).classList.remove('BlackButton');
+        $(prevButtonDropdown).classList.remove('blackButton');
+        $(prevButtonDropdownText).classList.remove('blackButton');
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;
@@ -257,8 +257,8 @@ function clickedDropdown(i) {
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        $(prevButtonClicked).classList.remove('BlackButton');
-        $(prevButtonClickedText).classList.remove('BlackButton');
+        $(prevButtonClicked).classList.remove('blackButton');
+        $(prevButtonClickedText).classList.remove('blackButton');
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }
@@ -271,10 +271,10 @@ function checkMobile() {
     const cUp = checkUp;
     const checkText = c.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
     const checkUpText = cUp.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
-    $(c).classList.add('BlackButton');
-    $(checkText).classList.add('BlackButton');
-    $(cUp).classList.add('BlackButton');
-    $(checkUpText).classList.add('BlackButton');
+    $(c).classList.add('blackButton');
+    $(checkText).classList.add('blackButton');
+    $(cUp).classList.add('blackButton');
+    $(checkUpText).classList.add('blackButton');
 }
 
 function dropContent() {

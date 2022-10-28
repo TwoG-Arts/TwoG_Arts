@@ -254,6 +254,15 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
+        if (prevBut !== null && prevBut !== selectedColor) {
+            prevBut.classList.remove('blackButton');
+            prevButText.classList.remove('blackButton');
+            prevButtonDropdown = selectedColor;
+            prevButtonDropdownText = selectedTextColor;
+        }
+        prevButtonDropdown = selectedColor;
+        prevButtonDropdownText = selectedTextColor;
+        return;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {

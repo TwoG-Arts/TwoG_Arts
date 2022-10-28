@@ -233,6 +233,9 @@ function clickedDropdown(i) {
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
         check = selectedColor;
         switch (i) {
+            case 0:
+                checkUp = null;
+                break;
             case 2:
                 checkUp = buttonSelected[1];
                 break;
@@ -267,12 +270,15 @@ function clickedDropdown(i) {
 function checkMobile() {
     const c = check;
     const cUp = checkUp;
-    const checkText = c.getElementsByTagName('div')[1];
-    const checkUpText = cUp.getElementsByTagName('div')[1];
-    c.classList.add('blackButton');
-    checkText.classList.add('blackButton');
-    cUp.classList.add('blackButton');
-    checkUpText.classList.add('blackButton');
+    if(c !== null) {
+        const checkText = c.getElementsByTagName('div')[1];
+        c.classList.add('blackButton');
+        checkText.classList.add('blackButton');
+    } else if (cUp !== null) {
+        const checkUpText = cUp.getElementsByTagName('div')[1];
+        cUp.classList.add('blackButton');
+        checkUpText.classList.add('blackButton');
+    }
 }
 
 function dropContent() {

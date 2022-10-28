@@ -280,7 +280,9 @@ function checkMobile() {
     const buttonAbove = document.getElementsByClassName('buttonSelected')[checkUp];
     const buttonHighlightText = buttonHighlight.getElementsByTagName('div')[1];
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
-    if(check !== 0) {
+    const black = document.getElementsByClassName('blackButton')[0];
+    black.classList.remove('blackButton');
+    if (check !== 0) {
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
     } else if (checkUp !== 0) {

@@ -296,6 +296,8 @@ function checkMobile() {
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;
+    prevButtonClicked = buttonHighlight;
+    prevButtonClickedText = buttonHighlightText;
 }
 
 function dropContent() {

@@ -188,6 +188,7 @@ function clickedDropdown(i) {
         check = selectedColor;
         switch (i) {
             case 0:
+                check = null;
                 checkUp = null;
                 break;
             case 2:
@@ -253,7 +254,6 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        return;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
@@ -267,10 +267,10 @@ function clickedDropdown(i) {
 }
 
 function checkMobile() {
-    const selected = document.getElementsByClassName('button')[i];
-    const selectedText = selected.getElementsByTagName('div')[1];
     const c = check;
     const cUp = checkUp;
+    const selectedButton = document.getElementsByClassName('buttonSelected')[0];
+    const buttonText = document.getElementById('homeText');
     if(c !== null) {
         const checkText = c.getElementsByTagName('div')[1];
         c.classList.add('blackButton');
@@ -279,6 +279,9 @@ function checkMobile() {
         const checkUpText = cUp.getElementsByTagName('div')[1];
         cUp.classList.add('blackButton');
         checkUpText.classList.add('blackButton');
+    } else {
+        selectedButton.classList.add('blackButton');
+        buttonText.classList.add('blackButton');
     }
 }
 

@@ -413,6 +413,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'King Viserys I Targaryen from Game of Thrones.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Darius from Assassin\'s Creed Odyssey.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki from Tokyo Ghoul. <sub>PH: Me.</sub>';
@@ -423,6 +424,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Jonhnny Silverhand from Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile from One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq From Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
@@ -510,6 +512,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Re Viserys I Targaryen da Il Trono Di Spade.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Darius da Assassin\'s Creed Odyssey.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'Ken Kaneki da Tokyo Ghoul. <sub>PH: Me.</sub>';
@@ -520,7 +523,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
-
+            toTranslate[it.next().value].innerHTML = 'Jonhnny Silverhand da Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile da One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';

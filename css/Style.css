@@ -1215,5 +1215,5 @@ input:checked + .slider:before {
 }
 
 .blackButton {
-    background-position: left bottom;
+    background-position: left bottom !important;
 }

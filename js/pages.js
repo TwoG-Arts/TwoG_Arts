@@ -212,19 +212,19 @@ function clickedDropdown(i) {
         }
         if (i===1) {
             buttonSelected[2].classList.remove('blackButton');
-            buttonSelected[2].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[2].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[3].classList.remove('blackButton');
-            buttonSelected[3].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[3].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===4) {
             buttonSelected[5].classList.remove('blackButton');
-            buttonSelected[5].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[5].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[6].classList.remove('blackButton');
-            buttonSelected[6].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[6].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===7) {
             buttonSelected[8].classList.remove('blackButton');
-            buttonSelected[8].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[8].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[9].classList.remove('blackButton');
-            buttonSelected[9].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
         prevButtonDropdown.classList.remove('blackButton');
         prevButtonDropdownText.classList.remove('blackButton');
@@ -269,8 +269,8 @@ function clickedDropdown(i) {
 function checkMobile() {
     const c = check;
     const cUp = checkUp;
-    const checkText = c.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
-    const checkUpText = cUp.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
+    const checkText = c.getElementsByTagName('div')[1];
+    const checkUpText = cUp.getElementsByTagName('div')[1];
     c.classList.add('blackButton');
     checkText.classList.add('blackButton');
     cUp.classList.add('blackButton');

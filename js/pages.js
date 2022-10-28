@@ -185,7 +185,7 @@ function clickedDropdown(i) {
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
 
-    if ((i===0 || i===1 || i===4 || i===7) && prevButtonDropdown !== selectedColor) {
+    if ((i===0 || i===1 || i===4 || i===7) && prevButtonClicked !== selectedColor) {
         switch (i) {
             case 0:
                 dropdownContent[0].classList.remove('dropAnimation2');
@@ -228,12 +228,6 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        if (prevBut.classList.contains('blackButton')) {
-            prevBut.classList.remove('blackButton');
-            prevButText.classList.remove('blackButton');
-        }
-        prevButtonDropdown = selectedColor;
-        prevButtonDropdownText = selectedTextColor;
         return;
     }
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {

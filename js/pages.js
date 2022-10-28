@@ -281,8 +281,7 @@ function checkMobile() {
     const buttonHighlightText = buttonHighlight.getElementsByTagName('div')[1];
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
     if (check !== 0) {
-        buttonHighlight.classList.add('blackButton');
-        buttonHighlightText.classList.add('blackButton');
+        clickedDropdown(check);
     } else if (checkUp !== 0) {
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');

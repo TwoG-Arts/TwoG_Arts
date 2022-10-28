@@ -8,7 +8,7 @@ let prevButtonClickedText = null;
 let showing = null;
 let selected = false;
 let check = document.getElementsByClassName('buttonSelected')[0];
-let checkUp = check.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
+let checkUp = check;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -96,24 +96,24 @@ function selection() {
 function selectionLeave() {
     let buttonActive = document.getElementsByClassName('active')[0];
     buttonActive.classList.add('hovering');
-    $(prevButton).classList.add('blackButton');
-    $(prevButtonText).classList.add('blackButton');
+    prevButton.classList.add('blackButton');
+    prevButtonText.classList.add('blackButton');
 }
 
 function buttonHover(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
     button.classList.add('hovering');
-    $(button).classList.add('blackButton');
-    $(buttonText).classList.add('blackButton');
+    button.classList.add('blackButton');
+    buttonText.classList.add('blackButton');
 }
 
 function buttonLeave(i) {
     let button = document.getElementsByClassName('button')[i];
     let buttonText = button.getElementsByTagName('div')[1];
     button.classList.remove('hovering');
-    $(button).classList.remove('blackButton');
-    $(buttonText).classList.remove('blackButton');
+    button.classList.remove('blackButton');
+    buttonText.classList.remove('blackButton');
 }
 
 function headerSelection() {
@@ -226,8 +226,8 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('a')[0].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        $(prevButtonDropdown).classList.remove('blackButton');
-        $(prevButtonDropdownText).classList.remove('blackButton');
+        prevButtonDropdown.classList.remove('blackButton');
+        prevButtonDropdownText.classList.remove('blackButton');
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
         return;
@@ -257,8 +257,8 @@ function clickedDropdown(i) {
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        $(prevButtonClicked).classList.remove('blackButton');
-        $(prevButtonClickedText).classList.remove('blackButton');
+        prevButtonClicked.classList.remove('blackButton');
+        prevButtonClickedText.classList.remove('blackButton');
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }
@@ -271,10 +271,10 @@ function checkMobile() {
     const cUp = checkUp;
     const checkText = c.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
     const checkUpText = cUp.getElementsByTagName('a')[0].getElementsByTagName('div')[1];
-    $(c).classList.add('blackButton');
-    $(checkText).classList.add('blackButton');
-    $(cUp).classList.add('blackButton');
-    $(checkUpText).classList.add('blackButton');
+    c.classList.add('blackButton');
+    checkText.classList.add('blackButton');
+    cUp.classList.add('blackButton');
+    checkUpText.classList.add('blackButton');
 }
 
 function dropContent() {

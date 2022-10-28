@@ -180,6 +180,8 @@ function clickedDropdown(i) {
     const buttonSelected = document.getElementsByClassName('buttonSelected');
     const content = document.getElementsByClassName('dropdown-content')[0];
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
+    const prevBut = prevButtonDropdown;
+    const prevButText = prevButtonDropdownText;
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
 
@@ -226,9 +228,9 @@ function clickedDropdown(i) {
             buttonSelected[9].classList.remove('blackButton');
             buttonSelected[9].getElementsByTagName('div')[1].classList.remove('blackButton');
         }
-        if (prevButtonDropdown.classList.contains('blackButton')) {
-            prevButtonDropdown.classList.remove('blackButton');
-            prevButtonDropdownText.classList.remove('blackButton');
+        if (prevBut.classList.contains('blackButton')) {
+            prevBut.classList.remove('blackButton');
+            prevButText.classList.remove('blackButton');
         }
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;

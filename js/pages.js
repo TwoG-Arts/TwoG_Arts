@@ -212,28 +212,7 @@ function clickedDropdown(i) {
         }
     }
     if ((i===0 || i===1 || i===4 || i===7) && prevButtonClicked !== selectedColor) {
-        switch (i) {
-            case 0:
-                dropdownContent[0].classList.remove('dropAnimation2');
-                dropdownContent[1].classList.remove('dropAnimation2');
-                dropdownContent[2].classList.remove('dropAnimation2');
-                break;
-            case 1:
-                dropdownContent[1].classList.remove('dropAnimation2');
-                dropdownContent[2].classList.remove('dropAnimation2');
-                dropdownContent[0].classList.add('dropAnimation2');
-                break;
-            case 4:
-                dropdownContent[2].classList.remove('dropAnimation2');
-                dropdownContent[0].classList.remove('dropAnimation2');
-                dropdownContent[1].classList.add('dropAnimation2');
-                break;
-            case 7:
-                dropdownContent[1].classList.remove('dropAnimation2');
-                dropdownContent[0].classList.remove('dropAnimation2');
-                dropdownContent[2].classList.add('dropAnimation2');
-                break;
-        }
+        dropdownHandler(i);
         if (i===1 || i===4 || i===7) {
             content.classList.add('bigSelection');
             content.classList.remove('selecting');
@@ -290,6 +269,7 @@ function checkMobile() {
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');
+        dropdownHandler(checkUp);
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
@@ -297,11 +277,37 @@ function checkMobile() {
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
+        dropdownHandler(0);
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;
     prevButtonClicked = buttonHighlight;
     prevButtonClickedText = buttonHighlightText;
+}
+
+function dropdownHandler(i) {
+    switch (i) {
+        case 0:
+            dropdownContent[0].classList.remove('dropAnimation2');
+            dropdownContent[1].classList.remove('dropAnimation2');
+            dropdownContent[2].classList.remove('dropAnimation2');
+            break;
+        case 1:
+            dropdownContent[1].classList.remove('dropAnimation2');
+            dropdownContent[2].classList.remove('dropAnimation2');
+            dropdownContent[0].classList.add('dropAnimation2');
+            break;
+        case 4:
+            dropdownContent[2].classList.remove('dropAnimation2');
+            dropdownContent[0].classList.remove('dropAnimation2');
+            dropdownContent[1].classList.add('dropAnimation2');
+            break;
+        case 7:
+            dropdownContent[1].classList.remove('dropAnimation2');
+            dropdownContent[0].classList.remove('dropAnimation2');
+            dropdownContent[2].classList.add('dropAnimation2');
+            break;
+    }
 }
 
 function dropContent() {

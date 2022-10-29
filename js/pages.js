@@ -262,6 +262,8 @@ function checkMobile() {
     if (check !== 0 && checkUp !== 0) {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
+        const content = document.getElementsByClassName('dropdown-content')[0];
+
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
@@ -269,14 +271,22 @@ function checkMobile() {
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');
         dropdownHandler(checkUp);
+        if (content.classList.contains('bigSelection')) {
+            content.classList.remove('bigSelection');
+        }
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
+        const content = document.getElementsByClassName('dropdown-content')[0];
+
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         dropdownHandler(0);
+        if (content.classList.contains('bigSelection')) {
+            content.classList.remove('bigSelection');
+        }
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;
@@ -310,9 +320,11 @@ function dropdownHandler(i) {
     }
 }
 
-function dropContent() {
+function dropContent(j) {
     if (selected === false) {
         view();
+    } else if (j===0) {
+        hide(0);
     } else {
         hide();
     }

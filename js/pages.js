@@ -242,16 +242,16 @@ function clickedDropdown(i) {
         }
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
+    }
 
-        if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-            prevButtonClicked.classList.remove('blackButton');
-            prevButtonClickedText.classList.remove('blackButton');
-            prevButtonClicked = selectedColor;
-            prevButtonClickedText = selectedTextColor;
-        }
+    if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
+        prevButtonClicked.classList.remove('blackButton');
+        prevButtonClickedText.classList.remove('blackButton');
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }
+    prevButtonClicked = selectedColor;
+    prevButtonClickedText = selectedTextColor;
 }
 
 function checkMobile() {

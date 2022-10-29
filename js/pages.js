@@ -277,16 +277,13 @@ function checkMobile() {
         buttonAboveText.classList.add('blackButton');
         dropdownHandler(checkUp);
     } else {
-        const black = document.getElementsByClassName('blackButton');
-        const blackText = black[0].getElementsByTagName('div')[1];
-
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
     }
 
-    switch (check) {
+    switch (checkUp) {
         case 1:
             buttons[checkUp].classList.add('blackButton');
             Texts.classList.add('blackButton');

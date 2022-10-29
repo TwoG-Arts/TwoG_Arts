@@ -9,7 +9,6 @@ let showing = null;
 let selected = false;
 let check = 0;
 let checkUp = 0;
-let dropdown = false;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -242,6 +241,7 @@ function clickedDropdown(i) {
         }
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
+        return;
     }
 
     if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
@@ -264,25 +264,29 @@ function checkMobile() {
     const black = document.getElementsByClassName('blackButton');
     const blackText = black[0].getElementsByTagName('div')[1];
 
-    if (buttonAbove.classList.contains('blackButton') && checkUp === 1 && checkUp === 4 && checkUp === 7) {
+    if (!buttonAbove.classList.contains('blackButton') && check === 0) {
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
     }
 
     if (check !== 0 && checkUp !== 0) {
+
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');
         dropdownHandler(checkUp);
     } else {
+        const black = document.getElementsByClassName('blackButton');
+        const blackText = black[0].getElementsByTagName('div')[1];
+
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
     }
 
-    switch (checkUp) {
+    switch (check) {
         case 1:
             buttons[checkUp].classList.add('blackButton');
             Texts.classList.add('blackButton');

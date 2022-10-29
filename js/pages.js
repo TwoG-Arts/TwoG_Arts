@@ -280,10 +280,6 @@ function checkMobile() {
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
-        dropdownHandler(0);
-        if (content.classList.contains('bigSelection')) {
-            content.classList.remove('bigSelection');
-        }
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;

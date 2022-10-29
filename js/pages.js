@@ -185,9 +185,10 @@ function clickedDropdown(i) {
 
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
-    check = i;
+
 
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
+        check = i;
         switch (i) {
             case 0:
                 checkUp = 0;

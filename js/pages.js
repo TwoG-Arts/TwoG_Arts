@@ -184,8 +184,9 @@ function clickedDropdown(i) {
 
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
+    check = i;
+
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
-        check = i;
         switch (i) {
             case 0:
                 checkUp = 0;
@@ -262,7 +263,6 @@ function checkMobile() {
     if (check !== 0 && checkUp !== 0) {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
-        const content = document.getElementsByClassName('dropdown-content')[0];
 
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');

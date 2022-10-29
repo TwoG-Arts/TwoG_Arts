@@ -261,12 +261,16 @@ function checkMobile() {
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
     const buttons = document.getElementsByClassName('buttonSelected');
     const Texts = buttons[checkUp].getElementsByTagName('div')[1];
+
     if (check !== 0 && checkUp !== 0) {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
 
-        black[0].classList.remove('blackButton');
-        blackText.classList.remove('blackButton');
+        if (!buttonAbove.classList.contains('blackButton')) {
+            black[0].classList.remove('blackButton');
+            blackText.classList.remove('blackButton');
+        }
+
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');
@@ -281,6 +285,7 @@ function checkMobile() {
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
     }
+
     switch (check) {
         case 1:
             buttons[checkUp].classList.add('blackButton');

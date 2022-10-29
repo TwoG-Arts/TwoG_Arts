@@ -282,10 +282,11 @@ function checkMobile() {
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
     const black = document.getElementsByClassName('blackButton');
     const blackText = black[0].getElementsByTagName('div')[1];
+    const blackText2 = black[1].getElementsByTagName('div')[1];
     black[0].classList.remove('blackButton');
     blackText.classList.remove('blackButton');
     black[1].classList.remove('blackButton');
-    blackText.classList.remove('blackButton');
+    blackText2.classList.remove('blackButton');
     if (check !== 0) {
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');

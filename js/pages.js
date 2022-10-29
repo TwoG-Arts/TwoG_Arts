@@ -179,7 +179,6 @@ function clickedDropdown(i) {
     const selectedTextColor = selectedColor.getElementsByTagName('div')[1];
     const buttonSelected = document.getElementsByClassName('buttonSelected');
     const content = document.getElementsByClassName('dropdown-content')[0];
-    const dropdownContent = document.getElementsByClassName('dropdown-content2');
     const prevBut = prevButtonDropdown;
     const prevButText = prevButtonDropdownText;
 
@@ -286,6 +285,7 @@ function checkMobile() {
 }
 
 function dropdownHandler(i) {
+    const dropdownContent = document.getElementsByClassName('dropdown-content2');
     switch (i) {
         case 0:
             dropdownContent[0].classList.remove('dropAnimation2');

@@ -280,11 +280,12 @@ function checkMobile() {
     const buttonAbove = document.getElementsByClassName('buttonSelected')[checkUp];
     const buttonHighlightText = buttonHighlight.getElementsByTagName('div')[1];
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
-    const black = document.getElementsByClassName('blackButton');
-    const blackText = black[0].getElementsByTagName('div')[1];
-    const blackText2 = black[1].getElementsByTagName('div')[1];
+
 
     if (check !== 0 && checkUp !== 0) {
+        const black = document.getElementsByClassName('blackButton');
+        const blackText = black[0].getElementsByTagName('div')[1];
+        const blackText2 = black[1].getElementsByTagName('div')[1];
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');
@@ -294,6 +295,9 @@ function checkMobile() {
         black[1].classList.remove('blackButton');
         blackText2.classList.remove('blackButton');
     } else {
+        const black = document.getElementsByClassName('blackButton');
+        const blackText = black[0].getElementsByTagName('div')[1];
+        const blackText2 = black[1].getElementsByTagName('div')[1];
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         black[1].classList.remove('blackButton');

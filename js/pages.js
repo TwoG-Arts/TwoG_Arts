@@ -274,12 +274,13 @@ function checkMobile() {
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
-        const content = document.getElementsByClassName('dropdown-content')[0];
 
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
+        buttonAbove.classList.add('blackButton');
+        buttonAboveText.classList.add('blackButton');
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;

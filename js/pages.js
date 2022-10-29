@@ -9,6 +9,7 @@ let showing = null;
 let selected = false;
 let check = 0;
 let checkUp = 0;
+let dropdown = false;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -261,16 +262,15 @@ function checkMobile() {
     const buttonAboveText = buttonAbove.getElementsByTagName('div')[1];
     const buttons = document.getElementsByClassName('buttonSelected');
     const Texts = buttons[checkUp].getElementsByTagName('div')[1];
+    const black = document.getElementsByClassName('blackButton');
+    const blackText = black[0].getElementsByTagName('div')[1];
+
+    if (buttonAbove.classList.contains('blackButton') && checkUp === 1 && checkUp === 4 && checkUp === 7) {
+        black[0].classList.remove('blackButton');
+        blackText.classList.remove('blackButton');
+    }
 
     if (check !== 0 && checkUp !== 0) {
-        const black = document.getElementsByClassName('blackButton');
-        const blackText = black[0].getElementsByTagName('div')[1];
-
-        if (!buttonAbove.classList.contains('blackButton')) {
-            black[0].classList.remove('blackButton');
-            blackText.classList.remove('blackButton');
-        }
-
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');

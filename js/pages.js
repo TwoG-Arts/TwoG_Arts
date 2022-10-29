@@ -286,14 +286,14 @@ function checkMobile() {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
         const blackText2 = black[1].getElementsByTagName('div')[1];
-        buttonHighlight.classList.add('blackButton');
-        buttonHighlightText.classList.add('blackButton');
-        buttonAbove.classList.add('blackButton');
-        buttonAboveText.classList.add('blackButton');
         black[0].classList.remove('blackButton');
         blackText.classList.remove('blackButton');
         black[1].classList.remove('blackButton');
         blackText2.classList.remove('blackButton');
+        buttonHighlight.classList.add('blackButton');
+        buttonHighlightText.classList.add('blackButton');
+        buttonAbove.classList.add('blackButton');
+        buttonAboveText.classList.add('blackButton');
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];

@@ -271,9 +271,6 @@ function checkMobile() {
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');
         dropdownHandler(checkUp);
-        if (content.classList.contains('bigSelection')) {
-            content.classList.remove('bigSelection');
-        }
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
@@ -320,11 +317,9 @@ function dropdownHandler(i) {
     }
 }
 
-function dropContent(j) {
+function dropContent() {
     if (selected === false) {
         view();
-    } else if (j===0) {
-        hide(0);
     } else {
         hide();
     }

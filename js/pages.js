@@ -279,8 +279,6 @@ function checkMobile() {
         blackText.classList.remove('blackButton');
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
-        buttonAbove.classList.add('blackButton');
-        buttonAboveText.classList.add('blackButton');
     }
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;

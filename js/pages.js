@@ -185,10 +185,9 @@ function clickedDropdown(i) {
 
     selectedColor.classList.add('blackButton');
     selectedTextColor.classList.add('blackButton');
-
+    check = i;
 
     if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
-        check = i;
         switch (i) {
             case 0:
                 checkUp = 0;
@@ -243,17 +242,16 @@ function clickedDropdown(i) {
         }
         prevButtonDropdown = selectedColor;
         prevButtonDropdownText = selectedTextColor;
-        return;
-    }
 
-    if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
-        prevButtonClicked.classList.remove('blackButton');
-        prevButtonClickedText.classList.remove('blackButton');
+        if (prevButtonClicked !== null && prevButtonClicked !== selectedColor) {
+            prevButtonClicked.classList.remove('blackButton');
+            prevButtonClickedText.classList.remove('blackButton');
+            prevButtonClicked = selectedColor;
+            prevButtonClickedText = selectedTextColor;
+        }
         prevButtonClicked = selectedColor;
         prevButtonClickedText = selectedTextColor;
     }
-    prevButtonClicked = selectedColor;
-    prevButtonClickedText = selectedTextColor;
 }
 
 function checkMobile() {

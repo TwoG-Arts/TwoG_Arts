@@ -9,6 +9,7 @@ let showing = null;
 let selected = false;
 let check = 0;
 let checkUp = 0;
+let prevDropdownButton = 0;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -186,48 +187,73 @@ function clickedDropdown(i) {
     selectedTextColor.classList.add('blackButton');
     check = i;
 
-    if (i===0 && i>1 && i<10 && i!==4 && i!==7) {
-        switch (i) {
-            case 0:
-                checkUp = 0;
-                break;
-            case 2:
-                checkUp = 1;
-                break;
-            case 3:
-                checkUp = 1;
-                break;
-            case 5:
-                checkUp = 4;
-                break;
-            case 6:
-                checkUp = 4;
-                break;
-            case 8:
-                checkUp = 7;
-                break;
-            case 9:
-                checkUp = 7;
-                break;
-        }
+    switch (check) {
+        case 0:
+            checkUp = 0;
+            break;
+        case 2:
+            lastDropdownButton = 2;
+            checkUp = 1;
+            break;
+        case 3:
+            lastDropdownButton = 3;
+            checkUp = 1;
+            break;
+        case 5:
+            lastDropdownButton = 5;
+            checkUp = 4;
+            break;
+        case 6:
+            lastDropdownButton = 6;
+            checkUp = 4;
+            break;
+        case 8:
+            lastDropdownButton = 8;
+            checkUp = 7;
+            break;
+        case 9:
+            lastDropdownButton = 9;
+            checkUp = 7;
+            break;
     }
+
     if ((i===0 || i===1 || i===4 || i===7) && prevButtonClicked !== selectedColor) {
         dropdownHandler(i);
+        if(i===0) {
+            buttonSelected[1].classList.remove('blackButton');
+            buttonSelected[1].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[4].classList.remove('blackButton');
+            buttonSelected[4].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[7].classList.remove('blackButton');
+            buttonSelected[7].getElementsByTagName('div')[1].classList.remove('blackButton');
+        }
         if (i===1 || i===4 || i===7) {
             content.classList.add('bigSelection');
             content.classList.remove('selecting');
         }
         if (i===1) {
+            buttonSelected[4].classList.remove('blackButton');
+            buttonSelected[4].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[7].classList.remove('blackButton');
+            buttonSelected[7].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[2].classList.remove('blackButton');
             buttonSelected[2].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[3].classList.remove('blackButton');
             buttonSelected[3].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===4) {
+            buttonSelected[1].classList.remove('blackButton');
+            buttonSelected[1].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[7].classList.remove('blackButton');
+            buttonSelected[7].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[5].classList.remove('blackButton');
             buttonSelected[5].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[6].classList.remove('blackButton');
             buttonSelected[6].getElementsByTagName('div')[1].classList.remove('blackButton');
         } if (i===7) {
+            buttonSelected[1].classList.remove('blackButton');
+            buttonSelected[1].getElementsByTagName('div')[1].classList.remove('blackButton');
+            buttonSelected[4].classList.remove('blackButton');
+            buttonSelected[4].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[8].classList.remove('blackButton');
             buttonSelected[8].getElementsByTagName('div')[1].classList.remove('blackButton');
             buttonSelected[9].classList.remove('blackButton');
@@ -269,13 +295,12 @@ function checkMobile() {
         blackText.classList.remove('blackButton');
     }
 
-    if (check !== 0 && checkUp !== 0) {
+    if (check !== 0) {
 
         buttonHighlight.classList.add('blackButton');
         buttonHighlightText.classList.add('blackButton');
         buttonAbove.classList.add('blackButton');
         buttonAboveText.classList.add('blackButton');
-        dropdownHandler(checkUp);
     } else {
         const black = document.getElementsByClassName('blackButton');
         const blackText = black[0].getElementsByTagName('div')[1];
@@ -286,7 +311,7 @@ function checkMobile() {
         buttonHighlightText.classList.add('blackButton');
     }
 
-    switch (check) {
+    switch (checkUp) {
         case 1:
             buttons[checkUp].classList.add('blackButton');
             Texts.classList.add('blackButton');
@@ -300,6 +325,17 @@ function checkMobile() {
             Texts.classList.add('blackButton');
             break;
     }
+
+    if (check===1 || check===4 || check===7) {
+        dropdownHandler(checkUp);
+        buttons[check].classList.remove('blackButton');
+        buttons[check].getElementsByTagName('div')[1].classList.remove('blackButton');
+        buttons[lastDropdownButton].classList.add('blackButton');
+        buttons[lastDropdownButton].getElementsByTagName('div')[1].classList.add('blackButton');
+    }
+
+    console.log(check);console.log(checkUp);
+
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;
 }
@@ -619,7 +655,7 @@ function toTop() {
 
 window.onscroll = function () {
     scrollFunction()
-    };
+};
 
 function scrollFunction() {
     let up = document.getElementById("upTop");

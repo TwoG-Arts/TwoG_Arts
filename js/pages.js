@@ -9,7 +9,7 @@ let showing = null;
 let selected = false;
 let check = 0;
 let checkUp = 0;
-let prevDropdownButton = 0;
+let lastDropdownButton = 0;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
@@ -334,19 +334,19 @@ function checkMobile() {
         buttons[lastDropdownButton].getElementsByTagName('div')[1].classList.add('blackButton');
     }
 
-    console.log(check);console.log(checkUp);
-
     prevButtonDropdown = buttonHighlight;
     prevButtonDropdownText = buttonHighlightText;
 }
 
 function dropdownHandler(i) {
     const dropdownContent = document.getElementsByClassName('dropdown-content2');
+    const content = document.getElementsByClassName('dropdown-content')[0];
     switch (i) {
         case 0:
             dropdownContent[0].classList.remove('dropAnimation2');
             dropdownContent[1].classList.remove('dropAnimation2');
             dropdownContent[2].classList.remove('dropAnimation2');
+            content.classList.remove('bigSelection');
             break;
         case 1:
             dropdownContent[1].classList.remove('dropAnimation2');
@@ -443,7 +443,7 @@ function language() {
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'More edits';
         toTranslate[it.next().value].textContent = 'More videos';
-        toTranslate[it.next().value].textContent = 'More designs';
+        toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contacts<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Support Me<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
@@ -513,7 +513,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Jonhnny Silverhand from Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand from Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile from One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq From Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
@@ -546,7 +546,7 @@ function language() {
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'Più editing';
         toTranslate[it.next().value].textContent = 'Più video';
-        toTranslate[it.next().value].textContent = 'Più designs';
+        toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contatti<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Supportami<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
@@ -612,7 +612,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Jonhnny Silverhand da Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile da One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';

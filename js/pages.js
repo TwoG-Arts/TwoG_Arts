@@ -442,7 +442,6 @@ function language() {
 
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'More edits';
-        toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'More videos';
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contacts<div class="overlay-right"><img src="images/ovhone.png"></div>';
@@ -546,7 +545,6 @@ function language() {
 
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
         toTranslate[it.next().value].textContent = 'Più editing';
-        toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contatti<div class="overlay-right"><img src="images/ovhone.png"></div>';

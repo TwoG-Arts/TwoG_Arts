@@ -999,7 +999,7 @@ input:checked + .slider:before {
 
     .Videos .video, .Designs .video {
         width: 50%;
-        height: height: max-content;
+        height: max-content;
     }
 
     .lavori {

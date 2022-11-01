@@ -997,6 +997,11 @@ input:checked + .slider:before {
         zoom: 100%;
     }
 
+    .Videos .video, .Designs .video {
+        width: 50%;
+        height: height: max-content;
+    }
+
     .lavori {
         background-color: #B4AE9A;
         max-height: none;

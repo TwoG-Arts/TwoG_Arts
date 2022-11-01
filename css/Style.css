@@ -1182,10 +1182,12 @@ input:checked + .slider:before {
 
     .video {
         width: 50%;
+        height: auto;
     }
 
     .video img {
         width: 100%;
+
     }
 
     .video p {

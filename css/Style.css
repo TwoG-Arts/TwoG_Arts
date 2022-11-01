@@ -1217,3 +1217,10 @@ input:checked + .slider:before {
         width: 3rem;
     }
 }
+
+.titwomo{
+  width: 80%;
+  background-color: #B4AE9A;
+  color: #4E4B42;
+  margin-top: 1rem;
+}

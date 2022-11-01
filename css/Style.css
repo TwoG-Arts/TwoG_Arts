@@ -125,6 +125,12 @@ img {
     align-items: center;
     width: 20rem;
 }
+#titwomo{
+  width: 80%;
+  background-color: #B4AE9A;
+  color: #4E4B42;
+  margin-top: 1rem;
+}
 
 .language p {
     display: inline-block;

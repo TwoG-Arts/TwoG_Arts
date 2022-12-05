@@ -504,6 +504,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'The End of Evangelion from Neon Genesis Evangelion.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'King Viserys I Targaryen from Game of Thrones.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Darius from Assassin\'s Creed Odyssey.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo from Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';
@@ -606,6 +607,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'The End of Evangelion da Neon Genesis Evangelion.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Re Viserys I Targaryen da Il Trono Di Spade.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Darius da Assassin\'s Creed Odyssey.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Satoru Gojo da Jujutsu Kaisen.<sub>PH: Rankoll.</sub>';

@@ -340,7 +340,7 @@ header ul, header li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 20rem;
+    width: 21rem;
 }
 
 .rightBlock a {
@@ -366,6 +366,10 @@ header ul, header li {
 .collabWrap {
     display: inline-flex;
     flex-flow: row wrap;
+}
+
+.rightBlock #contacts{
+    padding: 1.4rem;   
 }
 
 .collab {

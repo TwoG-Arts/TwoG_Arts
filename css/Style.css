@@ -368,10 +368,6 @@ header ul, header li {
     flex-flow: row wrap;
 }
 
-.rightBlock #contacts{
-    padding: 1.4rem;   
-}
-
 .collab {
     width: 50%;
     padding: 1rem;
@@ -757,6 +753,7 @@ input:checked + .slider:before {
 
 #contacts {
     flex-direction: column;
+    padding: 1.4rem;
 }
 
 .moreAbout {

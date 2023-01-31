@@ -519,12 +519,13 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Deacon St. John from Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo from JBA Stone Ocean by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Fantastic Beasts by RAAMDeadman & Smokercosplay. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand from Cyberpunk 2077 by RaamDeadman <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand from Cyberpunk 2077 by RaamDeadman <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile from One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq From Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor from Detroit Become Human by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Shanks from One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Thor Ravager from Thor Love&Thunder by RaamDeadman. <sub>PH: Me.</sub>';
@@ -625,6 +626,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Deacon St. John da Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo da JBA Stone Ocean by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Animali Fantastici by RAAMDeadman & Smokercosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077 by RaamDeadman. <sub>PH: Me.</sub>';

@@ -629,7 +629,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Deacon St. John da Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo da JBA Stone Ocean by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Animali Fantastici by RAAMDeadman & Smokercosplay. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077 by RaamDeadman. <sub>PH: Me.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077 by RaamDeadman. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile da One Piece by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed V2 by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by RaamDeadman. <sub>PH: Me.</sub>';

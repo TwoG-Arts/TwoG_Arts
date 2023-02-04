@@ -486,6 +486,7 @@ function language() {
 
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Logo for Deadman_Cosplay.';    
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials.';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Graphics and logo for my socials.';
@@ -596,6 +597,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = '3D';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Logo per Deadman_Cosplay.';    
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social.';

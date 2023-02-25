@@ -505,6 +505,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Or Not To [B]e from NieR Automata.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Playground from Arcane.<sub>PH: Rankoll.</sub>';
@@ -615,6 +616,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Or Not To [B]e da NieR Automata.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Playground da Arcane.<sub>PH: Rankoll.</sub>';

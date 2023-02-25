@@ -507,7 +507,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Or Not To [B]e from NieR Automata.<sub>PH: RaamDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Or Not To [B]e.<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Playground from Arcane.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'The End of Evangelion from Neon Genesis Evangelion.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'King Viserys I Targaryen from Game of Thrones.<sub>PH: Me.</sub>';
@@ -618,7 +618,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Or Not To [B]e da NieR Automata.<sub>PH: RaamDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Or Not To [B]e<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Playground da Arcane.<sub>PH: Rankoll.</sub>';
             toTranslate[it.next().value].innerHTML = 'The End of Evangelion da Neon Genesis Evangelion.<sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Re Viserys I Targaryen da Il Trono Di Spade.<sub>PH: Me.</sub>';

@@ -521,7 +521,7 @@ function language() {
 
 
             
-            oTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger from Death Stranding by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John from Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo from JBA Stone Ocean by RaamDeadman. <sub>PH: Me.</sub>';

@@ -505,6 +505,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Dottore & Collei from Genshin Impact w/Coco<sub>PH: Aletheia_majesty</sub>';
             toTranslate[it.next().value].innerHTML = 'Dottore from Genshin Impact<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
@@ -620,6 +621,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Dottore e Collei da Genshin Impact w/Coco<sub>PH: Aletheia_majesty</sub>';
             toTranslate[it.next().value].innerHTML = 'Dottore da Genshin Impact<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';

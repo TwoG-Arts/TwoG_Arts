@@ -524,8 +524,8 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Hu Tao from Genshin Impact by XionRomeruf<sub> </sub></sub>';
-            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub></sub>';
+            toTranslate[it.next().value].innerHTML = 'Hu Tao from Genshin Impact by XionRomeruf';
+            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Father Gascoigne from Bloodborne by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger from Death Stranding by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John from Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
@@ -640,8 +640,8 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Hu Tao da Genshin Impact by XionRomeruf<sub> </sub></sub>';
-            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub></sub>';
+            toTranslate[it.next().value].innerHTML = 'Hu Tao da Genshin Impact by XionRomeruf';
+            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Padre Gascoigne da Bloodborne by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger da Death Stranding by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John da Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';

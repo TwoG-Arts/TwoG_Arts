@@ -486,6 +486,8 @@ function language() {
 
             /*toTranslate[it.next().value].textContent = 'Graphics very cool';*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Logo for Playstation Studios Cosplay.'; 
+            toTranslate[it.next().value].textContent = 'Logo for Oplonticon/Oplonticoff.';  
             toTranslate[it.next().value].textContent = 'Logo for Deadman_Cosplay.';    
             toTranslate[it.next().value].textContent = 'Graphics and logo for RaamDeadman\'s socials.';
             toTranslate[it.next().value].textContent = 'Graphics and logo for the 2nd Youtube channel of RaamDeadman.';
@@ -505,6 +507,8 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Bad [J]udgement';
+            toTranslate[it.next().value].innerHTML = 'Thomas Shelby from Peaky Blinders. <sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Dottore & Collei from Genshin Impact w/Coco<sub>PH: Aletheia_majesty</sub>';
             toTranslate[it.next().value].innerHTML = 'Dottore from Genshin Impact<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
@@ -524,8 +528,9 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Hu Tao from Genshin Impact by XionRomeruf';
-            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Matt Murdock from Daredevil by RaamDeadman. <sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Hu Tao from Genshin Impact by XionRomeruf.';
+            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94. <sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Father Gascoigne from Bloodborne by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger from Death Stranding by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John from Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';
@@ -605,6 +610,8 @@ function language() {
             toTranslate[it.next().value].textContent = 'Coding';
             toTranslate[it.next().value].textContent = '3D';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Design<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Logo per Playstation Studios Cosplay.'; 
+            toTranslate[it.next().value].textContent = 'Logo per Oplonticon/Oplonticoff.';  
             toTranslate[it.next().value].textContent = 'Logo per Deadman_Cosplay.';    
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman.';
@@ -622,7 +629,9 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Dottore e Collei da Genshin Impact w/Coco<sub>PH: Aletheia_majesty</sub>';
+            toTranslate[it.next().value].innerHTML = 'Bad [J]udgement';
+            toTranslate[it.next().value].innerHTML = 'Thomas Shelby da Peaky Blinders. <sub>PH: RaamDeadman.</sub>';
+            toTranslate[it.next().value].innerHTML = 'Dottore e Collei da Genshin Impact w/Coco. <sub>PH: Aletheia_majesty.</sub>';
             toTranslate[it.next().value].innerHTML = 'Dottore da Genshin Impact<sub>PH: RaamDeadman.</sub>';
             toTranslate[it.next().value].innerHTML = 'Stop War.<sub>PH: AngelOfDeath.</sub>';
             toTranslate[it.next().value].innerHTML = 'Twilight Vanishing.<sub>PH: AngelOfDeath.</sub>';
@@ -640,8 +649,9 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Hu Tao da Genshin Impact by XionRomeruf';
-            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94<sub>PH: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Matt Murdock da Daredevil by RaamDeadman. <sub>PH: Me</sub>';           
+            toTranslate[it.next().value].innerHTML = 'Hu Tao da Genshin Impact by XionRomeruf.';
+            toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94. <sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Padre Gascoigne da Bloodborne by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger da Death Stranding by RaamDeadman. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John da Days Gone by RaamDeadman. <sub>Edit: Me.</sub>';

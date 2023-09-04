@@ -529,6 +529,8 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Kishibe from Chainsaw Man by Deadman_Cosplay. <sub>Editing: Me</sub>';   
+            toTranslate[it.next().value].innerHTML = 'Jodio Joestar from Jojolands by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Joel Miller from The Last Of Us by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Emil from NieR Repilicant by Deadman_Cosplay. <sub>PH: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Spider-Man Noir by Deadman_Cosplay. <sub>PH: Me</sub>';   
@@ -654,6 +656,8 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Kishibe da Chainsaw Man by Deadman_Cosplay. <sub>Editing: Me</sub>';   
+            toTranslate[it.next().value].innerHTML = 'Jodio Joestar da Jojolands by Deadman_Cosplay. <sub>Editing: Me</sub>'; 
             toTranslate[it.next().value].innerHTML = 'Joel Miller da The Last Of Us by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Emil da NieR Repilicant by Deadman_Cosplay. <sub>PH: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Spider-Man Noir by Deadman_Cosplay. <sub>PH: Me</sub>';   

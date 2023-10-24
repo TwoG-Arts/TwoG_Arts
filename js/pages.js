@@ -448,13 +448,14 @@ function language() {
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contacts<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
+            toTranslate[it.next().value].textContent = 'Welcome';
             toTranslate[it.next().value].textContent = 'Works';
             toTranslate[it.next().value].textContent = 'Contacts';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].textContent = 'Special Thanks';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>About Me<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Welcome<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">My name is "2G_Arts". You could surely notice how many of my creations have been affected by the works with which I resonate the most, for example Steins;Gate, which tells the deep story of a man I see me in tune with; from the manga Attack on Titan, practically showing how a good technique alone isn\'t enough and it has to carry a more important message; also, in my works I tend to bend reality without parting from it, under the influence of two great directors like Christopher Nolan and Martin Scorsese. I put a lot of emphasis on shaping my emotions and my thoughts through arts, the only means that allows me to fully express thoughts and moods.';
+            toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Hello everyone, I\'m 2G_Arts! Passionate about anime and manga, my creations are strongly influenced by the stories that have touched me the most. I particularly love Steins; Gate, an anime that has deeply inspired me, and Attack on Titan, which taught me that in artistic creation, technique is important, but it\'s the concept behind the artwork that makes it truly special. I\'m also a big fan of directors Christopher Nolan and Martin Scorsese, and I always try to incorporate a touch of their style into my work. But above all, art for me is a way to express my emotions and thoughts in a unique and creative way. I enjoy bending reality without losing touch with it, creating artworks that reflect who I am and what I feel. I hope my creations will excite you as much as they excite me when I create them!';
             toTranslate[it.next().value].textContent = 'More about';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Videos<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'More about';
@@ -578,13 +579,14 @@ function language() {
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contatti<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
+            toTranslate[it.next().value].textContent = 'Benvenuti';            
             toTranslate[it.next().value].textContent = 'Lavori';
             toTranslate[it.next().value].textContent = 'Contatti';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].textContent = 'Ringraziamenti';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Chi sono<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Benvenuti<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Mi chiamo "2G_Arts". Noterete sicuramente come molte delle mie creazioni siano state influenzate dalle opere con cui risuono di più, ad esempio dall\'anime Steins; Gate, il quale racconta una storia profonda che mi vede in sintonia col protagonista; dal manga de\' L\'Attacco dei giganti, dimostrazione pratica di come la tecnica da sola non basta e deve essere veicolo di un messaggio importante; inoltre, nei miei lavori tendo a piegare la realtà senza distaccarmene, sotto influenza di due grandi registi come Christopher Nolan e Martin Scorsese. Pongo molta enfasi nel dare una forma alle mie emozioni ed i miei pensieri tramite l\'arte, l\'unico mezzo che mi permette a pieno di esprimere pensieri e stati d\'animo.';
+            toTranslate[it.next().value].innerHTML = '<img id="logoAboutMe" src="images/LogoAboutMe.png">Ciao a tutti, sono 2G_Arts! Appassionato di anime e manga, le mie creazioni sono fortemente influenzate dalle storie che mi hanno colpito di più. Amo particolarmente Steins; Gate, un anime che mi ha ispirato profondamente, e L\'Attacco dei giganti, che mi ha insegnato che nella creazione artistica, la tecnica è importante, ma è il concetto dietro un\'opera a renderla davvero speciale. Sono anche un grande fan dei registi Christopher Nolan e Martin Scorsese, e cerco sempre di portare un tocco del loro stile nei miei lavori. Ma soprattutto, l\'arte per me è un modo di esprimere le mie emozioni e pensieri in modo unico e creativo. Mi piace piegare la realtà senza perderne il contatto, creando opere che riflettono chi sono e cosa sento. Spero che le mie creazioni vi emozionino tanto quanto me emozionano nel crearle!';
             toTranslate[it.next().value].textContent = 'Scopri di più';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Video<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Scopri di più';

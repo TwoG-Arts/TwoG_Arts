@@ -340,7 +340,7 @@ header ul, header li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 22rem;
+    width: 15rem;
 }
 
 .rightBlock a {

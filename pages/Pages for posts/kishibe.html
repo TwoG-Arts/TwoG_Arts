@@ -64,6 +64,10 @@
     function incrementaVariabile() {
         contatore=contatore+1;
         carosellino(contatore);
+        var scriptElement = document.createElement('script');
+        scriptElement.async = true;
+        scriptElement.src = '//www.instagram.com/embed.js';
+        document.body.appendChild(scriptElement);
     }
 
     // Aggiungi un gestore di eventi al bottone

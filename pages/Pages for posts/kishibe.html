@@ -33,6 +33,7 @@
             align-items: center;
         }
     </style>
+    <script async src="http://www.instagram.com/embed.js" type="text/javascript"></script>
 
 </head>
 
@@ -59,6 +60,11 @@
             console.log("worko");
         }
         carosellino();
+
+        useEffect(() => {
+        if (window.instgrm)
+            window.instgrm.Embeds.process();
+        }, [articleId]);
 
     </script>
 </body>

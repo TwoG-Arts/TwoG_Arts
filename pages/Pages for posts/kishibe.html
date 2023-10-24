@@ -44,7 +44,7 @@
         </div>
         <div class="buttons">
             <button class="button" id="incrementButton">Avanti</button>
-            <button class="button">Dietro</button>
+            <button class="button" id="decrementButton">Dietro</button>
         </div>
     </div>
     
@@ -53,8 +53,9 @@
         function carosellino(valore_car_in) {
 
             var fullinsturc = ""
-            var array =['https://www.instagram.com/p/CyQEmF5L42r',
-            'https://www.instagram.com/p/BFKjVxkBsCC'
+            var array =['https://www.instagram.com/p/CwwviPdrLfA',
+            'https://www.instagram.com/p/CxC0UMkrsno',
+            'https://www.instagram.com/p/Cw4hJpUr6Mc'
             ];
             let instacambio = document.getElementsByClassName('instagram-post')[0];
             fullinsturc = '<iframe src="'+array [valore_car_in]+'/embed" width="500" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>';
@@ -65,10 +66,14 @@
         contatore=contatore+1;
         carosellino(contatore);
     }
+    function decrementaVariabile() {
+        contatore=contatore-1;
+        carosellino(contatore);
+    }
 
     // Aggiungi un gestore di eventi al bottone
     document.getElementById("incrementButton").addEventListener("click", incrementaVariabile);
-    
+    document.getElementById("decrementButton").addEventListener("click", decrementaVariabile);
     carosellino(contatore);
 
     </script>

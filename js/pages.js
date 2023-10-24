@@ -447,7 +447,6 @@ function language() {
         toTranslate[it.next().value].textContent = 'More videos';
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contacts<div class="overlay-right"><img src="images/ovhone.png"></div>';
-        toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Support Me<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Works';
             toTranslate[it.next().value].textContent = 'Contacts';
@@ -468,7 +467,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> for the hosting.';
             toTranslate[it.next().value].innerHTML = 'A special thanks to <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> and <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contacts<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Support Me<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Special Thanks<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> for programming the site.';
@@ -579,7 +577,6 @@ function language() {
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contatti<div class="overlay-right"><img src="images/ovhone.png"></div>';
-        toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Supportami<div class="overlay-right"><img src="images/ovhone.png"></div>';
         if (wrap) {
             toTranslate[it.next().value].textContent = 'Lavori';
             toTranslate[it.next().value].textContent = 'Contatti';
@@ -600,7 +597,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com" target="_blank">GitHub</a> per l\'hosting';
             toTranslate[it.next().value].innerHTML = 'Un ringraziamento speciale a <a href="https://www.platinumgames.com/" target="_blank">Platinum Games</a> e <a href="https://twitter.com/yokotaro" target="_blank">Yoko Taro</a>.';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Contattami<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Supportami<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Ringraziamenti<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = '<a href="https://github.com/Rankoll" target="_blank">Rankoll</a> per la programmazione del sito.';

@@ -4,47 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Embed</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        .instagram-post {
-            max-width: 100%;
-            width: 320px; 
-        }
-        .buttons {
-             display: flex;
-        }
-
-        .button {
-             margin: 0 10px; 
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
-
-
+    <title>Kishibe</title>
+    <link rel="stylesheet" href="..\..\css\style_reader.css">
 </head>
 
 <body>
+
     <div class="container">
+        <h1 class="en">Kishibe</h1>
         <div class="instagram-post">
             <p>piripillo</p>
         </div>
         <div class="buttons">
+            <button class="button" id="decrementButton" >Dietro</button>
             <button class="button" id="incrementButton">Avanti</button>
-            <button class="button" id="decrementButton">Dietro</button>
+
         </div>
     </div>
     
@@ -58,7 +32,7 @@
             'https://www.instagram.com/p/Cw4hJpUr6Mc'
             ];
             let instacambio = document.getElementsByClassName('instagram-post')[0];
-            fullinsturc = '<iframe src="'+array [valore_car_in]+'/embed" width="500" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>';
+            fullinsturc = '<iframe src="'+array [valore_car_in]+'/embed" frameborder="0" scrolling="yes" allowtransparency="true"></iframe>';
             instacambio.innerHTML= fullinsturc;
             console.log("worko");
         }
@@ -77,6 +51,7 @@
     carosellino(contatore);
 
     </script>
+
 </body>
 
 </html>

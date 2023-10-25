@@ -7,13 +7,14 @@
     <title>Kishibe</title>
     <link rel="stylesheet" href="..\..\css\style_reader.css">
     <link rel="icon" href="..\..\images/favicon.ico">
+    <script src="..\..\js/reader.js"></script>
 </head>
 
 <body>
 
     <div class="container">
         <div class="instagram-post">
-            <p>piripillo</p>
+            <p>placeholder</p>
         </div>
         <div class="buttons">
             <img class="button" id="decrementButton" src="..\..\images\arrows\sin.png"></img>
@@ -23,37 +24,32 @@
     </div>
     
     <script>
-        var contatore=0
-        function carosellino(valore_car_in) {
+    //variabili globali
+    var contatore=0
+    var lunghezzaArray=0
 
-            var fullinsturc = ""
-            var array =['https://www.instagram.com/p/CwwviPdrLfA',
-            'https://www.instagram.com/p/CxC0UMkrsno',
-            'https://www.instagram.com/p/Cw4hJpUr6Mc'
-            ];
-            var lunghezzaArray = array.length;
-            let instacambio = document.getElementsByClassName('instagram-post')[0];
-            fullinsturc = '<iframe src="'+array [valore_car_in]+'/embed" frameborder="0" scrolling="yes" allowtransparency="true"></iframe>';
-            instacambio.innerHTML= fullinsturc;
-            console.log("worko");
-        }
-    function incrementaVariabile() {
+    function carosellino(valore_car_in) {
+        var fullinsturc = ""
 
-        contatore=contatore+1;
-        carosellino(contatore);
+        //Link ai Post
+        var linksig = ['https://www.instagram.com/p/CwwviPdrLfA',
+        'https://www.instagram.com/p/CxC0UMkrsno',
+        'https://www.instagram.com/p/Cw4hJpUr6Mc'
+        ];
 
-    }
-    function decrementaVariabile() {
-        contatore=contatore-1;
-        carosellino(contatore);
+        lunghezzaArray = linksig.length;
+        let instacambio = document.getElementsByClassName('instagram-post')[0];
+        //creazione dell' iframe da inserire al posto del placeholder
+        fullinsturc = '<iframe src="'+linksig [valore_car_in]+'/embed" frameborder="0" scrolling="yes" allowtransparency="true"></iframe>';
+        instacambio.innerHTML= fullinsturc;
     }
 
-    // Aggiungi un gestore di eventi al bottone
+    // Gestione eventi
     document.getElementById("incrementButton").addEventListener("click", incrementaVariabile);
     document.getElementById("decrementButton").addEventListener("click", decrementaVariabile);
     carosellino(contatore);
-
     </script>
+
 <footer class="footer">
     <div class="mobileButton">
         <div class="contacts">

@@ -7,6 +7,14 @@ body {
     background-image: url("../images/Background.png");
     background-size: 50%;
 }
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 .instagram-post {
     width: 31rem; 
     margin-top: 3rem;

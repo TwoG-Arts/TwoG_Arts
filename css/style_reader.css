@@ -9,9 +9,11 @@ body {
 }
 .instagram-post {
     width: 31rem; 
+    margin-top: 3rem;
 }
 .buttons {
      display: flex;
+     margin-top: 1.5rem;
 }
 
 .button {
@@ -22,21 +24,79 @@ body {
     flex-direction: column;
     align-items: center;
 }
-h1{
-    position: relative;
-    background-color: #4E4B42;
-    box-shadow: 1px 2px 3px 3px #7e796b;
-    margin: 0.2rem auto 1rem auto;
-    text-align: center;
-    width: 97%;
-    height: 4rem;
-    color: #B4AE9A;
-    font-family: BreezeSans, sans-serif;
-    font-weight: bolder;
-    padding: 0.25rem 0;
-    font-size: 3rem;
-}
+
 iframe{
     width: 31rem;
     height:40rem;
+}
+.overlay-right img, .overlay-left img {
+    width: 4rem;
+}
+
+.overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-right {
+    position: absolute;
+    bottom: -0.23em;
+    right: 0;
+}
+
+.overlay-right img {
+    transform: rotate(180deg);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #6A6555;
+    width: 100%;
+    height: 4rem;
+    font-weight: bolder;
+}
+.footer-center, .contacts, #email {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+}
+
+  .contactRowFooter img {
+      width: 1.5rem;
+      margin-right: 1rem;
+      opacity: 1;
+      transition: 0.3s;
+  }
+  
+  .contactRowFooter img:hover{
+   opacity: 0.5;
+   transform: scale(1.1);
+  }
+ .mobileButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+.buttons img {
+    width: 6.5rem;
+    margin-right: 1rem;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.buttons img:hover{
+ transform: scale(1.1);
 }

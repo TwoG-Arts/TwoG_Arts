@@ -100,7 +100,7 @@ iframe{
 
 .buttons img {
     width: 6.5rem;
-    margin-right: 1rem;
+    margin: 0 1.5rem;
     opacity: 1;
     transition: 0.3s;
 }
@@ -125,3 +125,20 @@ iframe{
     margin-top: 1rem;
 }
 }
+
+@media only screen and (max-height: 820px) {
+    iframe{
+        width: 24rem;
+        height: 34rem;
+    }
+    .overlay-right img, .overlay-left img {
+        width: 5rem;
+    }
+    .buttons {
+        margin-top: 0.5rem;
+    }
+    .instagram-post {
+        width: 24rem;
+        margin-top: 1rem;
+    }
+    }

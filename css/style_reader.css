@@ -110,7 +110,7 @@ iframe{
 }
 
 @media only screen and (max-width: 1100px) {
-.iframe{
+iframe{
     width: 20rem;
     height:28rem;
 }
@@ -119,5 +119,9 @@ iframe{
 }
 .buttons {
     margin-top: 1.5rem;
+}
+.instagram-post {
+    width: 21rem;
+    margin-top: 1rem;
 }
 }

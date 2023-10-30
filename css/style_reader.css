@@ -132,7 +132,7 @@ iframe{
         height: 27rem;
     }
     .overlay-right img, .overlay-left img {
-        width: 5rem;
+        width: 5.5rem;
     }
     .buttons {
         margin-top: 0.5rem;
@@ -140,8 +140,5 @@ iframe{
     .instagram-post {
         width: 19.5rem;
         margin-top: 1rem;
-    }
-    .overlay-right img, .overlay-left img {
-        width: 4.5rem;
     }
     }

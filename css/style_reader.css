@@ -121,8 +121,24 @@ iframe{
     margin-top: 0.5rem;
 }
 .instagram-post {
-    width: 18rem;
+    width: 20rem;
     margin-top: 1rem;
 }
 }
 
+@media only screen and ((min-width: 1350px)) {
+    iframe{
+        width: 24rem;
+        height: 34rem;
+    }
+    .overlay-right img, .overlay-left img {
+        width: 5rem;
+    }
+    .buttons {
+        margin-top: 0.5rem;
+    }
+    .instagram-post {
+        width: 24rem;
+        margin-top: 1rem;
+    }
+    }

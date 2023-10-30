@@ -126,19 +126,3 @@ iframe{
 }
 }
 
-@media only screen and (max-height: 820px) and ((min-width: 1101px)) {
-    iframe{
-        width: 24rem;
-        height: 34rem;
-    }
-    .overlay-right img, .overlay-left img {
-        width: 5rem;
-    }
-    .buttons {
-        margin-top: 0.5rem;
-    }
-    .instagram-post {
-        width: 24rem;
-        margin-top: 1rem;
-    }
-    }

@@ -496,7 +496,7 @@ function language() {
             /*Drawings*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Drawings<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Dreammare - An AInktober AI-Comic <sub>English Version</sub>';
-            linkfumein.href = 'https://www.google.com/';
+            linkfumein.href = 'pages/ai_comic/ai_comic_en.pdf';
             /*Beta*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Image Randomizer.';
@@ -626,7 +626,7 @@ function language() {
              /*Drawings*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Disegni<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].innerHTML = 'Dreammare - An AInktober AI-Comic <sub>Versione Italiana</sub>';
-            linkfumein.href = 'https://it.wikipedia.org/wiki/Pagina_principale';
+            linkfumein.href = 'pages/ai_comic/ai_comic_ita.pdf';
 
 
 

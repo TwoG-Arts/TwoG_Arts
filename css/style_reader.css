@@ -17,7 +17,7 @@ img {
 }
 .instagram-post {
     width: 31rem; 
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .buttons {
      display: flex;
@@ -31,6 +31,13 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #b4ae9a;
+    box-shadow: 1px 2px 3px 3px #7e796b;
+    padding-top: 0 rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 iframe{

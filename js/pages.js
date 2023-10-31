@@ -423,6 +423,7 @@ function language() {
     let editing = document.getElementById('editing');
     let video = document.getElementById('video');
     let check = document.getElementsByClassName('check')[0];
+    let linkfumein = document.getElementById('linkfume');
     let it = makeRangeIterator(0, 150, 1);
 
     if (check.checked) {
@@ -494,7 +495,9 @@ function language() {
 
             /*Drawings*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Drawings<div class="overlay-right"><img src="images/ovhone.png"></div>';
-
+            toTranslate[it.next().value].textContent = 'Dreammare - An AInktober AI-Comic English Version';
+            linkfumein.href = 'https://www.google.com/';
+            /*Beta*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Image Randomizer.';
             toTranslate[it.next().value].textContent = 'Website of Maikubirth mod for The Binding of Isaac.';
@@ -620,7 +623,12 @@ function language() {
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i social di RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per il secondo canale youtube di RaamDeadman.';
             toTranslate[it.next().value].textContent = 'Grafiche e logo per i miei social.';
+             /*Drawings*/
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Disegni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].textContent = 'Dreammare - An AInktober AI-Comic Versione Italiana';
+            linkfumein.href = 'https://it.wikipedia.org/wiki/Pagina_principale';
+
+
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Coding<div class="overlay-right"><img src="images/ovhone.png"></div>';
             toTranslate[it.next().value].textContent = 'Selettore di immagini casuale.';

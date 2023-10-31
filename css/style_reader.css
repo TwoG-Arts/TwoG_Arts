@@ -7,6 +7,18 @@ body {
     background-image: url("../images/Background.png");
     background-size: 50%;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #343127;
+}
+
+::-webkit-scrollbar-button {
+    background: #343127;
+    height: 0.35rem;
+}
 img {
     user-drag: none;
     user-select: none;

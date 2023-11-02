@@ -531,6 +531,7 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Kishibe from Chainsaw Man by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Jodio Joestar from Jojolands by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Joel Miller from The Last Of Us by Deadman_Cosplay. <sub>Editing: Me</sub>';   
@@ -538,6 +539,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Spider-Man Noir by Deadman_Cosplay. <sub>PH: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Matt Murdock from Daredevil by Deadman_Cosplay. <sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Hu Tao from Genshin Impact by XionRomeruf. <sub>Editing: Me</sub>';
+            toTranslate[it.next().value].innerHTML = 'Big Boss from Metal Gear Solid 3 by Deadman_Cosplay. <sub>PH: Me</sub>'; 
             toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94. <sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Father Gascoigne from Bloodborne by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger from Death Stranding by Deadman_Cosplay. <sub>PH: Me.</sub>';
@@ -546,8 +548,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Fantastic Beasts by Deadman_Cosplay & Smokercosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Johnny Silverhand from Cyberpunk 2077 by Deadman_Cosplay <sub>Editing: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile from One Piece by Deadman_Cosplay. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed V2 by Deadman_Cosplay. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed by Deadman_Cosplay. <sub>PH: Me.</sub>';
+
             toTranslate[it.next().value].innerHTML = 'Connor from Detroit Become Human by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Shanks from One Piece by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Thor Ravager from Thor Love&Thunder by Deadman_Cosplay. <sub>PH: Me.</sub>';
@@ -662,6 +663,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Kishibe da Chainsaw Man by Deadman_Cosplay. <sub>Editing: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Jodio Joestar da Jojolands by Deadman_Cosplay. <sub>Editing: Me</sub>'; 
             toTranslate[it.next().value].innerHTML = 'Joel Miller da The Last Of Us by Deadman_Cosplay. <sub>Editing: Me</sub>';   
@@ -669,6 +671,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Spider-Man Noir by Deadman_Cosplay. <sub>PH: Me</sub>';   
             toTranslate[it.next().value].innerHTML = 'Matt Murdock da Daredevil by Deadman_Cosplay. <sub>PH: Me</sub>';           
             toTranslate[it.next().value].innerHTML = 'Hu Tao da Genshin Impact by XionRomeruf.';
+            toTranslate[it.next().value].innerHTML = 'Big Boss da Metal Gear Solid 3 by Deadman_Cosplay. <sub>PH: Me</sub>';  
             toTranslate[it.next().value].innerHTML = 'Insomniac Spiderman by marco.daniele94. <sub>PH: Me</sub>';
             toTranslate[it.next().value].innerHTML = 'Padre Gascoigne da Bloodborne by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Cliff Unger da Death Stranding by Deadman_Cosplay. <sub>PH: Me.</sub>';
@@ -677,7 +680,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Animali Fantastici by Deadman_Cosplay & Smokercosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077 by Deadman_Cosplay. <sub>Edit: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile da One Piece by Deadman_Cosplay. <sub>PH: Me.</sub>';
-            toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed V2 by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor da Detroit Become Human by Deadman_Cosplay. <sub>PH: Me.</sub>';
             toTranslate[it.next().value].innerHTML = 'Shanks da One Piece by Deadman_Cosplay. <sub>PH: Me.</sub>';

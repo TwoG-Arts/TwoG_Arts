@@ -531,7 +531,7 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Father Gascoigne vs the Hunter from Bloodborne.<sub>Deadman_Cosplay \& Vosvort_Cosplay</sub>';
+            toTranslate[it.next().value].innerHTML = 'Father Gascoigne vs the Hunter from Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Kishibe from Chainsaw Man. <sub>Deadman_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Jodio Joestar from Jojolands. <sub>Deadman_Cosplay</sub>';   
@@ -546,7 +546,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Cliff Unger from Death Stranding. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John from Days Gone. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo from JBA Stone Ocean. <sub>Deadman_Cosplay</sub>';
-            toTranslate[it.next().value].innerHTML = 'Dumbledore \& Grindelwald from Fantastic Beasts. <sub>Deadman_Cosplay \& Smokercosplay</sub>';
+            toTranslate[it.next().value].innerHTML = 'Dumbledore \& Grindelwald from Fantastic Beasts. <sub>Deadman_Cosplay</sub><sub>Smokercosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Johnny Silverhand from Cyberpunk 2077. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile from One Piece. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor from Detroit Become Human. <sub>Deadman_Cosplay</sub>';
@@ -663,7 +663,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
-            toTranslate[it.next().value].innerHTML = 'Padre Gascoigne contro il Cacciatore da Bloodborne.<sub>Deadman_Cosplay \& Vosvort_Cosplay</sub>';
+            toTranslate[it.next().value].innerHTML = 'Padre Gascoigne contro il Cacciatore da Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Kishibe da Chainsaw Man. <sub>Deadman_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Jodio Joestar da Jojolands. <sub>Deadman_Cosplay</sub>';   
@@ -678,7 +678,7 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Cliff Unger da Death Stranding. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Deacon St. John da Days Gone. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Jotaro Kujo da JBA Stone Ocean. <sub>Deadman_Cosplay</sub>';
-            toTranslate[it.next().value].innerHTML = 'Albus e Grindelwald da Animali Fantastici. <sub>Deadman_Cosplay \& Smokercosplay</sub>';
+            toTranslate[it.next().value].innerHTML = 'Silente e Grindelwald da Animali Fantastici. <sub>Deadman_Cosplay</sub> <sub>Smokercosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Johnny Silverhand da Cyberpunk 2077. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Crocodile da One Piece. <sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Connor da Detroit Become Human. <sub>Deadman_Cosplay</sub>';

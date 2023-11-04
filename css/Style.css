@@ -484,6 +484,7 @@ header ul, header li {
 .video sub {
     display: block;
     margin-top: 1rem;
+    margin-bottom: 0.25rem;
     bottom: 0;
 }
 

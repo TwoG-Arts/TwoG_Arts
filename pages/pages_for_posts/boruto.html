@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6a6555" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#6a6555" />
+    <title>Boruto</title>
+    <link rel="stylesheet" href="..\..\css\style_reader.css">
+    <link rel="icon" href="..\..\images/favicon.ico">
+    <script src="..\..\js/reader.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="instagram-post">
+            <p>placeholder</p>
+        </div>
+        <div class="buttons">
+            <img class="button" id="decrementButton" src="..\..\images\arrows\sin.png"></img>
+
+            <img class="button" id="incrementButton" src="..\..\images\arrows\dx.png"></img>
+
+        </div>
+    </div>
+    
+    <script>
+    //variabili globali
+    var contatore=0
+    var lunghezzaArray=0
+
+    function carosellino(valore_car_in) {
+        var fullinsturc = ""
+
+        //Link ai Post
+        var linksig = ['https://www.instagram.com/p/C0qqYrer9_V'
+        ];
+
+        lunghezzaArray = linksig.length;
+        let instacambio = document.getElementsByClassName('instagram-post')[0];
+        //creazione dell' iframe da inserire al posto del placeholder
+        fullinsturc = '<iframe src="'+linksig [valore_car_in]+'/embed" frameborder="0" scrolling="yes" allowtransparency="true"></iframe>';
+        instacambio.innerHTML= fullinsturc;
+    }
+
+    // Gestione eventi
+    document.getElementById("incrementButton").addEventListener("click", incrementaVariabile);
+    document.getElementById("decrementButton").addEventListener("click", decrementaVariabile);
+    carosellino(contatore);
+    </script>
+
+<footer class="footer">
+    <div class="mobileButton">
+        <div class="contacts">
+            <div class="contactRowFooter"><a href="https://www.instagram.com/twog_arts/" target="_blank"><img
+                    src="..\..\images/footer/insta_f.png"></a>
+            </div>
+            <div class="contactRowFooter"><a href="https://www.facebook.com/profile.php?id=61550858562269" target="_blank"><img
+                    src="..\..\images/footer/facebook_f.png"></a>
+            </div>
+            <div class="contactRowFooter"><a href="https://www.youtube.com/channel/UCwncSXWGrpUo8Y70Fhg8_4Q" target="_blank"><img
+                    src="..\..\images/footer/yt_f.png"></a>
+            </div>
+            <div class="contactRowFooter"><a href="https://www.tiktok.com/@twog_arts" target="_blank"><img
+                    src="..\..\images/footer/tik_tok_f.png"></a>
+            </div>
+
+            <div class="contactRowFooter"><a href="https://twitter.com/TwoG_Arts" target="_blank"><img
+                src="..\..\images/footer/twitter_f.png"></a>
+            </div>
+            <div class="contactRowFooter"><a href="mailto:yorha2g@gmail.com" target="_blank"><img
+                    src="..\..\images/footer/email_f.png"></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

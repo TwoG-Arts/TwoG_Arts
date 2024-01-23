@@ -532,6 +532,7 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Alan Wake from Alan Wake Remastered.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Boruto Uzumaki From Boruto Two Blue Vortex.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Father Gascoigne vs the Hunter from Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq from Assassin\'s Creed.<sub>Deadman_Cosplay</sub>';
@@ -666,6 +667,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Alan Wake da Alan Wake Remastered.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Boruto Uzumaki da Boruto Two Blue Vortex.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Padre Gascoigne contro il Cacciatore da Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Basim Ibn Ishaq da Assassin\'s Creed.<sub>Deadman_Cosplay</sub>';

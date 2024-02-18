@@ -509,6 +509,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Self-destructive.';
             toTranslate[it.next().value].innerHTML = 'Welcome to the Truman Show.';
             toTranslate[it.next().value].innerHTML = 'Dante & Vergil from Devil May Cry 5 w/Deadman_Cosplay.<sub>PH: Artemio_Acunzo_Official.</sub>';
             toTranslate[it.next().value].innerHTML = 'Plague Doctor.<sub>PH: Deadman_Cosplay.</sub>';
@@ -649,6 +650,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Autodistruttivo.';
             toTranslate[it.next().value].innerHTML = 'Benvenuti nel Truman Show.';
             toTranslate[it.next().value].innerHTML = 'Dante & Vergil da Devil May Cry 5 w/Deadman_Cosplay.<sub>PH: Artemio_Acunzo_Official.</sub>';
             toTranslate[it.next().value].innerHTML = 'Plague Doctor.<sub>PH: Deadman_Cosplay.</sub>';

@@ -40,7 +40,11 @@ function videos(i) {
     }
     $(".home").html('Home');
 }
-
+function addTag(tag) {
+    // Aggiunge il tag all'url corrente
+    window.location.hash = tag;
+  }
+  
 function designs(i) {
     const mob = document.getElementsByClassName('mobile')[0];
 

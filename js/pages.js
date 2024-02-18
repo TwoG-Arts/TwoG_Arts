@@ -11,6 +11,11 @@ let check = 0;
 let checkUp = 0;
 let lastDropdownButton = 0;
 
+$(function addTag(tag) {
+    // Aggiunge il tag all'url corrente
+    window.location.hash = tag;
+  });
+
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
     headerButtons(0);

@@ -13,6 +13,7 @@ let lastDropdownButton = 0;
 
 $(function () {
     $(".AboutMe").load("pages/AboutMe.html");
+    addTag('About_Me');
     headerButtons(0);
     clickedDropdown(0);
     let random = document.getElementById('banana');

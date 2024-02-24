@@ -433,6 +433,7 @@ function language() {
 
     if (check.checked) {
         toTranslate[it.next().value].textContent = 'About Me';
+        toTranslate[it.next().value].textContent = 'Photos';
         toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].textContent = 'Home';
@@ -575,6 +576,7 @@ function language() {
         }
     } else {
         toTranslate[it.next().value].textContent = 'Chi sono';
+        toTranslate[it.next().value].textContent = 'Foto';
         toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].textContent = 'Home';

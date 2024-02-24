@@ -436,7 +436,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'Other';
         toTranslate[it.next().value].textContent = 'Home';
-        toTranslate[it.next().value].textContent = 'Editing';
+        toTranslate[it.next().value].textContent = 'Photos';
         toTranslate[it.next().value].textContent = 'Originals';
         toTranslate[it.next().value].textContent = 'Collaborations';
         toTranslate[it.next().value].textContent = 'Videos';
@@ -447,7 +447,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Drawings';
 
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Works<div class="overlay-right"><img src="images/ovhone.png"></div>';
-        toTranslate[it.next().value].textContent = 'Editings';
+        toTranslate[it.next().value].textContent = 'Photos';
         toTranslate[it.next().value].textContent = 'More edits';
         toTranslate[it.next().value].textContent = 'Videos';
         toTranslate[it.next().value].textContent = 'More videos';
@@ -578,7 +578,7 @@ function language() {
         toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Altro';
         toTranslate[it.next().value].textContent = 'Home';
-        toTranslate[it.next().value].textContent = 'Editing';
+        toTranslate[it.next().value].textContent = 'Foto';
         toTranslate[it.next().value].textContent = 'Originali';
         toTranslate[it.next().value].textContent = 'Collaborazioni';
         toTranslate[it.next().value].textContent = 'Video';
@@ -589,8 +589,8 @@ function language() {
         toTranslate[it.next().value].textContent = 'Disegni';
 
         toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Lavori<div class="overlay-right"><img src="images/ovhone.png"></div>';
-        toTranslate[it.next().value].textContent = 'Editing';
-        toTranslate[it.next().value].textContent = 'Più editing';
+        toTranslate[it.next().value].textContent = 'Foto';
+        toTranslate[it.next().value].textContent = 'Più Foto';
         toTranslate[it.next().value].textContent = 'Video';
         toTranslate[it.next().value].textContent = 'Più video';
         toTranslate[it.next().value].textContent = 'Altro';

@@ -516,6 +516,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originals';
             toTranslate[it.next().value].textContent = 'Collaborations';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originals<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = '9S from NieR: Automata.';     
             toTranslate[it.next().value].innerHTML = 'Alastor Human Form from Hazbin Hotel.';
             toTranslate[it.next().value].innerHTML = 'Self-destructive.';
             toTranslate[it.next().value].innerHTML = 'Welcome to the Truman Show.';
@@ -542,6 +543,7 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Denji from Chainsaw Man.<sub>Indie_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Edward Kenway from Assassins\'s Creed IV Black Flag.<sub>Deadman_Cosplay</sub>';    
             toTranslate[it.next().value].innerHTML = 'Makima from Chainsaw Man.<sub>Nekuro_kamisama</sub>';           
             toTranslate[it.next().value].innerHTML = 'Moogle from Final Fantasy XIV.<sub>Claire Maeda</sub>';
@@ -662,6 +664,7 @@ function language() {
             toTranslate[it.next().value].textContent = 'Originali';
             toTranslate[it.next().value].textContent = 'Collaborazioni';
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Originali<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = '9S da NieR: Automata.'; 
             toTranslate[it.next().value].innerHTML = 'Alastor Forma Umana da Hazbin Hotel.';
             toTranslate[it.next().value].innerHTML = 'Autodistruttivo.';
             toTranslate[it.next().value].innerHTML = 'Benvenuti nel Truman Show.';
@@ -687,6 +690,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Denji da Chainsaw Man.<sub>Indie_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Edward Kenway da Assassins\'s Creed IV Black Flag.<sub>Deadman_Cosplay</sub>';       
             toTranslate[it.next().value].innerHTML = 'Makima da Chainsaw Man.<sub>Nekuro_kamisama</sub>';
             toTranslate[it.next().value].innerHTML = 'Moguri da Final Fantasy XIV.<sub>Claire Maeda</sub>';

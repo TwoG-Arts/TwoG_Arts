@@ -543,6 +543,7 @@ function language() {
 
             
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborations<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Kylo Ren from Star Wars.<sub>Deadman_Cosplay</sub>';  
             toTranslate[it.next().value].innerHTML = 'Denji from Chainsaw Man.<sub>Indie_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Edward Kenway from Assassins\'s Creed IV Black Flag.<sub>Deadman_Cosplay</sub>';    
             toTranslate[it.next().value].innerHTML = 'Makima from Chainsaw Man.<sub>Nekuro_kamisama</sub>';           
@@ -690,6 +691,7 @@ function language() {
 
 
             toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>Collaborazioni<div class="overlay-right"><img src="images/ovhone.png"></div>';
+            toTranslate[it.next().value].innerHTML = 'Kylo Ren da Star Wars.<sub>Deadman_Cosplay</sub>';  
             toTranslate[it.next().value].innerHTML = 'Denji da Chainsaw Man.<sub>Indie_Cosplay</sub>';   
             toTranslate[it.next().value].innerHTML = 'Edward Kenway da Assassins\'s Creed IV Black Flag.<sub>Deadman_Cosplay</sub>';       
             toTranslate[it.next().value].innerHTML = 'Makima da Chainsaw Man.<sub>Nekuro_kamisama</sub>';

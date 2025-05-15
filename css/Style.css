@@ -1086,7 +1086,7 @@ input:checked + .slider:before {
     }
 
     .highlight {
-        display: flex;
+        display: block;
         justify-content: center;
     }
 
@@ -1165,6 +1165,7 @@ input:checked + .slider:before {
     }
 
     .banner {
+        overflow: hidden;
         background-color: #B4AE9A;
         display: flex;
         justify-content: center;
@@ -1206,7 +1207,7 @@ input:checked + .slider:before {
     }
 
     .video {
-        width: 50%;
+        width: 100%;
     }
 
     .video img {

@@ -1104,7 +1104,7 @@ input:checked + .slider:before {
 
     .linkCollab {
         justify-content: space-evenly;
-        display: flex;
+        
         width: 100%;
     }
 

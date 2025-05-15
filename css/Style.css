@@ -1107,7 +1107,18 @@ input:checked + .slider:before {
         
         width: 100%;
     }
-
+    .imageContacts {
+        display: block; 
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .wrap {
+        /* display: flex
+    ; */
+        position: relative;
+        text-align: center;
+    }
     .linkCollab a {
         margin: 0.5rem;
         font-family: BreezeSans, sans-serif;

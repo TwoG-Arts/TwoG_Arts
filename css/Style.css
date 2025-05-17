@@ -999,6 +999,12 @@ input:checked + .slider:before {
     #default {
         zoom: 100%;
     }
+    .mobileCredits h1{
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .Videos .video, .Designs .video {
         width: 50%;
@@ -1022,7 +1028,12 @@ input:checked + .slider:before {
     }
 
     .footer {
-        height: 100px;
+        height: 62px;
+    }
+
+    #upTop img {
+        width: 4rem;
+        margin: -24px 0;
     }
 
     .mobileCredits {
@@ -1080,9 +1091,14 @@ input:checked + .slider:before {
     }
 
     .mobileCollab p {
-        display: flex;
+        display: block;
         align-items: center;
         margin: 0;
+    }
+
+    #firstPart {
+        text-align: left;
+        font-size: 15pt !important;
     }
 
     .highlight {
@@ -1099,7 +1115,7 @@ input:checked + .slider:before {
         font-family: BreezeSans, sans-serif;
         color: #343127;
         font-weight: bolder;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .linkCollab {
@@ -1114,8 +1130,7 @@ input:checked + .slider:before {
         text-align: center;
     }
     .wrap {
-        /* display: flex
-    ; */
+        display: block;
         position: relative;
         text-align: center;
     }

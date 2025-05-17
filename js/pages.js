@@ -658,8 +658,6 @@ function language() {
             toTranslate[it.next().value].textContent = 'Selettore di immagini casuale.';
             toTranslate[it.next().value].textContent = 'Sito Web Maikubirth mod per The Binding of Isaac.';
             toTranslate[it.next().value].textContent = 'Sito Web portfolio personale.';
-
-            toTranslate[it.next().value].innerHTML = '<div class="overlay-left"><img src="images/ovhone.png"></div>3D<div class="overlay-right"><img src="images/ovhone.png"></div>';
         }
         if (editing) {
             toTranslate[it.next().value].textContent = 'Originali';

@@ -548,7 +548,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Makima from Chainsaw Man.<sub>Nekuro_kamisama</sub>';           
             toTranslate[it.next().value].innerHTML = 'Moogle from Final Fantasy XIV.<sub>Claire Maeda</sub>';
             toTranslate[it.next().value].innerHTML = 'Ethan Winters from Resident Evil Village.<sub>yoru.sky</sub>';
-            toTranslate[it.next().value].innerHTML = 'Chris Redfield from Resident Evil Village.<sub>Noktursson</sub>';
             toTranslate[it.next().value].innerHTML = 'Alan Wake from Alan Wake Remastered.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Boruto Uzumaki From Boruto Two Blue Vortex.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Father Gascoigne vs the Hunter from Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';
@@ -693,7 +692,6 @@ function language() {
             toTranslate[it.next().value].innerHTML = 'Makima da Chainsaw Man.<sub>Nekuro_kamisama</sub>';
             toTranslate[it.next().value].innerHTML = 'Moguri da Final Fantasy XIV.<sub>Claire Maeda</sub>';
             toTranslate[it.next().value].innerHTML = 'Ethan Winters da Resident Evil Village.<sub>yoru.sky</sub>';
-            toTranslate[it.next().value].innerHTML = 'Chris Redfield da Resident Evil Village.<sub>Noktursson</sub>';
             toTranslate[it.next().value].innerHTML = 'Alan Wake da Alan Wake Remastered.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Boruto Uzumaki da Boruto Two Blue Vortex.<sub>Deadman_Cosplay</sub>';
             toTranslate[it.next().value].innerHTML = 'Padre Gascoigne contro il Cacciatore da Bloodborne.<sub>Deadman_Cosplay</sub> <sub>Vosvort_Cosplay</sub>';

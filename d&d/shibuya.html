@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configurazione viewport ottimizzata per iPhone e dispositivi mobili con notch/Dynamic Island -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Evocazione Mitica - Contro Ser Selen</title>
+    
+    <!-- Caricamento Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Epici da Google Fonts (Cinzel Decorative per titoli D&D, Crimson Pro per i testi lore) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================
+           VARIABILI CSS DINAMICHE PER I TEMI EROI
+           ========================================== */
+        :root {
+            --theme-primary: #a855f7;
+            --theme-secondary: #eab308;
+            --theme-bg-dark: #090514;
+            --theme-glow: rgba(168, 85, 247, 0.55);
+            --theme-card-bg: rgba(18, 12, 32, 0.82);
+            --theme-border: #7e22ce;
+        }
+
+        /* Reset e ottimizzazione iOS Safari */
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100dvh;
+            background-color: var(--theme-bg-dark);
+            color: #f8fafc;
+            font-family: 'Crimson Pro', Georgia, serif;
+            overflow-x: hidden;
+            transition: background-color 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .font-cinzel-dec {
+            font-family: 'Cinzel Decorative', cursive, serif;
+        }
+
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* ==========================================
+           SFONDO E CANVAS PARTICELLARE
+           ========================================== */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .ambient-vignette {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2;
+            background: 
+                radial-gradient(circle at 50% 25%, var(--theme-glow) 0%, transparent 65%),
+                radial-gradient(circle at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.88) 100%);
+            transition: background 1.2s ease;
+        }
+
+        /* ==========================================
+           ANIMAZIONI CERCHIO RUNICO & RUNE
+           ========================================== */
+        @keyframes spin-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes spin-reverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @keyframes pulse-rune {
+            0%, 100% { filter: drop-shadow(0 0 12px var(--theme-primary)) drop-shadow(0 0 25px var(--theme-secondary)); transform: scale(1); }
+            50% { filter: drop-shadow(0 0 24px var(--theme-secondary)) drop-shadow(0 0 45px var(--theme-primary)); transform: scale(1.04); }
+        }
+
+        .runic-ring-outer {
+            animation: spin-slow 24s linear infinite;
+            transform-origin: center;
+        }
+
+        .runic-ring-inner {
+            animation: spin-reverse 14s linear infinite;
+            transform-origin: center;
+        }
+
+        .runic-seal-active {
+            animation: pulse-rune 2.2s ease-in-out infinite;
+        }
+
+        /* Stile per le singole lettere durante la decifrazione runica */
+        .rune-char {
+            display: inline-block;
+            color: var(--theme-secondary);
+            text-shadow: 0 0 14px var(--theme-primary), 0 0 28px var(--theme-secondary);
+            font-family: 'Cinzel', serif;
+            font-weight: 800;
+            transform: scale(1.12);
+            transition: all 0.2s ease;
+        }
+
+        .locked-char {
+            display: inline-block;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 18px var(--theme-primary);
+            animation: char-pop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes char-pop {
+            0% { transform: scale(1.5) translateY(-4px); color: var(--theme-secondary); filter: brightness(2); }
+            100% { transform: scale(1) translateY(0); color: #ffffff; filter: brightness(1); }
+        }
+
+        /* ==========================================
+           CARD STILE DARK FANTASY / D&D 5E
+           ========================================== */
+        .mythic-card {
+            background: var(--theme-card-bg);
+            -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--theme-border);
+            box-shadow: 
+                0 20px 50px rgba(0, 0, 0, 0.9),
+                0 0 35px var(--theme-glow),
+                inset 0 0 25px rgba(255, 255, 255, 0.04);
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.8s ease, box-shadow 0.8s ease, background 0.8s ease;
+        }
+
+        /* Angoli decorativi dorati/tematici per la pergamena oscura */
+        .corner-ornament {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-color: var(--theme-secondary);
+            opacity: 0.8;
+            pointer-events: none;
+            transition: border-color 0.8s ease;
+        }
+        .corner-tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; }
+        .corner-tr { top: 8px; right: 8px; border-top: 2px solid; border-right: 2px solid; }
+        .corner-bl { bottom: 8px; left: 8px; border-bottom: 2px solid; border-left: 2px solid; }
+        .corner-br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; }
+
+        /* Rivelazione progressiva degli elementi */
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(22px) scale(0.98);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-item.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        /* ==========================================
+           EFFETTI D'IMPATTO E SCREEN SHAKE
+           ========================================== */
+        @keyframes epic-shake {
+            0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+            10% { transform: translate3d(-8px, -6px, 0) rotate(-1deg); }
+            20% { transform: translate3d(8px, 4px, 0) rotate(1deg); }
+            30% { transform: translate3d(-10px, 6px, 0) rotate(-1.5deg); }
+            40% { transform: translate3d(9px, -5px, 0) rotate(1.5deg); }
+            50% { transform: translate3d(-6px, 4px, 0) rotate(-0.8deg); }
+            60% { transform: translate3d(6px, -4px, 0) rotate(0.8deg); }
+            70% { transform: translate3d(-4px, 3px, 0) rotate(-0.4deg); }
+            80% { transform: translate3d(4px, -2px, 0) rotate(0.4deg); }
+            90% { transform: translate3d(-2px, 2px, 0) rotate(0deg); }
+        }
+
+        .shake-screen {
+            animation: epic-shake 0.75s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        }
+
+        /* Onda d'urto visiva quando il nome viene completato o la mossa viene lanciata */
+        .shockwave-flash {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle at center, #ffffff 0%, var(--theme-secondary) 40%, transparent 80%);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 50;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes flash-burst {
+            0% { opacity: 0.95; transform: scale(0.8); }
+            100% { opacity: 0; transform: scale(2.2); }
+        }
+
+        .trigger-flash {
+            animation: flash-burst 0.85s ease-out forwards;
+        }
+
+        /* Pulsante Mossa Leggendaria */
+        .btn-legendary {
+            background: linear-gradient(135deg, var(--theme-primary) 0%, #1e1b4b 100%);
+            border: 1px solid var(--theme-secondary);
+            box-shadow: 0 0 20px var(--theme-glow), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-legendary:active {
+            transform: scale(0.96);
+        }
+
+        .btn-legendary::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 40%;
+            height: 200%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.35), transparent);
+            transform: rotate(30deg);
+            animation: sheen 3.5s infinite;
+        }
+
+        @keyframes sheen {
+            0% { left: -60%; }
+            25%, 100% { left: 140%; }
+        }
+
+        /* Safe area bottom per iPhone */
+        .safe-bottom {
+            padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+        }
+    </style>
+</head>
+<body class=" antialiased selection:bg-purple-900 selection:text-white">
+
+    <!-- Canvas HTML5 per particelle elementali a 60fps (Vino, Fuoco, Cenere, Natura) -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Vignettatura e bagliore atmosferico dinamico -->
+    <div class="ambient-vignette"></div>
+
+    <!-- Flash per le onde d'urto arcane -->
+    <div id="shockwave" class="shockwave-flash"></div>
+
+    <!-- Contenitore Principale -->
+    <main id="app-container" class="relative z-10 min-h-[100dvh] w-full max-w-xl mx-auto px-4 pt-5 safe-bottom flex flex-col justify-between">
+        
+        <!-- ==========================================
+             INTESTAZIONE RAID BOSS
+             ========================================== -->
+        <header class="text-center space-y-1">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 border border-white/15 text-xs uppercase tracking-[0.2em] text-amber-300/90 font-cinzel shadow-md">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                Scontro Finale • Grado Sfida 30
+            </div>
+            <h2 class="text-xs sm:text-sm font-cinzel tracking-widest text-slate-400 uppercase">
+                Intervento Ancestrale contro <strong class="text-slate-200">Ser Selen, Primo Cavaliere di Vecna</strong>
+            </h2>
+        </header>
+
+        <!-- ==========================================
+             SEZIONE CENTRALE: SIGILLO RUNICO + SCHEDA EROE
+             ========================================== -->
+        <section class="my-auto py-4 flex flex-col items-center w-full">
+            
+            <!-- Sigillo Runico Rotante (Ridimensiona dolcemente quando la scheda si apre) -->
+            <div id="sigil-wrapper" class="relative flex items-center justify-center my-2 transition-all duration-700 ease-out w-40 h-40 sm:w-48 sm:h-48">
+                <!-- SVG Cerchio Arcano -->
+                <svg viewBox="0 0 200 200" class="w-full h-full runic-seal-active">
+                    <defs>
+                        <linearGradient id="runeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--theme-secondary)" />
+                            <stop offset="100%" stop-color="var(--theme-primary)" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Anello Esterno con Rune Elder Futhark -->
+                    <g class="runic-ring-outer" stroke="url(#runeGrad)" fill="none">
+                        <circle cx="100" cy="100" r="92" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.75"/>
+                        <circle cx="100" cy="100" r="82" stroke-width="1" opacity="0.5"/>
+                        <!-- Simboli Runici lungo la circonferenza -->
+                        <text x="100" y="15" fill="var(--theme-secondary)" font-size="10" text-anchor="middle" font-family="serif">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ</text>
+                        <text x="100" y="193" fill="var(--theme-secondary)" font-size="10" text-anchor="middle" font-family="serif">ᚷ ᚹ ᚺ ᚾ ᛁ ᛃ</text>
+                        <text x="12" y="103" fill="var(--theme-secondary)" font-size="10" text-anchor="middle" transform="rotate(-90 12 100)" font-family="serif">ᛇ ᛈ ᛉ ᛊ</text>
+                        <text x="188" y="103" fill="var(--theme-secondary)" font-size="10" text-anchor="middle" transform="rotate(90 188 100)" font-family="serif">ᛏ ᛒ ᛖ ᛗ</text>
+                    </g>
+
+                    <!-- Stella Geometria Sacra Interna -->
+                    <g class="runic-ring-inner" stroke="url(#runeGrad)" fill="none" opacity="0.85">
+                        <polygon points="100,24 165,138 35,138" stroke-width="1.5"/>
+                        <polygon points="100,176 165,62 35,62" stroke-width="1.5"/>
+                        <circle cx="100" cy="100" r="52" stroke-width="1.2" stroke-dasharray="3 3"/>
+                    </g>
+                </svg>
+
+                <!-- Icona Elementale Centrale dell'Eroe -->
+                <div id="hero-emblem" class="absolute inset-0 flex items-center justify-center text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-transform duration-500 scale-90">
+                    <!-- Viene popolato dinamicamente con SVG specifico dell'eroe -->
+                </div>
+            </div>
+
+            <!-- Stato Decifrazione Runica -->
+            <div id="decipher-status" class="text-xs font-cinzel uppercase tracking-[0.25em] text-amber-300/90 mb-2 h-5 flex items-center gap-2">
+                <span id="status-text">Decifrazione Sigillo Runico...</span>
+            </div>
+
+            <!-- ==========================================
+                 CONTENITORE NOME EROE (DECIFRAZIONE RUNE -> TESTO)
+                 ========================================== -->
+            <div class="w-full text-center px-2 mb-3 min-h-[3.8rem] flex flex-col justify-center items-center">
+                <h1 id="hero-name-display" class="font-cinzel-dec font-bold tracking-wide leading-tight text-2xl sm:text-3xl break-words max-w-full">
+                    <!-- Le rune animate si trasformano qui lettera per lettera -->
+                </h1>
+                <p id="hero-subtitle" class="font-cinzel text-xs sm:text-sm tracking-[0.15em] uppercase mt-1 opacity-0 transition-opacity duration-500" style="color: var(--theme-secondary);">
+                    <!-- Titolo dell'Eroe -->
+                </p>
+            </div>
+
+            <!-- ==========================================
+                 SCHEDA MOSSA LEGGENDARIA (D&D ABILITY CARD)
+                 ========================================== -->
+            <article id="ability-card" class="mythic-card w-full rounded-2xl p-5 sm:p-6 space-y-4">
+                <!-- Ornamenti angolari -->
+                <div class="corner-ornament corner-tl"></div>
+                <div class="corner-ornament corner-tr"></div>
+                <div class="corner-ornament corner-bl"></div>
+                <div class="corner-ornament corner-br"></div>
+
+                <!-- Badge Elementale & Nome della Mossa Leggendaria -->
+                <div id="card-header" class="reveal-item text-center border-b border-white/15 pb-3">
+                    <span id="element-badge" class="inline-block px-3 py-0.5 rounded-full text-[11px] font-cinzel uppercase tracking-widest mb-1.5 bg-white/10 border border-white/20">
+                        Dominio Elementale
+                    </span>
+                    <h3 class="text-xs uppercase font-cinzel tracking-widest text-slate-400">Mossa Leggendaria</h3>
+                    <h2 id="move-title" class="font-cinzel font-bold text-xl sm:text-2xl mt-0.5" style="color: var(--theme-secondary);">
+                        <!-- Nome della Mossa -->
+                    </h2>
+                </div>
+
+                <!-- Descrizione Lore & Effetto Scenico -->
+                <div id="card-lore" class="reveal-item bg-black/40 rounded-xl p-3.5 border border-white/10">
+                    <div class="flex items-center gap-2 text-xs font-cinzel uppercase tracking-wider text-slate-300 mb-1">
+                        <svg class="w-4 h-4 shrink-0" style="color: var(--theme-secondary)" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span>Manifestazione dell'Avatar</span>
+                    </div>
+                    <p id="move-effect" class="text-base sm:text-lg leading-relaxed text-slate-100 italic">
+                        <!-- Descrizione dell'effetto -->
+                    </p>
+                </div>
+
+                <!-- Griglia Danni & Debuff/Buff -->
+                <div class="grid grid-cols-1 gap-3">
+                    
+                    <!-- Box Danni Ineludibili -->
+                    <div id="card-damage" class="reveal-item relative overflow-hidden rounded-xl bg-gradient-to-r from-red-950/70 via-black/60 to-black/60 border border-red-500/40 p-3.5 flex items-center gap-3.5">
+                        <div class="w-12 h-12 rounded-lg bg-red-500/20 border border-red-400/40 flex items-center justify-center shrink-0 text-red-300">
+                            <!-- Icona Danno -->
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-[11px] font-cinzel uppercase tracking-widest text-red-300/90">Impatto Diretto (Bypassa Immunità)</div>
+                            <div id="move-damage" class="text-lg sm:text-xl font-bold text-white leading-snug">
+                                <!-- Danni -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box Debuff sul Boss o Buff sul Party -->
+                    <div id="card-debuff" class="reveal-item relative overflow-hidden rounded-xl bg-black/50 border border-white/15 p-3.5">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span id="debuff-badge" class="px-2 py-0.5 text-[10px] font-cinzel font-bold uppercase tracking-widest rounded bg-amber-500/20 text-amber-300 border border-amber-400/30">
+                                Debuff su Ser Selen
+                            </span>
+                        </div>
+                        <p id="move-debuff" class="text-base sm:text-[17px] text-slate-200 leading-snug">
+                            <!-- Descrizione Debuff o Buff -->
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pulsante Interattivo per Scatenare la Mossa al Tavolo -->
+                <div id="card-action" class="reveal-item pt-2">
+                    <button id="cast-move-btn" onclick="triggerLegendaryCast()" class="btn-legendary w-full py-3.5 px-6 rounded-xl font-cinzel font-bold text-sm sm:text-base uppercase tracking-[0.15em] text-white flex items-center justify-center gap-3 shadow-xl">
+                        <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                        </svg>
+                        <span id="cast-btn-text">Scatena la Mossa Leggendaria</span>
+                    </button>
+                    <p id="cast-confirmation" class="text-center text-xs font-cinzel tracking-wider text-emerald-300 mt-2 hidden">
+                        ✦ IL TEMPO SI FERMA: COMUNICA AL MASTER IL TUO ATTACCO! ✦
+                    </p>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- ==========================================
+             FOOTER / CONTROLLI RAPIDI PER GIOCATORI & DM
+             ========================================== -->
+        <footer class="pt-3 border-t border-white/10 flex flex-col items-center gap-2 text-xs text-slate-400">
+            <div class="flex flex-wrap items-center justify-center gap-1.5">
+                <button onclick="evocaEroeCasuale()" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 active:scale-95 text-white font-cinzel text-[11px] uppercase tracking-wider border border-white/15 transition">
+                    🎲 Nuova Estrazione Runica
+                </button>
+                <button onclick="toggleDmBar()" class="px-2.5 py-1.5 rounded-lg bg-black/50 hover:bg-black/70 text-slate-400 font-cinzel text-[11px] uppercase tracking-wider border border-white/10 transition">
+                    Selettore Eroi (DM)
+                </button>
+            </div>
+
+            <!-- Barra rapida per testare tutti e 4 gli eroi -->
+            <div id="dm-selector" class="hidden flex-wrap justify-center gap-1.5 pt-1">
+                <button onclick="avviaSequenzaEroe(0)" class="px-2.5 py-1 rounded bg-rose-950/80 border border-rose-500/40 text-rose-200 text-xs font-cinzel">🍷 Lello</button>
+                <button onclick="avviaSequenzaEroe(1)" class="px-2.5 py-1 rounded bg-orange-950/80 border border-orange-500/40 text-orange-200 text-xs font-cinzel">🔥 Sonne</button>
+                <button onclick="avviaSequenzaEroe(2)" class="px-2.5 py-1 rounded bg-stone-800/90 border border-amber-500/40 text-amber-200 text-xs font-cinzel">🌋 Chuck</button>
+                <button onclick="avviaSequenzaEroe(3)" class="px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 text-xs font-cinzel">🌿 Gregory X</button>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        /* ==========================================================================
+           DATABASE DEI 4 EROI MITICI E LORO PROPRIETÀ ELEMENTALI
+           ========================================================================== */
+        const EROI_MITICI = [
+            {
+                id: 'lello',
+                nome: "Lello, il Bardo Uccello",
+                sottotitolo: "Virtuoso del Calice Ancestrale & delle Onde Soniche",
+                dominio: "🍷 Dominio del Vino & Risonanza",
+                titoloMossa: "Sinfonia della Frattura Universale (Calice dell'Armonia)",
+                effetto: "Lello solleva un calice di vino ancestrale e intona un canto acuto che fa vibrare il sangue nelle vene e lacera il tessuto stesso della magia attorno a Vecna.",
+                danni: "150 danni tonanti ineludibili",
+                tipoEffettoSecondario: "DEBUFF SU SER SELEN",
+                coloreBadgeSecondario: "bg-purple-500/20 text-purple-200 border-purple-400/40",
+                debuff: "L'onda d'urto distrugge l'udito magico di Ser Selen. Per <strong class='text-white underline decoration-rose-400'>2 turni interi</strong>, Ser Selen è <strong class='text-rose-300'>Assordato</strong> e perde completamente la capacità di usare <em>Controincantesimo</em> o qualsiasi magia con componente Verbale.",
+                particleType: 'wine',
+                theme: {
+                    primary: '#be123c',      // Rosso Vino Cremisi
+                    secondary: '#f59e0b',    // Oro Calice
+                    bgDark: '#13050d',       // Borgogna Abissale
+                    glow: 'rgba(190, 18, 60, 0.55)',
+                    cardBg: 'rgba(28, 8, 21, 0.84)',
+                    border: '#9f1239'
+                },
+                svgIcon: `
+                    <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8l-1 7a3 3 0 01-3 3 3 3 0 01-3-3L8 3z" fill="rgba(190,18,60,0.35)"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 13v7m-4 0h8"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.5C3 11 3 14 4.5 15.5M19.5 9.5C21 11 21 14 19.5 15.5" stroke="var(--theme-secondary)"/>
+                    </svg>`
+            },
+            {
+                id: 'sonne',
+                nome: "Sonne, il Nano Chierico",
+                sottotitolo: "Fedele alla Dea del Fuoco Rosenkrieg",
+                dominio: "🔥 Dominio del Sacro Fuoco di Rosenkrieg",
+                titoloMossa: "Supernova di Rosenkrieg",
+                effetto: "Sonne cala dal cielo come una meteora di pura luce e fiamma divina, piantando il suo simbolo sacro incandescente nel terreno e sprigionando un sole in miniatura.",
+                danni: "100 danni radianti puri a Ser Selen",
+                tipoEffettoSecondario: "BUFF DIVINO SUL PARTY",
+                coloreBadgeSecondario: "bg-amber-500/25 text-amber-200 border-amber-400/50",
+                debuff: "L'esplosione di fuoco sacro cura ogni membro del party di <strong class='text-amber-300'>100 Punti Ferita</strong> (ignorando l'Aura di Ser Selen) e rimuove immediatamente <strong class='text-white'>1 livello di Indebolimento</strong> o una condizione (<em>Accecato, Sordo, Avvelenato</em>) da tutti gli alleati.",
+                particleType: 'fire',
+                theme: {
+                    primary: '#ea580c',      // Arancio Fiamma Sacra
+                    secondary: '#fde047',    // Oro Solare
+                    bgDark: '#160702',       // Nero Ardente
+                    glow: 'rgba(234, 88, 12, 0.6)',
+                    cardBg: 'rgba(33, 12, 5, 0.85)',
+                    border: '#f97316'
+                },
+                svgIcon: `
+                    <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2c1.5 3.5 4.5 5.5 4.5 9.5a4.5 4.5 0 11-9 0c0-2.5 1.5-4.5 2.5-6.5 1 2 2 2.5 2-3z" fill="rgba(234,88,12,0.4)"/>
+                        <circle cx="12" cy="13" r="2.2" fill="var(--theme-secondary)"/>
+                        <path stroke-linecap="round" d="M12 19v3M8 21h8" stroke="var(--theme-secondary)"/>
+                    </svg>`
+            },
+            {
+                id: 'chuck',
+                nome: "Chuck, il Nano Paladino",
+                sottotitolo: "Araldo della Dea del Fuoco Rosenkrieg",
+                dominio: "🌋 Dominio della Cenere Ardente & Magma",
+                titoloMossa: "Schianto del Sole Forgiato nella Cenere",
+                effetto: "Avvolto da un ciclone di cenere vulcanica e braci, Chuck si scaglia contro Ser Selen incanalando tutta la furia di Rosenkrieg nella sua arma e colpendo il petto del Cavaliere.",
+                danni: "150 danni da fuoco divini (ignorano l'immunità)",
+                tipoEffettoSecondario: "DEBUFF PERMANENTE SU SER SELEN",
+                coloreBadgeSecondario: "bg-orange-500/20 text-orange-200 border-orange-400/40",
+                debuff: "L'impatto incenerisce e fonde l'Armatura a Piastre Demoniaca di Ser Selen. La <strong class='text-orange-300'>Classe Armatura (CA)</strong> del boss viene <strong class='text-white underline decoration-orange-400'>ridotta permanentemente di 3</strong> (scende da 24 a 21) per il resto del combattimento.",
+                particleType: 'ash',
+                theme: {
+                    primary: '#d97706',      // Brace Magmatica
+                    secondary: '#fca5a5',    // Grigio/Rosso Cenere Calda
+                    bgDark: '#111113',       // Carbone Vulcanico
+                    glow: 'rgba(217, 119, 6, 0.5)',
+                    cardBg: 'rgba(24, 22, 24, 0.88)',
+                    border: '#78716c'
+                },
+                svgIcon: `
+                    <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" fill="rgba(87,83,78,0.5)"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v8m-3-5h6" stroke="var(--theme-secondary)" stroke-width="2"/>
+                    </svg>`
+            },
+            {
+                id: 'gregory',
+                nome: "Gregory Camillo Amilcare Desmodio Van Hastel Aspera Hansel Bishop X",
+                sottotitolo: "Il Berserk Elfico Anziano",
+                dominio: "🌿 Dominio della Natura Primordiale",
+                titoloMossa: "L'Ira dei Cento Secoli",
+                effetto: "Le radici millenarie del mondo avvolgono l'anziano elfo che per un singolo istante recupera il vigore primordiale, sferrando una raffica di colpi a velocità impercettibile mentre urla ogni singolo nome della sua lunghissima stirpe.",
+                danni: "200 danni contundenti puri",
+                tipoEffettoSecondario: "DISTRUZIONE DIFESE & CONTROLLO",
+                coloreBadgeSecondario: "bg-emerald-500/20 text-emerald-200 border-emerald-400/40",
+                debuff: "La forza bruta della natura frantuma qualsiasi difesa magica. Se Ser Selen ha <em>Scudo</em>, <em>Gabbia di Forza</em> o <em>Muro di Forza</em> attivi, vengono <strong class='text-emerald-300'>distrutti all'istante</strong>. Inoltre, il boss viene scaraventato a terra (<strong class='text-white underline decoration-emerald-400'>Prono</strong>) senza possibilità di resistere.",
+                particleType: 'nature',
+                theme: {
+                    primary: '#10b981',      // Verde Smeraldo Antico
+                    secondary: '#facc15',    // Oro Quercia Secolare
+                    bgDark: '#04130b',       // Foresta Profonda
+                    glow: 'rgba(16, 185, 129, 0.5)',
+                    cardBg: 'rgba(6, 26, 16, 0.85)',
+                    border: '#059669'
+                },
+                svgIcon: `
+                    <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 3C11 3 6 7 5 14c2 1 5 2 7 5 3-6 6-10 5-16z" fill="rgba(16,185,129,0.35)"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 19c3-3 7-7 12-11" stroke="var(--theme-secondary)"/>
+                    </svg>`
+            }
+        ];
+
+        // Set di caratteri runici Elder Futhark per l'effetto di trasformazione
+        const ALFABETO_RUNICO = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ";
+
+        // Variabili di stato per l'animazione
+        let intervalDecifrazione = null;
+        let eroeCorrenteIndex = -1;
+        let modalitaParticelle = 'arcane'; // 'arcane' | 'wine' | 'fire' | 'ash' | 'nature'
+        let intensitaParticelle = 1;
+
+        /* ==========================================================================
+           MOTORE DI DECIFRAZIONE RUNICA E RIVELAZIONE SCHEDA
+           ========================================================================== */
+        function applicaTemaCSS(theme) {
+            const root = document.documentElement;
+            root.style.setProperty('--theme-primary', theme.primary);
+            root.style.setProperty('--theme-secondary', theme.secondary);
+            root.style.setProperty('--theme-bg-dark', theme.bgDark);
+            root.style.setProperty('--theme-glow', theme.glow);
+            root.style.setProperty('--theme-card-bg', theme.cardBg);
+            root.style.setProperty('--theme-border', theme.border);
+        }
+
+        function attivaFlashOndaDurto() {
+            const flash = document.getElementById('shockwave');
+            flash.classList.remove('trigger-flash');
+            void flash.offsetWidth; // Force reflow
+            flash.classList.add('trigger-flash');
+        }
+
+        function avviaSequenzaEroe(index) {
+            if (intervalDecifrazione) clearInterval(intervalDecifrazione);
+            eroeCorrenteIndex = index;
+            const eroe = EROI_MITICI[index];
+
+            // 1. Nascondi gli elementi della card per prepararli alla nuova rivelazione
+            const revealItems = document.querySelectorAll('.reveal-item');
+            revealItems.forEach(el => el.classList.remove('visible'));
+            document.getElementById('hero-subtitle').style.opacity = '0';
+            document.getElementById('cast-confirmation').classList.add('hidden');
+            document.getElementById('cast-btn-text').textContent = "Scatena la Mossa Leggendaria";
+
+            // 2. Imposta il tema e le particelle dell'eroe
+            applicaTemaCSS(eroe.theme);
+            modalitaParticelle = eroe.particleType;
+            intensitaParticelle = 1.4;
+            rigeneraParticellePerTema();
+
+            // 3. Aggiorna l'emblema centrale nel cerchio runico
+            const emblem = document.getElementById('hero-emblem');
+            emblem.innerHTML = eroe.svgIcon;
+            emblem.classList.remove('scale-110');
+            void emblem.offsetWidth;
+            emblem.classList.add('scale-110');
+
+            // 4. Adatta la grandezza del font se il nome è lunghissimo (es. Gregory X)
+            const nameDisplay = document.getElementById('hero-name-display');
+            if (eroe.nome.length > 35) {
+                nameDisplay.className = "font-cinzel-dec font-bold tracking-wide leading-snug text-lg sm:text-xl break-words max-w-full";
+            } else {
+                nameDisplay.className = "font-cinzel-dec font-bold tracking-wide leading-tight text-2xl sm:text-3xl break-words max-w-full";
+            }
+
+            // 5. Popola i contenuti della Card dietro le quinte
+            document.getElementById('hero-subtitle').textContent = eroe.sottotitolo;
+            document.getElementById('element-badge').textContent = eroe.dominio;
+            document.getElementById('move-title').textContent = eroe.titoloMossa;
+            document.getElementById('move-effect').textContent = `"${eroe.effetto}"`;
+            document.getElementById('move-damage').textContent = eroe.danni;
+
+            const debuffBadge = document.getElementById('debuff-badge');
+            debuffBadge.textContent = eroe.tipoEffettoSecondario;
+            debuffBadge.className = `px-2.5 py-0.5 text-[10px] font-cinzel font-bold uppercase tracking-widest rounded border ${eroe.coloreBadgeSecondario}`;
+            document.getElementById('move-debuff').innerHTML = eroe.debuff;
+
+            // 6. Avvia l'animazione delle rune che si trasformano lettera per lettera nel nome dell'eroe
+            const statusText = document.getElementById('status-text');
+            statusText.textContent = "Traduzione delle Rune Antiche in corso...";
+
+            const targetName = eroe.nome;
+            const totalChars = targetName.length;
+            let currentStep = 0;
+            // Velocità calibrata: più veloce per il nome lunghissimo di Gregory così dura ~1.8 secondi
+            const charsPerTick = totalChars > 35 ? 2.4 : 0.85;
+
+            intervalDecifrazione = setInterval(() => {
+                currentStep += charsPerTick;
+                const lockedCount = Math.floor(currentStep);
+
+                let htmlOutput = '';
+                for (let i = 0; i < totalChars; i++) {
+                    const ch = targetName[i];
+                    if (ch === ' ') {
+                        htmlOutput += ' ';
+                    } else if (i < lockedCount) {
+                        // Carattere sbloccato
+                        htmlOutput += `<span class="locked-char">${ch}</span>`;
+                    } else if (i < lockedCount + 10) {
+                        // Runa attiva in trasformazione
+                        const randomRune = ALFABETO_RUNICO[Math.floor(Math.random() * ALFABETO_RUNICO.length)];
+                        htmlOutput += `<span class="rune-char">${randomRune}</span>`;
+                    } else {
+                        // Runa dormiente
+                        const faintRune = ALFABETO_RUNICO[(i * 7) % ALFABETO_RUNICO.length];
+                        htmlOutput += `<span class="opacity-35 text-slate-400">${faintRune}</span>`;
+                    }
+                }
+
+                nameDisplay.innerHTML = htmlOutput;
+
+                // Quando tutte le lettere sono state decifrate:
+                if (lockedCount >= totalChars) {
+                    clearInterval(intervalDecifrazione);
+                    nameDisplay.innerHTML = `<span class="text-white drop-shadow-[0_0_18px_var(--theme-primary)]">${targetName}</span>`;
+                    statusText.textContent = "✦ Campione Mitico Evocato ✦";
+                    document.getElementById('hero-subtitle').style.opacity = '1';
+                    intensitaParticelle = 1;
+
+                    // Onda d'urto luminosa e rivelazione a cascata della scheda D&D
+                    attivaFlashOndaDurto();
+                    rivelazioneStaggeredCard();
+                }
+            }, 42);
+        }
+
+        function rivelazioneStaggeredCard() {
+            const ids = ['card-header', 'card-lore', 'card-damage', 'card-debuff', 'card-action'];
+            ids.forEach((id, idx) => {
+                setTimeout(() => {
+                    const el = document.getElementById(id);
+                    if (el) el.classList.add('visible');
+                }, idx * 140);
+            });
+        }
+
+        /* ==========================================================================
+           INTERAZIONE GIOCATORE: SCATENA LA MOSSA LEGGENDARIA
+           ========================================================================== */
+        function triggerLegendaryCast() {
+            const container = document.getElementById('app-container');
+            const confirmMsg = document.getElementById('cast-confirmation');
+            const btnText = document.getElementById('cast-btn-text');
+
+            // 1. Effetto Flash + Screen Shake cinematografico
+            attivaFlashOndaDurto();
+            container.classList.remove('shake-screen');
+            void container.offsetWidth;
+            container.classList.add('shake-screen');
+
+            // 2. Aumenta temporaneamente la velocità delle particelle elementali
+            intensitaParticelle = 3.2;
+            setTimeout(() => { intensitaParticelle = 1.2; }, 1400);
+
+            // 3. Feedback aptico su dispositivi supportati
+            if (navigator.vibrate) {
+                navigator.vibrate([60, 40, 120]);
+            }
+
+            // 4. Aggiorna stato del bottone
+            btnText.textContent = "Mossa Leggendaria Scatenata!";
+            confirmMsg.classList.remove('hidden');
+        }
+
+        function evocaEroeCasuale() {
+            // Sceglie un eroe casuale (evitando di ripetere immediatamente lo stesso se possibile)
+            let nuovoIndex;
+            do {
+                nuovoIndex = Math.floor(Math.random() * EROI_MITICI.length);
+            } while (nuovoIndex === eroeCorrenteIndex && EROI_MITICI.length > 1);
+
+            avviaSequenzaEroe(nuovoIndex);
+        }
+
+        function toggleDmBar() {
+            const bar = document.getElementById('dm-selector');
+            bar.classList.toggle('hidden');
+            bar.classList.toggle('flex');
+        }
+
+        /* ==========================================================================
+           SISTEMA PARTICELLARE HTML5 CANVAS (60FPS OTTIMIZZATO PER IPHONE RETINA)
+           Gestisce 4 comportamenti:
+           - 'wine': Bollicine cremisi/oro e anelli di risonanza sonica
+           - 'fire': Scintille e tizzoni infuocati ascendenti
+           - 'ash': Cenere vulcanica incandescente che cade in diagonale
+           - 'nature': Foglie di quercia dorate/verdi e spore luminose fluttuanti
+           ========================================================================== */
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let sonicRings = [];
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+
+        function ridimensionaCanvas() {
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width * dpr;
+            canvas.height = height * dpr;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        class ParticellaElementale {
+            constructor() {
+                this.reset(true);
+            }
+
+            reset(initial = false) {
+                this.x = Math.random() * width;
+                this.y = initial ? Math.random() * height : height + 20;
+                this.size = Math.random() * 3.5 + 1.5;
+                this.alpha = Math.random() * 0.65 + 0.25;
+                this.angle = Math.random() * Math.PI * 2;
+                this.spinSpeed = (Math.random() - 0.5) * 0.04;
+
+                if (modalitaParticelle === 'wine') {
+                    // Gocce di vino e bollicine dorate che salgono dolcemente
+                    this.vx = (Math.random() - 0.5) * 0.6;
+                    this.vy = -(Math.random() * 1.2 + 0.5);
+                    this.color = Math.random() > 0.35 ? '#e11d48' : '#fbbf24';
+                    this.size = Math.random() * 4 + 2;
+                } else if (modalitaParticelle === 'fire') {
+                    // Fiamme e scintille solari veloci verso l'alto
+                    this.vx = (Math.random() - 0.5) * 1.4;
+                    this.vy = -(Math.random() * 2.6 + 1.2);
+                    this.color = Math.random() > 0.4 ? '#f97316' : '#fef08a';
+                } else if (modalitaParticelle === 'ash') {
+                    // Cenere vulcanica che cade dall'alto con cuore di brace
+                    this.y = initial ? Math.random() * height : -15;
+                    this.vx = (Math.random() - 0.3) * 1.1;
+                    this.vy = Math.random() * 1.4 + 0.6;
+                    this.color = Math.random() > 0.45 ? '#a8a29e' : '#f97316';
+                    this.size = Math.random() * 3.5 + 1.5;
+                } else if (modalitaParticelle === 'nature') {
+                    // Foglie ancestrali e spore verdi/dorate
+                    this.vx = (Math.random() - 0.5) * 1.1;
+                    this.vy = -(Math.random() * 0.9 + 0.3);
+                    this.color = Math.random() > 0.3 ? '#34d399' : '#facc15';
+                    this.size = Math.random() * 5 + 2.5;
+                } else {
+                    // Default arcano
+                    this.vx = (Math.random() - 0.5) * 0.8;
+                    this.vy = -(Math.random() * 1 + 0.3);
+                    this.color = '#c084fc';
+                }
+            }
+
+            update() {
+                this.x += this.vx * intensitaParticelle;
+                this.y += this.vy * intensitaParticelle;
+                this.angle += this.spinSpeed;
+
+                // Oscillazione sinusoidale naturale
+                this.x += Math.sin(this.angle) * 0.35;
+
+                // Controllo bordi per riciclo continuo
+                if (modalitaParticelle === 'ash') {
+                    if (this.y > height + 20 || this.x < -20 || this.x > width + 20) {
+                        this.reset(false);
+                    }
+                } else {
+                    if (this.y < -20 || this.x < -20 || this.x > width + 20) {
+                        this.reset(false);
+                    }
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.alpha;
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+
+                if (modalitaParticelle === 'nature') {
+                    // Disegna una piccola foglia stilizzata
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.ellipse(0, 0, this.size, this.size * 0.5, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                } else if (modalitaParticelle === 'ash') {
+                    // Fiocco irregolare di cenere/brace
+                    ctx.fillStyle = this.color;
+                    ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size * 0.7);
+                } else {
+                    // Sfera luminosa (bollicina di vino o scintilla di fuoco)
+                    ctx.fillStyle = this.color;
+                    ctx.shadowColor = this.color;
+                    ctx.shadowBlur = 8;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size * 0.65, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                ctx.restore();
+            }
+        }
+
+        function rigeneraParticellePerTema() {
+            const numeroParticelle = width < 640 ? 42 : 65; // Ottimizzato per 60fps su iPhone
+            particles = [];
+            for (let i = 0; i < numeroParticelle; i++) {
+                particles.push(new ParticellaElementale());
+            }
+            sonicRings = [];
+        }
+
+        function loopAnimazioneCanvas() {
+            ctx.clearRect(0, 0, width, height);
+
+            // Se l'eroe è Lello (Vino & Onde Soniche), genera occasionalmente onde sonore espansive
+            if (modalitaParticelle === 'wine' && Math.random() < 0.03) {
+                sonicRings.push({
+                    x: width / 2,
+                    y: height * 0.25,
+                    r: 15,
+                    alpha: 0.45
+                });
+            }
+
+            // Disegna gli anelli sonori di Lello
+            for (let i = sonicRings.length - 1; i >= 0; i--) {
+                const ring = sonicRings[i];
+                ring.r += 2.2 * intensitaParticelle;
+                ring.alpha -= 0.006;
+                if (ring.alpha <= 0) {
+                    sonicRings.splice(i, 1);
+                    continue;
+                }
+                ctx.save();
+                ctx.strokeStyle = '#fbbf24';
+                ctx.globalAlpha = ring.alpha;
+                ctx.lineWidth = 1.5;
+                ctx.beginPath();
+                ctx.arc(ring.x, ring.y, ring.r, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.restore();
+            }
+
+            // Aggiorna e disegna tutte le particelle elementali
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+            }
+
+            requestAnimationFrame(loopAnimazioneCanvas);
+        }
+
+        /* ==========================================================================
+           AVVIO AUTOMATICO ALL'APERTURA DELLA PAGINA
+           ========================================================================== */
+        window.addEventListener('resize', ridimensionaCanvas);
+
+        window.onload = function () {
+            ridimensionaCanvas();
+            rigeneraParticellePerTema();
+            loopAnimazioneCanvas();
+
+            // Avvia immediatamente l'estrazione casuale dell'Eroe Mitico appena aperta la pagina
+            setTimeout(() => {
+                evocaEroeCasuale();
+            }, 350);
+        };
+    </script>
+</body>
+</html>
